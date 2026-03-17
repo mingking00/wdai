@@ -1,0 +1,129 @@
+{
+  "skill_name": "clawflow",
+  "skill_path": "/root/.openclaw/workspace/skills/clawflow",
+  "description": "ClawFlow - 轻量级工作流引擎，支持18种节点、并行执行、可视化",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "simple-data-pipeline",
+      "prompt": "创建一个简单数据处理工作流：输入数据 → 转换 → 输出",
+      "input": {
+        "workflow": {
+          "name": "数据处理",
+          "nodes": [
+            {"id": "input", "type": "function", "params": {"code": "output = {'data': [1,2,3]}"}},
+            {"id": "process", "type": "function", "params": {"code": "output = [x*2 for x in input['data']]"}},
+            {"id": "output", "type": "output", "params": {}}
+          ],
+          "connections": [
+            {"from": "input", "to": "process"},
+            {"from": "process", "to": "output"}
+          ]
+        }
+      },
+      "expected_output": "工作流成功执行，输出 [2,4,6]",
+      "assertions": [
+        {
+          "name": "execution_success",
+          "description": "工作流执行成功",
+          "check": "result.success == true"
+        },
+        {
+          "name": "correct_output",
+          "description": "输出数据正确",
+          "check": "result.data == [2,4,6]"
+        },
+        {
+          "name": "execution_time",
+          "description": "执行时间 < 1秒",
+          "check": "result.execution_time < 1.0"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "parallel-execution",
+      "prompt": "测试并行执行性能：两个无依赖节点应同时执行",
+      "input": {
+        "workflow": {
+          "name": "并行测试",
+          "nodes": [
+            {"id": "start", "type": "trigger", "params": {}},
+            {"id": "a", "type": "delay", "params": {"delay": 100}},
+            {"id": "b", "type": "delay", "params": {"delay": 100}},
+            {"id": "merge", "type": "merge", "params": {"mode": "append"}}
+          ],
+          "connections": [
+            {"from": "start", "to": "a"},
+            {"from": "start", "to": "b"},
+            {"from": "a", "to": "merge"},
+            {"from": "b", "to": "merge"}
+          ]
+        },
+        "parallel": true
+      },
+      "expected_output": "并行执行，耗时 < 0.2秒（顺序执行需要0.2秒）",
+      "assertions": [
+        {
+          "name": "parallel_faster",
+          "description": "并行执行比顺序快",
+          "check": "result.execution_time < 0.15"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "skill-integration",
+      "prompt": "测试技能节点调用：使用kimi_search搜索",
+      "input": {
+        "workflow": {
+          "name": "搜索测试",
+          "nodes": [
+            {"id": "search", "type": "skill", "params": {"skill": "kimi_search", "params": {"query": "Python", "limit": 3}}}
+          ],
+          "connections": []
+        }
+      },
+      "expected_output": "成功调用技能，返回搜索结果",
+      "assertions": [
+        {
+          "name": "skill_works",
+          "description": "技能节点正常工作",
+          "check": "result.success == true"
+        },
+        {
+          "name": "has_results",
+          "description": "返回结果包含数据",
+          "check": "len(result.data.get('results', [])) > 0"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "eval_name": "visualization",
+      "prompt": "测试工作流可视化功能",
+      "input": {
+        "workflow": {
+          "name": "可视化测试",
+          "nodes": [
+            {"id": "a", "type": "trigger", "params": {}},
+            {"id": "b", "type": "function", "params": {}},
+            {"id": "c", "type": "output", "params": {}}
+          ],
+          "connections": [
+            {"from": "a", "to": "b"},
+            {"from": "b", "to": "c"}
+          ]
+        }
+      },
+      "expected_output": "生成Mermaid格式的流程图",
+      "assertions": [
+        {
+          "name": "generates_mermaid",
+          "description": "生成Mermaid格式",
+          "check": "'flowchart' in visualization_output"
+        }
+      ]
+    }
+  ]
+}

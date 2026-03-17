@@ -1,0 +1,21 @@
+{
+  "agent_id": "test",
+  "methods": {
+    "deploy:github_api": {
+      "method_name": "github_api",
+      "task_type": "deploy",
+      "count": 3,
+      "successes": 0,
+      "failures": 3,
+      "first_attempt": "2026-03-16T16:19:10.378442",
+      "last_attempt": "2026-03-16T16:19:10.378808",
+      "error_patterns": [
+        "timeout",
+        "timeout",
+        "timeout"
+      ]
+    }
+  },
+  "violations": [],
+  "last_update": "2026-03-16T16:19:10.378821"
+}

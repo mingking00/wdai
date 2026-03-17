@@ -1,0 +1,26 @@
+review_rules:
+  style_check: true
+  bug_detection: true
+  performance: true
+  security: true
+  complexity: true
+  
+languages:
+  - python
+  - javascript
+  - typescript
+  - go
+  - rust
+  - java
+  
+severity_threshold: "warning"
+comment_style: "detailed"
+auto_fix: false
+
+exclude_patterns:
+  - "*.test.js"
+  - "*_test.py"
+  - "vendor/"
+  - "node_modules/"
+  - "dist/"
+  - "build/"

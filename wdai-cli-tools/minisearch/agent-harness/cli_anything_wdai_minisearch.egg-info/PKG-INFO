@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: cli-anything-wdai-minisearch
+Version: 1.0.0
+Summary: CLI interface for wdai_minisearch - Semantic search for wdai workspace
+Author: wdai
+Requires-Python: >=3.10

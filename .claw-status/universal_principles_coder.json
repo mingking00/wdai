@@ -1,0 +1,31 @@
+{
+  "agent_id": "coder",
+  "methods": {
+    "deploy:github_api": {
+      "method_name": "github_api",
+      "task_type": "deploy",
+      "count": 3,
+      "successes": 0,
+      "failures": 3,
+      "first_attempt": "2026-03-16T16:46:07.473630",
+      "last_attempt": "2026-03-16T16:46:08.075950",
+      "error_patterns": [
+        "timeout",
+        "timeout",
+        "timeout"
+      ]
+    },
+    "deploy:git_push": {
+      "method_name": "git_push",
+      "task_type": "deploy",
+      "count": 1,
+      "successes": 1,
+      "failures": 0,
+      "first_attempt": "2026-03-16T16:46:08.676421",
+      "last_attempt": "2026-03-16T16:46:08.676449",
+      "error_patterns": []
+    }
+  },
+  "violations": [],
+  "last_update": "2026-03-16T16:46:08.676497"
+}

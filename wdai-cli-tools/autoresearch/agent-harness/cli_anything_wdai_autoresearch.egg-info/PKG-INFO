@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: cli-anything-wdai-autoresearch
+Version: 1.0.0
+Summary: CLI interface for wdai_autoresearch - Autonomous research with self-improvement
+Author: wdai
+Requires-Python: >=3.10

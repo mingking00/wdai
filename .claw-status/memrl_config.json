@@ -1,0 +1,11 @@
+{
+  "alpha": 0.1,
+  "lambda_weight": 0.5,
+  "similarity_threshold": 0.5,
+  "top_k_candidates": 20,
+  "top_k_final": 5,
+  "initial_q": 0.5,
+  "min_q": 0.1,
+  "max_q": 1.0,
+  "created_at": "2026-03-16T17:17:04.367591"
+}

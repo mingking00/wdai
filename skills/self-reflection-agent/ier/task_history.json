@@ -1,0 +1,33 @@
+[
+  {
+    "task_id": "video_to_kg_bv1nvcuz5ewj",
+    "task_type": "video_to_knowledge_graph",
+    "description": "B站视频(BV1nvcuz5Ewj)转知识图谱自动化处理",
+    "platform": "bilibili",
+    "video_id": "BV1nvcuz5Ewj",
+    "video_title": "[LLM Architect] 08 Dive into K2.5",
+    "duration": "58min",
+    "status": "completed",
+    "steps": [
+      {"step": "cookie_login", "status": "success", "note": "有效，支持1080P下载"},
+      {"step": "video_download", "status": "success", "note": "214MB完整下载"},
+      {"step": "subtitle_check", "status": "success", "note": "发现ai-zh原生字幕"},
+      {"step": "whisper_transcription", "status": "failed", "note": "进程被SIGKILL终止"},
+      {"step": "native_subtitle_download", "status": "success", "note": "1581条AI字幕"},
+      {"step": "keyframe_extraction", "status": "success", "note": "提取12个关键时刻"},
+      {"step": "kg_generation", "status": "success", "note": "生成JSON+Markdown"}
+    ],
+    "outputs": {
+      "video": "output/videos/BV1nvcuz5Ewj.mp4",
+      "subtitles": "output/subtitles/BV1nvcuz5Ewj_real.json",
+      "keyframes": "output/keyframes/BV1nvcuz5Ewj_real_keyframe_*.jpg (12个)",
+      "knowledge_graph": "output/knowledge_graph/BV1nvcuz5Ewj_real_kg.json"
+    },
+    "lessons": [
+      "优先使用B站原生字幕，避免Whisper长时转录",
+      "系统对>20分钟进程自动SIGKILL",
+      "语义分析比时间采样更精准识别关键帧"
+    ],
+    "executed_at": "2026-03-15T23:48:01"
+  }
+]

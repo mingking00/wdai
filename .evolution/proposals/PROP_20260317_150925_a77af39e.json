@@ -1,0 +1,38 @@
+{
+  "id": "PROP_20260317_150925_a77af39e",
+  "title": "自动化GitHub项目分析与改进",
+  "created_at": "2026-03-17T15:09:25.983102",
+  "type": "流程",
+  "impact": "high",
+  "content": {
+    "problem": "当前GitHub项目发现是独立的，发现的项目没有自动分析其与wdai的关联性，也没有转化为具体的改进动作。",
+    "solution": "自动化GitHub项目分析流程：\n1. 发现项目后自动克隆/分析README\n2. 自动评估与wdai的适用性（0-1分数）\n3. 自动生成分析报告和改进建议\n4. 高适用性项目（>0.7）自动生成进化提案\n5. 跟踪已分析项目，避免重复",
+    "expected_effect": "GitHub发现→分析→提案→实施的完整自动化流程。确保外部优秀实践持续被学习。",
+    "risk_assessment": "中风险。需要API调用、自动克隆代码，可能涉及网络和资源问题。",
+    "implementation_steps": [
+      "扩展.github_discovery/analyzer.py",
+      "实现自动README分析",
+      "创建适用性评分算法",
+      "集成提案系统（高适用性自动生成提案）",
+      "添加项目去重机制"
+    ]
+  },
+  "status": "EXECUTED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T15:18:03.743005",
+    "decision_reason": "自动化外部优秀实践学习"
+  },
+  "execution": {
+    "executed_at": "2026-03-17T15:18:03.743283",
+    "result": {
+      "status": "success",
+      "implemented_files": [
+        ".github_discovery/auto_analyzer.py",
+        ".github_discovery/scoring.py"
+      ],
+      "summary": "GitHub发现→分析→评分→提案自动化流程已实施"
+    },
+    "logs": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "PROP_20260317_150925_320dd223",
+  "title": "将现有Python工具CLI化",
+  "created_at": "2026-03-17T15:09:25.982574",
+  "type": "架构",
+  "impact": "medium",
+  "content": {
+    "problem": "wdai_minisearch、wdai_autoresearch等工具目前只能通过直接运行Python脚本使用，缺乏标准化的CLI接口和REPL体验。用户需要记住脚本路径和参数格式。",
+    "solution": "使用CLI-Anything方法为所有现有工具生成标准化的CLI接口：\n1. 为wdai_minisearch生成完整CLI（已完成原型）\n2. 为wdai_autoresearch生成完整CLI（已完成原型）\n3. 为SEA Service、IER系统生成CLI\n4. 统一ReplSkin接口，提供一致的REPL体验\n5. 为每个CLI生成SKILL.md供AI发现",
+    "expected_effect": "所有工具可通过cli-anything-wdai-*命令统一调用，支持--json输出、REPL模式、自动补全。AI可自动发现并学习使用工具。",
+    "risk_assessment": "低风险。基于已验证的CLI-Anything方法，只是对现有工具的包装，不改变核心逻辑。",
+    "implementation_steps": [
+      "使用CLI-Anything为所有工具生成CLI harness",
+      "统一ReplSkin.py接口",
+      "生成并安装各工具的SKILL.md",
+      "测试所有CLI命令",
+      "更新文档和MEMORY.md"
+    ]
+  },
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T15:18:03.740302",
+    "decision_reason": "标准化CLI接口，提升工具可用性"
+  },
+  "execution": {
+    "executed_at": null,
+    "result": null,
+    "logs": []
+  }
+}

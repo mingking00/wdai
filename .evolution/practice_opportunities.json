@@ -1,0 +1,41 @@
+[
+  {
+    "opportunity_id": "opp_1773704425_1",
+    "name": "\u6269\u5c55\u6280\u80fd\u8986\u76d6",
+    "type": "exploration",
+    "description": "\u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd",
+    "expected_value": 0.8,
+    "required_skills": [
+      "skill_discovery",
+      "skill_learning"
+    ],
+    "estimated_effort": "medium",
+    "created_at": 1773704425.6530898
+  },
+  {
+    "opportunity_id": "opp_1773704425_2",
+    "name": "\u4ee3\u7801\u8d28\u91cf\u63d0\u5347",
+    "type": "exploration",
+    "description": "\u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406",
+    "expected_value": 0.7,
+    "required_skills": [
+      "code_refactoring",
+      "error_handling"
+    ],
+    "estimated_effort": "low",
+    "created_at": 1773704425.6530924
+  },
+  {
+    "opportunity_id": "opp_1773704425_3",
+    "name": "\u7528\u6237\u4ea4\u4e92\u4f18\u5316",
+    "type": "user_task",
+    "description": "\u5206\u6790\u6700\u8fd1\u7528\u6237\u4ea4\u4e92\uff0c\u627e\u51fa\u6539\u8fdb\u70b9",
+    "expected_value": 0.9,
+    "required_skills": [
+      "user_analysis",
+      "interaction_design"
+    ],
+    "estimated_effort": "medium",
+    "created_at": 1773704425.6530933
+  }
+]

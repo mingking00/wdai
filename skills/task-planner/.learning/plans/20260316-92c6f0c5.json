@@ -1,0 +1,116 @@
+{
+  "task_id": "20260316-92c6f0c5",
+  "task_description": "实现用户认证系统",
+  "complexity": "moderate",
+  "constraints": [
+    {
+      "category": "functional",
+      "description": "用户认证",
+      "priority": 10,
+      "verification": "功能测试",
+      "implicit": true
+    },
+    {
+      "category": "functional",
+      "description": "权限管理",
+      "priority": 9,
+      "verification": "功能测试",
+      "implicit": true
+    },
+    {
+      "category": "security",
+      "description": "会话管理安全",
+      "priority": 9,
+      "verification": "安全审计",
+      "implicit": true
+    }
+  ],
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "需求分析",
+      "estimated_time": "30min",
+      "dependencies": [],
+      "validation_criteria": [
+        "需求文档"
+      ],
+      "artifacts": [
+        "requirements.md"
+      ]
+    },
+    {
+      "step_id": 2,
+      "description": "架构设计",
+      "estimated_time": "45min",
+      "dependencies": [
+        1
+      ],
+      "validation_criteria": [
+        "设计文档"
+      ],
+      "artifacts": [
+        "design.md"
+      ]
+    },
+    {
+      "step_id": 3,
+      "description": "接口定义",
+      "estimated_time": "30min",
+      "dependencies": [
+        2
+      ],
+      "validation_criteria": [
+        "API文档"
+      ],
+      "artifacts": [
+        "api.md"
+      ]
+    },
+    {
+      "step_id": 4,
+      "description": "核心实现",
+      "estimated_time": "2h",
+      "dependencies": [
+        3
+      ],
+      "validation_criteria": [
+        "代码完成"
+      ],
+      "artifacts": [
+        "code"
+      ]
+    },
+    {
+      "step_id": 5,
+      "description": "集成测试",
+      "estimated_time": "1h",
+      "dependencies": [
+        4
+      ],
+      "validation_criteria": [
+        "测试通过"
+      ],
+      "artifacts": [
+        "test_report"
+      ]
+    },
+    {
+      "step_id": 6,
+      "description": "文档完善",
+      "estimated_time": "30min",
+      "dependencies": [
+        5
+      ],
+      "validation_criteria": [
+        "文档完整"
+      ],
+      "artifacts": [
+        "docs"
+      ]
+    }
+  ],
+  "risks": [],
+  "total_estimate": "3.0h",
+  "created_at": "2026-03-16T10:42:29.582133",
+  "validated": false
+}

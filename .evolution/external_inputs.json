@@ -1,0 +1,1002 @@
+[
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-research-orchestrator",
+    "url": "/root/.openclaw/skills/advanced-research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773690020.5507522,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: sag",
+    "url": "/root/.openclaw/skills/sag/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773690020.5507739,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: notion",
+    "url": "/root/.openclaw/skills/notion/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773690020.5507846,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: summarize",
+    "url": "/root/.openclaw/skills/summarize/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773690020.5507953,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-13",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-13.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773690020.5509048,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-15",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-15.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773690020.5509076,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-architecture-refactor",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-architecture-refactor.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773690020.5509093,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-phase4",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-phase4.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773690020.5509102,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773690020.5509114,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-17",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-17.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773690020.5509126,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: github",
+    "url": "/root/.openclaw/skills/github/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.061162,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: obsidian",
+    "url": "/root/.openclaw/skills/obsidian/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.0611856,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: channels-setup",
+    "url": "/root/.openclaw/skills/channels-setup/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.0612025,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: self-improving-agent",
+    "url": "/root/.openclaw/skills/self-improving-agent/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.0612311,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: research-orchestrator",
+    "url": "/root/.openclaw/skills/research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.0612428,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: openai-whisper",
+    "url": "/root/.openclaw/skills/openai-whisper/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.0612538,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-planner",
+    "url": "/root/.openclaw/skills/advanced-planner/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.061276,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: tmux",
+    "url": "/root/.openclaw/skills/tmux/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.0612874,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-research-orchestrator",
+    "url": "/root/.openclaw/skills/advanced-research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.0613089,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: sag",
+    "url": "/root/.openclaw/skills/sag/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.061343,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: notion",
+    "url": "/root/.openclaw/skills/notion/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.0613556,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: summarize",
+    "url": "/root/.openclaw/skills/summarize/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773693620.061367,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-13",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-13.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773693620.0614836,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-15",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-15.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773693620.061486,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-architecture-refactor",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-architecture-refactor.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773693620.061488,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-phase4",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-phase4.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773693620.0614889,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773693620.06149,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-17",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-17.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773693620.0614913,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: github",
+    "url": "/root/.openclaw/skills/github/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3524394,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: obsidian",
+    "url": "/root/.openclaw/skills/obsidian/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3524623,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: channels-setup",
+    "url": "/root/.openclaw/skills/channels-setup/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3524806,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: self-improving-agent",
+    "url": "/root/.openclaw/skills/self-improving-agent/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3525097,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: research-orchestrator",
+    "url": "/root/.openclaw/skills/research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.352522,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: openai-whisper",
+    "url": "/root/.openclaw/skills/openai-whisper/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.352534,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-planner",
+    "url": "/root/.openclaw/skills/advanced-planner/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.352556,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: tmux",
+    "url": "/root/.openclaw/skills/tmux/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3525672,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-research-orchestrator",
+    "url": "/root/.openclaw/skills/advanced-research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3525891,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: sag",
+    "url": "/root/.openclaw/skills/sag/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3526096,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: notion",
+    "url": "/root/.openclaw/skills/notion/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3526204,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: summarize",
+    "url": "/root/.openclaw/skills/summarize/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773695233.3526313,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-13",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-13.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773695233.3527417,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-15",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-15.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773695233.352744,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-architecture-refactor",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-architecture-refactor.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773695233.3527458,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-phase4",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-phase4.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773695233.352747,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773695233.352748,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-17",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-17.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773695233.3527489,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: github",
+    "url": "/root/.openclaw/skills/github/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.9199457,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: obsidian",
+    "url": "/root/.openclaw/skills/obsidian/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.9199693,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: channels-setup",
+    "url": "/root/.openclaw/skills/channels-setup/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.9199867,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: self-improving-agent",
+    "url": "/root/.openclaw/skills/self-improving-agent/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.920016,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: research-orchestrator",
+    "url": "/root/.openclaw/skills/research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.9200282,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: openai-whisper",
+    "url": "/root/.openclaw/skills/openai-whisper/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.92004,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-planner",
+    "url": "/root/.openclaw/skills/advanced-planner/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.9200625,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: tmux",
+    "url": "/root/.openclaw/skills/tmux/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.9200737,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-research-orchestrator",
+    "url": "/root/.openclaw/skills/advanced-research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.9200952,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: sag",
+    "url": "/root/.openclaw/skills/sag/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.9201162,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: notion",
+    "url": "/root/.openclaw/skills/notion/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.920127,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: summarize",
+    "url": "/root/.openclaw/skills/summarize/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773697223.920138,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-13",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-13.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773697223.9202497,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-15",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-15.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773697223.920252,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-architecture-refactor",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-architecture-refactor.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773697223.920254,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-phase4",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-phase4.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773697223.920255,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773697223.920256,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-17",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-17.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773697223.920257,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: github",
+    "url": "/root/.openclaw/skills/github/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.918906,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: obsidian",
+    "url": "/root/.openclaw/skills/obsidian/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.9189293,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: channels-setup",
+    "url": "/root/.openclaw/skills/channels-setup/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.9189463,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: self-improving-agent",
+    "url": "/root/.openclaw/skills/self-improving-agent/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.9189756,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: research-orchestrator",
+    "url": "/root/.openclaw/skills/research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.9189882,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: openai-whisper",
+    "url": "/root/.openclaw/skills/openai-whisper/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.919,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-planner",
+    "url": "/root/.openclaw/skills/advanced-planner/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.9190223,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: tmux",
+    "url": "/root/.openclaw/skills/tmux/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.9190338,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-research-orchestrator",
+    "url": "/root/.openclaw/skills/advanced-research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.919056,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: sag",
+    "url": "/root/.openclaw/skills/sag/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.919077,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: notion",
+    "url": "/root/.openclaw/skills/notion/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.9190876,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: summarize",
+    "url": "/root/.openclaw/skills/summarize/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773700821.9190986,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-13",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-13.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773700821.9192092,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-15",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-15.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773700821.919212,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-architecture-refactor",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-architecture-refactor.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773700821.9192135,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-phase4",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-phase4.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773700821.9192145,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773700821.9192157,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-17",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-17.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773700821.9192166,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: github",
+    "url": "/root/.openclaw/skills/github/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.6517467,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: obsidian",
+    "url": "/root/.openclaw/skills/obsidian/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.6517715,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: channels-setup",
+    "url": "/root/.openclaw/skills/channels-setup/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.6517885,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: self-improving-agent",
+    "url": "/root/.openclaw/skills/self-improving-agent/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.651818,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: research-orchestrator",
+    "url": "/root/.openclaw/skills/research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.65183,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: openai-whisper",
+    "url": "/root/.openclaw/skills/openai-whisper/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.651841,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-planner",
+    "url": "/root/.openclaw/skills/advanced-planner/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.651863,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: tmux",
+    "url": "/root/.openclaw/skills/tmux/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.6518743,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: advanced-research-orchestrator",
+    "url": "/root/.openclaw/skills/advanced-research-orchestrator/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.6518965,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: sag",
+    "url": "/root/.openclaw/skills/sag/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.6519175,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: notion",
+    "url": "/root/.openclaw/skills/notion/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.651928,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "skills_repository",
+    "title": "Skill: summarize",
+    "url": "/root/.openclaw/skills/summarize/SKILL.md",
+    "relevance_score": 0.7,
+    "collected_at": 1773704425.651939,
+    "insights": [
+      "\u53ef\u5b66\u4e60\u7684\u6280\u80fd\u6a21\u5f0f"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-13",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-13.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773704425.652051,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-15",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-15.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773704425.6520536,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-architecture-refactor",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-architecture-refactor.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773704425.652055,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16-phase4",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16-phase4.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773704425.652056,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-16",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-16.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773704425.6520572,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  },
+  {
+    "source": "memory_insights",
+    "title": "Memory: 2026-03-17",
+    "url": "/root/.openclaw/workspace/memory/daily/2026-03-17.md",
+    "relevance_score": 0.9,
+    "collected_at": 1773704425.6520581,
+    "insights": [
+      "\u5386\u53f2\u7ecf\u9a8c\u548c\u6559\u8bad"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "REQ_20260317_141315_62de": {
+    "task_id": "REQ_20260317_141315_62de",
+    "description": "优化错误处理，添加详细异常信息和日志",
+    "target_files": [],
+    "change_type": "improve",
+    "created_at": "2026-03-17T15:29:45.459968",
+    "completed_at": null,
+    "success": false,
+    "experiences_used": [],
+    "experiences_generated": [],
+    "rollback_needed": false,
+    "error_info": null
+  },
+  "REQ_20260317_141757_0050": {
+    "task_id": "REQ_20260317_141757_0050",
+    "description": "优化错误处理和代码性能",
+    "target_files": [],
+    "change_type": "improve",
+    "created_at": "2026-03-17T15:29:45.460855",
+    "completed_at": null,
+    "success": false,
+    "experiences_used": [],
+    "experiences_generated": [],
+    "rollback_needed": false,
+    "error_info": null
+  }
+}

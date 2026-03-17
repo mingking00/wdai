@@ -1,0 +1,114 @@
+{
+  "agents": {
+    "main": {
+      "agent_id": "main",
+      "agent_type": "coordinator",
+      "status": "idle",
+      "current_task": null,
+      "capabilities": [
+        "task_decompose",
+        "conflict_arbitrate",
+        "quality_control"
+      ],
+      "principles": {
+        "level": "P1",
+        "weight": 100
+      },
+      "last_heartbeat": ""
+    },
+    "coder": {
+      "agent_id": "coder",
+      "agent_type": "coder",
+      "status": "idle",
+      "current_task": null,
+      "capabilities": [
+        "code_write",
+        "debug",
+        "deploy",
+        "git"
+      ],
+      "principles": {
+        "level": "P2",
+        "weight": 50
+      },
+      "last_heartbeat": "2026-03-16T16:46:07.473195"
+    },
+    "reflector": {
+      "agent_id": "reflector",
+      "agent_type": "reflector",
+      "status": "busy",
+      "current_task": "reflection_task_20260316_164607_8744",
+      "capabilities": [
+        "reflection",
+        "pattern_extraction",
+        "principle_refinement"
+      ],
+      "principles": {
+        "level": "P3",
+        "weight": 30
+      },
+      "last_heartbeat": ""
+    },
+    "evolution": {
+      "agent_id": "evolution",
+      "agent_type": "evolution",
+      "status": "idle",
+      "current_task": null,
+      "capabilities": [
+        "system_improve",
+        "skill_creation",
+        "framework_update"
+      ],
+      "principles": {
+        "level": "P1",
+        "weight": 90
+      },
+      "last_heartbeat": ""
+    },
+    "reviewer": {
+      "agent_id": "reviewer",
+      "agent_type": "reviewer",
+      "status": "idle",
+      "current_task": null,
+      "capabilities": [
+        "code_review",
+        "quality_check",
+        "verification"
+      ],
+      "principles": {
+        "level": "P2",
+        "weight": 40
+      },
+      "last_heartbeat": ""
+    }
+  },
+  "tasks": {
+    "task_20260316_164607_8744": {
+      "task_id": "task_20260316_164607_8744",
+      "task_type": "deploy",
+      "description": "\u90e8\u7f72\u535a\u5ba2\u5230GitHub",
+      "assigned_to": "coder",
+      "assigned_by": "coordinator",
+      "status": "completed",
+      "created_at": "2026-03-16T16:46:07.473181",
+      "completed_at": "2026-03-16T16:46:08.976847",
+      "result": {
+        "method": "git_push",
+        "duration": "5s"
+      }
+    },
+    "reflection_task_20260316_164607_8744": {
+      "task_id": "reflection_task_20260316_164607_8744",
+      "task_type": "reflection",
+      "description": "\u53cd\u601d\u4efb\u52a1: \u90e8\u7f72\u535a\u5ba2\u5230GitHub",
+      "assigned_to": "reflector",
+      "assigned_by": "coordinator",
+      "status": "pending",
+      "created_at": "2026-03-16T16:46:08.976872",
+      "completed_at": null,
+      "result": null
+    }
+  },
+  "conflicts": [],
+  "updated_at": "2026-03-16T16:46:08.976959"
+}

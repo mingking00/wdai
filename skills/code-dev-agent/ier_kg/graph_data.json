@@ -1,0 +1,907 @@
+{
+  "experiences": {
+    "EXP_2f7cfb0852d4": {
+      "id": "EXP_2f7cfb0852d4",
+      "exp_type": "pattern",
+      "name": "依赖注入模式",
+      "description": "通过参数传递依赖而不是内部创建",
+      "context": "需要解耦组件的场景",
+      "solution": "使用函数参数或类构造函数接收依赖",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern"
+      ],
+      "created_at": "2026-03-15T17:23:49.875800",
+      "updated_at": "2026-03-15T17:23:49.875815"
+    },
+    "EXP_baa7db903f42": {
+      "id": "EXP_baa7db903f42",
+      "exp_type": "pattern",
+      "name": "装饰器模式",
+      "description": "在不修改原函数的情况下添加功能",
+      "context": "需要扩展函数行为的场景",
+      "solution": "使用@decorator语法包装函数",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern"
+      ],
+      "created_at": "2026-03-15T17:23:50.011375",
+      "updated_at": "2026-03-15T17:23:50.011389"
+    },
+    "EXP_b77b03b1308a": {
+      "id": "EXP_b77b03b1308a",
+      "exp_type": "shortcut",
+      "name": "使用@lru_cache",
+      "description": "自动缓存函数结果",
+      "context": "函数结果被重复调用的场景",
+      "solution": "@functools.lru_cache(maxsize=128)",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "shortcut"
+      ],
+      "created_at": "2026-03-15T17:23:50.124784",
+      "updated_at": "2026-03-15T17:23:50.124797"
+    },
+    "EXP_0971201547ea": {
+      "id": "EXP_0971201547ea",
+      "exp_type": "optimization",
+      "name": "异步IO",
+      "description": "使用async/await提高并发性能",
+      "context": "IO密集型操作场景",
+      "solution": "将同步函数改为async def",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "optimization"
+      ],
+      "created_at": "2026-03-15T17:23:50.237880",
+      "updated_at": "2026-03-15T17:23:50.237896"
+    },
+    "EXP_6d6198635f5f": {
+      "id": "EXP_6d6198635f5f",
+      "exp_type": "lesson",
+      "name": "记得关闭资源",
+      "description": "使用上下文管理器确保资源释放",
+      "context": "操作文件、数据库连接等场景",
+      "solution": "使用with语句或try-finally",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "lesson"
+      ],
+      "created_at": "2026-03-15T17:23:50.351612",
+      "updated_at": "2026-03-15T17:23:50.351624"
+    },
+    "EXP_fbf288a09fd7": {
+      "id": "EXP_fbf288a09fd7",
+      "exp_type": "anti_pattern",
+      "name": "全局可变状态",
+      "description": "避免使用全局变量",
+      "context": "任何场景都应该避免",
+      "solution": "使用参数传递或依赖注入替代",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "anti_pattern"
+      ],
+      "created_at": "2026-03-15T17:23:50.464637",
+      "updated_at": "2026-03-15T17:23:50.464650"
+    },
+    "EXP_56bbada006a0": {
+      "id": "EXP_56bbada006a0",
+      "exp_type": "pattern",
+      "name": "FastAPI依赖注入",
+      "description": "使用Depends实现依赖注入",
+      "context": "构建API需要管理依赖",
+      "solution": "使用Depends(dependency_func)注入依赖",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:30:19.479625",
+      "updated_at": "2026-03-15T17:30:19.479640"
+    },
+    "EXP_c864ac2b7016": {
+      "id": "EXP_c864ac2b7016",
+      "exp_type": "tool",
+      "name": "Rich终端美化",
+      "description": "使用Rich库美化终端输出",
+      "context": "需要格式化终端输出的场景",
+      "solution": "from rich.console import Console; console = Console()",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "tool",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:30:19.613062",
+      "updated_at": "2026-03-15T17:30:19.613077"
+    },
+    "EXP_ff9b3980c365": {
+      "id": "EXP_ff9b3980c365",
+      "exp_type": "pattern",
+      "name": "HTTPX异步请求",
+      "description": "使用HTTPX进行异步HTTP请求",
+      "context": "需要高性能HTTP客户端",
+      "solution": "使用async with httpx.AsyncClient() as client:",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:30:19.743098",
+      "updated_at": "2026-03-15T17:30:19.743112"
+    },
+    "EXP_53b084881bfc": {
+      "id": "EXP_53b084881bfc",
+      "exp_type": "pattern",
+      "name": "Pydantic模型验证",
+      "description": "使用Pydantic进行数据验证和序列化",
+      "context": "需要数据验证的场景",
+      "solution": "class User(BaseModel): name: str; age: int",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:30:19.873223",
+      "updated_at": "2026-03-15T17:30:19.873237"
+    },
+    "EXP_6310f1a7f440": {
+      "id": "EXP_6310f1a7f440",
+      "exp_type": "best_practice",
+      "name": "类型提示",
+      "description": "为函数和变量添加类型提示",
+      "context": "Python 3.6+项目",
+      "solution": "使用typing模块添加类型注解",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "best_practice",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:30:20.003954",
+      "updated_at": "2026-03-15T17:30:20.003968"
+    },
+    "EXP_fc8ccad7d227": {
+      "id": "EXP_fc8ccad7d227",
+      "exp_type": "optimization",
+      "name": "异步并发",
+      "description": "使用asyncio.gather并发执行多个任务",
+      "context": "多个独立IO操作",
+      "solution": "await asyncio.gather(task1(), task2(), task3())",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "optimization",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:30:20.139649",
+      "updated_at": "2026-03-15T17:30:20.139665"
+    },
+    "EXP_c3b8a57924fe": {
+      "id": "EXP_c3b8a57924fe",
+      "exp_type": "pattern",
+      "name": "SQLAlchemy声明式ORM",
+      "description": "使用声明式基类定义数据模型",
+      "context": "需要数据库ORM的场景",
+      "solution": "class User(Base): __tablename__ = 'users'; id = Column(Integer, primary_key=True)",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:42:11.079078",
+      "updated_at": "2026-03-15T17:42:11.079094"
+    },
+    "EXP_f06a22fe960f": {
+      "id": "EXP_f06a22fe960f",
+      "exp_type": "pattern",
+      "name": "Flask应用工厂模式",
+      "description": "使用create_app工厂函数创建应用",
+      "context": "构建Flask应用",
+      "solution": "def create_app(): app = Flask(__name__); return app",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:42:11.230821",
+      "updated_at": "2026-03-15T17:42:11.230834"
+    },
+    "EXP_cbe2b6f8cbd3": {
+      "id": "EXP_cbe2b6f8cbd3",
+      "exp_type": "best_practice",
+      "name": "pytest fixtures",
+      "description": "使用fixture管理测试依赖",
+      "context": "编写单元测试",
+      "solution": "@pytest.fixture; def client(): return app.test_client()",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "best_practice",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:42:11.379653",
+      "updated_at": "2026-03-15T17:42:11.379664"
+    },
+    "EXP_a7ae49ed9b78": {
+      "id": "EXP_a7ae49ed9b78",
+      "exp_type": "pattern",
+      "name": "HTTP连接池",
+      "description": "使用连接池复用HTTP连接",
+      "context": "频繁HTTP请求场景",
+      "solution": "pool = urllib3.PoolManager(num_pools=10)",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:42:11.529831",
+      "updated_at": "2026-03-15T17:42:11.529845"
+    },
+    "EXP_0938dafd4f1c": {
+      "id": "EXP_0938dafd4f1c",
+      "exp_type": "best_practice",
+      "name": "上下文管理器",
+      "description": "使用with语句管理资源生命周期",
+      "context": "需要资源管理的场景",
+      "solution": "with open('file') as f: ...",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "best_practice",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:42:11.680035",
+      "updated_at": "2026-03-15T17:42:11.680048"
+    },
+    "EXP_b98e9d7c0cb2": {
+      "id": "EXP_b98e9d7c0cb2",
+      "exp_type": "pattern",
+      "name": "工厂模式",
+      "description": "使用工厂函数创建对象",
+      "context": "需要根据条件创建不同对象",
+      "solution": "def create_object(type): if type == 'A': return A(); return B()",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:42:11.830385",
+      "updated_at": "2026-03-15T17:42:11.830399"
+    },
+    "EXP_cd847ffd4e57": {
+      "id": "EXP_cd847ffd4e57",
+      "exp_type": "tool",
+      "name": "Typer命令行",
+      "description": "使用Typer构建类型安全的CLI",
+      "context": "需要命令行工具的场景",
+      "solution": "import typer; app = typer.Typer()",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "tool",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:47:02.552387",
+      "updated_at": "2026-03-15T17:47:02.552406"
+    },
+    "EXP_6fd7f1e0e9f0": {
+      "id": "EXP_6fd7f1e0e9f0",
+      "exp_type": "pattern",
+      "name": "WebSocket实时通信",
+      "description": "使用SocketIO实现实时双向通信",
+      "context": "需要实时更新的场景",
+      "solution": "@socketio.on('event'); def handle(data): emit('response', data)",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:47:02.735451",
+      "updated_at": "2026-03-15T17:47:02.735467"
+    },
+    "EXP_61dc45279d52": {
+      "id": "EXP_61dc45279d52",
+      "exp_type": "pattern",
+      "name": "WSGI服务器部署",
+      "description": "使用Gunicorn部署Python Web应用",
+      "context": "生产环境部署",
+      "solution": "gunicorn -w 4 -b 0.0.0.0:8000 app:app",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:47:02.895899",
+      "updated_at": "2026-03-15T17:47:02.895914"
+    },
+    "EXP_45797461520b": {
+      "id": "EXP_45797461520b",
+      "exp_type": "tool",
+      "name": "Flask-AppBuilder",
+      "description": "使用FAB快速构建管理后台",
+      "context": "需要后台管理系统的场景",
+      "solution": "from flask_appbuilder import AppBuilder",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "tool",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:47:03.055760",
+      "updated_at": "2026-03-15T17:47:03.055774"
+    },
+    "EXP_10c505583202": {
+      "id": "EXP_10c505583202",
+      "exp_type": "pattern",
+      "name": "Scrapy爬虫引擎",
+      "description": "使用Scrapy构建高效爬虫",
+      "context": "需要数据采集的场景",
+      "solution": "class MySpider(scrapy.Spider): ...",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:55:35.227379",
+      "updated_at": "2026-03-15T17:55:35.227396"
+    },
+    "EXP_7a63a905a4a0": {
+      "id": "EXP_7a63a905a4a0",
+      "exp_type": "optimization",
+      "name": "异步信号处理",
+      "description": "使用信号机制解耦组件",
+      "context": "需要事件驱动架构的场景",
+      "solution": "from blinker import signal; @signal.connect",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "optimization",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:55:35.400299",
+      "updated_at": "2026-03-15T17:55:35.400313"
+    },
+    "EXP_de2a2941c25c": {
+      "id": "EXP_de2a2941c25c",
+      "exp_type": "best_practice",
+      "name": "迭代器模式",
+      "description": "使用生成器处理大数据流",
+      "context": "内存敏感的数据处理",
+      "solution": "def process_items(): for item in large_dataset: yield item",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "best_practice",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:55:35.560521",
+      "updated_at": "2026-03-15T17:55:35.560533"
+    },
+    "EXP_be29920242b6": {
+      "id": "EXP_be29920242b6",
+      "exp_type": "pattern",
+      "name": "插件系统",
+      "description": "使用插件架构扩展功能",
+      "context": "需要可扩展性的应用",
+      "solution": "class BasePlugin: def register(self, app): ...",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "external"
+      ],
+      "created_at": "2026-03-15T17:55:35.721283",
+      "updated_at": "2026-03-15T17:55:35.721297"
+    },
+    "EXP_43fa165140ff": {
+      "id": "EXP_43fa165140ff",
+      "exp_type": "pattern",
+      "name": "记忆层抽象",
+      "description": "将记忆管理抽象为独立层，与业务逻辑解耦",
+      "context": "需要持久化记忆的AI应用",
+      "solution": "class MemoryLayer: def add(self, key, value): ...",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "memory_system",
+        "github"
+      ],
+      "created_at": "2026-03-15T18:00:40.517963",
+      "updated_at": "2026-03-15T18:00:40.517978"
+    },
+    "EXP_7b6fb29c271c": {
+      "id": "EXP_7b6fb29c271c",
+      "exp_type": "optimization",
+      "name": "记忆压缩",
+      "description": "智能压缩对话历史，减少token使用",
+      "context": "长对话场景",
+      "solution": "使用摘要算法提取关键信息，减少80%token",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "optimization",
+        "memory_system",
+        "github"
+      ],
+      "created_at": "2026-03-15T18:00:40.697835",
+      "updated_at": "2026-03-15T18:00:40.697849"
+    },
+    "EXP_07c298c414bd": {
+      "id": "EXP_07c298c414bd",
+      "exp_type": "best_practice",
+      "name": "零信任安全",
+      "description": "默认不信任，所有记忆访问需授权",
+      "context": "涉及敏感数据的应用",
+      "solution": "实现BYOK(Bring Your Own Key)加密",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "best_practice",
+        "memory_system",
+        "github"
+      ],
+      "created_at": "2026-03-15T18:00:40.862554",
+      "updated_at": "2026-03-15T18:00:40.862569"
+    },
+    "EXP_af23c2d5b6a8": {
+      "id": "EXP_af23c2d5b6a8",
+      "exp_type": "pattern",
+      "name": "自适应记忆",
+      "description": "根据使用频率自动调整记忆保留策略",
+      "context": "大规模记忆管理",
+      "solution": "高频记忆→长期存储；低频记忆→归档或删除",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "memory_system",
+        "github"
+      ],
+      "created_at": "2026-03-15T18:00:41.029035",
+      "updated_at": "2026-03-15T18:00:41.029049"
+    },
+    "EXP_d69c50c62a65": {
+      "id": "EXP_d69c50c62a65",
+      "exp_type": "tool",
+      "name": "记忆检索增强",
+      "description": "使用向量检索快速定位相关记忆",
+      "context": "大规模记忆查询",
+      "solution": "embedding + vector DB实现语义检索",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "tool",
+        "memory_system",
+        "github"
+      ],
+      "created_at": "2026-03-15T18:00:41.189255",
+      "updated_at": "2026-03-15T18:00:41.189274"
+    },
+    "EXP_1b970408aefb": {
+      "id": "EXP_1b970408aefb",
+      "exp_type": "best_practice",
+      "name": "记忆可观测性",
+      "description": "记录记忆访问日志，支持审计和调试",
+      "context": "生产环境",
+      "solution": "Track TTL, size, access for every memory",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "best_practice",
+        "memory_system",
+        "github"
+      ],
+      "created_at": "2026-03-15T18:00:41.473022",
+      "updated_at": "2026-03-15T18:00:41.473036"
+    },
+    "EXP_b3e76738011e": {
+      "id": "EXP_b3e76738011e",
+      "exp_type": "pattern",
+      "name": "多层级记忆",
+      "description": "区分工作记忆和长期记忆",
+      "context": "复杂Agent系统",
+      "solution": "Working Memory(短期) + Long-term Memory(持久)",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "pattern",
+        "memory_system",
+        "github"
+      ],
+      "created_at": "2026-03-15T18:00:41.639807",
+      "updated_at": "2026-03-15T18:00:41.639821"
+    },
+    "EXP_60cd139f5789": {
+      "id": "EXP_60cd139f5789",
+      "exp_type": "optimization",
+      "name": "记忆去重",
+      "description": "检测并合并相似记忆，避免冗余",
+      "context": "自动积累场景",
+      "solution": "使用相似度检测合并重复信息",
+      "code_example": null,
+      "source_task": null,
+      "reliability_score": 0.5,
+      "usage_count": 0,
+      "success_count": 0,
+      "tags": [
+        "optimization",
+        "memory_system",
+        "github"
+      ],
+      "created_at": "2026-03-15T18:00:41.804659",
+      "updated_at": "2026-03-15T18:00:41.804672"
+    }
+  },
+  "edges": {
+    "EDGE_9e0d6cc703f4": {
+      "id": "EDGE_9e0d6cc703f4",
+      "source_id": "EXP_baa7db903f42",
+      "target_id": "EXP_b77b03b1308a",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:23:50.465232"
+    },
+    "EDGE_c783e2b91366": {
+      "id": "EDGE_c783e2b91366",
+      "source_id": "EXP_b77b03b1308a",
+      "target_id": "EXP_6d6198635f5f",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:23:50.466556"
+    },
+    "EDGE_eff659e47a7b": {
+      "id": "EDGE_eff659e47a7b",
+      "source_id": "EXP_2f7cfb0852d4",
+      "target_id": "EXP_fbf288a09fd7",
+      "relation_type": "prevents",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:23:50.467137"
+    },
+    "EDGE_ed9bd6f925f8": {
+      "id": "EDGE_ed9bd6f925f8",
+      "source_id": "EXP_0971201547ea",
+      "target_id": "EXP_6d6198635f5f",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:23:50.467618"
+    },
+    "EDGE_4fc538823019": {
+      "id": "EDGE_4fc538823019",
+      "source_id": "EXP_56bbada006a0",
+      "target_id": "EXP_2f7cfb0852d4",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:30:20.141209"
+    },
+    "EDGE_6c52b4279b6b": {
+      "id": "EDGE_6c52b4279b6b",
+      "source_id": "EXP_56bbada006a0",
+      "target_id": "EXP_6310f1a7f440",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:30:20.141751"
+    },
+    "EDGE_7c2f6550e629": {
+      "id": "EDGE_7c2f6550e629",
+      "source_id": "EXP_53b084881bfc",
+      "target_id": "EXP_6310f1a7f440",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:30:20.143011"
+    },
+    "EDGE_0c84d892d300": {
+      "id": "EDGE_0c84d892d300",
+      "source_id": "EXP_ff9b3980c365",
+      "target_id": "EXP_fc8ccad7d227",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:30:20.143900"
+    },
+    "EDGE_a389acbd2914": {
+      "id": "EDGE_a389acbd2914",
+      "source_id": "EXP_fc8ccad7d227",
+      "target_id": "EXP_6d6198635f5f",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:30:20.144610"
+    },
+    "EDGE_b4d6ddfa8aa5": {
+      "id": "EDGE_b4d6ddfa8aa5",
+      "source_id": "EXP_c864ac2b7016",
+      "target_id": "EXP_baa7db903f42",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:30:20.145390"
+    },
+    "EDGE_91dbc5f07b4f": {
+      "id": "EDGE_91dbc5f07b4f",
+      "source_id": "EXP_f06a22fe960f",
+      "target_id": "EXP_b98e9d7c0cb2",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:42:11.831617"
+    },
+    "EDGE_1ef3497fe98b": {
+      "id": "EDGE_1ef3497fe98b",
+      "source_id": "EXP_0938dafd4f1c",
+      "target_id": "EXP_6d6198635f5f",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:42:11.834309"
+    },
+    "EDGE_a4d50befe202": {
+      "id": "EDGE_a4d50befe202",
+      "source_id": "EXP_fc8ccad7d227",
+      "target_id": "EXP_a7ae49ed9b78",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:42:11.835134"
+    },
+    "EDGE_67884856ebaa": {
+      "id": "EDGE_67884856ebaa",
+      "source_id": "EXP_6fd7f1e0e9f0",
+      "target_id": "EXP_fc8ccad7d227",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:47:03.057133"
+    },
+    "EDGE_71fafdc58188": {
+      "id": "EDGE_71fafdc58188",
+      "source_id": "EXP_61dc45279d52",
+      "target_id": "EXP_f06a22fe960f",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:47:03.058579"
+    },
+    "EDGE_c8a5e0dac8e7": {
+      "id": "EDGE_c8a5e0dac8e7",
+      "source_id": "EXP_45797461520b",
+      "target_id": "EXP_c3b8a57924fe",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:47:03.059470"
+    },
+    "EDGE_73f99fd0083c": {
+      "id": "EDGE_73f99fd0083c",
+      "source_id": "EXP_10c505583202",
+      "target_id": "EXP_fc8ccad7d227",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:55:35.722869"
+    },
+    "EDGE_4b15bb61ef06": {
+      "id": "EDGE_4b15bb61ef06",
+      "source_id": "EXP_10c505583202",
+      "target_id": "EXP_b77b03b1308a",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:55:35.724263"
+    },
+    "EDGE_5b80ee017f08": {
+      "id": "EDGE_5b80ee017f08",
+      "source_id": "EXP_7a63a905a4a0",
+      "target_id": "EXP_baa7db903f42",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:55:35.725240"
+    },
+    "EDGE_bd74fc555d8a": {
+      "id": "EDGE_bd74fc555d8a",
+      "source_id": "EXP_de2a2941c25c",
+      "target_id": "EXP_fc8ccad7d227",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:55:35.726247"
+    },
+    "EDGE_f158258e678c": {
+      "id": "EDGE_f158258e678c",
+      "source_id": "EXP_61dc45279d52",
+      "target_id": "EXP_10c505583202",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T17:55:35.727179"
+    },
+    "EDGE_23cc7ddb4c57": {
+      "id": "EDGE_23cc7ddb4c57",
+      "source_id": "EXP_43fa165140ff",
+      "target_id": "EXP_2f7cfb0852d4",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T18:00:41.806605"
+    },
+    "EDGE_193194fa8a68": {
+      "id": "EDGE_193194fa8a68",
+      "source_id": "EXP_af23c2d5b6a8",
+      "target_id": "EXP_60cd139f5789",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T18:00:41.808151"
+    },
+    "EDGE_68310e90ef11": {
+      "id": "EDGE_68310e90ef11",
+      "source_id": "EXP_d69c50c62a65",
+      "target_id": "EXP_53b084881bfc",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T18:00:41.809350"
+    },
+    "EDGE_30f4bd1a8979": {
+      "id": "EDGE_30f4bd1a8979",
+      "source_id": "EXP_b3e76738011e",
+      "target_id": "EXP_fc8ccad7d227",
+      "relation_type": "requires",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T18:00:41.810600"
+    },
+    "EDGE_dabc2c9ecab2": {
+      "id": "EDGE_dabc2c9ecab2",
+      "source_id": "EXP_1b970408aefb",
+      "target_id": "EXP_cbe2b6f8cbd3",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T18:00:41.811763"
+    },
+    "EDGE_4478ef8ac8de": {
+      "id": "EDGE_4478ef8ac8de",
+      "source_id": "EXP_07c298c414bd",
+      "target_id": "EXP_fbf288a09fd7",
+      "relation_type": "prevents",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T18:00:41.813010"
+    },
+    "EDGE_3978e99d0d2d": {
+      "id": "EDGE_3978e99d0d2d",
+      "source_id": "EXP_60cd139f5789",
+      "target_id": "EXP_de2a2941c25c",
+      "relation_type": "complements",
+      "strength": 1.0,
+      "metadata": {},
+      "created_at": "2026-03-15T18:00:41.814399"
+    }
+  },
+  "updated_at": "2026-03-15T18:00:41.814716"
+}

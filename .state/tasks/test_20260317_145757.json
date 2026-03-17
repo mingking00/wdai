@@ -1,0 +1,28 @@
+{
+  "id": "test_20260317_145757",
+  "type": "test",
+  "description": "测试持久状态系统",
+  "status": "completed",
+  "created_at": "2026-03-17T14:57:57.007906",
+  "updated_at": "2026-03-17T14:57:57.008757",
+  "metadata": {},
+  "steps": [
+    {
+      "step": "步骤1",
+      "result": {
+        "data": "test"
+      },
+      "timestamp": "2026-03-17T14:57:57.008073"
+    },
+    {
+      "step": "步骤2",
+      "result": {
+        "data": "test2"
+      },
+      "timestamp": "2026-03-17T14:57:57.008371"
+    }
+  ],
+  "results": {},
+  "errors": [],
+  "result": "成功"
+}

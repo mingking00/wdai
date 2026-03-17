@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": 1773684615.3740726,
+    "goal_id": "goal_1773684615_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "status": "executed"
+  },
+  {
+    "timestamp": 1773684615.3747993,
+    "goal_id": "goal_1773684615_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "status": "executed"
+  },
+  {
+    "timestamp": 1773684615.3755584,
+    "goal_id": "goal_1773684615_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "status": "executed"
+  }
+]

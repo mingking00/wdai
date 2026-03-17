@@ -1,0 +1,31 @@
+{
+  "id": "PROP_20260317_150925_d215003a",
+  "title": "实现三区安全检查钩子",
+  "created_at": "2026-03-17T15:09:25.982770",
+  "type": "工具",
+  "impact": "high",
+  "content": {
+    "problem": "当前系统虽然有安全分区定义，但缺乏自动 enforcement。AI可能在不知情的情况下修改RED ZONE文件。",
+    "solution": "实现自动安全检查钩子：\n1. 在文件修改前自动检查文件所属的安全区域\n2. RED ZONE文件修改请求自动阻止并报告\n3. YELLOW ZONE修改请求自动生成提案\n4. GREEN ZONE修改自动记录到审计日志\n5. 提供check_zone_safety()函数供所有工具调用",
+    "expected_effect": "所有文件修改都经过安全分区检查，从根本上防止核心文件被误修改。安全事件可追踪。",
+    "risk_assessment": "中低风险。主要是添加检查逻辑，不改变文件结构。需要全面测试确保不误报。",
+    "implementation_steps": [
+      "创建.claw-status/safety_checker.py",
+      "实现get_file_zone()和check_modification_allowed()",
+      "在关键工具中集成安全检查",
+      "创建审计日志系统",
+      "测试各种边界情况"
+    ]
+  },
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T15:12:12.336898",
+    "decision_reason": "安全关键，立即实施"
+  },
+  "execution": {
+    "executed_at": null,
+    "result": null,
+    "logs": []
+  }
+}

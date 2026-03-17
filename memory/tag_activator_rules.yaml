@@ -1,0 +1,299 @@
+# Tag Activator Rules - 关键词到标签的映射规则
+# 这是标签化记忆系统的核心配置文件
+
+---
+# 1. 精确关键词匹配（直接映射）
+exact_matches:
+  # 自我认知相关
+  "设计": ["#self/cognition/CoreThink", "#knowledge/patterns"]
+  "架构": ["#self/cognition/CoreThink", "#knowledge/patterns"]
+  "系统": ["#self/cognition/CoreThink"]
+  "方案": ["#self/cognition/CoreThink", "#self/constraints/验证优先"]
+  
+  "分析": ["#self/cognition/CoreThink", "#self/cognition/System2"]
+  "评估": ["#self/cognition/CoreThink"]
+  "对比": ["#self/cognition/CoreThink"]
+  "验证": ["#self/constraints/验证优先"]
+  
+  "优化": ["#self/cognition/CoreThink", "#self/evolution"]
+  "改进": ["#self/evolution"]
+  "效率": ["#self/evolution"]
+  "更快": ["#self/evolution"]
+  
+  "检查": ["#self/constraints"]
+  "确认": ["#self/constraints"]
+  "测试": ["#self/constraints/验证优先"]
+  
+  "实现": ["#self/constraints/已有能力优先"]
+  "创建": ["#self/constraints/已有能力优先"]
+  "写": ["#self/constraints/已有能力优先"]
+  "做": ["#self/constraints/已有能力优先"]
+  
+  "本质": ["#user/preferences/第一性原理"]
+  "根本": ["#user/preferences/第一性原理"]
+  "原理": ["#self/cognition/System2"]
+  
+  "直接": ["#user/preferences/直接性"]
+  "简洁": ["#user/preferences/直接性"]
+  "简单": ["#user/preferences/直接性"]
+  
+  "不对": ["#session/context/纠正模式"]
+  "错了": ["#session/context/纠正模式"]
+  "不是": ["#session/context/纠正模式"]
+  
+  "物理": ["#self/constraints/物理现实检查"]
+  "现实": ["#self/constraints/物理现实检查"]
+  "实际": ["#self/constraints/物理现实检查"]
+  "限制": ["#self/constraints/物理现实检查"]
+  "约束": ["#self/constraints"]
+  
+  "能": ["#self/constraints/已有能力优先", "#knowledge/skills"]
+  "可以": ["#self/constraints/已有能力优先", "#knowledge/skills"]
+  "支持": ["#knowledge/skills"]
+  
+  "为什么": ["#self/cognition/System2"]
+  "怎么": ["#self/cognition/System2"]
+  "如何": ["#self/cognition/System2"]
+  
+  "标签": ["#knowledge/patterns", "#self/cognition"]
+  "记忆": ["#self/cognition"]
+  "激活": ["#self/cognition"]
+  
+  "技能": ["#knowledge/skills"]
+  "工具": ["#knowledge/skills"]
+  "能力": ["#knowledge/skills"]
+  
+  "模式": ["#knowledge/patterns"]
+  "套路": ["#knowledge/patterns"]
+  "方法": ["#knowledge/patterns"]
+  
+  "复盘": ["#self/evolution"]
+  "总结": ["#self/evolution"]
+  "学习": ["#self/evolution"]
+  
+  "深度": ["#self/cognition"]
+  "推理": ["#self/cognition"]
+  "思考": ["#self/cognition"]
+
+---
+# 2. 模式匹配（正则表达式/语义模式）
+pattern_matches:
+  # 递进式执行模式
+  - pattern: "从.*开始|第一步|一步一步|先.*再"
+    tags: ["#user/preferences/递进式执行"]
+    priority_boost: 10
+    
+  # 物理现实相关
+  - pattern: "(物理|现实|实际).*(限制|约束|可能|可行)"
+    tags: ["#self/constraints/物理现实检查"]
+    priority_boost: 20
+    
+  # 能力询问
+  - pattern: "能.*吗|可以.*吗|支持.*吗|有.*吗"
+    tags: ["#self/constraints/已有能力优先", "#knowledge/skills"]
+    priority_boost: 5
+    
+  # 快速响应需求
+  - pattern: "快.*说|直接.*给|不要.*解释"
+    tags: ["#user/preferences/直接性", "#self/cognition/NoThink"]
+    priority_boost: 15
+    
+  # 深度分析需求
+  - pattern: "详细.*分析|深入.*研究|彻底.*理解"
+    tags: ["#self/cognition/DeepThink"]
+    priority_boost: 15
+    
+  # 方案对比
+  - pattern: "哪种.*好|对比.*一下|A还是B"
+    tags: ["#self/cognition/CoreThink", "#knowledge/patterns"]
+    priority_boost: 5
+    
+  # 修正/纠正
+  - pattern: "不对|错了|不是|重新"
+    tags: ["#session/context/纠正模式"]
+    priority_boost: 30  # 高优先级，立即响应
+    
+  # 完成信号
+  - pattern: "可以了|先这样|够了|停止"
+    tags: ["#user/preferences/终止信号"]
+    priority_boost: 25
+
+---
+# 3. 意图分类规则
+intent_classification:
+  design:  # 设计方案
+    keywords: ["设计", "架构", "系统", "方案", "规划"]
+    default_depth: "CoreThink"
+    required_tags: 
+      - "#self/constraints/验证优先"
+      - "#self/cognition/CoreThink"
+    
+  implement:  # 执行任务
+    keywords: ["实现", "创建", "写", "做", "生成", "构建"]
+    default_depth: "FastThink"
+    required_tags:
+      - "#self/constraints/已有能力优先"
+      - "#knowledge/skills"
+    
+  analyze:  # 分析讨论
+    keywords: ["分析", "评估", "对比", "研究", "探讨"]
+    default_depth: "CoreThink"
+    required_tags:
+      - "#self/cognition/System2"
+    
+  correct:  # 纠正错误
+    keywords: ["不对", "错了", "不是", "纠正", "修改"]
+    default_depth: "CoreThink"
+    required_tags:
+      - "#session/context/纠正模式"
+    
+  query:  # 信息查询
+    keywords: ["查", "找", "看", "搜索", "获取"]
+    default_depth: "NoThink"
+    required_tags:
+      - "#knowledge/skills"
+    
+  optimize:  # 优化改进
+    keywords: ["优化", "改进", "提升", "效率", "更快"]
+    default_depth: "CoreThink"
+    required_tags:
+      - "#self/evolution"
+      - "#knowledge/patterns"
+
+---
+# 4. 上下文相关规则
+context_rules:
+  # 当前会话特定约束（需要动态更新）
+  session_constraints:
+    forbidden_topics:
+      - "智能家居"
+      - "HomeClaw"
+    
+    forbidden_tags:
+      - "#user/projects/智能家居"
+    
+    trigger_on_mention:
+      pattern: "智能家居|HomeClaw|传感器|Home Assistant"
+      action: "warn_and_redirect"
+      message: "当前会话禁用智能家居关联，仅讨论AI自我优化"
+
+---
+# 5. 复合标签解析规则
+composite_tag_rules:
+  # 当激活父标签时，自动包含子标签的摘要
+  inheritance:
+    "#self/cognition":
+      include_children: true
+      children: ["System1", "System2", "NoThink", "FastThink", "CoreThink", "DeepThink"]
+    
+    "#self/constraints":
+      include_children: true
+      children: ["物理现实检查", "已有能力优先", "验证优先"]
+    
+    "#user/preferences":
+      include_children: true
+      children: ["直接性", "递进式执行", "第一性原理"]
+
+---
+# 6. 记忆分段规则（大文件部分加载）
+file_chunking:
+  "#self/cognition.md":
+    chunks:
+      - id: "architecture_overview"
+        title: "双路径架构总览"
+        trigger_tags: ["#self/cognition"]
+        summary_length: 500
+        
+      - id: "system1"
+        title: "System 1 快路径"
+        trigger_tags: ["#self/cognition/System1", "#self/cognition/NoThink"]
+        summary_length: 300
+        
+      - id: "system2"
+        title: "System 2 慢路径"
+        trigger_tags: ["#self/cognition/System2"]
+        summary_length: 300
+        
+      - id: "depth_selection"
+        title: "推理深度选择"
+        trigger_tags: ["#self/cognition/FastThink", "#self/cognition/CoreThink", "#self/cognition/DeepThink"]
+        summary_length: 400
+  
+  "#self/constraints.md":
+    chunks:
+      - id: "level1_constraints"
+        title: "一级约束（绝对强制）"
+        trigger_tags: ["#self/constraints/物理现实检查", "#self/constraints/已有能力优先"]
+        summary_length: 400
+        
+      - id: "checklist"
+        title: "快速检查清单"
+        trigger_tags: ["#self/constraints"]
+        summary_length: 300
+  
+  "#user/preferences.md":
+    chunks:
+      - id: "core_principles"
+        title: "核心交互原则"
+        trigger_tags: ["#user/preferences"]
+        summary_length: 300
+        
+      - id: "trigger_words"
+        title: "触发词与信号"
+        trigger_tags: ["#user/preferences/直接性", "#user/preferences/递进式执行"]
+        summary_length: 400
+
+---
+# 7. Token预算配置
+context_budget:
+  total_tokens: 4000
+  allocation:
+    P0-约束: 0.30      # 1200 tokens
+    P1-会话: 0.20      # 800 tokens
+    P2-用户: 0.20      # 800 tokens
+    P3-技能: 0.15      # 600 tokens
+    P4-认知: 0.10      # 400 tokens
+    P5-知识: 0.05       # 200 tokens
+  
+  overflow_strategy: "summarize"  # 超长时加载摘要
+
+---
+# 8. 动态指令生成规则
+dynamic_instructions:
+  "#self/constraints/物理现实检查":
+    instruction: "⚠️ 涉及真实世界实体，执行物理现实检查四问：1)识别实体 2)查询约束 3)验证假设 4)查阅文献"
+    position: "top"
+  
+  "#self/constraints/已有能力优先":
+    instruction: "🔍 执行任务前扫描现有能力：查记忆→查文档→查技能→拒绝造轮子"
+    position: "top"
+  
+  "#self/constraints/验证优先":
+    instruction: "✓ 新设计方案必须经过验证：小规模测试→对照实验→文献查证"
+    position: "middle"
+  
+  "#user/preferences/递进式执行":
+    instruction: "📍 用户偏好递进式：列出步骤→执行第一步→等待确认→继续下一步"
+    position: "middle"
+  
+  "#user/preferences/直接性":
+    instruction: "➡️ 用户偏好直接性：跳过铺垫，直接给核心结论，无寒暄"
+    position: "top"
+  
+  "#self/cognition/CoreThink":
+    instruction: "🧠 使用CoreThink深度：展示推理链条，多步验证"
+    position: "middle"
+  
+  "#self/cognition/DeepThink":
+    instruction: "🔬 使用DeepThink深度：多路径探索，Self-Consistency验证，标注置信度"
+    position: "middle"
+  
+  "#session/context/纠正模式":
+    instruction: "🔄 进入纠正模式：立即停止当前思路，重新评估，不辩解"
+    position: "top"
+
+---
+# 版本信息
+version: "1.0.0"
+last_updated: "2026-03-14"
+author: "Kimi Claw"

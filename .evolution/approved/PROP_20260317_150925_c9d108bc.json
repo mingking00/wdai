@@ -1,0 +1,31 @@
+{
+  "id": "PROP_20260317_150925_c9d108bc",
+  "title": "创建系统监控仪表盘",
+  "created_at": "2026-03-17T15:09:25.982936",
+  "type": "架构",
+  "impact": "medium",
+  "content": {
+    "problem": "系统状态分散在多个文件中（STATUS.md、.claw-status/*.json、.scheduler/*.json），难以快速了解整体运行状况。",
+    "solution": "创建一个统一的监控仪表盘：\n1. 聚合所有系统状态到一个可视化界面\n2. 显示：任务状态、提案状态、系统健康度、最近事件\n3. 支持命令行查看（--dashboard）\n4. 自动生成健康报告\n5. 异常状态自动告警",
+    "expected_effect": "用户可通过一个命令查看完整的系统状态，快速发现问题。系统可自我监控并报告健康状态。",
+    "risk_assessment": "低风险。纯只读操作，不影响现有系统。只是数据聚合和展示。",
+    "implementation_steps": [
+      "创建.claw-status/dashboard.py",
+      "实现状态聚合逻辑",
+      "设计仪表盘输出格式（文本/JSON）",
+      "添加健康检查规则",
+      "创建定时报告任务"
+    ]
+  },
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T15:12:12.339470",
+    "decision_reason": "系统监控必要，纯只读无风险"
+  },
+  "execution": {
+    "executed_at": null,
+    "result": null,
+    "logs": []
+  }
+}

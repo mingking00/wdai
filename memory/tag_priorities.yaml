@@ -1,0 +1,211 @@
+# Tag Priorities - 标签优先级配置
+# 数值越高优先级越高，冲突时高优先级胜出
+
+---
+# P0: 绝对约束 (90-100)
+# 违反 = 根本性错误
+
+P0_constraints:
+  "#self/constraints/物理现实检查":
+    priority: 100
+    description: "涉及真实世界实体时必须执行"
+    mandatory: true
+    
+  "#self/constraints/已有能力优先":
+    priority: 100
+    description: "执行任务前必须扫描现有能力"
+    mandatory: true
+    
+  "#self/constraints/验证优先":
+    priority: 95
+    description: "新设计方案必须经过验证"
+    mandatory: true
+
+---
+# P1: 会话上下文 (80-89)
+# 当前对话特定的临时约束
+
+P1_session:
+  "#session/constraints":
+    priority: 90
+    description: "当前会话的显式约束（如禁用关联）"
+    mandatory: true
+    
+  "#session/context/纠正模式":
+    priority: 85
+    description: "用户正在纠正我的错误"
+    mandatory: true
+    
+  "#session/context":
+    priority: 80
+    description: "当前对话的主题和上下文"
+    mandatory: false
+
+---
+# P2: 用户偏好 (70-79)
+# 个性化的交互偏好
+
+P2_user_preferences:
+  "#user/preferences/直接性":
+    priority: 78
+    description: "用户偏好直接、无寒暄的交互"
+    mandatory: false
+    
+  "#user/preferences/递进式执行":
+    priority: 78
+    description: "用户偏好一步一步执行"
+    mandatory: false
+    
+  "#user/preferences/第一性原理":
+    priority: 75
+    description: "用户偏好第一性原理思考"
+    mandatory: false
+    
+  "#user/preferences":
+    priority: 70
+    description: "用户总体偏好"
+    mandatory: false
+
+---
+# P3: 能力边界 (60-69)
+# 技能和工具相关
+
+P3_skills:
+  "#knowledge/skills":
+    priority: 65
+    description: "我的技能清单和能力边界"
+    mandatory: false
+    
+  "#self/constraints":
+    priority: 60
+    description: "总体约束（不含具体约束项）"
+    mandatory: false
+
+---
+# P4: 认知模式 (50-59)
+# 思考方式和推理深度
+
+P4_cognition:
+  "#self/cognition/DeepThink":
+    priority: 58
+    description: "复杂问题需要深度推理"
+    mandatory: false
+    
+  "#self/cognition/CoreThink":
+    priority: 55
+    description: "标准分析任务"
+    mandatory: false
+    
+  "#self/cognition/System2":
+    priority: 52
+    description: "需要深度思考"
+    mandatory: false
+    
+  "#self/cognition":
+    priority: 50
+    description: "总体认知架构"
+    mandatory: false
+
+---
+# P5: 知识资产 (40-49)
+# 可复用模式和背景知识
+
+P5_knowledge:
+  "#knowledge/patterns":
+    priority: 48
+    description: "可复用的模式和方法"
+    mandatory: false
+    
+  "#self/evolution":
+    priority: 45
+    description: "学习和进化相关"
+    mandatory: false
+    
+  "#self/personality":
+    priority: 42
+    description: "人格特质和立场"
+    mandatory: false
+    
+  "#knowledge":
+    priority: 40
+    description: "总体知识资产"
+    mandatory: false
+
+---
+# P6: 基础背景 (30-39)
+# 最低优先级的背景信息
+
+P6_background:
+  "#self":
+    priority: 35
+    description: "自我认知总入口"
+    mandatory: false
+    
+  "#user":
+    priority: 35
+    description: "用户关系总入口"
+    mandatory: false
+
+---
+# 冲突解决规则
+conflict_resolution:
+  # 规则1: 高优先级总是胜出
+  default_rule: "highest_priority_wins"
+  
+  # 规则2: 特殊冲突处理
+  special_cases:
+    # System1 vs System2: 根据任务复杂度
+    - tags: ["#self/cognition/System1", "#self/cognition/System2"]
+      rule: "evaluate_complexity"
+      default: "#self/cognition/System2"
+      description: "评估任务复杂度，复杂任务强制System2"
+    
+    # NoThink vs DeepThink: 选择更深度的
+    - tags: ["#self/cognition/NoThink", "#self/cognition/DeepThink"]
+      rule: "always_higher_depth"
+      winner: "#self/cognition/DeepThink"
+      description: "深度需求明确时，选择更深度的推理"
+    
+    # 直接性 vs 递进式: 递进式更具体
+    - tags: ["#user/preferences/直接性", "#user/preferences/递进式执行"]
+      rule: "more_specific_wins"
+      winner: "#user/preferences/递进式执行"
+      description: "递进式是具体执行策略，优先于一般直接性"
+    
+    # 约束 vs 效率: 约束优先
+    - tags: ["#self/constraints", "#self/evolution"]
+      rule: "constraint_wins"
+      winner: "#self/constraints"
+      description: "任何约束都优先于效率优化"
+
+---
+# 标签组合增强规则
+# 某些标签组合会增强整体优先级
+combination_boosts:
+  - tags: ["#self/constraints/验证优先", "#self/cognition/CoreThink"]
+    boost: 5
+    description: "设计+验证 = 高优先级"
+  
+  - tags: ["#user/preferences/递进式执行", "#self/constraints/已有能力优先"]
+    boost: 3
+    description: "递进+能力扫描 = 协同增强"
+  
+  - tags: ["#session/context/纠正模式", "#self/cognition/System2"]
+    boost: 10
+    description: "纠正+深度思考 = 最高关注"
+
+---
+# Token预算分配（按优先级）
+token_allocation:
+  P0_约束: 1200      # 30%
+  P1_会话: 800       # 20%
+  P2_用户: 800       # 20%
+  P3_技能: 600       # 15%
+  P4_认知: 400       # 10%
+  P5_知识: 200       # 5%
+
+---
+# 版本信息
+version: "1.0.0"
+last_updated: "2026-03-14"
+author: "Kimi Claw"

@@ -1,0 +1,31 @@
+{
+  "id": "PROP_20260317_150925_4428cc12",
+  "title": "集成MemRL增强记忆系统",
+  "created_at": "2026-03-17T15:09:25.983262",
+  "type": "架构",
+  "impact": "high",
+  "content": {
+    "problem": "当前记忆系统主要基于文件读写，缺乏语义检索、Q值学习和自动冲突解决能力。",
+    "solution": "完整集成MemRL系统：\n1. 启用语义记忆提取（每次会话自动提取关键事实）\n2. 实现带Q值的记忆检索（高价值记忆优先）\n3. 自动冲突检测和解决\n4. 记忆衰减机制（旧记忆降低权重）\n5. 与持久状态系统集成",
+    "expected_effect": "记忆系统具备学习能力，越用越准。自动沉淀有价值经验，遗忘过时信息。",
+    "risk_assessment": "中风险。需要引入新的依赖，改变现有记忆检索方式。需要充分测试。",
+    "implementation_steps": [
+      "启用skills/mem0-memory/",
+      "实现自动记忆提取钩子",
+      "替换memory_search为带Q值的版本",
+      "添加冲突解决UI",
+      "测试记忆准确性"
+    ]
+  },
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T15:18:03.743725",
+    "decision_reason": "提升记忆系统的语义检索和学习能力"
+  },
+  "execution": {
+    "executed_at": null,
+    "result": null,
+    "logs": []
+  }
+}

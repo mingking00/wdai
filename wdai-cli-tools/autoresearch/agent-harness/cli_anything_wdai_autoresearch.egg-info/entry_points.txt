@@ -1,0 +1,2 @@
+[console_scripts]
+cli-anything-wdai-autoresearch = cli_anything.autoresearch.cli:cli

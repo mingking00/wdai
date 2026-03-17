@@ -1,0 +1,11 @@
+{
+  "violations": [
+    {
+      "principle": "\u68c0\u67e5\u9a8c\u8bc1",
+      "context": "test_delivery",
+      "severity": 1,
+      "timestamp": "2026-03-16T16:09:25.789131"
+    }
+  ],
+  "last_update": "2026-03-16T16:09:25.789149"
+}

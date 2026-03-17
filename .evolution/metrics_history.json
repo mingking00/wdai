@@ -1,0 +1,310 @@
+[
+  {
+    "timestamp": 1773684361.9696321,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684362.4705644,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684362.9712613,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684363.471998,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684615.3732204,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684615.3744178,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684615.3751686,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684615.3759294,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684871.6489277,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684871.6558375,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684887.2362552,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684887.2431955,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684887.2442582,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  },
+  {
+    "timestamp": 1773684887.2480855,
+    "overall_score": 0.6705000000000001,
+    "wisdom": {
+      "decision_accuracy": 0.75,
+      "innovation_score": 0.6,
+      "experience_reuse_rate": 0.8,
+      "error_avoidance": 0.7
+    },
+    "comprehensive": {
+      "tool_coverage": 0.24,
+      "skill_coverage": 0.65,
+      "edge_case_handling": 0.7,
+      "integration_level": 0.75
+    },
+    "efficiency": {
+      "avg_task_time": 120.0,
+      "token_efficiency": 0.7,
+      "redundancy_rate": 0.2,
+      "resource_utilization": 0.6
+    }
+  }
+]

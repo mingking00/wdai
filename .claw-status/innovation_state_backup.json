@@ -1,0 +1,12 @@
+{
+  "github_api": {
+    "count": 3,
+    "firstFail": "2026-03-17T01:33:56",
+    "lastFail": "2026-03-17T01:34:02"
+  },
+  "bash_exec": {
+    "count": 3,
+    "firstFail": "2026-03-17T01:40:00",
+    "lastFail": "2026-03-17T01:45:00"
+  }
+}

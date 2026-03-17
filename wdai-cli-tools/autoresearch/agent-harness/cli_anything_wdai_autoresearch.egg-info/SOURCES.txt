@@ -1,0 +1,7 @@
+setup.py
+cli_anything_wdai_autoresearch.egg-info/PKG-INFO
+cli_anything_wdai_autoresearch.egg-info/SOURCES.txt
+cli_anything_wdai_autoresearch.egg-info/dependency_links.txt
+cli_anything_wdai_autoresearch.egg-info/entry_points.txt
+cli_anything_wdai_autoresearch.egg-info/requires.txt
+cli_anything_wdai_autoresearch.egg-info/top_level.txt
