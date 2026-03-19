@@ -1,0 +1,89 @@
+
+# OpenClaw 创新能力配置
+innovation:
+  enabled: true
+  
+  # 执行策略
+  execution:
+    max_attempts: 3
+    timeout_ms: 60000
+    verify_results: true
+    
+  # 学习设置
+  learning:
+    enabled: true
+    analysis_interval_minutes: 60
+    min_samples_for_pattern: 3
+    
+  # 工具配置
+  tools:
+    exec:
+      enabled: true
+      patterns:
+        git_push:
+          fallbacks:
+            - git_push_ssh
+            - git_push_api
+          verifier: git_status_check
+          
+        curl:
+          fallbacks:
+            - curl_with_proxy
+            - wget
+            - http_get
+          verifier: http_status_check
+          
+        pip_install:
+          fallbacks:
+            - pip_install_mirror
+            - pip_install_cache
+    
+    read:
+      enabled: true
+      patterns:
+        read_file:
+          fallbacks:
+            - read_with_sudo
+            - read_from_backup
+          verifier: file_exists_check
+    
+    write:
+      enabled: true
+      patterns:
+        write_file:
+          fallbacks:
+            - write_with_sudo
+            - write_to_temp_then_move
+          verifier: file_exists_check
+    
+    browser:
+      enabled: true
+      patterns:
+        navigate:
+          fallbacks:
+            - navigate_with_proxy
+            - navigate_mobile_useragent
+          verifier: http_status_check
+    
+    web_search:
+      enabled: true
+      patterns:
+        search:
+          fallbacks:
+            - search_with_cache
+            - search_alternative_engine
+  
+  # 通用备选规则
+  generic_fallbacks:
+    timeout_error:
+      - increase_timeout
+      - split_request
+    
+    network_error:
+      - retry_with_backoff
+      - try_alternative_protocol
+      - use_cached_result
+    
+    permission_error:
+      - retry_with_sudo
+      - request_permission
