@@ -7,17 +7,23 @@
       "file": "/root/.openclaw/workspace/.claw-status/evo/evo-006-planning.md",
       "status": "completed",
       "priority": "p0"
-    },
-    {
-      "id": "evo-007-mcp",
-      "file": "/root/.openclaw/workspace/.claw-status/evo/evo-007-mcp.md",
-      "status": "pending",
-      "priority": "p0"
     }
   ],
   "p1_tasks": [],
   "p2_tasks": [],
-  "completed_today": [],
+  "completed_today": [
+    {
+      "id": "evo-007-mcp",
+      "file": "/root/.openclaw/workspace/.claw-status/evo/evo-007-mcp.md",
+      "status": "pending",
+      "priority": "p0",
+      "completed_at": "2026-03-19T10:07:21.602959",
+      "files_changed": [
+        "skills/mcp_client/mcp_client.py",
+        "skills/mcp_client/README.md"
+      ]
+    }
+  ],
   "failed_today": [],
   "stats": {
     "total_evo": 2,

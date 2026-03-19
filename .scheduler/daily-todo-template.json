@@ -1,0 +1,15 @@
+{
+  "date": "2026-03-19",
+  "generated_at": "01:00",
+  "p0_tasks": [],
+  "p1_tasks": [],
+  "p2_tasks": [],
+  "completed_today": [],
+  "failed_today": [],
+  "stats": {
+    "total_evo": 0,
+    "completed": 0,
+    "pending": 0,
+    "completion_rate": 0
+  }
+}
