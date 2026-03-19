@@ -1,0 +1,108 @@
+#!/usr/bin/env python3
+"""
+智能Git命令包装器
+
+自动检测失败并换路，无需人工干预
+"""
+
+import subprocess
+import sys
+import os
+from pathlib import Path
+
+# 添加创新引擎路径
+CLAW = Path("/root/.openclaw/workspace/.claw-status")
+sys.path.insert(0, str(CLAW))
+
+try:
+    from innovation_engine import InnovationEngine
+    INNOVATION_AVAILABLE = True
+except ImportError:
+    INNOVATION_AVAILABLE = False
+    print("⚠️ 创新引擎不可用，使用普通git")
+
+
+class SmartGit:
+    """智能Git"""
+    
+    def __init__(self):
+        self.engine = InnovationEngine() if INNOVATION_AVAILABLE else None
+    
+    def push(self, args):
+        """智能推送"""
+        if not self.engine:
+            return self._normal_push(args)
+        
+        # 定义主方法
+        def try_https():
+            return self._run_git(["push"] + args)
+        
+        # 定义备选方法
+        def try_ssh():
+            # 切换remote到SSH
+            subprocess.run(
+                ["git", "remote", "set-url", "origin",
+                 "git@github.com:mingking00/wdai.git"],
+                check=False, capture_output=True
+            )
+            return self._run_git(["push", "origin", "master"])
+        
+        # 执行带自动创新的推送
+        result = self.engine.execute_with_innovation(
+            primary_method="git_push",
+            execute_fn=try_https,
+            fallback_fns=[try_ssh],
+            context={"args": args}
+        )
+        
+        if result["success"]:
+            print(f"✅ 推送成功 ({result.get('attempts', 1)} 次尝试)")
+            if "note" in result:
+                print(f"   {result['note']}")
+            return 0
+        else:
+            print(f"❌ 推送失败: {result.get('error', '未知错误')}")
+            return 1
+    
+    def _normal_push(self, args):
+        """普通推送（无创新）"""
+        result = subprocess.run(["git", "push"] + args)
+        return result.returncode
+    
+    def _run_git(self, args) -> dict:
+        """运行git命令并返回结构化结果"""
+        result = subprocess.run(
+            ["git"] + args,
+            capture_output=True, text=True
+        )
+        
+        if result.returncode == 0:
+            return {"success": True, "output": result.stdout}
+        else:
+            return {"success": False, "error": result.stderr}
+    
+    def run(self, command, args):
+        """运行命令"""
+        if command == "push" and self.engine:
+            return self.push(args)
+        else:
+            # 其他命令直接执行
+            result = subprocess.run(["git", command] + args)
+            return result.returncode
+
+
+def main():
+    """主函数"""
+    if len(sys.argv) < 2:
+        print("用法: git-smart <command> [args...]")
+        return 1
+    
+    command = sys.argv[1]
+    args = sys.argv[2:]
+    
+    smart_git = SmartGit()
+    return smart_git.run(command, args)
+
+
+if __name__ == "__main__":
+    sys.exit(main())
