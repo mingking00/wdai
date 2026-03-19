@@ -1,0 +1,116 @@
+# OpenClaw Innovation Configuration
+
+innovation:
+  # Global settings
+  enabled: true
+  verify_results: true
+  auto_fallback: true
+  max_attempts: 3
+  
+  # Tool-specific patterns
+  tools:
+    exec:
+      enabled: true
+      patterns:
+        git_push:
+          triggers:
+            - "could not read Username"
+            - "Connection refused"
+            - "timeout"
+          fallbacks:
+            - name: git_push_ssh
+              adapter: switch_to_ssh
+              verifier: git_status
+            - name: git_push_api
+              adapter: use_github_api
+              verifier: api_response
+              
+        curl:
+          triggers:
+            - "Could not resolve"
+            - "Connection refused"
+          fallbacks:
+            - name: curl_with_proxy
+              adapter: add_proxy
+            - name: wget
+              adapter: convert_to_wget
+              
+        pip_install:
+          triggers:
+            - "Connection timed out"
+          fallbacks:
+            - name: pip_mirror
+              adapter: use_tsinghua_mirror
+              
+    browser:
+      enabled: true
+      patterns:
+        navigate:
+          triggers:
+            - "net::ERR_"
+          fallbacks:
+            - name: navigate_proxy
+              adapter: use_proxy
+            - name: navigate_mobile
+              adapter: mobile_user_agent
+              
+    read:
+      enabled: true
+      patterns:
+        read_file:
+          triggers:
+            - "Permission denied"
+          fallbacks:
+            - name: read_with_sudo
+              adapter: use_sudo
+              verifier: file_content
+              
+    write:
+      enabled: true
+      patterns:
+        write_file:
+          triggers:
+            - "Permission denied"
+            - "Read-only file system"
+          fallbacks:
+            - name: write_with_sudo
+              adapter: use_sudo
+              verifier: file_exists
+            - name: write_to_temp
+              adapter: write_temp_then_move
+              verifier: file_exists
+  
+  # Verifiers
+  verifiers:
+    git_status:
+      type: exec
+      command: "git status"
+      check: "up to date"
+      
+    file_exists:
+      type: read
+      check: "exists"
+      
+    file_content:
+      type: read
+      check: "content_match"
+      
+    api_response:
+      type: http_status
+      range: [200, 299]
+  
+  # Generic fallback rules
+  generic_fallbacks:
+    network_error:
+      - retry_with_backoff
+      - try_alternative_protocol
+      - use_cached_result
+      
+    timeout_error:
+      - increase_timeout
+      - split_request
+      - use_async
+      
+    permission_error:
+      - retry_with_sudo
+      - request_permission

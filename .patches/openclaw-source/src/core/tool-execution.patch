@@ -1,0 +1,60 @@
+--- a/src/core/tool-execution.ts
++++ b/src/core/tool-execution.ts
+@@ -1,5 +1,6 @@
+ import { ToolCall, ToolResult } from './tool-types';
+ import { getTool } from './tool-registry';
++import { InnovationEngine } from '../innovation/engine';
+ 
+ /**
+  * Execute a tool call
+@@ -8,6 +9,20 @@ export async function executeTool(call: ToolCall): Promise<ToolResult> {
+   const tool = getTool(call.name);
+   
++  // Innovation: auto-fallback and verification
++  const innovation = getInnovationEngine();
++  if (innovation.isEnabled(call.name)) {
++    try {
++      return await innovation.execute(call, tool);
++    } catch (error) {
++      // If innovation fails, fall through to standard execution
++      // or re-throw based on configuration
++      if (isCriticalError(error)) {
++        throw error;
++      }
++    }
++  }
++  
+   const result = await tool.execute(call.params);
+   
+   // Post-execution validation (existing)
+@@ -17,3 +32,25 @@ export async function executeTool(call: ToolCall): Promise<ToolResult> {
+   
+   return result;
+ }
++
++// Innovation engine singleton
++let innovationEngine: InnovationEngine | null = null;
++
++export function getInnovationEngine(): InnovationEngine {
++  if (!innovationEngine) {
++    const config = loadInnovationConfig();
++    innovationEngine = new InnovationEngine(config);
++  }
++  return innovationEngine;
++}
++
++function loadInnovationConfig() {
++  return {
++    enabled: process.env.OPENCLAW_INNOVATION !== 'disabled',
++    maxAttempts: 3,
++    verifyResults: true,
++    autoFallback: true,
++    learningEnabled: true
++  };
++}
++
++function isCriticalError(error: any): boolean {
++  return error?.name === 'AllMethodsFailedError' || 
++         error?.message?.includes('security') ||
++         error?.message?.includes('permission');
++}
