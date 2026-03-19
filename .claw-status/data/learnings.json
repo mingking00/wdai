@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "errors": [],
+  "corrections": [
+    {
+      "id": "corr_0001",
+      "original": "应该这样做",
+      "correction": "不对，应该那样做",
+      "context": "测试任务",
+      "timestamp": "2026-03-18T15:46:24.538721"
+    }
+  ],
+  "best_practices": [
+    {
+      "id": "bp_0001",
+      "practice": "使用cron而不是直接发送消息",
+      "context": "",
+      "tags": [
+        "messaging",
+        "feishu"
+      ],
+      "timestamp": "2026-03-18T15:46:24.538794",
+      "use_count": 0
+    }
+  ],
+  "patterns": {}
+}

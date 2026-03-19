@@ -1,0 +1,33 @@
+{
+  "user_id": "test_user",
+  "preferences": {
+    "code_style": {
+      "value": "简洁优先",
+      "confidence": 1.0,
+      "updated_at": "2026-03-18T19:28:42.857421"
+    },
+    "response_format": {
+      "value": "结构化",
+      "confidence": 0.9,
+      "updated_at": "2026-03-18T19:28:42.857424"
+    }
+  },
+  "interaction_patterns": {},
+  "learned_facts": [
+    {
+      "fact": "用户对AI架构底层原理感兴趣",
+      "category": "interests",
+      "confidence": 0.9,
+      "learned_at": "2026-03-18T19:28:42.857427",
+      "updated_at": "2026-03-18T19:28:42.857429"
+    },
+    {
+      "fact": "用户偏好Python开发",
+      "category": "skills",
+      "confidence": 0.8,
+      "learned_at": "2026-03-18T19:28:42.857432",
+      "updated_at": "2026-03-18T19:28:42.857433"
+    }
+  ],
+  "updated_at": "2026-03-18T19:28:42.857596"
+}

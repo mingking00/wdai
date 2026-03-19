@@ -1,0 +1,46 @@
+[
+  {
+    "pattern_id": "chain_\u5411\u91cf\u5b58\u50a8_Qdrant\u914d\u7f6e",
+    "pattern_type": "topic_chain",
+    "description": "\u7528\u6237\u5728\u4e86\u89e3'\u5411\u91cf\u5b58\u50a8'\u540e\uff0c\u670940%\u7684\u6982\u7387\u4f1a\u8be2\u95ee'Qdrant\u914d\u7f6e'",
+    "confidence": 0.4,
+    "occurrence_count": 4,
+    "supporting_sessions": 10,
+    "extracted_at": 1773836797.055259,
+    "applied": false,
+    "impact_score": 0.0
+  },
+  {
+    "pattern_id": "temporal_peak_20",
+    "pattern_type": "temporal",
+    "description": "20:00\u662f\u9ad8\u9891\u4f7f\u7528\u65f6\u6bb5(6\u6b21\u4f1a\u8bdd)\uff0c\u53ef\u9884\u52a0\u8f7d\u5e38\u7528\u8d44\u6e90",
+    "confidence": 0.6,
+    "occurrence_count": 6,
+    "supporting_sessions": 10,
+    "extracted_at": 1773836797.055293,
+    "applied": true,
+    "impact_score": 0.0
+  },
+  {
+    "pattern_id": "temporal_peak_15",
+    "pattern_type": "temporal",
+    "description": "15:00\u662f\u9ad8\u9891\u4f7f\u7528\u65f6\u6bb5(2\u6b21\u4f1a\u8bdd)\uff0c\u53ef\u9884\u52a0\u8f7d\u5e38\u7528\u8d44\u6e90",
+    "confidence": 0.2,
+    "occurrence_count": 2,
+    "supporting_sessions": 10,
+    "extracted_at": 1773836797.055298,
+    "applied": false,
+    "impact_score": 0.0
+  },
+  {
+    "pattern_id": "success_factor_standard",
+    "pattern_type": "success_factor",
+    "description": "'standard'\u7b56\u7565\u6210\u529f\u7387\u8f83\u9ad8(90%)\uff0c\u53ef\u4f5c\u4e3a\u9ed8\u8ba4\u63a8\u8350",
+    "confidence": 0.9,
+    "occurrence_count": 21,
+    "supporting_sessions": 10,
+    "extracted_at": 1773836797.055319,
+    "applied": true,
+    "impact_score": 0.0
+  }
+]

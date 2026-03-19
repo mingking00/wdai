@@ -1,0 +1,60 @@
+{
+  "queue": [
+    {
+      "id": "evo-001",
+      "priority": "P0",
+      "title": "RAG架构升级：自适应检索策略",
+      "description": "\n基于2025年RAG最佳实践，实现自适应RAG：\n- 查询分类器：自动识别查询类型（事实性/解释性/创造性）\n- 策略选择器：基于查询类型选择最佳检索策略  \n- 参数调整器：动态调整k值、相似度阈值\n- 参考：多阶段RAG架构（查询扩展→初步检索→重排序→上下文构建）\n",
+      "source": "RAG应用论文2025",
+      "expected_outcome": "检索准确率提升20%+",
+      "estimated_tokens": "15k",
+      "created_at": "2026-03-18T22:05:00"
+    },
+    {
+      "id": "evo-002",
+      "priority": "P0",
+      "title": "多Agent协作框架对比与借鉴",
+      "description": "\n研究主流框架，提取可借鉴模式：\n- CrewAI：Role-Playing（角色/目标/背景故事）提升LLM稳定性\n- AutoGen：对话式多智能体，支持代码生成和执行\n- LangGraph：状态机工作流，human-in-the-loop\n- OpenAI Swarm：轻量级任务交接\n\n目标：提取适合WDai的多Agent协作模式\n",
+      "source": "2025年AI Agent Framework选型指南",
+      "expected_outcome": "设计WDai多Agent协作v2.0架构",
+      "estimated_tokens": "20k",
+      "created_at": "2026-03-18T22:05:00"
+    },
+    {
+      "id": "evo-003",
+      "priority": "P1",
+      "title": "向量存储优化：HNSW索引与混合检索",
+      "description": "\n优化现有向量存储：\n- HNSW索引参数调优（ef_construction, ef_search）\n- 实现混合检索：BM25关键词 + 向量语义\n- 分层检索：文档级→章节级→段落级\n- 查询缓存策略\n",
+      "source": "Vector Database白皮书",
+      "expected_outcome": "检索延迟降低50%",
+      "estimated_tokens": "12k",
+      "created_at": "2026-03-18T22:05:00"
+    },
+    {
+      "id": "evo-004",
+      "priority": "P1",
+      "title": "评估框架增强：RAG特定指标",
+      "description": "\n扩展evaluation_framework.py，增加RAG专用指标：\n- 检索质量：Precision, Recall, F1, MAP\n- 生成质量：事实准确性、引用准确性\n- 端到端评估：答案相关性、上下文相关性\n- 实现A/B测试自动化\n",
+      "source": "RAG系统评估与优化指南",
+      "expected_outcome": "完整的RAG评估体系",
+      "estimated_tokens": "10k",
+      "created_at": "2026-03-18T22:05:00"
+    },
+    {
+      "id": "evo-005",
+      "priority": "P2",
+      "title": "约束规则扩展：代码安全与性能",
+      "description": "\n新增约束类别：\n- 代码安全：SQL注入、XSS、硬编码密钥检测\n- 性能约束：时间复杂度、空间复杂度检查\n- 风格约束：PEP8、代码可读性\n- 参考：现有10类约束的扩展\n",
+      "source": "代码审查最佳实践",
+      "expected_outcome": "代码相关约束规则集",
+      "estimated_tokens": "8k",
+      "created_at": "2026-03-18T22:05:00"
+    }
+  ],
+  "meta": {
+    "version": "1.0",
+    "created_at": "2026-03-18T22:15:38.703734",
+    "task_count": 5,
+    "p0_count": 2
+  }
+}

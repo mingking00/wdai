@@ -1,0 +1,101 @@
+[
+  {
+    "id": "opt-p0-001",
+    "name": "\u4e0a\u4e0b\u6587\u538b\u7f29",
+    "trigger": "context>80k",
+    "action": "\u538b\u7f29\u5197\u4f59\u5bf9\u8bdd\uff0c\u4fdd\u7559\u5173\u952e\u4fe1\u606f",
+    "priority": "P0",
+    "status": "completed",
+    "last_run": "2026-03-19T09:40:50.185723",
+    "run_count": 17,
+    "success_count": 17
+  },
+  {
+    "id": "opt-p0-002",
+    "name": "\u81ea\u6211\u53cd\u601d",
+    "trigger": "task_end",
+    "action": "\u5206\u6790\u6267\u884c\u8fc7\u7a0b\uff0c\u8bb0\u5f55\u7ecf\u9a8c\u6559\u8bad",
+    "priority": "P0",
+    "status": "completed",
+    "last_run": "2026-03-19T09:40:50.185737",
+    "run_count": 17,
+    "success_count": 17
+  },
+  {
+    "id": "opt-p0-003",
+    "name": "\u8bb0\u5fc6\u5199\u5165",
+    "trigger": "every_10_rounds",
+    "action": "\u6301\u4e45\u5316\u5173\u952e\u51b3\u7b56\u5230\u6587\u4ef6",
+    "priority": "P0",
+    "status": "completed",
+    "last_run": "2026-03-19T09:40:50.185812",
+    "run_count": 17,
+    "success_count": 17
+  },
+  {
+    "id": "opt-p0-004",
+    "name": "\u6307\u6807\u6536\u96c6",
+    "trigger": "every_response",
+    "action": "\u6536\u96c6\u54cd\u5e94\u65f6\u95f4\u3001token\u4f7f\u7528",
+    "priority": "P0",
+    "status": "completed",
+    "last_run": "2026-03-19T09:40:50.185876",
+    "run_count": 17,
+    "success_count": 17
+  },
+  {
+    "id": "opt-p1-001",
+    "name": "\u6df7\u5408\u68c0\u7d22",
+    "trigger": "every_search",
+    "action": "BM25+\u8bed\u4e49+\u65f6\u95f4\u878d\u5408",
+    "priority": "P1",
+    "status": "completed",
+    "last_run": "2026-03-19T01:10:31.497787",
+    "run_count": 1,
+    "success_count": 1
+  },
+  {
+    "id": "opt-p1-002",
+    "name": "\u53cd\u9988\u5b66\u4e60",
+    "trigger": "user_feedback",
+    "action": "\u6839\u636e\u70b9\u51fb/\u5ffd\u7565\u8c03\u6574\u6743\u91cd",
+    "priority": "P1",
+    "status": "completed",
+    "last_run": "2026-03-19T01:10:31.497794",
+    "run_count": 1,
+    "success_count": 1
+  },
+  {
+    "id": "opt-p1-003",
+    "name": "\u4f1a\u8bdd\u5feb\u7167",
+    "trigger": "every_30min",
+    "action": "\u4fdd\u5b58\u4f1a\u8bdd\u72b6\u6001",
+    "priority": "P1",
+    "status": "completed",
+    "last_run": "2026-03-19T09:11:09.825429",
+    "run_count": 11,
+    "success_count": 11
+  },
+  {
+    "id": "opt-p2-001",
+    "name": "A/B\u6d4b\u8bd5",
+    "trigger": "new_strategy",
+    "action": "\u5bf9\u6bd4\u65b0\u65e7\u7b56\u7565\u6548\u679c",
+    "priority": "P2",
+    "status": "completed",
+    "last_run": "2026-03-19T01:10:31.497918",
+    "run_count": 1,
+    "success_count": 1
+  },
+  {
+    "id": "opt-p2-002",
+    "name": "\u5f02\u5e38\u68c0\u6d4b",
+    "trigger": "every_hour",
+    "action": "\u68c0\u6d4b\u6307\u6807\u5f02\u5e38",
+    "priority": "P2",
+    "status": "completed",
+    "last_run": "2026-03-19T09:11:09.825558",
+    "run_count": 8,
+    "success_count": 8
+  }
+]

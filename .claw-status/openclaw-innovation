@@ -1,0 +1,11 @@
+#!/bin/bash
+# OpenClaw with Innovation - 快捷启动脚本
+# 在当前系统启用创新能力
+
+export OPENCLAW_INNOVATION=enabled
+
+# 创新引擎预加载代码
+NODE_OPTIONS="--require /usr/lib/node_modules/openclaw/innovation-runtime.js"
+
+# 启动OpenClaw
+exec /usr/bin/node $NODE_OPTIONS /usr/lib/node_modules/openclaw/openclaw.mjs "$@"

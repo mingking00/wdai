@@ -1,0 +1,59 @@
+{
+  "version": "2.0",
+  "last_updated": "2026-03-18T15:46:24.538368",
+  "fingerprints": {
+    "file_read.txt": {
+      "category": "file_operation",
+      "description": "file_read.txt",
+      "success_patterns": [
+        {
+          "id": "fp_001",
+          "signature": {
+            "tool": "read",
+            "file_path": "/tmp/test.txt"
+          },
+          "signature_hash": "3ae2d954cb04",
+          "optimal_params": {},
+          "metrics": {
+            "success_rate": 1.0,
+            "avg_tokens": 1000,
+            "execution_count": 1,
+            "first_success": "2026-03-18T15:46:24.537982",
+            "last_success": "2026-03-18T15:46:24.537982"
+          },
+          "status": "active"
+        }
+      ],
+      "failure_patterns": []
+    },
+    "browser_navigate": {
+      "category": "general",
+      "description": "browser_navigate",
+      "success_patterns": [
+        {
+          "id": "fp_001",
+          "signature": {
+            "tool": "browser",
+            "action": "navigate",
+            "url": "https://example.com"
+          },
+          "signature_hash": "7a68184c228d",
+          "optimal_params": {},
+          "metrics": {
+            "success_rate": 1.0,
+            "avg_tokens": 1000.0,
+            "execution_count": 2,
+            "first_success": "2026-03-18T15:46:24.538155",
+            "last_success": "2026-03-18T15:46:24.538362"
+          },
+          "status": "active"
+        }
+      ],
+      "failure_patterns": []
+    }
+  },
+  "global_rules": {
+    "blacklist_threshold": 2,
+    "reuse_threshold": 0.8
+  }
+}

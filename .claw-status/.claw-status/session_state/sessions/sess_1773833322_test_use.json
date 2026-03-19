@@ -1,0 +1,29 @@
+{
+  "session_id": "sess_1773833322_test_use",
+  "user_id": "test_user",
+  "created_at": "2026-03-18T19:28:42.857348",
+  "last_active": "2026-03-18T19:28:42.857417",
+  "current_topic": "分层记忆架构",
+  "active_entities": [
+    "Layer 3",
+    "Layer 2",
+    "向量存储"
+  ],
+  "pending_tasks": [
+    {
+      "description": "完成动态压缩引擎",
+      "completed": false
+    },
+    {
+      "description": "测试向量检索",
+      "completed": true
+    },
+    {
+      "description": "集成到系统",
+      "completed": false
+    }
+  ],
+  "context_summary": "正在实现分层记忆架构的向量存储部分",
+  "working_memory_turns": 0,
+  "compression_stats": {}
+}

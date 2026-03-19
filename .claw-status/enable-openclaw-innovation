@@ -1,0 +1,91 @@
+#!/bin/bash
+# OpenClaw Innovation Enabler
+# 在当前系统快速启用创新能力
+
+echo "OpenClaw 创新能力启用工具"
+echo "=========================="
+echo ""
+
+# 检查OpenClaw安装
+if [ ! -d "/usr/lib/node_modules/openclaw" ]; then
+    echo "❌ OpenClaw未安装"
+    exit 1
+fi
+
+echo "✅ OpenClaw已安装"
+echo ""
+
+# 选项
+echo "选择操作:"
+echo "1. 启用创新引擎（当前会话）"
+echo "2. 启用创新引擎（永久）"
+echo "3. 禁用创新引擎"
+echo "4. 测试创新引擎"
+echo "5. 查看状态"
+echo ""
+
+read -p "请输入选项 (1-5): " choice
+
+case $choice in
+    1)
+        echo ""
+        echo "正在启用创新引擎（当前会话）..."
+        export OPENCLAW_INNOVATION=enabled
+        export NODE_OPTIONS="--require /usr/lib/node_modules/openclaw/innovation-runtime.js"
+        echo "✅ 已启用！在当前终端使用openclaw命令将自动具备创新能力"
+        echo ""
+        echo "提示：新终端窗口需要重新运行此脚本"
+        ;;
+    2)
+        echo ""
+        echo "正在配置永久启用..."
+        
+        # 添加到bashrc
+        if ! grep -q "innovation-runtime" ~/.bashrc; then
+            echo "" >> ~/.bashrc
+            echo "# OpenClaw Innovation Engine" >> ~/.bashrc
+            echo "export OPENCLAW_INNOVATION=enabled" >> ~/.bashrc
+            echo "export NODE_OPTIONS=\"--require /usr/lib/node_modules/openclaw/innovation-runtime.js\"" >> ~/.bashrc
+            echo "✅ 已添加到 ~/.bashrc"
+        else
+            echo "⚠️ 配置已存在"
+        fi
+        
+        # 创建alias
+        if ! grep -q "openclaw-innovation" ~/.bashrc; then
+            echo "alias openclaw-innovation='OPENCLAW_INNOVATION=enabled NODE_OPTIONS=\"--require /usr/lib/node_modules/openclaw/innovation-runtime.js\" openclaw'" >> ~/.bashrc
+            echo "✅ 已创建快捷命令: openclaw-innovation"
+        fi
+        
+        echo ""
+        echo "请运行: source ~/.bashrc"
+        echo "或重新登录以生效"
+        ;;
+    3)
+        echo ""
+        echo "禁用创新引擎..."
+        export OPENCLAW_INNOVATION=disabled
+        unset NODE_OPTIONS
+        echo "✅ 已禁用"
+        ;;
+    4)
+        echo ""
+        echo "测试创新引擎..."
+        node -e "require('/usr/lib/node_modules/openclaw/innovation-runtime.js'); console.log('✅ 测试通过');"
+        ;;
+    5)
+        echo ""
+        echo "当前状态:"
+        if [ "$OPENCLAW_INNOVATION" = "enabled" ]; then
+            echo "  创新引擎: ✅ 已启用"
+            echo "  NODE_OPTIONS: $NODE_OPTIONS"
+        else
+            echo "  创新引擎: ❌ 未启用"
+        fi
+        ;;
+    *)
+        echo "无效选项"
+        ;;
+esac
+
+echo ""

@@ -1,0 +1,8 @@
+{
+  "parameters": {
+    "fast_path_threshold": 0.92,
+    "max_retry_attempts": 3,
+    "topic_switch_threshold": 0.5
+  },
+  "timestamp": 1773840241.1399572
+}

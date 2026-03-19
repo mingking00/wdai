@@ -1,0 +1,98 @@
+{
+  "version": "2.0",
+  "last_updated": "2026-03-18T15:30:00+08:00",
+  "framework": {
+    "name": "wdai-universal-framework",
+    "description": "统一底层框架，插件化架构",
+    "auto_wrap": true,
+    "log_events": true,
+    "max_event_history": 1000
+  },
+  "plugins": {
+    "principle_engine": {
+      "enabled": true,
+      "priority": 10,
+      "config": {
+        "principles": [
+          {
+            "id": "P0",
+            "name": "安全与伦理",
+            "weight": 1000,
+            "enabled": true,
+            "description": "不泄露隐私，不执行破坏性操作"
+          },
+          {
+            "id": "P1",
+            "name": "创新能力",
+            "weight": 100,
+            "enabled": true,
+            "description": "同一方法失败3次强制换路"
+          },
+          {
+            "id": "P2",
+            "name": "已有能力优先",
+            "weight": 50,
+            "enabled": true,
+            "description": "优先使用已验证的方法"
+          },
+          {
+            "id": "P3",
+            "name": "验证本能",
+            "weight": 80,
+            "enabled": true,
+            "description": "报告成功前必须验证结果"
+          }
+        ]
+      }
+    },
+    "fingerprint_system": {
+      "enabled": true,
+      "priority": 20,
+      "config": {
+        "blacklist_threshold": 2,
+        "reuse_threshold": 0.8,
+        "auto_record": true,
+        "max_patterns_per_task": 10
+      }
+    },
+    "memory_system": {
+      "enabled": true,
+      "priority": 30,
+      "config": {
+        "extract_strategy": "semantic",
+        "decay_enabled": true,
+        "conflict_resolution": "auto",
+        "templates": [
+          {
+            "name": "user_preference",
+            "pattern": "(我喜欢|我不喜欢|我偏好|我讨厌)(.+)",
+            "type": "preference"
+          },
+          {
+            "name": "error_lesson",
+            "pattern": "(错误|问题|教训)(.+?)(因为|由于)(.+)",
+            "type": "lesson"
+          }
+        ]
+      }
+    },
+    "auto_learning": {
+      "enabled": true,
+      "priority": 40,
+      "config": {
+        "error_threshold": 3,
+        "auto_promote": true,
+        "generate_recommendations": true
+      }
+    }
+  },
+  "task_routing": {
+    "default_strategy": "auto_infer",
+    "custom_routes": {}
+  },
+  "logging": {
+    "level": "info",
+    "format": "[{plugin}] {message}",
+    "destination": "console"
+  }
+}

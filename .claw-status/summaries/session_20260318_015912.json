@@ -1,0 +1,40 @@
+{
+  "session_id": "session_20260318_015912",
+  "timestamp": "2026-03-18T01:59:15.581239",
+  "duration_minutes": 0.05009188333333334,
+  "stats": {
+    "total_messages": 6,
+    "user_messages": 3,
+    "assistant_messages": 3
+  },
+  "key_decisions": [
+    {
+      "title": "好的，我决定搜索 Kimi 的 Attention Resi...",
+      "details": "好的，我决定搜索 Kimi 的 Attention Residuals 技术报告。",
+      "timestamp": "2026-03-18T01:59:13.076460",
+      "marker": "决定"
+    }
+  ],
+  "errors": [
+    {
+      "type": "用户纠正",
+      "description": "不对，应该先理解核心思想",
+      "correction": "您说得对，我学到了：应该先理解核心思想再搜索细节。",
+      "timestamp": "2026-03-18T01:59:13.577397"
+    }
+  ],
+  "learnings": [
+    {
+      "category": "一般认知",
+      "content": "您说得对，我学到了：应该先理解核心思想再搜索细节。",
+      "source": "2026-03-18T01:59:14.078307"
+    }
+  ],
+  "todo_items": [
+    {
+      "content": "好的，我实现了 AttentionBasedOrchestrator。: 后续需要添加测试。",
+      "priority": "normal",
+      "completed": false
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "opt-001",
+    "name": "\u6307\u6807\u6536\u96c6",
+    "status": "completed",
+    "priority": "P0",
+    "trigger": "every_response",
+    "last_run": "2026-03-19T07:03:22.536127",
+    "run_count": 3,
+    "success_rate": 1.0
+  },
+  {
+    "id": "opt-002",
+    "name": "Token\u9884\u4f30",
+    "status": "completed",
+    "priority": "P0",
+    "trigger": "before_task",
+    "last_run": "2026-03-19T07:03:22.536230",
+    "run_count": 3,
+    "success_rate": 1.0
+  },
+  {
+    "id": "opt-003",
+    "name": "\u6d41\u5f0f\u8f93\u51fa",
+    "status": "completed",
+    "priority": "P0",
+    "trigger": "large_task",
+    "last_run": "2026-03-19T07:03:22.536324",
+    "run_count": 3,
+    "success_rate": 1.0
+  },
+  {
+    "id": "opt-004",
+    "name": "\u5bf9\u8bdd\u6458\u8981",
+    "status": "completed",
+    "priority": "P1",
+    "trigger": "10_rounds",
+    "last_run": "2026-03-19T01:03:01.264320",
+    "run_count": 1,
+    "success_rate": 1.0
+  },
+  {
+    "id": "opt-005",
+    "name": "\u6df7\u5408\u68c0\u7d22",
+    "status": "completed",
+    "priority": "P1",
+    "trigger": "every_search",
+    "last_run": "2026-03-19T01:03:01.264369",
+    "run_count": 1,
+    "success_rate": 1.0
+  },
+  {
+    "id": "opt-006",
+    "name": "\u4f1a\u8bdd\u5feb\u7167",
+    "status": "completed",
+    "priority": "P1",
+    "trigger": "30_minutes",
+    "last_run": "2026-03-19T07:03:22.536402",
+    "run_count": 3,
+    "success_rate": 1.0
+  },
+  {
+    "id": "opt-007",
+    "name": "\u70ed\u542f\u52a8",
+    "status": "completed",
+    "priority": "P2",
+    "trigger": "session_start",
+    "last_run": "2026-03-19T01:03:01.264481",
+    "run_count": 1,
+    "success_rate": 1.0
+  },
+  {
+    "id": "opt-008",
+    "name": "\u53cd\u9988\u5b66\u4e60",
+    "status": "completed",
+    "priority": "P2",
+    "trigger": "daily",
+    "last_run": "2026-03-19T01:03:01.264486",
+    "run_count": 1,
+    "success_rate": 1.0
+  }
+]

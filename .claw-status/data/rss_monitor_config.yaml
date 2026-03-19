@@ -1,0 +1,313 @@
+# RSS监控配置 - 跨平台信息源
+# 生成时间: 2026-03-18
+# 监控来源: YouTube + Newsletter + 技术博客
+
+sources:
+  # ========== YouTube ==========
+  - name: "@Yonggie"
+    platform: youtube
+    rss_url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCYjwzfvKIQpgJ7aRjE5B-QQ"
+    check_interval: 3600  # 每小时检查
+    grade: "A"
+    trust_score: 0.5
+    keywords: ["AI", "Claude", "LLM", "Agent", "OpenAI"]
+    notify_threshold: 1.5
+    notify_strategy: "immediate"
+
+  # ========== Newsletter ==========
+  - name: "TLDR AI"
+    platform: newsletter
+    rss_url: "https://tldrnewsletter.com/ai/rss"
+    check_interval: 86400  # 每日
+    grade: "A"
+    trust_score: 0.5
+    keywords: ["AI", "machine learning", "LLM"]
+    notify_threshold: 1.0
+    notify_strategy: "daily_digest"
+
+  - name: "Import AI"
+    platform: newsletter
+    rss_url: "https://importai.substack.com/feed"
+    check_interval: 604800  # 每周
+    grade: "A-"
+    trust_score: 0.5
+    keywords: ["AI research", "policy", "technical"]
+    notify_threshold: 0.8
+    notify_strategy: "weekly_digest"
+
+  # ========== 技术博客 ==========
+  - name: "Anthropic Blog"
+    platform: blog
+    rss_url: "https://www.anthropic.com/research/rss.xml"
+    check_interval: 3600  # 每小时检查
+    grade: "S"
+    trust_score: 0.8
+    keywords: ["Claude", "safety", "alignment", "research"]
+    notify_threshold: 0.0  # 所有文章都推送
+    notify_strategy: "immediate"
+
+  - name: "Lil'Log"
+    platform: blog
+    rss_url: "https://lilianweng.github.io/rss.xml"
+    check_interval: 86400  # 每日
+    grade: "A+"
+    trust_score: 0.7
+    keywords: ["LLM", "Agent", "RL", "AI systems"]
+    notify_threshold: 0.0  # 所有文章都推送
+    notify_strategy: "immediate"
+
+  - name: "Simon Willison"
+    platform: blog
+    rss_url: "https://simonwillison.net/atom.xml"
+    check_interval: 86400  # 每日
+    grade: "A"
+    trust_score: 0.5
+    keywords: ["LLM", "tools", "Datasette", "AI engineering"]
+    notify_threshold: 1.0
+    notify_strategy: "selective"
+
+# ========== B站 (原有) ==========
+  - name: "慢学AI"
+    platform: bilibili
+    uid: 28321599
+    check_interval: 86400  # 每日
+    grade: "A"
+    trust_score: 0.6
+    notify_threshold: 1.0
+    notify_strategy: "immediate"
+
+  - name: "橘鸦Juya"
+    platform: bilibili
+    uid: 285286947
+    check_interval: 86400  # 每日
+    grade: "A"
+    trust_score: 0.5
+    notify_threshold: 1.2
+    notify_strategy: "daily_digest"
+
+  # 专项领域: AI/系统安全 (2026-03-18新增)
+  - name: "黑客酒吧"
+    platform: bilibili
+    uid: "328460261"
+    check_interval: 86400    # 每日
+    grade: "B+"
+    trust_score: 0.6          # 用户推荐升权
+    keywords: ["安全", "黑客", "渗透", "AI安全", "系统安全"]
+    notify_threshold: 1.0
+    notify_strategy: "daily_digest"
+    notes: "用户推荐，安全方向质量高"
+
+  # AI方向UP主 (2026-03-18新增)
+  - name: "许粲昊ThomasCXu"
+    platform: bilibili
+    uid: "524313676"
+    check_interval: 86400    # 每日
+    grade: "B+"
+    trust_score: 0.5
+    keywords: ["AI", "人工智能", "大模型", "LLM", "Agent"]
+    notify_threshold: 1.0
+    notify_strategy: "daily_digest"
+    notes: "AI方向UP主，1.2万粉丝"
+
+  # 2026-03-18 新增UP主
+  - name: "吴恩达Agentic"
+    platform: bilibili
+    uid: "3546982291343656"
+    check_interval: 86400    # 每日
+    grade: "A"
+    trust_score: 0.6
+    keywords: ["AI", "大模型", "论文", "Agent", "深度学习"]
+    notify_threshold: 0.8
+    notify_strategy: "daily_digest"
+    notes: "大模型知识+论文指导"
+
+  - name: "唐国梁Tommy"
+    platform: bilibili
+    uid: "474347248"
+    check_interval: 86400    # 每日
+    grade: "A"
+    trust_score: 0.7
+    keywords: ["AI", "算法", "前沿技术", "研究"]
+    notify_threshold: 0.8
+    notify_strategy: "daily_digest"
+    notes: "AI算法研究工程师，专家推荐"
+
+  - name: "探索未至之境"
+    platform: bilibili
+    uid: "441831884"
+    check_interval: 86400    # 每日
+    grade: "B"
+    trust_score: 0.4
+    keywords: ["哲学", "认知", "多样性", "智慧"]
+    notify_threshold: 1.2
+    notify_strategy: "weekly_digest"
+    notes: "哲学/认知类，用户要求加入"
+
+# ========== GitHub (新增) ==========
+  # Tier 1: Anthropic官方 (立即通知)
+  - name: "claude-code"
+    platform: github
+    repo: "anthropics/claude-code"
+    check_interval: 3600  # 每小时
+    grade: "S"
+    trust_score: 0.9
+    watch_releases: true
+    watch_commits: false
+    watch_issues: false
+    notify_strategy: "immediate"
+
+  - name: "anthropic-cookbook"
+    platform: github
+    repo: "anthropics/anthropic-cookbook"
+    check_interval: 3600
+    grade: "S"
+    trust_score: 0.9
+    watch_releases: true
+    watch_commits: true
+    notify_strategy: "immediate"
+
+  - name: "anthropic-sdk-python"
+    platform: github
+    repo: "anthropics/anthropic-sdk-python"
+    check_interval: 86400
+    grade: "A+"
+    trust_score: 0.8
+    watch_releases: true
+    notify_strategy: "daily_digest"
+
+  # Tier 1: AI编程工具 (立即通知)
+  - name: "aider"
+    platform: github
+    repo: "Aider-AI/aider"
+    check_interval: 3600
+    grade: "A+"
+    trust_score: 0.8
+    watch_releases: true
+    notify_strategy: "immediate"
+
+  - name: "continue"
+    platform: github
+    repo: "continuedev/continue"
+    check_interval: 86400
+    grade: "A"
+    trust_score: 0.7
+    watch_releases: true
+    notify_strategy: "daily_digest"
+
+  # Tier 1: Agent框架 (立即通知)
+  - name: "langgraph"
+    platform: github
+    repo: "langchain-ai/langgraph"
+    check_interval: 3600
+    grade: "A+"
+    trust_score: 0.8
+    watch_releases: true
+    notify_strategy: "immediate"
+
+  - name: "crewAI"
+    platform: github
+    repo: "crewAIInc/crewAI"
+    check_interval: 86400
+    grade: "A"
+    trust_score: 0.7
+    watch_releases: true
+    notify_strategy: "daily_digest"
+
+  # Tier 2: 新兴项目 (每日汇总)
+  - name: "mem0"
+    platform: github
+    repo: "mem0ai/mem0"
+    check_interval: 86400
+    grade: "A-"
+    trust_score: 0.6
+    watch_releases: true
+    notify_strategy: "daily_digest"
+
+  - name: "browser-use"
+    platform: github
+    repo: "browser-use/browser-use"
+    check_interval: 86400
+    grade: "B+"
+    trust_score: 0.5
+    watch_releases: true
+    notify_strategy: "daily_digest"
+
+  - name: "E2B"
+    platform: github
+    repo: "e2b-dev/E2B"
+    check_interval: 86400
+    grade: "A-"
+    trust_score: 0.6
+    watch_releases: true
+    notify_strategy: "daily_digest"
+
+  # Tier 3: 经典框架 (每周汇总)
+  - name: "langchain"
+    platform: github
+    repo: "langchain-ai/langchain"
+    check_interval: 604800  # 每周
+    grade: "A"
+    trust_score: 0.7
+    watch_releases: true
+    notify_strategy: "weekly_digest"
+
+  - name: "llama_index"
+    platform: github
+    repo: "run-llama/llama_index"
+    check_interval: 604800
+    grade: "A"
+    trust_score: 0.6
+    watch_releases: true
+    notify_strategy: "weekly_digest"
+
+  - name: "AutoGPT"
+    platform: github
+    repo: "Significant-Gravitas/AutoGPT"
+    check_interval: 604800
+    grade: "B+"
+    trust_score: 0.5
+    watch_releases: true
+    notify_strategy: "weekly_digest"
+
+  # Trending监控
+  - name: "github-trending-ai"
+    platform: github_trending
+    query: "AI"
+    language: "python"
+    check_interval: 86400
+    grade: "B"
+    trust_score: 0.4
+    min_stars_gain: 100  # 日增100star才通知
+    notify_strategy: "daily_digest"
+
+  # 教学/资料类项目 (2026-03-18新增)
+  - name: "HaiPenglai-bilibili_NLP"
+    platform: github
+    repo: "HaiPenglai/bilibili_NLP"
+    check_interval: 604800    # 每周
+    grade: "B"
+    trust_score: 0.4
+    watch_releases: true
+    watch_commits: false
+    notify_strategy: "weekly_digest"
+    notes: "海蓬莱-NLP视频教学资料"
+
+  - name: "HaiPenglai-BlockCraft-DDPM"
+    platform: github
+    repo: "HaiPenglai/BlockCraft-DDPM"
+    check_interval: 604800    # 每周
+    grade: "B"
+    trust_score: 0.4
+    watch_releases: true
+    watch_commits: false
+    notify_strategy: "weekly_digest"
+    notes: "海蓬莱-DDPM扩散模型实验手册"
+
+# 全局配置
+global:
+  max_age_days: 7  # 只处理7天内的新内容
+  deduplication: true  # 去重
+  summary_length: 500  # 摘要长度
+  notification_channels:
+    - feishu
+    - kimi-claw

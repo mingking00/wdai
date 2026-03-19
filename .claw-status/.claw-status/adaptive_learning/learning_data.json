@@ -1,0 +1,11 @@
+{
+  "stats": {
+    "fast_path_hits": 20,
+    "fast_path_misses": 0,
+    "tool_success": 19,
+    "tool_failures": 6,
+    "user_satisfied": 10,
+    "user_dissatisfied": 10
+  },
+  "timestamp": "2026-03-18T20:03:36.813918"
+}

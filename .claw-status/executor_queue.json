@@ -1,0 +1,63 @@
+{
+  "queue": [
+    {
+      "id": "evo-001",
+      "priority": "P0",
+      "title": "RAG架构升级：自适应检索策略",
+      "status": "completed",
+      "completed_at": "2026-03-18T22:30:00",
+      "files": ["adaptive_rag.py", "wdai_v32_adaptive.py"],
+      "actual_tokens": "~13k",
+      "result": "实现5种查询分类器、动态策略选择、参数调整器"
+    },
+    {
+      "id": "evo-002",
+      "priority": "P0",
+      "title": "多Agent协作框架对比与借鉴",
+      "status": "completed",
+      "completed_at": "2026-03-18T22:50:00",
+      "files": ["multi_agent_collab.py", "wdai_v33_multiagent.py"],
+      "actual_tokens": "~20k",
+      "result": "借鉴CrewAI/AutoGen/LangGraph/Swarm，实现5角色Agent系统"
+    },
+    {
+      "id": "evo-003",
+      "priority": "P1",
+      "title": "向量存储优化：HNSW索引与混合检索",
+      "status": "completed",
+      "completed_at": "2026-03-18T23:00:00",
+      "files": ["vector_store_opt.py", "wdai_v34_vector.py"],
+      "actual_tokens": "~20k",
+      "result": "HNSW索引 + BM25 + 混合检索(RRF) + 查询缓存"
+    },
+    {
+      "id": "evo-004",
+      "priority": "P1",
+      "title": "评估框架增强：RAG特定指标",
+      "status": "completed",
+      "completed_at": "2026-03-18T23:20:00",
+      "files": ["rag_evaluation.py", "wdai_v35_eval.py"],
+      "actual_tokens": "~22k",
+      "result": "检索指标(P/R/F1/MAP/MRR) + 生成指标 + A/B测试框架"
+    },
+    {
+      "id": "evo-005",
+      "priority": "P2",
+      "title": "约束规则扩展：代码安全与性能",
+      "status": "completed",
+      "completed_at": "2026-03-18T23:50:00",
+      "files": ["code_security.py", "wdai_v36_security.py"],
+      "actual_tokens": "~19k",
+      "result": "安全规则(SQL/XSS/注入/密钥) + 性能 + 风格 + 质量评分"
+    }
+  ],
+  "meta": {
+    "version": "1.0",
+    "updated_at": "2026-03-18T23:50:00",
+    "task_count": 5,
+    "completed_count": 5,
+    "completion_rate": "100%",
+    "total_tokens": "~94k",
+    "system_version": "WDai v3.6"
+  }
+}
