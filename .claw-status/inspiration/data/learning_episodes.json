@@ -1,0 +1,22 @@
+[
+  {
+    "id": "6beb634b2555",
+    "pattern_id": "add_caching",
+    "attempts": 1,
+    "successes": 1,
+    "failures": 0,
+    "avg_performance_gain": 1.1111111111111112,
+    "confidence": 0.9,
+    "last_updated": "2026-03-19T18:09:41.858744"
+  },
+  {
+    "id": "d20cbb897f94",
+    "pattern_id": "add_monitoring",
+    "attempts": 1,
+    "successes": 1,
+    "failures": 0,
+    "avg_performance_gain": 0.0,
+    "confidence": 0.9,
+    "last_updated": "2026-03-19T18:16:09.987482"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "dbebdf46_exp1",
+  "hypothesis": "实验2: 调整学习率",
+  "code_changes": "lr = 0.002",
+  "metrics": {
+    "val_bpb": 3.4,
+    "train_time": 300
+  },
+  "success": true
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "e1fc0121-c859-48ec-aa21-0a5117551ead",
+    "fact": "Python `ast` 模块分析代码",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314632",
+    "last_accessed": "2026-03-17T21:25:12.314635",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "55c74400-f3d1-49ff-a7f6-e031be193baa",
+        "55c74400-f3d1-49ff-a7f6-e031be193baa",
+        "e668dc1b-dfe1-4c92-8375-a292208d96eb",
+        "e668dc1b-dfe1-4c92-8375-a292208d96eb"
+      ]
+    }
+  },
+  {
+    "id": "748e5ee1-374b-44fa-95c0-a52758127ad6",
+    "fact": "B（停下来测试现有功能）",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314643",
+    "last_accessed": "2026-03-17T21:25:12.314644",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "39e5424e-175b-4068-8356-34b45fd4ffc6",
+        "39e5424e-175b-4068-8356-34b45fd4ffc6",
+        "e372552c-e035-4764-a61d-a1ee2da06371",
+        "e372552c-e035-4764-a61d-a1ee2da06371"
+      ]
+    }
+  },
+  {
+    "id": "969d160b-b448-473e-b71a-a488b4e8d575",
+    "fact": "B），是**执行力**问题（没有直接执行，而是重复确认）。",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314650",
+    "last_accessed": "2026-03-17T21:25:12.314651",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "6d8d89a5-323b-4b00-b38c-0653fed9d0da",
+        "6d8d89a5-323b-4b00-b38c-0653fed9d0da",
+        "52dc23d5-6857-4095-8322-0a5b69fe565a",
+        "52dc23d5-6857-4095-8322-0a5b69fe565a"
+      ]
+    }
+  },
+  {
+    "id": "9b99748f-516f-4dca-bd7b-897dc8a30f04",
+    "fact": "后，**直接执行**，不再确认",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314656",
+    "last_accessed": "2026-03-17T21:25:12.314657",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "92bd6796-7e03-40b3-aaf1-3c83f64abafa",
+        "92bd6796-7e03-40b3-aaf1-3c83f64abafa",
+        "a92e4ef6-ae7b-4ae6-b54e-5aef63064d55",
+        "a92e4ef6-ae7b-4ae6-b54e-5aef63064d55"
+      ]
+    }
+  }
+]

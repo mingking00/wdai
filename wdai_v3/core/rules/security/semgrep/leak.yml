@@ -1,0 +1,9 @@
+rules:
+- id: python-log-sensitive
+  message: 日志记录敏感信息，可能导致泄露
+  pattern: (?:logging|logger)\.(?:info|debug|warning|error)\s*\([^)]*(?:password|secret|token)
+  severity: medium
+- id: python-exception-sensitive
+  message: 异常信息包含敏感数据，可能泄露给用户
+  pattern: raise\s+\w+\s*\([^)]*(?:user|password|secret)
+  severity: medium

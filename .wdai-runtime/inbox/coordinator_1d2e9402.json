@@ -1,0 +1,1 @@
+{"msg_id": "1d2e9402", "from_agent": "user", "to_agent": "coordinator", "msg_type": "task_request", "payload": {"task_type": "code", "description": "\u90e8\u7f72\u535a\u5ba2\u5230GitHub (\u5c1d\u8bd52)", "data": {"repo": "my-blog", "method": "github_api"}}, "timestamp": 1773682406.7779086, "priority": 0}

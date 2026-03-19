@@ -1,0 +1,26 @@
+{
+  "arxiv": {
+    "source_id": "arxiv",
+    "total_crawls": 2,
+    "new_items_found": 2,
+    "avg_quality_score": 0.5,
+    "last_crawl": "2026-03-19T21:19:28.272195",
+    "avg_crawl_time_ms": 0.00095367431640625,
+    "success_rate": 1.0,
+    "consecutive_empty": 1,
+    "current_interval_hours": 4.800000000000001,
+    "priority_score": 0.5
+  },
+  "github": {
+    "source_id": "github",
+    "total_crawls": 2,
+    "new_items_found": 2,
+    "avg_quality_score": 0.5,
+    "last_crawl": "2026-03-19T21:20:34.770287",
+    "avg_crawl_time_ms": 0.0016689300537109375,
+    "success_rate": 1.0,
+    "consecutive_empty": 1,
+    "current_interval_hours": 4.800000000000001,
+    "priority_score": 0.5
+  }
+}

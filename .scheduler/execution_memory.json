@@ -1,0 +1,298 @@
+[
+  {
+    "timestamp": 1773686410.329685,
+    "date": "2026-03-17",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.08259797096252441,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 75.00%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773686410 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773690020.579198,
+    "date": "2026-03-17",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.05710887908935547,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 75.00%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773690020 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773693620.0901937,
+    "date": "2026-03-17",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.05748486518859863,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 75.00%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773693620 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773697223.949126,
+    "date": "2026-03-17",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.0580289363861084,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 75.00%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773697223 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773700821.9480395,
+    "date": "2026-03-17",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.05763888359069824,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 75.00%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773700821 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773704425.6811237,
+    "date": "2026-03-17",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.057951927185058594,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 75.00%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773704425 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773740425.2044637,
+    "date": "2026-03-17",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.05848550796508789,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 75.00%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773740425 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773746095.8513818,
+    "date": "2026-03-17",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "failed",
+      "duration": 0.08486652374267578,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773776419.3230708,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.06198883056640625,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 71.43%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773776419 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773813845.5329158,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.05273318290710449,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773820810.2103786,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.06438231468200684,
+      "output": "================================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 70.00%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: \u7ee7\u7eed\u5f53\u524d\u65b9\u5411\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773820810 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773821059.7590446,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.07446551322937012,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773828247.528609,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.053078651428222656,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773831610.683667,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.05278611183166504,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773835387.839606,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.0611264705657959,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773842645.3803217,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.0611417293548584,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773846125.0996835,
+    "date": "2026-03-18",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.05392622947692871,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773849798.4270768,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.052828073501586914,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773853213.4432673,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.0538938045501709,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773857001.6366396,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.0550684928894043,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773859231.530399,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "external_loop",
+      "status": "success",
+      "duration": 0.06421375274658203,
+      "output": "==================================================\n\u2699\ufe0f  Phase 2: \u5185\u90e8\u8fdb\u5316 (\u8c03\u7528v1.x)\n=================================================================\n  (\u5185\u90e8\u8fdb\u5316\u903b\u8f91 - \u4f7f\u7528\u73b0\u6709\u7684evolution_loop.py)\n\n=================================================================\n\ud83c\udfaf Phase 3: \u5b9e\u6218\u9a8c\u8bc1\n=================================================================\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u6269\u5c55\u6280\u80fd\u8986\u76d6\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u5f53\u524d\u5de5\u5177\u8986\u76d6\u7387\u4ec524%\uff0c\u9700\u8981\u4e3b\u52a8\u5b66\u4e60\u65b0\u6280\u80fd\n  \u6269\u5c55\u6280\u80fd\u8986\u76d6: \u6548\u679c\u8bc4\u5206 0.80\n[Validator] \u9a8c\u8bc1\u673a\u4f1a: \u4ee3\u7801\u8d28\u91cf\u63d0\u5347\n  \u8fd0\u884c\u63a2\u7d22\u9879\u76ee: \u6539\u8fdbevolution_loop.py\u7684\u4ee3\u7801\u8d28\u91cf\u548c\u9519\u8bef\u5904\u7406\n  \u4ee3\u7801\u8d28\u91cf\u63d0\u5347: \u6548\u679c\u8bc4\u5206 0.50\n\n=================================================================\n\ud83d\udd04 Phase 4: \u53cd\u9988\u5438\u6536\n=================================================================\n[ExternalInput] \u6536\u96c6\u5916\u90e8\u53cd\u9988...\n  \u4efb\u52a1\u5b8c\u6210\u7387: 67.57%\n[\u53cd\u9988\u6574\u5408] \u5206\u6790\u53cd\u9988\u5e76\u8c03\u6574\u8fdb\u5316\u65b9\u5411...\n  \u5e73\u5747\u6548\u679c\u8bc4\u5206: 0.65\n  \u8c03\u6574\u5efa\u8bae: ['\u4efb\u52a1\u5b8c\u6210\u7387\u504f\u4f4e\uff0c\u9700\u8981\u52a0\u5f3a\u9519\u8bef\u5904\u7406']\n\n[\u6d1e\u5bdf\u751f\u6210] \u4ece\u5916\u90e8\u8f93\u5165\u4e2d\u63d0\u53d6\u6d1e\u5bdf...\n  \u751f\u6210\u4e86 5 \u6761\u6d1e\u5bdf\n=================================================================\n[EvolutionLoopV2] \u5916\u90e8\u53cd\u9988\u5faa\u73af v2evo_1773859231 \u5b8c\u6210\n=================================================================\n\n\ud83d\udca1 v2.0\u5916\u90e8\u53cd\u9988\u5faa\u73af\u5efa\u7acb\u5b8c\u6210\n   \u4e0b\u4e00\u6b65: \u5728\u771f\u5b9e\u7528\u6237\u4efb\u52a1\u4e2d\u9a8c\u8bc1\u6539\u8fdb\u6548\u679c\n",
+      "summary": "\u5916\u90e8\u5faa\u73af\u6267\u884c\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773859291.5881321,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.0563662052154541,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773859316.8827589,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "paper_study",
+      "status": "success",
+      "duration": 0.03885698318481445,
+      "summary": "\u8bba\u6587\u5b66\u4e60\u5b8c\u6210\uff0c\u8017\u65f60.0\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773860650.1300688,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.08479928970336914,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773864084.8652167,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.05669975280761719,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  },
+  {
+    "timestamp": 1773867609.709722,
+    "date": "2026-03-19",
+    "type": "auto_execution",
+    "content": {
+      "task_type": "internal_loop",
+      "status": "success",
+      "duration": 0.05745577812194824,
+      "summary": "\u5185\u90e8\u5faa\u73af\u5b8c\u6210\uff0c\u8017\u65f60.1\u79d2"
+    }
+  }
+]

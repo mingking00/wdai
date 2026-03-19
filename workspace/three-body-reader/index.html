@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三体交互阅读器 | Vibero Style</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">📖</span>
+                <span class="logo-text">三体交互阅读器</span>
+            </div>
+            <div class="upload-section">
+                <input type="file" id="pdf-upload" accept=".pdf" hidden>
+                <button class="btn btn-primary" onclick="document.getElementById('pdf-upload').click()">
+                    <span>📁</span> 上传PDF
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Book Info -->
+                <div class="panel book-info">
+                    <div class="panel-header">
+                        <span class="panel-icon">📚</span>
+                        <span class="panel-title">书籍信息</span>
+                    </div>
+                    <div class="panel-content">
+                        <div class="book-cover">三体</div>
+                        <div class="book-meta">
+                            <h3>三体 (The Three-Body Problem)</h3>
+                            <p class="author">刘慈欣 著</p>
+                            <p class="translator">刘宇昆 译 (英文版)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter Navigation -->
+                <div class="panel chapter-nav">
+                    <div class="panel-header">
+                        <span class="panel-icon">📑</span>
+                        <span class="panel-title">章节导航</span>
+                    </div>
+                    <div class="panel-content">
+                        <div class="book-part">
+                            <div class="part-title" onclick="togglePart('part1')">
+                                <span class="toggle-icon">▼</span>
+                                第一部：地球往事
+                            </div>
+                            <ul class="chapter-list" id="part1">
+                                <li class="chapter-item" data-page="1">
+                                    <span class="chapter-num">1</span>
+                                    <span class="chapter-name">科学边界</span>
+                                </li>
+                                <li class="chapter-item" data-page="15">
+                                    <span class="chapter-num">2</span>
+                                    <span class="chapter-name">台球</span>
+                                </li>
+                                <li class="chapter-item" data-page="28">
+                                    <span class="chapter-num">3</span>
+                                    <span class="chapter-name">射手和农场主</span>
+                                </li>
+                                <li class="chapter-item" data-page="42">
+                                    <span class="chapter-num">4</span>
+                                    <span class="chapter-name">三体、周文王、长夜</span>
+                                </li>
+                                <li class="chapter-item" data-page="58">
+                                    <span class="chapter-num">5</span>
+                                    <span class="chapter-name">叶文洁</span>
+                                </li>
+                                <li class="chapter-item" data-page="75">
+                                    <span class="chapter-num">6</span>
+                                    <span class="chapter-name">宇宙闪烁</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="book-part">
+                            <div class="part-title" onclick="togglePart('part2')">
+                                <span class="toggle-icon">▶</span>
+                                第二部：黑暗森林
+                            </div>
+                            <ul class="chapter-list collapsed" id="part2">
+                                <li class="chapter-item" data-page="200">
+                                    <span class="chapter-num">1</span>
+                                    <span class="chapter-name">面壁者</span>
+                                </li>
+                                <li class="chapter-item" data-page="225">
+                                    <span class="chapter-num">2</span>
+                                    <span class="chapter-name">咒语</span>
+                                </li>
+                                <li class="chapter-item" data-page="250">
+                                    <span class="chapter-num">3</span>
+                                    <span class="chapter-name">黑暗森林</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="book-part">
+                            <div class="part-title" onclick="togglePart('part3')">
+                                <span class="toggle-icon">▶</span>
+                                第三部：死神永生
+                            </div>
+                            <ul class="chapter-list collapsed" id="part3">
+                                <li class="chapter-item" data-page="400">
+                                    <span class="chapter-num">1</span>
+                                    <span class="chapter-name">魔法师之死</span>
+                                </li>
+                                <li class="chapter-item" data-page="425">
+                                    <span class="chapter-num">2</span>
+                                    <span class="chapter-name">掩体计划</span>
+                                </li>
+                                <li class="chapter-item" data-page="450">
+                                    <span class="chapter-num">3</span>
+                                    <span class="chapter-name">二维化</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Characters -->
+                <div class="panel characters">
+                    <div class="panel-header">
+                        <span class="panel-icon">👤</span>
+                        <span class="panel-title">主要角色</span>
+                    </div>
+                    <div class="panel-content">
+                        <div class="char-list">
+                            <div class="char-item" data-char="wangmiao">
+                                <div class="char-avatar" style="background: #4A90D9;">汪</div>
+                                <div class="char-info">
+                                    <span class="char-name">汪淼</span>
+                                    <span class="char-role">纳米科学家</span>
+                                </div>
+                            </div>
+                            <div class="char-item" data-char="yewenjie">
+                                <div class="char-avatar" style="background: #E74C3C;">叶</div>
+                                <div class="char-info">
+                                    <span class="char-name">叶文洁</span>
+                                    <span class="char-role">天体物理学家</span>
+                                </div>
+                            </div>
+                            <div class="char-item" data-char="shiqiang">
+                                <div class="char-avatar" style="background: #27AE60;">史</div>
+                                <div class="char-info">
+                                    <span class="char-name">史强</span>
+                                    <span class="char-role">刑警</span>
+                                </div>
+                            </div>
+                            <div class="char-item" data-char="luoji">
+                                <div class="char-avatar" style="background: #9B59B6;">罗</div>
+                                <div class="char-info">
+                                    <span class="char-name">罗辑</span>
+                                    <span class="char-role">面壁者</span>
+                                </div>
+                            </div>
+                            <div class="char-item" data-char="chengxin">
+                                <div class="char-avatar" style="background: #F39C12;">程</div>
+                                <div class="char-info">
+                                    <span class="char-name">程心</span>
+                                    <span class="char-role">执剑人</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="panel timeline">
+                    <div class="panel-header">
+                        <span class="panel-icon">🕐</span>
+                        <span class="panel-title">故事时间线</span>
+                    </div>
+                    <div class="panel-content">
+                        <div class="timeline-list">
+                            <div class="timeline-item" data-era="cultural">
+                                <div class="timeline-dot" style="background: #C0392B;"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-time">1967-1970s</span>
+                                    <span class="timeline-title">文革时期</span>
+                                    <span class="timeline-desc">红岸基地，叶文洁发送信号</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-era="modern">
+                                <div class="timeline-dot" style="background: #2980B9;"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-time">2007</span>
+                                    <span class="timeline-title">现代</span>
+                                    <span class="timeline-desc">汪淼调查科学家自杀事件</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-era="crisis">
+                                <div class="timeline-dot" style="background: #8E44AD;"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-time">危机纪元</span>
+                                    <span class="timeline-title">三体舰队来袭</span>
+                                    <span class="timeline-desc">面壁计划，黑暗森林威慑</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-era="broadcast">
+                                <div class="timeline-dot" style="background: #E67E22;"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-time">广播纪元</span>
+                                    <span class="timeline-title">坐标暴露</span>
+                                    <span class="timeline-desc">黑暗森林打击，掩体计划</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-era="degen">
+                                <div class="timeline-dot" style="background: #2C3E50;"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-time">宇宙末日</span>
+                                    <span class="timeline-title">降维打击</span>
+                                    <span class="timeline-desc">二维化，死神永生</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concepts -->
+                <div class="panel concepts">
+                    <div class="panel-header">
+                        <span class="panel-icon">💡</span>
+                        <span class="panel-title">核心概念</span>
+                    </div>
+                    <div class="panel-content">
+                        <div class="concept-tags">
+                            <span class="concept-tag" data-concept="sophon">智子</span>
+                            <span class="concept-tag" data-concept="darkforest">黑暗森林</span>
+                            <span class="concept-tag" data-concept="droplet">水滴</span>
+                            <span class="concept-tag" data-concept="dimensional">降维打击</span>
+                            <span class="concept-tag" data-concept="sword">执剑人</span>
+                            <span class="concept-tag" data-concept="wall">面壁者</span>
+                            <span class="concept-tag" data-concept="eto">地球三体组织</span>
+                            <span class="concept-tag" data-concept="red">红岸基地</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Reader Area -->
+            <main class="reader">
+                <div class="reader-toolbar">
+                    <div class="page-nav">
+                        <button class="btn-icon" id="prev-page">◀</button>
+                        <span class="page-info">
+                            <input type="number" id="page-input" value="1" min="1">
+                            <span>/</span>
+                            <span id="total-pages">--</span>
+                        </span>
+                        <button class="btn-icon" id="next-page">▶</button>
+                    </div>
+                    <div class="zoom-controls">
+                        <button class="btn-icon" id="zoom-out">−</button>
+                        <span id="zoom-level">100%</span>
+                        <button class="btn-icon" id="zoom-in">+</button>
+                    </div>
+                </div>
+
+                <div class="reader-container" id="reader-container">
+                    <div class="empty-state" id="empty-state">
+                        <div class="empty-icon">📖</div>
+                        <h2>上传三体PDF开始阅读</h2>
+                        <p>支持拖拽上传或点击上方按钮</p>
+                        <div class="supported-formats">
+                            <span>支持格式: PDF</span>
+                        </div>
+                    </div>
+                    <canvas id="pdf-canvas"></canvas>
+                </div>
+
+                <!-- Character Detail Modal -->
+                <div class="modal" id="char-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 id="char-modal-title">角色详情</h3>
+                            <button class="modal-close" onclick="closeModal()">×</button>
+                        </div>
+                        <div class="modal-body" id="char-modal-body">
+                            <!-- Dynamic content -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept Detail Modal -->
+                <div class="modal" id="concept-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 id="concept-modal-title">概念详解</h3>
+                            <button class="modal-close" onclick="closeConceptModal()">×</button>
+                        </div>
+                        <div class="modal-body" id="concept-modal-body">
+                            <!-- Dynamic content -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="reader.js"></script>
+</body>
+</html>

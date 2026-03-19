@@ -1,0 +1,1 @@
+savedcmd_/root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/hello-world.mod := printf '%s\n'   hello-world.o | awk '!x[$$0]++ { print("/root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/"$$0) }' > /root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/hello-world.mod

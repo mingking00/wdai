@@ -89,6 +89,23 @@ except Exception as e:
     print(f"⚠️ MemRL加载失败: {e}")
 ```
 
+### 初始化Method Fingerprint System（方法指纹系统）⭐ 2026-03-18新增
+
+```python
+# 在每次会话开始时自动执行 - 方法指纹系统
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent / ".claw-status"))
+
+try:
+    from fingerprint_hooks import install_hooks
+    from method_fingerprint import get_report
+    hook = install_hooks()
+    print(get_report())
+except Exception as e:
+    print(f"⚠️ 方法指纹系统加载失败: {e}")
+```
+
 ### 工作目录协议 (防丢失) ⭐ 2026-03-16新增
 
 **核心原则**: 任何需要保留的结果，禁止保存在 `/tmp/` 或 `/var/tmp/`
@@ -741,3 +758,43 @@ Do NOT proactively offer the original time as an alternative. Let the user bring
 Do NOT create the cron job until the user confirms the suggested time (except for time-critical tasks).
 
 </IMPORTANT_REMINDER>
+
+
+---
+
+### 初始化Universal Framework（通用底层框架）⭐ 2026-03-18新增
+
+```python
+# 在每次会话开始时自动执行 - 通用框架初始化
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent / ".claw-status"))
+
+try:
+    from framework import UniversalFramework
+    
+    framework = UniversalFramework(
+        config_path=str(Path(__file__).parent / ".claw-status" / "config" / "framework.json")
+    )
+    framework.discover_plugins(str(Path(__file__).parent / ".claw-status" / "plugins"))
+    
+    stats = framework.get_stats()
+    print(f"✅ Universal Framework 已加载 ({stats['plugins_loaded']}个插件)")
+    print(f"   插件: {', '.join(stats['plugin_names'])}")
+    
+except Exception as e:
+    print(f"⚠️ Universal Framework 加载失败: {e}")
+```
+
+**框架组件**:
+- **PrinciplePlugin**: P0-P4原则执行
+- **FingerprintPlugin**: 方法指纹记录/复用
+- **MemoryPlugin**: 自动记忆提取
+- **LearningPlugin**: 错误/纠正/最佳实践记录
+
+**统一入口**:
+```python
+# 所有工具调用通过框架
+result = framework.tool_call("message", action="send", channel="feishu")
+# 自动触发: 原则检查 → 指纹复用 → 记忆记录 → 学习分析
+```

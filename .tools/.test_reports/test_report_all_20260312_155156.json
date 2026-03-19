@@ -1,0 +1,92 @@
+{
+  "skill": "all",
+  "timestamp": "2026-03-12T15:51:56.091794",
+  "results": {
+    "react_agent": [
+      {
+        "name": "test_tool_registry",
+        "level": "unit",
+        "result": "passed",
+        "duration": 1.3589859008789062e-05,
+        "error": null
+      },
+      {
+        "name": "test_action_parsing",
+        "level": "unit",
+        "result": "passed",
+        "duration": 6.9141387939453125e-06,
+        "error": null
+      },
+      {
+        "name": "test_react_loop",
+        "level": "integration",
+        "result": "passed",
+        "duration": 4.291534423828125e-06,
+        "error": null
+      },
+      {
+        "name": "test_end_to_end_task",
+        "level": "e2e",
+        "result": "passed",
+        "duration": 2.6226043701171875e-06,
+        "error": null
+      }
+    ],
+    "memory_context": [
+      {
+        "name": "test_add_entry",
+        "level": "unit",
+        "result": "passed",
+        "duration": 2.86102294921875e-06,
+        "error": null
+      },
+      {
+        "name": "test_retrieve_context",
+        "level": "integration",
+        "result": "passed",
+        "duration": 2.6226043701171875e-06,
+        "error": null
+      }
+    ],
+    "task_decomp": [
+      {
+        "name": "test_task_decomposition",
+        "level": "unit",
+        "result": "passed",
+        "duration": 2.1457672119140625e-06,
+        "error": null
+      },
+      {
+        "name": "test_dependency_resolution",
+        "level": "integration",
+        "result": "passed",
+        "duration": 2.1457672119140625e-06,
+        "error": null
+      }
+    ],
+    "free_search": [
+      {
+        "name": "test_search_backends",
+        "level": "unit",
+        "result": "passed",
+        "duration": 2.1457672119140625e-06,
+        "error": null
+      },
+      {
+        "name": "test_fallback_chain",
+        "level": "integration",
+        "result": "passed",
+        "duration": 2.1457672119140625e-06,
+        "error": null
+      }
+    ]
+  },
+  "summary": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "skipped": 0,
+    "error": 0
+  },
+  "duration": 9.417533874511719e-05
+}

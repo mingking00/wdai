@@ -1,0 +1,21 @@
+[
+  {
+    "id": "7621e49c-9e4a-4e8d-a9e0-562ad517641b",
+    "fact": ".json | 120s |",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T18:25:39.516948",
+    "last_accessed": "2026-03-19T18:25:39.516950",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "24d9f5ee-33b1-455f-96d2-0bac27db67b1",
+        "24d9f5ee-33b1-455f-96d2-0bac27db67b1"
+      ]
+    }
+  }
+]

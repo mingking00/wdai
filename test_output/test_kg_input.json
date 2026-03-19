@@ -1,0 +1,97 @@
+[
+  {
+    "id": "BV_test123_moment_01",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV_test123",
+      "platform": "bilibili",
+      "timestamp": "00:00:15"
+    },
+    "content": {
+      "text": "RAG是检索增强生成，核心是把外部知识接入大模型",
+      "image_path": "keyframes/BV_test123_keyframe_01.jpg",
+      "keywords": [
+        "核心"
+      ]
+    },
+    "metadata": {
+      "importance": 5
+    }
+  },
+  {
+    "id": "BV_test123_moment_02",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV_test123",
+      "platform": "bilibili",
+      "timestamp": "00:02:00"
+    },
+    "content": {
+      "text": "关键是embedding要准，相似度计算要对",
+      "image_path": "keyframes/BV_test123_keyframe_02.jpg",
+      "keywords": [
+        "关键是"
+      ]
+    },
+    "metadata": {
+      "importance": 3
+    }
+  },
+  {
+    "id": "BV_test123_moment_03",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV_test123",
+      "platform": "bilibili",
+      "timestamp": "00:03:00"
+    },
+    "content": {
+      "text": "总结一下，RAG三步：索引、检索、生成",
+      "image_path": "keyframes/BV_test123_keyframe_03.jpg",
+      "keywords": [
+        "总结"
+      ]
+    },
+    "metadata": {
+      "importance": 3
+    }
+  },
+  {
+    "id": "BV_test123_moment_04",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV_test123",
+      "platform": "bilibili",
+      "timestamp": "00:03:30"
+    },
+    "content": {
+      "text": "对比微调方案，RAG的优势是知识可更新",
+      "image_path": "keyframes/BV_test123_keyframe_04.jpg",
+      "keywords": [
+        "对比",
+        "优势",
+        "方案"
+      ]
+    },
+    "metadata": {
+      "importance": 7
+    }
+  },
+  {
+    "id": "BV_test123_moment_05",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV_test123",
+      "platform": "bilibili",
+      "timestamp": "00:04:00"
+    },
+    "content": {
+      "text": "下节课我们实战，用LangChain实现一个简单的RAG",
+      "image_path": "keyframes/BV_test123_keyframe_05.jpg",
+      "keywords": []
+    },
+    "metadata": {
+      "importance": 3
+    }
+  }
+]

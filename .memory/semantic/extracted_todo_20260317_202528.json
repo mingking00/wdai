@@ -1,0 +1,23 @@
+[
+  {
+    "id": "68d987a7-ac85-4703-9697-57625bde77a0",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.575766",
+    "last_accessed": "2026-03-17T20:25:28.575768",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f"
+      ]
+    }
+  }
+]

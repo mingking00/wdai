@@ -1,0 +1,14 @@
+{
+  "paper_001": {
+    "key": "paper_001",
+    "content_hash": "b14cc732dccfff44b7e5050c820e672c90504939bcf54e05cfe1a1313a9c34b2",
+    "raw_content": "This is a paper about AI",
+    "metadata": {},
+    "created_at": "2026-03-19T22:05:51.069608",
+    "expires_at": "2026-03-20T22:05:51.069617",
+    "etag": null,
+    "last_modified": null,
+    "access_count": 2,
+    "last_accessed": "2026-03-19T22:05:51.069645"
+  }
+}

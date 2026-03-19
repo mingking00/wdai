@@ -1,0 +1,9 @@
+rules:
+- id: python-xxe-lxml
+  message: lxml 解析 XML，可能存在 XXE 漏洞，建议禁用外部实体
+  pattern: lxml\.etree\.(?:parse|fromstring|XML)\s*\(
+  severity: high
+- id: python-xxe-defused
+  message: 使用标准库解析 XML，建议使用 defusedxml 防止 XXE
+  pattern: xml\.(?:parse|etree)\.(?:parse|fromstring)
+  severity: medium

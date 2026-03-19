@@ -1,0 +1,152 @@
+[
+  {
+    "id": "657e8769-14d0-401c-9f8f-aab5adc1a2dc",
+    "fact": "先设计数据结构再实现。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T03:25:23.753185",
+    "last_accessed": "2026-03-18T03:25:23.753186",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357"
+      ]
+    }
+  },
+  {
+    "id": "bbb9365c-3410-41a1-bfb2-f03559bc6b36",
+    "fact": "先设计数据结构再实现。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T03:25:23.753192",
+    "last_accessed": "2026-03-18T03:25:23.753193",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357"
+      ]
+    }
+  },
+  {
+    "id": "fa30d0b6-55c6-45f4-8092-e430859b735f",
+    "fact": "先设计数据结构再实现。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T03:25:23.753199",
+    "last_accessed": "2026-03-18T03:25:23.753200",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357",
+        "28607de9-c45f-47c8-a25f-bfac03a3b873",
+        "5268fd21-09c7-46a6-9ef5-bb8c2dd680e0",
+        "ae9fbf56-d93c-4f9f-8f18-e353d0f70357"
+      ]
+    }
+  },
+  {
+    "id": "40470695-7054-4cac-8516-d9c4356ed261",
+    "fact": "先理解核心思想再搜索细节。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T03:25:23.753211",
+    "last_accessed": "2026-03-18T03:25:23.753212",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f",
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f",
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f",
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f",
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f"
+      ]
+    }
+  },
+  {
+    "id": "93e65513-00fb-4168-9820-e9ed315a783e",
+    "fact": "先理解核心思想再搜索细节。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T03:25:23.753216",
+    "last_accessed": "2026-03-18T03:25:23.753217",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f",
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f",
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f",
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f",
+        "436d6721-38ad-4b03-94eb-2dfb21d6975c",
+        "b82cd1ac-8865-4b6f-a346-3775fadd9b0f"
+      ]
+    }
+  }
+]

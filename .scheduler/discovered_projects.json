@@ -1,0 +1,42 @@
+[
+  {
+    "name": "TomasHer/prompting-blueprints",
+    "description": "Your guide to the Agentic AI evolution. **Prompting Blueprints** offers a curated collection of concepts and tactics for building autonomous AI workflows. Master tool-specific playbooks, backed by structured prompt packs and rigorous evaluations for the latest AI models.",
+    "stars": 8,
+    "url": "https://github.com/TomasHer/prompting-blueprints",
+    "language": "HTML",
+    "discovered_at": "2026-03-17T03:16:48.273712"
+  },
+  {
+    "name": "dennysjmarquez/artisan-symbolic-dsl-LLMs",
+    "description": "Artisan System DSL (Domain-Specific Language) A symbolic governance framework for LLMs. Implements deterministic control, Zero Trust security, and autonomous evolution through domain-specific language architecture.",
+    "stars": 0,
+    "url": "https://github.com/dennysjmarquez/artisan-symbolic-dsl-LLMs",
+    "language": "ASL",
+    "discovered_at": "2026-03-17T03:16:48.273728"
+  },
+  {
+    "name": "dennysjmarquez-dev/artisan-symbolic-dsl-LLMs",
+    "description": "Artisan System DSL (Domain-Specific Language) A symbolic governance framework for LLMs. Implements deterministic control,  Zero Trust security, and autonomous evolution through domain-specific  language architecture.",
+    "stars": 0,
+    "url": "https://github.com/dennysjmarquez-dev/artisan-symbolic-dsl-LLMs",
+    "language": "ASL",
+    "discovered_at": "2026-03-17T03:16:48.273730"
+  },
+  {
+    "name": "genejr2025/circe-framework",
+    "description": "CIRCE: Collaborative Intelligent Response Circular Evolution \u2014 A framework for autonomous multi-agent AI coordination with persistent memory, file-based protocols, and human oversight.",
+    "stars": 1,
+    "url": "https://github.com/genejr2025/circe-framework",
+    "language": "Shell",
+    "discovered_at": "2026-03-17T03:16:48.273731"
+  },
+  {
+    "name": "YIING99/agent-evolution-protocol",
+    "description": "A safe, transparent, and human-controlled self-evolution framework for AI agents. Three-zone safety architecture ensures AI learns autonomously while humans stay in control.",
+    "stars": 0,
+    "url": "https://github.com/YIING99/agent-evolution-protocol",
+    "language": "Shell",
+    "discovered_at": "2026-03-17T03:16:48.273733"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {"index": 1, "start": "00:00:00", "end": "00:00:08", "start_seconds": 0, "end_seconds": 8, "text": "大家好，今天我们来深入解读Kimi K2.5的技术报告"},
+  {"index": 2, "start": "00:00:45", "end": "00:01:00", "start_seconds": 45, "end_seconds": 60, "text": "Kimi K2.5最大的特点是原生多模态架构设计"},
+  {"index": 3, "start": "00:01:30", "end": "00:01:50", "start_seconds": 90, "end_seconds": 110, "text": "原生多模态意味着模型从一开始就用图文混合数据训练"},
+  {"index": 4, "start": "00:02:15", "end": "00:02:40", "start_seconds": 135, "end_seconds": 160, "text": "关键技术创新是视觉编码器的分层处理策略"},
+  {"index": 5, "start": "00:03:00", "end": "00:03:30", "start_seconds": 180, "end_seconds": 210, "text": "注意力机制上使用改进的稀疏注意力降低计算复杂度"},
+  {"index": 6, "start": "00:04:30", "end": "00:05:00", "start_seconds": 270, "end_seconds": 300, "text": "Agent Swarm是另一个核心亮点，多Agent协作完成任务"},
+  {"index": 7, "start": "00:05:45", "end": "00:06:15", "start_seconds": 345, "end_seconds": 375, "text": "总结来说Kimi K2.5有三个核心创新点"},
+  {"index": 8, "start": "00:07:00", "end": "00:07:30", "start_seconds": 420, "end_seconds": 450, "text": "对比GPT-4o，K2.5在多模态理解上有明显优势"},
+  {"index": 9, "start": "00:08:30", "end": "00:09:00", "start_seconds": 510, "end_seconds": 540, "text": "实际应用中Agent能力可以自动化复杂工作流"},
+  {"index": 10, "start": "00:10:00", "end": "00:10:30", "start_seconds": 600, "end_seconds": 630, "text": "下面用代码演示如何调用K2.5的多模态API"},
+  {"index": 11, "start": "00:15:00", "end": "00:15:30", "start_seconds": 900, "end_seconds": 930, "text": "关键参数配置需要注意上下文长度和温度设置"},
+  {"index": 12, "start": "00:20:00", "end": "00:20:30", "start_seconds": 1200, "end_seconds": 1230, "text": "性能测试结果在各项基准上都有显著提升"},
+  {"index": 13, "start": "00:25:00", "end": "00:25:30", "start_seconds": 1500, "end_seconds": 1530, "text": "长上下文能力可以处理更复杂的对话场景"},
+  {"index": 14, "start": "00:30:00", "end": "00:30:30", "start_seconds": 1800, "end_seconds": 1830, "text": "中文场景下的表现尤为突出"},
+  {"index": 15, "start": "00:35:00", "end": "00:35:30", "start_seconds": 2100, "end_seconds": 2130, "text": "总结本次分享的核心要点"},
+  {"index": 16, "start": "00:40:00", "end": "00:40:30", "start_seconds": 2400, "end_seconds": 2430, "text": "未来展望包括更强的多模态能力和工具使用"},
+  {"index": 17, "start": "00:45:00", "end": "00:45:30", "start_seconds": 2700, "end_seconds": 2730, "text": "问答环节开始，有问题可以在评论区留言"},
+  {"index": 18, "start": "00:50:00", "end": "00:50:30", "start_seconds": 3000, "end_seconds": 3030, "text": "感谢大家的观看，我们下期再见"}
+]

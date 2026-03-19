@@ -1,0 +1,21 @@
+rules:
+- id: python-sql-injection-string-format
+  message: SQL 字符串格式化/拼接，存在 SQL 注入风险
+  pattern: (?:cursor|db|conn)\.(?:execute|executemany)\s*\(\s*["\'].*(?:%s|%d|\{.*\}|\+.*\+|\.format\()
+  severity: critical
+- id: python-command-injection-os-system
+  message: os.system/popen 使用动态命令，存在命令注入
+  pattern: os\.(?:system|popen)\s*\([^)]*(?:\+|\%|\.format\(|f["\'])
+  severity: critical
+- id: python-command-injection-subprocess
+  message: subprocess 使用 shell=True，存在命令注入风险
+  pattern: subprocess\.(?:call|run|Popen)\s*\([^)]*shell\s*=\s*True
+  severity: critical
+- id: python-ssti-jinja2
+  message: Jinja2 模板渲染用户输入，存在 SSTI 注入
+  pattern: (?:jinja2\.)?(?:Template|Environment)\s*\([^)]*\)\.render\s*\([^)]*(?:\+|\%|\.format\(|f["\'])
+  severity: critical
+- id: python-django-raw-sql
+  message: Django raw() 使用字符串格式化，存在 SQL 注入
+  pattern: \.raw\s*\(\s*["\'].*(?:%s|%d|\{.*\}|\.format\()
+  severity: critical

@@ -1,0 +1,9 @@
+rules:
+- id: python-deserialization-shelve
+  message: shelve 模块基于 pickle，存在反序列化风险
+  pattern: shelve\.(?:open|DbfilenameShelf)
+  severity: high
+- id: python-compile-code
+  message: 动态编译执行代码，存在代码注入风险
+  pattern: compile\s*\([^)]*\).*exec|exec\s*\(\s*compile
+  severity: critical

@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+"""
+Agent Toolkit - AI助手工具集
+
+整合ReAct Agent、Memory Context、Task Decomposition三大技能
+提供统一入口
+
+用法:
+    agent-toolkit react "任务描述"          # ReAct模式
+    agent-toolkit memory add "内容"         # 添加记忆
+    agent-toolkit memory recall "查询"      # 检索记忆
+    agent-toolkit plan "复杂任务"           # 任务分解
+    agent-toolkit plan list                 # 列出计划
+"""
+
+import sys
+import subprocess
+from pathlib import Path
+
+TOOLS_DIR = Path("/root/.openclaw/workspace/.tools")
+
+
+def run_react(task: str, tools: str = None):
+    """运行ReAct Agent"""
+    cmd = ["python3", str(TOOLS_DIR / "react_agent_skill.py"), task]
+    if tools:
+        cmd.extend(["--tools", tools])
+    subprocess.run(cmd)
+
+
+def run_memory_command(command: str, args: list):
+    """运行Memory Context命令"""
+    cmd = ["python3", str(TOOLS_DIR / "memory_context_skill.py"), command] + args
+    subprocess.run(cmd)
+
+
+def run_plan_command(command: str, args: list):
+    """运行Task Decomposition命令"""
+    cmd = ["python3", str(TOOLS_DIR / "task_decomp_skill.py"), command] + args
+    subprocess.run(cmd)
+
+
+def print_help():
+    """打印帮助"""
+    print("""
+🧰 Agent Toolkit - AI助手工具集
+
+用法:
+    agent-toolkit react "任务描述" [--tools tool1,tool2]
+        使用ReAct Agent执行多步骤任务
+
+    agent-toolkit memory add "内容" [--source source] [--importance N]
+        添加信息到上下文记忆
+
+    agent-toolkit memory recall "查询" [--top-k N]
+        从记忆中检索相关信息
+
+    agent-toolkit memory context "当前查询"
+        获取格式化的Prompt上下文
+
+    agent-toolkit plan "复杂任务描述" [--depth deep]
+        将复杂任务分解为可执行计划
+
+    agent-toolkit plan list [--status STATUS]
+        列出所有执行计划
+
+    agent-toolkit plan update PLAN_ID TASK_ID STATUS
+        更新任务状态
+
+    agent-toolkit plan next PLAN_ID
+        获取接下来要执行的任务
+
+示例:
+    agent-toolkit react "分析当前目录的代码结构" --tools execute,read_file
+    agent-toolkit memory add "用户偏好使用Python" --importance 8
+    agent-toolkit plan "实现一个web爬虫" --depth deep
+    """)
+
+
+def main():
+    if len(sys.argv) < 2:
+        print_help()
+        return
+    
+    module = sys.argv[1]
+    
+    if module == "react":
+        if len(sys.argv) < 3:
+            print("Usage: agent-toolkit react \"任务描述\"")
+            return
+        task = sys.argv[2]
+        tools = None
+        if "--tools" in sys.argv:
+            idx = sys.argv.index("--tools")
+            tools = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else None
+        run_react(task, tools)
+    
+    elif module == "memory":
+        if len(sys.argv) < 4:
+            print("Usage: agent-toolkit memory [add|recall|context|summarize] ...")
+            return
+        command = sys.argv[2]
+        args = sys.argv[3:]
+        run_memory_command(command, args)
+    
+    elif module == "plan":
+        if len(sys.argv) < 3:
+            print("Usage: agent-toolkit plan [create|list|update|next] ...")
+            return
+        command = sys.argv[2] if sys.argv[2] in ["list", "update", "next"] else "create"
+        if command == "create":
+            args = sys.argv[2:]  # 包含任务描述
+        else:
+            args = sys.argv[3:]
+        run_plan_command(command, args)
+    
+    else:
+        print(f"未知模块: {module}")
+        print_help()
+
+
+if __name__ == "__main__":
+    main()

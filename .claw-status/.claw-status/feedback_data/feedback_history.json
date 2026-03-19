@@ -1,0 +1,20 @@
+[
+  {
+    "query": "我的B站UID是多少？",
+    "memory_content": "用户的B站UID是 12345678",
+    "original_decision": "use",
+    "original_confidence": 0.95,
+    "user_feedback": "confirm",
+    "user_correction": null,
+    "timestamp": "2026-03-19T23:40:44.723723"
+  },
+  {
+    "query": "我的B站UID是多少？",
+    "memory_content": "用户的B站UID是 12345678",
+    "original_decision": "use",
+    "original_confidence": 0.95,
+    "user_feedback": "confirm",
+    "user_correction": null,
+    "timestamp": "2026-03-19T23:40:56.683259"
+  }
+]

@@ -1,0 +1,13 @@
+rules:
+- id: semgrep-dangerous-pickle-load
+  message: Pickle 反序列化可能导致任意代码执行
+  pattern: pickle\\.loads\\(\\[^\s\(\)\[\]\{\}]+\\)
+  severity: critical
+- id: semgrep-sql-injection-fstring
+  message: SQL f-string 拼接可能存在注入漏洞
+  pattern: \\[^\s\(\)\[\]\{\}]+\\.execute\\(f"\\.\\.\\."\\)
+  severity: high
+- id: semgrep-os-system-call
+  message: os.system 执行命令存在注入风险
+  pattern: os\\.system\\(\\[^\s\(\)\[\]\{\}]+\\)
+  severity: critical

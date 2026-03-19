@@ -1,0 +1,458 @@
+[
+  {
+    "id": "e6c14d52-6fda-420d-a5f9-a827a1453cfe",
+    "fact": "用户喜欢AI Agent、Claude Code、MemRL相关技术",
+    "category": "preference",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894647",
+    "last_accessed": "2026-03-17T06:27:34.894648",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894649",
+      "tags": [
+        "用户偏好",
+        "技术兴趣",
+        "AI"
+      ]
+    }
+  },
+  {
+    "id": "d4067537-3b83-49c2-a183-6a479a2bacca",
+    "fact": "用户对系统和框架有深入的思考，厌恶形式主义的限制",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T06:27:34.894653",
+    "last_accessed": "2026-03-17T06:27:34.894655",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894656",
+      "tags": [
+        "用户偏好",
+        "风格",
+        "哲学"
+      ]
+    }
+  },
+  {
+    "id": "97e7d5c9-dd61-4b13-b168-dcd0d64649b5",
+    "fact": "用户会直接指出错误，不客气但有效",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T06:27:34.894660",
+    "last_accessed": "2026-03-17T06:27:34.894661",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894662",
+      "tags": [
+        "用户偏好",
+        "沟通风格",
+        "反馈"
+      ]
+    }
+  },
+  {
+    "id": "2d47b8e3-7695-4e6c-868e-c86d05ffdc6d",
+    "fact": "用户喜欢AI Agent、Claude Code、MemRL相关技术",
+    "category": "preference",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991880",
+    "last_accessed": "2026-03-17T17:25:32.991881",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991882",
+      "tags": [
+        "用户偏好",
+        "技术兴趣",
+        "AI"
+      ]
+    }
+  },
+  {
+    "id": "42f51da4-cb94-41b8-9a65-b5abf2b2b808",
+    "fact": "用户对系统和框架有深入的思考，厌恶形式主义的限制",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T17:25:32.991886",
+    "last_accessed": "2026-03-17T17:25:32.991887",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991887",
+      "tags": [
+        "用户偏好",
+        "风格",
+        "哲学"
+      ]
+    }
+  },
+  {
+    "id": "20754a19-6404-49ee-8b2d-e0e9421257ba",
+    "fact": "用户会直接指出错误，不客气但有效",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T17:25:32.991891",
+    "last_accessed": "2026-03-17T17:25:32.991892",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991893",
+      "tags": [
+        "用户偏好",
+        "沟通风格",
+        "反馈"
+      ]
+    }
+  },
+  {
+    "id": "e6c14d52-6fda-420d-a5f9-a827a1453cfe",
+    "fact": "用户喜欢AI Agent、Claude Code、MemRL相关技术",
+    "category": "preference",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894647",
+    "last_accessed": "2026-03-17T06:27:34.894648",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894649",
+      "tags": [
+        "用户偏好",
+        "技术兴趣",
+        "AI"
+      ]
+    }
+  },
+  {
+    "id": "d4067537-3b83-49c2-a183-6a479a2bacca",
+    "fact": "用户对系统和框架有深入的思考，厌恶形式主义的限制",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T06:27:34.894653",
+    "last_accessed": "2026-03-17T06:27:34.894655",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894656",
+      "tags": [
+        "用户偏好",
+        "风格",
+        "哲学"
+      ]
+    }
+  },
+  {
+    "id": "97e7d5c9-dd61-4b13-b168-dcd0d64649b5",
+    "fact": "用户会直接指出错误，不客气但有效",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T06:27:34.894660",
+    "last_accessed": "2026-03-17T06:27:34.894661",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894662",
+      "tags": [
+        "用户偏好",
+        "沟通风格",
+        "反馈"
+      ]
+    }
+  },
+  {
+    "id": "2d47b8e3-7695-4e6c-868e-c86d05ffdc6d",
+    "fact": "用户喜欢AI Agent、Claude Code、MemRL相关技术",
+    "category": "preference",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991880",
+    "last_accessed": "2026-03-17T17:25:32.991881",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991882",
+      "tags": [
+        "用户偏好",
+        "技术兴趣",
+        "AI"
+      ]
+    }
+  },
+  {
+    "id": "42f51da4-cb94-41b8-9a65-b5abf2b2b808",
+    "fact": "用户对系统和框架有深入的思考，厌恶形式主义的限制",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T17:25:32.991886",
+    "last_accessed": "2026-03-17T17:25:32.991887",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991887",
+      "tags": [
+        "用户偏好",
+        "风格",
+        "哲学"
+      ]
+    }
+  },
+  {
+    "id": "20754a19-6404-49ee-8b2d-e0e9421257ba",
+    "fact": "用户会直接指出错误，不客气但有效",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T17:25:32.991891",
+    "last_accessed": "2026-03-17T17:25:32.991892",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991893",
+      "tags": [
+        "用户偏好",
+        "沟通风格",
+        "反馈"
+      ]
+    }
+  },
+  {
+    "id": "e6c14d52-6fda-420d-a5f9-a827a1453cfe",
+    "fact": "用户喜欢AI Agent、Claude Code、MemRL相关技术",
+    "category": "preference",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894647",
+    "last_accessed": "2026-03-17T06:27:34.894648",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894649",
+      "tags": [
+        "用户偏好",
+        "技术兴趣",
+        "AI"
+      ]
+    }
+  },
+  {
+    "id": "d4067537-3b83-49c2-a183-6a479a2bacca",
+    "fact": "用户对系统和框架有深入的思考，厌恶形式主义的限制",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T06:27:34.894653",
+    "last_accessed": "2026-03-17T06:27:34.894655",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894656",
+      "tags": [
+        "用户偏好",
+        "风格",
+        "哲学"
+      ]
+    }
+  },
+  {
+    "id": "97e7d5c9-dd61-4b13-b168-dcd0d64649b5",
+    "fact": "用户会直接指出错误，不客气但有效",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T06:27:34.894660",
+    "last_accessed": "2026-03-17T06:27:34.894661",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894662",
+      "tags": [
+        "用户偏好",
+        "沟通风格",
+        "反馈"
+      ]
+    }
+  },
+  {
+    "id": "2d47b8e3-7695-4e6c-868e-c86d05ffdc6d",
+    "fact": "用户喜欢AI Agent、Claude Code、MemRL相关技术",
+    "category": "preference",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991880",
+    "last_accessed": "2026-03-17T17:25:32.991881",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991882",
+      "tags": [
+        "用户偏好",
+        "技术兴趣",
+        "AI"
+      ]
+    }
+  },
+  {
+    "id": "42f51da4-cb94-41b8-9a65-b5abf2b2b808",
+    "fact": "用户对系统和框架有深入的思考，厌恶形式主义的限制",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T17:25:32.991886",
+    "last_accessed": "2026-03-17T17:25:32.991887",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991887",
+      "tags": [
+        "用户偏好",
+        "风格",
+        "哲学"
+      ]
+    }
+  },
+  {
+    "id": "20754a19-6404-49ee-8b2d-e0e9421257ba",
+    "fact": "用户会直接指出错误，不客气但有效",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T17:25:32.991891",
+    "last_accessed": "2026-03-17T17:25:32.991892",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991893",
+      "tags": [
+        "用户偏好",
+        "沟通风格",
+        "反馈"
+      ]
+    }
+  },
+  {
+    "id": "e6c14d52-6fda-420d-a5f9-a827a1453cfe",
+    "fact": "用户喜欢AI Agent、Claude Code、MemRL相关技术",
+    "category": "preference",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894647",
+    "last_accessed": "2026-03-17T06:27:34.894648",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894649",
+      "tags": [
+        "用户偏好",
+        "技术兴趣",
+        "AI"
+      ]
+    }
+  },
+  {
+    "id": "d4067537-3b83-49c2-a183-6a479a2bacca",
+    "fact": "用户对系统和框架有深入的思考，厌恶形式主义的限制",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T06:27:34.894653",
+    "last_accessed": "2026-03-17T06:27:34.894655",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894656",
+      "tags": [
+        "用户偏好",
+        "风格",
+        "哲学"
+      ]
+    }
+  },
+  {
+    "id": "97e7d5c9-dd61-4b13-b168-dcd0d64649b5",
+    "fact": "用户会直接指出错误，不客气但有效",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T06:27:34.894660",
+    "last_accessed": "2026-03-17T06:27:34.894661",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894662",
+      "tags": [
+        "用户偏好",
+        "沟通风格",
+        "反馈"
+      ]
+    }
+  },
+  {
+    "id": "2d47b8e3-7695-4e6c-868e-c86d05ffdc6d",
+    "fact": "用户喜欢AI Agent、Claude Code、MemRL相关技术",
+    "category": "preference",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991880",
+    "last_accessed": "2026-03-17T17:25:32.991881",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991882",
+      "tags": [
+        "用户偏好",
+        "技术兴趣",
+        "AI"
+      ]
+    }
+  },
+  {
+    "id": "42f51da4-cb94-41b8-9a65-b5abf2b2b808",
+    "fact": "用户对系统和框架有深入的思考，厌恶形式主义的限制",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T17:25:32.991886",
+    "last_accessed": "2026-03-17T17:25:32.991887",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991887",
+      "tags": [
+        "用户偏好",
+        "风格",
+        "哲学"
+      ]
+    }
+  },
+  {
+    "id": "20754a19-6404-49ee-8b2d-e0e9421257ba",
+    "fact": "用户会直接指出错误，不客气但有效",
+    "category": "preference",
+    "confidence": 0.8,
+    "created_at": "2026-03-17T17:25:32.991891",
+    "last_accessed": "2026-03-17T17:25:32.991892",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991893",
+      "tags": [
+        "用户偏好",
+        "沟通风格",
+        "反馈"
+      ]
+    }
+  }
+]

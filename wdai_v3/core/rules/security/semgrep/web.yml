@@ -1,0 +1,5 @@
+rules:
+- id: python-jwt-weak-algorithm
+  message: JWT 使用 'none' 算法，存在严重的认证绕过风险
+  pattern: jwt\.encode\s*\([^)]*algorithm\s*=\s*["\']none["\']
+  severity: critical

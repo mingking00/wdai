@@ -1,0 +1,266 @@
+{
+  "simple_avg": {
+    "precision": 0.5142857142857143,
+    "recall": 0.6785714285714286,
+    "f1": 0.5674603174603174
+  },
+  "enhanced_avg": {
+    "precision": 0.6071428571428571,
+    "recall": 0.5238095238095238,
+    "f1": 0.553061224489796
+  },
+  "detailed_results": [
+    {
+      "test": "Bug修复-认证失败",
+      "version": "simple",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "selected": [
+        "src/api/login.py"
+      ],
+      "expected": [
+        "src/auth/service.py",
+        "src/auth/models.py",
+        "logs/error.log",
+        "tests/test_auth.py"
+      ]
+    },
+    {
+      "test": "Bug修复-认证失败",
+      "version": "enhanced",
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1": 0.5714285714285715,
+      "selected": [
+        "logs/error.log",
+        "src/auth/models.py",
+        "docs/auth.md"
+      ],
+      "expected": [
+        "src/auth/service.py",
+        "src/auth/models.py",
+        "logs/error.log",
+        "tests/test_auth.py"
+      ]
+    },
+    {
+      "test": "功能实现-添加用户注册",
+      "version": "simple",
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.3333333333333333,
+      "selected": [
+        "src/models/user.py",
+        "tests/test_user.py"
+      ],
+      "expected": [
+        "src/api/routes.py",
+        "src/models/user.py",
+        "src/services/auth.py",
+        "docs/api.md"
+      ]
+    },
+    {
+      "test": "功能实现-添加用户注册",
+      "version": "enhanced",
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1": 0.5714285714285715,
+      "selected": [
+        "src/models/user.py",
+        "src/db/repository.py",
+        "docs/api.md"
+      ],
+      "expected": [
+        "src/api/routes.py",
+        "src/models/user.py",
+        "src/services/auth.py",
+        "docs/api.md"
+      ]
+    },
+    {
+      "test": "性能优化-数据库查询",
+      "version": "simple",
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "selected": [
+        "src/db/query.py",
+        "src/models/user.py",
+        "src/services/search.py",
+        "config/database.yml"
+      ],
+      "expected": [
+        "src/db/query.py",
+        "src/db/connection.py",
+        "logs/performance.log",
+        "config/database.yml"
+      ]
+    },
+    {
+      "test": "性能优化-数据库查询",
+      "version": "enhanced",
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "selected": [
+        "src/models/user.py",
+        "src/services/search.py",
+        "logs/performance.log",
+        "config/database.yml"
+      ],
+      "expected": [
+        "src/db/query.py",
+        "src/db/connection.py",
+        "logs/performance.log",
+        "config/database.yml"
+      ]
+    },
+    {
+      "test": "代码审查-新功能PR",
+      "version": "simple",
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.888888888888889,
+      "selected": [
+        "src/payment/service.py",
+        "src/payment/models.py",
+        "src/api/payment.py",
+        "tests/test_payment.py",
+        "docs/payment.md"
+      ],
+      "expected": [
+        "src/payment/service.py",
+        "src/payment/models.py",
+        "src/api/payment.py",
+        "tests/test_payment.py"
+      ]
+    },
+    {
+      "test": "代码审查-新功能PR",
+      "version": "enhanced",
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1": 0.5714285714285715,
+      "selected": [
+        "src/payment/service.py",
+        "src/payment/models.py",
+        "docs/payment.md"
+      ],
+      "expected": [
+        "src/payment/service.py",
+        "src/payment/models.py",
+        "src/api/payment.py",
+        "tests/test_payment.py"
+      ]
+    },
+    {
+      "test": "文档编写-API文档",
+      "version": "simple",
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.7499999999999999,
+      "selected": [
+        "src/api/users.py",
+        "src/api/auth.py",
+        "docs/api_template.md",
+        "tests/test_api.py",
+        "src/models/user.py"
+      ],
+      "expected": [
+        "src/api/users.py",
+        "docs/api_template.md",
+        "src/api/auth.py"
+      ]
+    },
+    {
+      "test": "文档编写-API文档",
+      "version": "enhanced",
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1": 0.4,
+      "selected": [
+        "src/models/user.py",
+        "docs/api_template.md"
+      ],
+      "expected": [
+        "src/api/users.py",
+        "docs/api_template.md",
+        "src/api/auth.py"
+      ]
+    },
+    {
+      "test": "文件名模糊匹配-用户相关",
+      "version": "simple",
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.7499999999999999,
+      "selected": [
+        "src/user/profile.py",
+        "src/user/settings.py",
+        "tests/test_profile.py",
+        "docs/user_guide.md",
+        "frontend/profile.js"
+      ],
+      "expected": [
+        "src/user/profile.py",
+        "tests/test_profile.py",
+        "frontend/profile.js"
+      ]
+    },
+    {
+      "test": "文件名模糊匹配-用户相关",
+      "version": "enhanced",
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1": 0.4,
+      "selected": [
+        "frontend/profile.js",
+        "docs/user_guide.md"
+      ],
+      "expected": [
+        "src/user/profile.py",
+        "tests/test_profile.py",
+        "frontend/profile.js"
+      ]
+    },
+    {
+      "test": "语义理解-错误处理",
+      "version": "simple",
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.7499999999999999,
+      "selected": [
+        "src/payment/service.py",
+        "src/payment/exceptions.py",
+        "logs/payment.log",
+        "tests/test_payment.py",
+        "docs/error_codes.md"
+      ],
+      "expected": [
+        "src/payment/service.py",
+        "src/payment/exceptions.py",
+        "logs/payment.log"
+      ]
+    },
+    {
+      "test": "语义理解-错误处理",
+      "version": "enhanced",
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571428571428571,
+      "selected": [
+        "logs/payment.log",
+        "src/payment/service.py",
+        "src/payment/exceptions.py",
+        "docs/error_codes.md"
+      ],
+      "expected": [
+        "src/payment/service.py",
+        "src/payment/exceptions.py",
+        "logs/payment.log"
+      ]
+    }
+  ]
+}

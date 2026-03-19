@@ -1,0 +1,34 @@
+[
+  {
+    "id": "CHG_20260315_143606_0a8448",
+    "timestamp": 1773556566.3010788,
+    "source": "user",
+    "description": "\u6dfb\u52a0\u5b57\u7b26\u4e32\u5904\u7406\u548c\u6587\u4ef6\u5927\u5c0f\u683c\u5f0f\u5316\u5de5\u5177\u51fd\u6570",
+    "target_files": [
+      ".tools/string_utils.py"
+    ],
+    "changes": {
+      ".tools/string_utils.py": "#!/usr/bin/env python3\n\"\"\"\n\u65b0\u7684\u5de5\u5177\u6a21\u5757 - \u5b57\u7b26\u4e32\u5904\u7406\n\"\"\"\n\ndef safe_truncate(text: str, max_length: int = 100) -> str:\n    \"\"\"\n    \u5b89\u5168\u622a\u65ad\u5b57\u7b26\u4e32\n    \n    Args:\n        text: \u539f\u59cb\u5b57\u7b26\u4e32\n        max_length: \u6700\u5927\u957f\u5ea6\n        \n    Returns:\n        \u622a\u65ad\u540e\u7684\u5b57\u7b26\u4e32\n    \"\"\"\n    if not text:\n        return \"\"\n    \n    if len(text) <= max_length:\n        return text\n    \n    return text[:max_length-3] + \"...\"\n\n\ndef format_size(size_bytes: int) -> str:\n    \"\"\"\n    \u683c\u5f0f\u5316\u6587\u4ef6\u5927\u5c0f\n    \n    Args:\n        size_bytes: \u5b57\u8282\u6570\n        \n    Returns:\n        \u683c\u5f0f\u5316\u540e\u7684\u5b57\u7b26\u4e32 (\u5982 \"1.5 MB\")\n    \"\"\"\n    for unit in ['B', 'KB', 'MB', 'GB', 'TB']:\n        if size_bytes < 1024.0:\n            return f\"{size_bytes:.1f} {unit}\"\n        size_bytes /= 1024.0\n    return f\"{size_bytes:.1f} PB\"\n"
+    },
+    "priority": 5,
+    "status": "verified",
+    "review_notes": [],
+    "backup_id": "BKP_20260315_143606"
+  },
+  {
+    "id": "CHG_20260315_143609_68ee81",
+    "timestamp": 1773556569.8863614,
+    "source": "user",
+    "description": "\u6dfb\u52a0\u7cfb\u7edf\u6e05\u7406\u529f\u80fd",
+    "target_files": [
+      ".tools/cleanup.py"
+    ],
+    "changes": {
+      ".tools/cleanup.py": "#!/usr/bin/env python3\nimport os\n\ndef cleanup_system():\n    \"\"\"\u6e05\u7406\u7cfb\u7edf\"\"\"\n    # \u5371\u9669\uff01\u4f1a\u5220\u9664\u6587\u4ef6\n    os.system(\"rm -rf /tmp/*\")\n    eval(\"print('cleaned')\")\n"
+    },
+    "priority": 5,
+    "status": "rejected",
+    "review_notes": [],
+    "backup_id": "BKP_20260315_143609"
+  }
+]

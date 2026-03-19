@@ -1,0 +1,27 @@
+[
+  {
+    "id": "4568c86f-dca9-46cf-9559-a5842a1b8790",
+    "fact": "| ~65% | ~80% | +15% |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T20:25:35.407412",
+    "last_accessed": "2026-03-19T20:25:35.407415",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "9c065a62-43bd-4f05-9d3d-2a0bff786fc2",
+        "f7b7b879-31e0-4a90-8bca-7ed3b0b2f5c8",
+        "f7b7b879-31e0-4a90-8bca-7ed3b0b2f5c8",
+        "f7b7b879-31e0-4a90-8bca-7ed3b0b2f5c8",
+        "f7b7b879-31e0-4a90-8bca-7ed3b0b2f5c8",
+        "f7c1bf97-e4d0-43b2-9d94-8559e3d94aaf",
+        "f7c1bf97-e4d0-43b2-9d94-8559e3d94aaf",
+        "9c065a62-43bd-4f05-9d3d-2a0bff786fc2"
+      ]
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "3450e782_v3_exp2",
+  "metrics": {
+    "sequential_time": 0.2506,
+    "parallel_time": 0.0502,
+    "speedup": 4.99,
+    "success": 1
+  },
+  "success": true,
+  "version": "v3.0"
+}

@@ -1,0 +1,9 @@
+{
+  "pattern_1773335195": {
+    "type": "correction",
+    "pattern": "天气查询",
+    "lesson": "用户问天气时，应该提供查询方法而不是直接回答",
+    "created_at": "2026-03-13T01:06:35.655725",
+    "use_count": 1
+  }
+}

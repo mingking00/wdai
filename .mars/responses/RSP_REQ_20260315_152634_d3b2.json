@@ -1,0 +1,183 @@
+{
+  "id": "REQ_20260315_152634_d3b2",
+  "timestamp": "2026-03-15T15:26:37.054019",
+  "result": {
+    "success": true,
+    "query": "GitHub multi-agent systems projects frameworks 2024 2025",
+    "result": {
+      "query": "GitHub multi-agent systems projects frameworks 2024 2025",
+      "answer": "## Research Answer\n\nBased on parallel investigations from 4 angles:\n\nResearch findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. \n\nResearch findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from tec...\n\n### Key Insights\n1. Multiple sources confirm the main findings\n2. Different angles provide comprehensive coverage\n3. Critical evaluation ensures quality\n\n### Sources\n[1] Overview Source 1 - https://example.com/overview/1\n[2] Overview Source 2 - https://example.com/overview/2\n[3] Technical Source 1 - https://example.com/technical/1\n[4] Technical Source 2 - https://example.com/technical/2\n[5] Comparison Source 1 - https://example.com/comparison/1\n",
+      "metrics": {
+        "total_time": 1.6,
+        "queries_generated": 4,
+        "parallel_agents_used": 0,
+        "search_results": 4,
+        "conflicts_detected": 3,
+        "conflicts_resolved": 0,
+        "critic_votes": 3,
+        "is_sufficient": true
+      },
+      "state": {
+        "original_query": "GitHub multi-agent systems projects frameworks 2024 2025",
+        "generated_queries": [
+          {
+            "id": "Q1",
+            "query": "GitHub multi-agent systems projects frameworks 2024 2025 overview architecture",
+            "angle": "overview",
+            "priority": 5
+          },
+          {
+            "id": "Q2",
+            "query": "GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details",
+            "angle": "technical",
+            "priority": 5
+          },
+          {
+            "id": "Q3",
+            "query": "GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison",
+            "angle": "comparison",
+            "priority": 5
+          },
+          {
+            "id": "Q4",
+            "query": "GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies",
+            "angle": "examples",
+            "priority": 5
+          }
+        ],
+        "search_results": [
+          {
+            "query_id": "Q1",
+            "agent_id": "Investigator-1",
+            "content": "Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. ",
+            "sources": [
+              {
+                "url": "https://example.com/overview/1",
+                "title": "Overview Source 1",
+                "relevance": 0.9
+              },
+              {
+                "url": "https://example.com/overview/2",
+                "title": "Overview Source 2",
+                "relevance": 0.85
+              }
+            ],
+            "quality_score": 0.86,
+            "timestamp": 1773559596.252282
+          },
+          {
+            "query_id": "Q2",
+            "agent_id": "Investigator-2",
+            "content": "Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. ",
+            "sources": [
+              {
+                "url": "https://example.com/technical/1",
+                "title": "Technical Source 1",
+                "relevance": 0.9
+              },
+              {
+                "url": "https://example.com/technical/2",
+                "title": "Technical Source 2",
+                "relevance": 0.85
+              }
+            ],
+            "quality_score": 0.89,
+            "timestamp": 1773559596.2522972
+          },
+          {
+            "query_id": "Q3",
+            "agent_id": "Investigator-3",
+            "content": "Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 vs alternatives comparison' from comparison angle. ",
+            "sources": [
+              {
+                "url": "https://example.com/comparison/1",
+                "title": "Comparison Source 1",
+                "relevance": 0.9
+              },
+              {
+                "url": "https://example.com/comparison/2",
+                "title": "Comparison Source 2",
+                "relevance": 0.85
+              }
+            ],
+            "quality_score": 0.9099999999999999,
+            "timestamp": 1773559596.2523031
+          },
+          {
+            "query_id": "Q4",
+            "agent_id": "Investigator-4",
+            "content": "Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 real world examples case studies' from examples angle. ",
+            "sources": [
+              {
+                "url": "https://example.com/examples/1",
+                "title": "Examples Source 1",
+                "relevance": 0.9
+              },
+              {
+                "url": "https://example.com/examples/2",
+                "title": "Examples Source 2",
+                "relevance": 0.85
+              }
+            ],
+            "quality_score": 0.9299999999999999,
+            "timestamp": 1773559596.2523227
+          }
+        ],
+        "detected_conflicts": [
+          {
+            "type": "content_conflict",
+            "between": [
+              "Q1",
+              "Q2"
+            ],
+            "description": "Information overlap or contradiction detected"
+          },
+          {
+            "type": "content_conflict",
+            "between": [
+              "Q1",
+              "Q3"
+            ],
+            "description": "Information overlap or contradiction detected"
+          },
+          {
+            "type": "content_conflict",
+            "between": [
+              "Q1",
+              "Q4"
+            ],
+            "description": "Information overlap or contradiction detected"
+          }
+        ],
+        "resolved_conflicts": [],
+        "critic_results": [
+          {
+            "agent_id": "Critic-5",
+            "dimension": "comprehensive coverage",
+            "is_sufficient": true,
+            "score": 0.8
+          },
+          {
+            "agent_id": "Critic-6",
+            "dimension": "factual accuracy",
+            "is_sufficient": true,
+            "score": 0.8500000000000001
+          },
+          {
+            "agent_id": "Critic-7",
+            "dimension": "source credibility",
+            "is_sufficient": true,
+            "score": 0.9
+          }
+        ],
+        "is_sufficient": true,
+        "final_answer": "## Research Answer\n\nBased on parallel investigations from 4 angles:\n\nResearch findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 overview architecture' from overview angle. \n\nResearch findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from technical angle. Research findings for 'GitHub multi-agent systems projects frameworks 2024 2025 technical implementation details' from tec...\n\n### Key Insights\n1. Multiple sources confirm the main findings\n2. Different angles provide comprehensive coverage\n3. Critical evaluation ensures quality\n\n### Sources\n[1] Overview Source 1 - https://example.com/overview/1\n[2] Overview Source 2 - https://example.com/overview/2\n[3] Technical Source 1 - https://example.com/technical/1\n[4] Technical Source 2 - https://example.com/technical/2\n[5] Comparison Source 1 - https://example.com/comparison/1\n",
+        "merged_sources": [],
+        "start_time": 1773559595.451039,
+        "parallel_agents_used": 0,
+        "total_tokens": 0
+      }
+    },
+    "timestamp": "2026-03-15T15:26:37.053774"
+  }
+}

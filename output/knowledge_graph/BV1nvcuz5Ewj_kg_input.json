@@ -1,0 +1,121 @@
+[
+  {
+    "id": "BV1nvcuz5Ewj_moment_01",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:03:00",
+      "timestamp_seconds": 180
+    },
+    "content": {
+      "text": "注意力机制上使用改进的稀疏注意力降低计算复杂度",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_01_000300.jpg",
+      "keywords": [
+        "注意",
+        "机制"
+      ],
+      "description": "视频关键时刻，时间戳00:03:00"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T23:39:20.555173",
+      "importance": 4,
+      "extraction_method": "subtitle_analysis"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_02",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:05:45",
+      "timestamp_seconds": 345
+    },
+    "content": {
+      "text": "总结来说Kimi K2.5有三个核心创新点",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_02_000545.jpg",
+      "keywords": [
+        "核心",
+        "总结"
+      ],
+      "description": "视频关键时刻，时间戳00:05:45"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T23:39:20.555228",
+      "importance": 4,
+      "extraction_method": "subtitle_analysis"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_03",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:07:00",
+      "timestamp_seconds": 420
+    },
+    "content": {
+      "text": "对比GPT-4o，K2.5在多模态理解上有明显优势",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_03_000700.jpg",
+      "keywords": [
+        "对比",
+        "优势"
+      ],
+      "description": "视频关键时刻，时间戳00:07:00"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T23:39:20.555260",
+      "importance": 4,
+      "extraction_method": "subtitle_analysis"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_04",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:10:00",
+      "timestamp_seconds": 600
+    },
+    "content": {
+      "text": "下面用代码演示如何调用K2.5的多模态API",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_04_001000.jpg",
+      "keywords": [
+        "演示"
+      ],
+      "description": "视频关键时刻，时间戳00:10:00"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T23:39:20.555285",
+      "importance": 4,
+      "extraction_method": "subtitle_analysis"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_05",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:35:00",
+      "timestamp_seconds": 2100
+    },
+    "content": {
+      "text": "总结本次分享的核心要点",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_05_003500.jpg",
+      "keywords": [
+        "核心",
+        "总结"
+      ],
+      "description": "视频关键时刻，时间戳00:35:00"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T23:39:20.555311",
+      "importance": 4,
+      "extraction_method": "subtitle_analysis"
+    }
+  }
+]

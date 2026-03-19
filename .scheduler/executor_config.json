@@ -1,0 +1,16 @@
+{
+  "last_execution": {
+    "external_loop": 1773859231.5309067,
+    "internal_loop": 1773867609.710268,
+    "paper_study": 1773859316.8832653,
+    "memory_maintenance": 0
+  },
+  "time_allocation": {
+    "external_loop_interval": 3600,
+    "internal_loop_interval": 1800,
+    "paper_study_interval": 86400,
+    "memory_maintenance_interval": 7200,
+    "max_continuous_runtime": 300,
+    "cooldown_period": 60
+  }
+}

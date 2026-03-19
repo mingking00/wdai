@@ -1,0 +1,113 @@
+{
+  "video_id": "BV1e4cyziEqH",
+  "title": "告别99%的Token冗余：LeCun团队发布C-JEPA，通过对象级干预重塑世界模型算力极限",
+  "author": "Agent创世纪",
+  "url": "https://www.bilibili.com/video/BV1e4cyziEqH",
+  "duration": 362,
+  "extracted_at": "2026-03-13T03:12:16.627428",
+  "chapters": [
+    {
+      "index": 1,
+      "start": "00:00",
+      "end": "01:30",
+      "title": "章节 1: 背景, 问题",
+      "topics": [
+        "背景",
+        "问题"
+      ]
+    },
+    {
+      "index": 2,
+      "start": "01:30",
+      "end": "03:00",
+      "title": "章节 2: C-JEPA, 方法",
+      "topics": [
+        "C-JEPA",
+        "方法",
+        "对象级干预"
+      ]
+    },
+    {
+      "index": 3,
+      "start": "03:00",
+      "end": "04:30",
+      "title": "章节 3: 算力优化, 99%冗余",
+      "topics": [
+        "算力优化",
+        "99%冗余",
+        "效率"
+      ]
+    },
+    {
+      "index": 4,
+      "start": "04:30",
+      "end": "06:00",
+      "title": "章节 4: 实验结果, 展望",
+      "topics": [
+        "实验结果",
+        "展望"
+      ]
+    }
+  ],
+  "key_concepts": [
+    "选择性处理",
+    "算力优化",
+    "自监督学习",
+    "对象级干预",
+    "世界模型",
+    "JEPA",
+    "Meta AI",
+    "注意力机制",
+    "Yann LeCun",
+    "计算效率",
+    "C-JEPA",
+    "LeCun",
+    "Token冗余",
+    "World Models",
+    "Computational Efficiency"
+  ],
+  "transcript": [
+    {
+      "start": "00:00",
+      "end": "01:30",
+      "text": "介绍背景和动机。当前世界模型计算成本高昂，需要大量Token。",
+      "is_key": true,
+      "topics": [
+        "背景",
+        "问题"
+      ]
+    },
+    {
+      "start": "01:30",
+      "end": "03:00",
+      "text": "LeCun团队提出的C-JEPA方法。通过对象级干预，只处理变化的部分。",
+      "is_key": true,
+      "topics": [
+        "C-JEPA",
+        "方法",
+        "对象级干预"
+      ]
+    },
+    {
+      "start": "03:00",
+      "end": "04:30",
+      "text": "技术细节：算力优化达到99%冗余消除。对比传统方法的效率提升。",
+      "is_key": true,
+      "topics": [
+        "算力优化",
+        "99%冗余",
+        "效率"
+      ]
+    },
+    {
+      "start": "04:30",
+      "end": "06:00",
+      "text": "实验结果和未来展望。C-JEPA在多个基准测试中的表现。",
+      "is_key": true,
+      "topics": [
+        "实验结果",
+        "展望"
+      ]
+    }
+  ]
+}

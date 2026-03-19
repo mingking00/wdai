@@ -1,0 +1,9 @@
+{
+  "task_id": "2d776013",
+  "description": "实现一个任务调度器",
+  "design": "# Design: 实现一个任务调度器\n\n## 核心问题\n你真正想解决什么核心问题？\n→ 需要构建一个实现一个任务调度器的系统\n\n## 边界定义\n这个功能的边界在哪里？\n→ 复杂度等级: 7/10\n→ 质量要求: 高\n\n## 验证标准\n如何验证它成功了？\n→ 通过所有测试用例\n→ 代码审查通过\n\n## 创建时间\n2026-03-17T11:11:57.936108\n",
+  "plan": "# Plan: 实现一个任务调度器\n\n## Worktree\n/root/.openclaw/workspace/.superpowers-framework/worktrees/task_2d776013\n\n## 子任务 (3个)\n\n1. 创建基础结构 (2min)\n   文件: main.py\n\n2. 实现核心功能 (3min)\n   文件: core.py\n\n3. 编写测试 (2min)\n   文件: test_core.py\n\n## 验证步骤\n- [ ] 所有测试通过\n- [ ] 代码审查通过\n\n## 创建时间\n2026-03-17T11:11:57.936298\n",
+  "test_count": 2,
+  "review_passed": true,
+  "completed_at": "2026-03-17T11:11:57.936616"
+}

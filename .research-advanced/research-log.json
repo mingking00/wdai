@@ -1,0 +1,14 @@
+[
+  {
+    "id": "RES-1773079542",
+    "query": "AI agent information gathering",
+    "timestamp": "2026-03-10T02:05:42+08:00",
+    "status": "completed"
+  },
+  {
+    "id": "RES-1773290044",
+    "query": "LLM agents",
+    "timestamp": "2026-03-12T12:34:04+08:00",
+    "status": "completed"
+  }
+]

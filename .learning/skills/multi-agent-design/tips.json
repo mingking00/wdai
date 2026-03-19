@@ -1,0 +1,35 @@
+[
+  {
+    "id": "tip-20260310-055845",
+    "name": "Tip-055845",
+    "context": "解决多智能体冲突问题",
+    "pattern": "def resolve_conflict(agents): →     for agent in agents: →     return max(votes, key=votes.get)",
+    "code_example": "\ndef resolve_conflict(agents):\n    # 技巧: 投票机制\n    votes = defaultdict(int)\n    for agent in agents:\n        votes[agent.preference] += agent.weight\n    return max(votes, key=votes.get)\n        ",
+    "efficiency_gain": "节省70%代码量",
+    "verified_count": 4,
+    "success_rate": 1.0,
+    "created_at": "2026-03-10T05:58:45.275572"
+  },
+  {
+    "id": "tip-20260310-055845",
+    "name": "Async+Batch Pattern",
+    "context": "优化Agent响应时间",
+    "pattern": "async def batch_process(tasks): →     results = await asyncio.gather(*[process(b) for b in batches]) →     return flatten(results)",
+    "code_example": "\nasync def batch_process(tasks):\n    # 技巧: 批处理\n    batches = chunk(tasks, size=10)\n    results = await asyncio.gather(*[process(b) for b in batches])\n    return flatten(results)\n        ",
+    "efficiency_gain": "节省70%代码量",
+    "verified_count": 1,
+    "success_rate": 1.0,
+    "created_at": "2026-03-10T05:58:45.275723"
+  },
+  {
+    "id": "tip-20260310-055845",
+    "name": "Tip-055845",
+    "context": "防止级联失败",
+    "pattern": "def call_external_service(): →     return service.call()",
+    "code_example": "\n@circuit_breaker(threshold=5, timeout=60)\ndef call_external_service():\n    # 技巧: 熔断器模式\n    return service.call()\n        ",
+    "efficiency_gain": "节省70%代码量",
+    "verified_count": 1,
+    "success_rate": 1.0,
+    "created_at": "2026-03-10T05:58:45.275899"
+  }
+]

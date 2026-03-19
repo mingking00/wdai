@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赘婿 - 双语阅读器</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: #0a0a0f; color: #fff; line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        h1 { 
+            text-align: center; 
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            font-size: 32px; margin-bottom: 10px;
+        }
+        .subtitle { text-align: center; color: #a0a0b0; margin-bottom: 30px; }
+        
+        .tabs { 
+            display: flex; justify-content: center; gap: 10px; 
+            margin-bottom: 30px; background: #12121a; padding: 10px; border-radius: 10px;
+        }
+        .tab { 
+            padding: 10px 20px; border-radius: 8px; cursor: pointer;
+            background: transparent; color: #606070; border: none; font-size: 14px;
+        }
+        .tab.active { background: rgba(255,255,255,0.1); color: #fff; }
+        
+        .chapter { margin-bottom: 40px; }
+        .chapter-title { 
+            font-size: 24px; color: #ff6b6b; margin-bottom: 20px;
+            padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .paragraph { 
+            background: rgba(255,255,255,0.03); 
+            padding: 20px; margin-bottom: 20px; border-radius: 12px;
+        }
+        .zh { font-size: 17px; margin-bottom: 12px; }
+        .en { 
+            font-size: 15px; color: #a0a0b0; 
+            padding-left: 16px; border-left: 3px solid #ff6b6b;
+        }
+        
+        .characters { 
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px; margin: 30px 0;
+        }
+        .char-card { 
+            background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;
+        }
+        .char-name { font-size: 18px; color: #ff6b6b; }
+        .char-en { font-size: 14px; color: #a0a0b0; }
+        .char-role { font-size: 12px; color: #606070; margin-top: 5px; }
+        
+        .notice {
+            background: linear-gradient(135deg, rgba(255,107,107,0.1), rgba(255,142,83,0.1));
+            border: 1px solid #ff6b6b; border-radius: 10px;
+            padding: 20px; text-align: center; margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📖 赘婿</h1>
+        <div class="subtitle">My Heroic Husband - 双语阅读器 (前5章)</div>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="showMode('both')">双语对照</button>
+            <button class="tab" onclick="showMode('zh')">仅中文</button>
+            <button class="tab" onclick="showMode('en')">仅英文</button>
+        </div>
+
+        <h2 style="color: #ff6b6b; margin: 30px 0 20px;">主要人物 Characters</h2>
+        <div class="characters">
+            <div class="char-card">
+                <div class="char-name">宁毅</div>
+                <div class="char-en">Ning Yi</div>
+                <div class="char-role">主角/赘婿 - 现代金融巨子穿越</div>
+            </div>
+            <div class="char-card">
+                <div class="char-name">苏檀儿</div>
+                <div class="char-en">Su Tan'er</div>
+                <div class="char-role">女主角/妻子 - 苏家大小姐</div>
+            </div>
+            <div class="char-card">
+                <div class="char-name">小婵</div>
+                <div class="char-en">Xiao Chan</div>
+                <div class="char-role">侍女 - 贴身丫鬟</div>
+            </div>
+            <div class="char-card">
+                <div class="char-name">唐明远</div>
+                <div class="char-en">Tang Mingyuan</div>
+                <div class="char-role">前世对手 - 背叛宁毅</div>
+            </div>
+        </div>
+
+        <div id="content"></div>
+
+        <div class="notice">
+            <h3>📚 全书共834章</h3>
+            <p>当前为前5章双语预览版</p>
+        </div>
+    </div>
+
+    <script>
+        const chapters = [
+            {
+                title: "楔子 繁华过眼开一季",
+                paragraphs: [
+                    {zh: "火焰燃烧着，电路啪啦啦的响，从倾倒的汽车里爬出来的时候，他的视野有些模糊。", en: "Flames burned and circuits crackled as he crawled out of the overturned car, his vision somewhat blurred."},
+                    {zh: "夜色下的、河边的公园，城市密集的灯光在对面如火光般的摇曳着，仿佛浮在水面上的巨大城池。", en: "In the riverside park under the night sky, the dense city lights flickered like flames across the water, resembling a magnificent floating city."},
+                    {zh: "风吹过来，他叹了口气，踉踉跄跄地朝那片迷离的水光走过去，后方的汽车陡然传来巨大的爆炸声。", en: "The wind blew past. He sighed and staggered toward the shimmering water. Suddenly, a massive explosion erupted from the car behind him."},
+                    {zh: "四周，海陆空密密麻麻的包围令他觉得有些烦闷，视线之中并不清晰了，心中明白这次或许没有多少侥幸的可能。", en: "Surrounded on all sides by land, sea, and air forces, he felt somewhat suffocated. His vision grew unclear, and he understood there might be little chance of escape."},
+                    {zh: ""我将来要把这边建个公园，变得更漂亮，让城市里到处都有高楼大厦，我们都住进去……"", en: ""Someday I'll build a park here, make it more beautiful, fill the city with tall buildings, and we'll all live in them...""},
+                    {zh: "那时还小，去过繁荣的省会之后，立下的这个宏愿。", en: "He had made this grand vow as a child after visiting the prosperous provincial capital."},
+                    {zh: "此后二三十年的时间里，他如同刚刚发明石刀石斧的原始人一般，以惊人的魄力开拓进取，建立起了世界上数一数二的巨大金融帝国。", en: "In the decades that followed, like a primitive man who had just invented stone tools, he forged ahead with astonishing determination, building one of the world's greatest financial empires."},
+                    {zh: "在别人眼中，他已经是完全不会被打倒的金融巨人，然而当此时此刻重回故地，他才渐渐地明白过来，这个公园，终究是失败了啊。", en: "In others' eyes, he was an invincible financial giant, yet at this moment, returning to this place, he gradually understood—this park had ultimately failed."}
+                ]
+            },
+            {
+                title: "第一章 苏家赘婿",
+                paragraphs: [
+                    {zh: "他从迷迷糊糊中醒过来，看见的是白色的蚊帐，头上隐隐作痛，不知道这是在怎样的环境里。", en: "He woke up in a daze, seeing white mosquito netting above him. His head throbbed with pain, uncertain of his surroundings."},
+                    {zh: "掀开被子坐起来，大约是昏迷了很久，与身体之间还无法很好的协调，低头看看，衣服的样式怪里怪气的。", en: "He threw off the covers and sat up. Having been unconscious for so long, his coordination was still off. Looking down, the clothes were oddly styled."},
+                    {zh: "老式的房屋、老式的床、桌椅板凳，虽然用料和做工都不错，但整个房间都是仿古的摆设。", en: "Old-fashioned rooms, beds, tables and chairs—though the materials and craftsmanship were decent, the entire room was decorated in antique style."},
+                    {zh: "他看了看两只显得苍白的手，片刻，才在桌椅前坐下，解开身上的衣服，这具身体……没有弹孔。", en: "He looked at his pale hands. After a moment, he sat at the table and unfastened his clothes... this body had no bullet wounds."},
+                    {zh: "自己明明记得那么多子弹对着自己射过来的，前前后后都有啊，难不成是做了整形手术？", en: "He clearly remembered so many bullets flying toward him from all directions. Had he undergone plastic surgery?"},
+                    {zh: "他曾经是世界上最有经济实力的人之一，能够白手起家到那个地步，自然不会因为一些小疑惑被打倒。", en: "He had once been one of the world's most economically powerful individuals. Having built everything from scratch, he naturally wouldn't be defeated by minor doubts."},
+                    {zh: "头上缠着绷带，还隐隐有些痛，他推开房门，明媚的阳光便射了进来，令他下意识地伸手遮挡了一下。", en: "Bandages were wrapped around his head, still throbbing with pain. He pushed open the door, and bright sunlight poured in."},
+                    {zh: "这是木制楼房的二楼上，从门口看出去，下方、远远仅仅是一个个鳞次栉比的院落与园林。", en: "This was the second floor of a wooden building. Looking out from the doorway, rows of courtyards and gardens stretched into the distance."},
+                    {zh: "他吸了一口气，随后吐出来。大手笔啊，唐明远你弄这个得花多少钱才行？", en: "He took a breath and exhaled. What a grand production! Tang Mingyuan, how much would it cost you to create all this?"}
+                ]
+            },
+            {
+                title: "第二章 诗与棋",
+                paragraphs: [
+                    {zh: "转眼间，来到这个古代，已经三个月了，时间也渐渐从春天转向盛夏。", en: "In the blink of an eye, three months had passed since coming to this ancient world, and the seasons gradually shifted from spring to midsummer."},
+                    {zh: "园林、假山、楼阁、院落、街道、画舫，宁毅也渐渐熟悉了这个古代的世界。", en: "Gardens, rockeries, pavilions, courtyards, streets, and painted boats—Ning Yi had gradually become familiar with this ancient world."},
+                    {zh: "大概是以前忙惯了，如今没有电脑没有工作，没有任何事情可以做，总会觉得手痒。", en: "Perhaps he had been too busy before; now without computers, without work, he always felt restless."},
+                    {zh: "苏家是乐于见到他的无聊的，毕竟之前让他入赘，原因就是为了给苏檀儿一个留在自己家里不至于嫁出去的理由。", en: "The Su family was content to see him idle. After all, the reason for having him marry in was to give Su Tan'er a reason to stay home."},
+                    {zh: "相对于他的悠闲，自己那个名义上的妻子苏檀儿就显然很忙。不过，无论如何的忙，她基本上会按时的回家吃饭。", en: "Compared to his leisure, his nominal wife Su Tan'er was obviously very busy. However, no matter how busy, she basically came home for meals on time."},
+                    {zh: "大概是将自己当成了真正老实木讷的男人，每天坐在一起吃饭，挑起话题的也总是她。", en: "She probably regarded him as a truly honest and dull man. During their daily meals, she was always the one to initiate conversation."},
+                    {zh: "吃饭完，如果下雨，大家多半在各自的房间里，苏檀儿看书，偶尔随手弹弹琴，做做女红刺绣。", en: "After meals, if it rained, they mostly stayed in their rooms. Su Tan'er would read, occasionally play the qin, or do embroidery."},
+                    {zh: "名叫小婵的婢女一直跟着他，几个月来大概就成了专门服侍他的侍女，这也是苏檀儿的安排。", en: "The maid named Xiao Chan had been following him; over the months, she had become his personal attendant."},
+                    {zh: "临河的一棵树下常有个老头在那里摆棋盘，偶尔会有几个老头在那儿看，偶尔也会有些书生过来。", en: "Under a tree by the river, an old man often set up a chessboard. Occasionally old men would watch, and sometimes scholars would come by."}
+                ]
+            },
+            {
+                title: "第三章 群像：老叟、小婢与二世祖",
+                paragraphs: [
+                    {zh: "日子过得无聊，说好听一点当然便是悠闲，连续下雨的时间里，跟小姑娘下下五子棋，偶尔练练毛笔字。", en: "Days passed boringly—or elegantly put, leisurely. During rainy days, he played Gomoku with the young maid, occasionally practiced calligraphy."},
+                    {zh: "新姑爷进门，又是入赘，这个年代里，一向是没什么地位的。", en: "A new son-in-law entering the family, especially one who married in, had little status in this era."},
+                    {zh: "苏家的情况，其实又比较复杂。如今苏家真正的掌权者是苏檀儿如今仍然在世的爷爷，一般人叫他老太公。", en: "The Su family's situation was quite complex. The true head was Su Tan'er's still-living grandfather, called the Old Patriarch."},
+                    {zh: "老太公有三个亲生儿子，分成了大房二房三房，对外掌权的是大房，也就是苏檀儿的父亲苏伯庸。", en: "The Old Patriarch had three sons, divided into three branches. The First Branch held power, led by Su Tan'er's father Su Boyong."},
+                    {zh: "他自然不会怕这种被孤立的无聊感，曾经的阅历足以让他如今轻松面对一切情况。", en: "He naturally wasn't afraid of this isolated boredom; his past experiences were enough to help him face any situation with ease."}
+                ]
+            },
+            {
+                title: "第四章 没关系的人",
+                paragraphs: [
+                    {zh: "街道上行人来往，苏檀儿带着娟儿与杏儿，宁毅带着婵儿，薛进则带着两名小厮，正在友好地交谈着。", en: "Pedestrians came and went. Su Tan'er came with Juan'er and Xing'er, Ning Yi with Chan'er, while Xue Jin brought two servants. They were having a cordial conversation."},
+                    {zh: "江宁一带经济繁荣，织造业发达，在这方面，附近最大的三家布行分别是苏氏布行，薛家的大川布行以及作为行首的乌氏布行。", en: "The Jiangning region was economically prosperous with a developed textile industry. The three largest cloth merchants were the Su family, Xue family's Dachuan Cloth Store, and the leading Wu family's business."},
+                    {zh: "薛进对苏家的苏檀儿一直有意思，大家老早就知道。", en: "Everyone had long known that Xue Jin was interested in Su Tan'er from the Su family."},
+                    {zh: "曾经薛家也对苏家提过亲，但一来苏老太公对这薛进不怎么喜欢，二来苏家也不打算把苏檀儿直接嫁出去。", en: "The Xue family had once proposed marriage, but Old Patriarch Su didn't like Xue Jin much, and the Su family didn't plan to marry Su Tan'er out."},
+                    {zh: "谁知道赶出来，才发现宁毅正态度自然地跟对方讨论着失忆的事情，看起来真像是连薛进这个名字都完全没有感觉了。", en: "Who knew when she arrived, she found Ning Yi naturally discussing his amnesia, looking as if he truly had no recollection of Xue Jin whatsoever."}
+                ]
+            }
+        ];
+
+        function render() {
+            const content = document.getElementById('content');
+            const mode = document.querySelector('.tab.active').textContent;
+            
+            content.innerHTML = chapters.map((ch, i) => `
+                <div class="chapter">
+                    <div class="chapter-title">${ch.title}</div>
+                    ${ch.paragraphs.map(p => `
+                        <div class="paragraph">
+                            ${mode !== '仅英文' ? `<div class="zh">${p.zh}</div>` : ''}
+                            ${mode !== '仅中文' ? `<div class="en">${p.en}</div>` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            `).join('');
+        }
+
+        function showMode(m) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+            render();
+        }
+
+        render();
+    </script>
+</body>
+</html>

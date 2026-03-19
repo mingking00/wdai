@@ -1,0 +1,87 @@
+[
+  {
+    "id": "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074878",
+    "last_accessed": "2026-03-19T00:25:37.074890",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "87cef969-8f72-4485-aa92-99413fc65284",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074903",
+    "last_accessed": "2026-03-19T00:25:37.074904",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "ff5299bd-b702-4926-9d40-51a8a499325d",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074923",
+    "last_accessed": "2026-03-19T00:25:37.074925",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074936",
+    "last_accessed": "2026-03-19T00:25:37.074937",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074955",
+    "last_accessed": "2026-03-19T00:25:37.074956",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

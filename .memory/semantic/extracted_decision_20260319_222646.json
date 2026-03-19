@@ -1,0 +1,47 @@
+[
+  {
+    "id": "192a812b-526a-4c51-b9f4-6960f13f638d",
+    "fact": "Planner-Executor 分离模式",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.605123",
+    "last_accessed": "2026-03-19T22:26:46.605124",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "8b2fae97-f98e-48e9-885b-11f1d67cbeb5",
+    "fact": "简单时间间隔检查，未应用CS162调度原语",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.605132",
+    "last_accessed": "2026-03-19T22:26:46.605133",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e7e399c6-dc31-4ade-8f5a-7682d3477e70",
+    "fact": "| 无限增长 | LRU淘汰 | 固定上限1000条 |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.605148",
+    "last_accessed": "2026-03-19T22:26:46.605149",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "05ec0f49-40f7-47d6-aaa3-b7302e36d0c0",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.929340",
+    "last_accessed": "2026-03-19T08:25:39.929341",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "aee971d7_exp0",
+  "hypothesis": "实验1: 调整学习率",
+  "code_changes": "lr = 0.001",
+  "metrics": {
+    "val_bpb": 3.5,
+    "train_time": 300
+  },
+  "success": false
+}

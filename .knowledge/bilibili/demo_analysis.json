@@ -1,0 +1,57 @@
+{
+  "demo_mode": true,
+  "videos_analyzed": 3,
+  "topic_distribution": {
+    "AI": 1,
+    "agent": 1,
+    "memory": 1,
+    "RAG": 1,
+    "LLM": 1,
+    "fine-tuning": 1,
+    "LoRA": 1,
+    "transformer": 1,
+    "分布式": 1,
+    "system design": 1,
+    "microservices": 1,
+    "cloud": 1
+  },
+  "study_paths": [
+    {
+      "video_title": "OpenClaw 代理为何总失忆？完整内存架构解决方案",
+      "bvid": "BV1uowLz7Evr",
+      "papers": [
+        "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+      ],
+      "repos": [
+        "Significant-Gravitas/AutoGPT",
+        "microsoft/autogen"
+      ],
+      "estimated_time": "2-3小时"
+    },
+    {
+      "video_title": "大模型微调实战：LoRA vs Full Fine-tuning",
+      "bvid": "BV1xyz123",
+      "papers": [
+        "LoRA: Low-Rank Adaptation of Large Language Models",
+        "Attention Is All You Need"
+      ],
+      "repos": [
+        "openai/openai-python",
+        "huggingface/transformers"
+      ],
+      "estimated_time": "2-3小时"
+    },
+    {
+      "video_title": "分布式系统设计：从0到1构建高可用架构",
+      "bvid": "BV2abc456",
+      "papers": [
+        "The Google File System"
+      ],
+      "repos": [
+        "etcd-io/etcd",
+        "hashicorp/consul"
+      ],
+      "estimated_time": "2-3小时"
+    }
+  ]
+}

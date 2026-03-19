@@ -1,0 +1,17 @@
+[
+  {
+    "id": "99df0d97-342c-4c19-ad24-c4c449dc5fcc",
+    "fact": "yt-dlp下载B站原生字幕",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:20.509676",
+    "last_accessed": "2026-03-17T03:25:20.509688",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

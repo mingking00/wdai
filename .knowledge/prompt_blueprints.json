@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "based_on": "prompting-blueprints",
+  "blueprints": {
+    "reflection": {
+      "name": "反思分析蓝图",
+      "purpose": "结构化任务反思和经验提取",
+      "template": "\n# 反思分析任务\n\n## 任务信息\n- 任务类型: {task_type}\n- 执行结果: {result}\n- 耗时: {duration}\n\n## Chain-of-Thought分析\n1. **任务理解**: {understanding_assessment}\n2. **过程回顾**: {process_review}\n3. **错误检测**: {error_detection}\n4. **改进建议**: {improvements}\n\n## 输出格式\n- 洞察数量: 3-5条\n- 每条包含: type, content, priority\n- 建议可执行: 是/否\n                ",
+      "output_schema": {
+        "insights": [
+          {
+            "type": "str",
+            "content": "str",
+            "priority": "high/medium/low"
+          }
+        ],
+        "improvements": [
+          "str"
+        ],
+        "success_patterns": [
+          "str"
+        ]
+      }
+    },
+    "evolution": {
+      "name": "系统进化蓝图",
+      "purpose": "规划系统自我改进",
+      "template": "\n# 系统进化任务\n\n## 当前状态\n- 版本: {current_version}\n- 已知问题: {known_issues}\n- 目标维度: {target_dimensions}\n\n## 进化规划\n1. **问题诊断**: 根本原因分析\n2. **方案设计**: 多方案对比\n3. **安全评估**: 风险评估和缓解\n4. **实施计划**: 步骤和回滚方案\n\n## 输出要求\n- 必须包含: 回滚方案\n- 必须验证: 语法和语义\n- 必须记录: 变更日志\n                ",
+      "safety_checks": [
+        "backup_created",
+        "syntax_valid",
+        "impact_assessed",
+        "rollback_plan_ready"
+      ]
+    },
+    "conflict_resolution": {
+      "name": "冲突解决蓝图",
+      "purpose": "解决多Agent建议冲突",
+      "template": "\n# 冲突解决任务\n\n## 冲突信息\n- Agent A建议: {suggestion_a}\n- Agent B建议: {suggestion_b}\n- 冲突类型: {conflict_type}\n\n## 解决流程\n1. **原则对比**: 基于P0-P4优先级评估\n2. **历史胜率**: 参考过往成功率\n3. **风险权衡**: 保守vs激进方案\n4. **决策输出**: 明确结论和理由\n\n## 决策标准\n- 安全优先(P0) > 元能力(P1) > 执行策略(P2)\n- 历史成功率 > 70% 的方案优先\n- 提供明确的决策依据\n                ",
+      "decision_criteria": [
+        "principle_priority",
+        "historical_success_rate",
+        "risk_level",
+        "reversibility"
+      ]
+    },
+    "github_learning": {
+      "name": "GitHub项目学习蓝图",
+      "purpose": "分析开源项目并提取可借鉴模式",
+      "template": "\n# GitHub项目分析任务\n\n## 项目信息\n- 项目名称: {repo_name}\n- 核心功能: {description}\n- Stars/Forks: {stars}/{forks}\n\n## 分析维度\n1. **架构设计**: 核心架构模式\n2. **适用性评估**: 与wdai的匹配度0-1\n3. **关键洞察**: 可借鉴的设计思想\n4. **实施建议**: 如何应用到wdai\n\n## 输出格式\n- 适用性评分: float(0-1)\n- 关键洞察: list[str]\n- 建议优先级: high/medium/low\n                ",
+      "evaluation_criteria": [
+        "architecture_alignment",
+        "problem_similarity",
+        "implementation_feasibility"
+      ]
+    }
+  }
+}

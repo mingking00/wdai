@@ -1,0 +1,9 @@
+rules:
+- id: python-path-traversal-open
+  message: 使用用户输入作为文件路径，存在路径遍历风险
+  pattern: open\s*\([^)]*(?:user|input|request|params|args|argv)
+  severity: high
+- id: python-path-traversal-io
+  message: io 模块使用用户输入路径，存在路径遍历风险
+  pattern: io\.(?:open|FileIO)\s*\([^)]*(?:user|input|request)
+  severity: high

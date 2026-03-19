@@ -1,0 +1,256 @@
+[
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_01",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:00:33.860",
+      "timestamp_seconds": 33.86
+    },
+    "content": {
+      "text": "然后第二部分是算法",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_01_000033.860.jpg",
+      "keywords": [
+        "算法",
+        "第二部分",
+        "然后"
+      ]
+    },
+    "metadata": {
+      "importance_score": 5
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_02",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:01:39.020",
+      "timestamp_seconds": 99.02000000000001
+    },
+    "content": {
+      "text": "好第二部分就是算法",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_02_000139.020.jpg",
+      "keywords": [
+        "算法",
+        "第二部分"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_03",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:05:45.490",
+      "timestamp_seconds": 345.49
+    },
+    "content": {
+      "text": "我们要对比KIMI的py of optimizing的这个算法",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_03_000545.490.jpg",
+      "keywords": [
+        "算法",
+        "对比"
+      ]
+    },
+    "metadata": {
+      "importance_score": 5
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_04",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:08:35.520",
+      "timestamp_seconds": 515.52
+    },
+    "content": {
+      "text": "而是说我们从K2.5训练之初",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_04_000835.520.jpg",
+      "keywords": [
+        "K2.5",
+        "训练"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_05",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:13:23.370",
+      "timestamp_seconds": 803.37
+    },
+    "content": {
+      "text": "K2是它的预训练是15T的数据",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_05_001323.370.jpg",
+      "keywords": [
+        "数据",
+        "训练"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_06",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:14:50.430",
+      "timestamp_seconds": 890.43
+    },
+    "content": {
+      "text": "把把这个vision的数据去去映射到这个这个文本的",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_06_001450.430.jpg",
+      "keywords": [
+        "vision",
+        "数据"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_07",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:18:14.520",
+      "timestamp_seconds": 1094.52
+    },
+    "content": {
+      "text": "呃呃多模态训练越早越少啊",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_07_001814.520.jpg",
+      "keywords": [
+        "多模态",
+        "训练"
+      ]
+    },
+    "metadata": {
+      "importance_score": 5
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_08",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:19:32.350",
+      "timestamp_seconds": 1172.35
+    },
+    "content": {
+      "text": "他们的cot的数据去做ST训练",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_08_001932.350.jpg",
+      "keywords": [
+        "数据",
+        "训练"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_09",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:26:31.879",
+      "timestamp_seconds": 1591.879
+    },
+    "content": {
+      "text": "GRPU算法的一个强化性训练",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_09_002631.879.jpg",
+      "keywords": [
+        "算法",
+        "训练"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_10",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:29:28.739",
+      "timestamp_seconds": 1768.739
+    },
+    "content": {
+      "text": "我们训练大家注意后",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_10_002928.739.jpg",
+      "keywords": [
+        "训练",
+        "注意"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_11",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:39:38.440",
+      "timestamp_seconds": 2378.44
+    },
+    "content": {
+      "text": "然后我们再对K2.5做continue pretraining的时候",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_11_003938.440.jpg",
+      "keywords": [
+        "K2.5",
+        "然后"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_real_moment_12",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "platform": "bilibili",
+      "timestamp": "00:54:35.870",
+      "timestamp_seconds": 3275.87
+    },
+    "content": {
+      "text": "然后另外就是为什么要要训练这个模型",
+      "image_path": "keyframes/BV1nvcuz5Ewj_real_keyframe_12_005435.870.jpg",
+      "keywords": [
+        "训练",
+        "模型",
+        "然后"
+      ]
+    },
+    "metadata": {
+      "importance_score": 4
+    }
+  }
+]

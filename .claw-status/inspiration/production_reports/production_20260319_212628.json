@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-03-19T21:26:28.641472",
+  "status": "success",
+  "startup_time": 0.00020503997802734375,
+  "cycle_time": 2.0001635551452637,
+  "total_time": 5.00459885597229,
+  "performance": {
+    "uptime_seconds": 5.004823,
+    "tasks_completed": 1,
+    "tasks_failed": 0,
+    "success_rate": 1.0,
+    "avg_task_time": 2.0001635551452637,
+    "cache_hit_rate": 0.0,
+    "timestamp": "2026-03-19T21:26:28.641478"
+  },
+  "learning": {
+    "total_executions": 1,
+    "successful_executions": 1,
+    "success_rate": 1.0,
+    "pattern_confidence": {
+      "dual_agent_better": 0.8500000000000001,
+      "deep_analysis_valuable": 0.9,
+      "auto_insight_works": 0.7
+    },
+    "recommendations": [
+      "\u53cc\u4ee3\u7406\u67b6\u6784\u6548\u679c\u663e\u8457\uff0c\u5efa\u8bae\u5168\u9762\u91c7\u7528",
+      "\u6df1\u5ea6\u5206\u6790\u6a21\u5757\u6548\u679c\u826f\u597d\uff0c\u4fdd\u6301\u5f53\u524d\u914d\u7f6e"
+    ]
+  }
+}

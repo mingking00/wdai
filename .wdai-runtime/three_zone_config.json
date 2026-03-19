@@ -1,0 +1,53 @@
+{
+  "architecture_version": "2.1",
+  "based_on": "agent-evolution-protocol",
+  "zones": {
+    "human_control": {
+      "name": "人类控制区",
+      "description": "用户直接对话时，系统处于人类完全控制模式",
+      "permissions": [
+        "full_access",
+        "override_decisions",
+        "stop_execution"
+      ],
+      "entry_condition": "用户发起对话",
+      "exit_condition": "用户结束对话或切换到自主模式"
+    },
+    "ai_learning": {
+      "name": "AI学习区",
+      "description": "自主执行进化循环，但需要遵守安全约束",
+      "permissions": [
+        "read_memory",
+        "execute_code",
+        "update_config"
+      ],
+      "restrictions": [
+        "no_destructive_ops",
+        "max_runtime_5min",
+        "must_log_all"
+      ],
+      "entry_condition": "用户明确授权自主运行",
+      "safety_mechanisms": [
+        "timeout",
+        "rollback",
+        "human_checkpoints"
+      ]
+    },
+    "validation": {
+      "name": "验证区",
+      "description": "所有自主执行的变更需要在此验证",
+      "validation_rules": [
+        "syntax_check",
+        "safety_scan",
+        "impact_assessment",
+        "backup_created"
+      ],
+      "approval_required": true
+    }
+  },
+  "state_transitions": {
+    "human_to_ai": "需要用户明确授权",
+    "ai_to_validation": "自主执行后自动进入",
+    "validation_to_human": "验证通过或不通过都返回人类控制"
+  }
+}

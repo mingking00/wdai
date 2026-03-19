@@ -1,0 +1,10 @@
+[
+  {
+    "id": "DEC-1773079295",
+    "timestamp": "2026-03-10T02:01:35+08:00",
+    "decision": "创建独立的cognitive-transparency Skill",
+    "rationale": "虽然可以与progress-reporter合并，但认知透明和进度追踪是两个不同维度。独立设计更清晰，未来可以组合使用",
+    "options": "合并到progress-reporter|独立Skill|简单日志文件",
+    "outcome": "pending"
+  }
+]

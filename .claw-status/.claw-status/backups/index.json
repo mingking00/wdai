@@ -1,0 +1,20 @@
+[
+  {
+    "backup_id": "c348ba267b75c8e7",
+    "timestamp": "2026-03-20T00:19:23.002992",
+    "trigger": "\u7cfb\u7edf\u5347\u7ea7",
+    "user_id": "wdai",
+    "files": [
+      {
+        "original": "defense_system.py",
+        "backup": ".claw-status/backups/c348ba267b75c8e7/defense_system.py",
+        "hash": "1b680635307b84f2"
+      },
+      {
+        "original": "enhanced_defense.py",
+        "backup": ".claw-status/backups/c348ba267b75c8e7/enhanced_defense.py",
+        "hash": "72e6f08d22d01ba2"
+      }
+    ]
+  }
+]

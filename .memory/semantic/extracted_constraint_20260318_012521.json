@@ -1,0 +1,22 @@
+[
+  {
+    "id": "23acb9de-dc29-4c47-9474-1b7b2866053e",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:21.196063",
+    "last_accessed": "2026-03-18T01:25:21.196071",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "2719abd4-bc6d-4531-8115-9f6035b6126d",
+        "c9ef10ba-7531-44dd-a983-7279c3a6e877",
+        "2719abd4-bc6d-4531-8115-9f6035b6126d"
+      ]
+    }
+  }
+]

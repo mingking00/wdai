@@ -1,0 +1,3 @@
+{"timestamp": "2026-03-13T01:06:35.655540", "query": "Python怎么写循环？", "response": "用for或while", "feedback": "对的", "session_id": "2026-03-13T01:06:35.655530"}
+{"timestamp": "2026-03-13T01:06:35.655628", "query": "AI安全吗？", "response": "AI相对安全但需要谨慎", "feedback": "可以更详细吗", "session_id": "2026-03-13T01:06:35.655530"}
+{"timestamp": "2026-03-13T01:06:35.655655", "query": "明天天气？", "response": "我不确定", "feedback": "不对，我是问怎么查", "session_id": "2026-03-13T01:06:35.655530"}

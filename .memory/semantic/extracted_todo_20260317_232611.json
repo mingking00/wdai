@@ -1,0 +1,17 @@
+[
+  {
+    "id": "f8f765f9-32ef-4395-aa09-bbf90f099348",
+    "fact": "框架层支持（多个独立session）",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.836675",
+    "last_accessed": "2026-03-17T23:26:11.836678",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

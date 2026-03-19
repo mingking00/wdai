@@ -1,0 +1,10 @@
+{
+  "prompt_injection": {
+    "rule_id": "prompt_injection",
+    "rule_pattern": "prompt_injection",
+    "total_hits": 4,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "last_updated": "2026-03-20T00:32:04.874265"
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "18681bad-13ee-41fd-8031-d166b755b44f",
+    "fact": "运行次数** → 取消12次/天上限",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604084",
+    "last_accessed": "2026-03-19T22:26:46.604095",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "87ae6e86-c41e-4187-8993-cd5adbdd3be4",
+    "fact": "，只要产出可15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604107",
+    "last_accessed": "2026-03-19T22:26:46.604109",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "bd17dc0a-0f84-4d51-beda-42ab2c1c3ead",
+    "fact": "次数 → 限制无效**: 不限制运行次数，限制的是\"无效空转\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604117",
+    "last_accessed": "2026-03-19T22:26:46.604118",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "d6082202-70e8-403d-b2db-850c871d5e9b",
+    "fact": "风险控制**: 不是什么都自动实施",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604135",
+    "last_accessed": "2026-03-19T22:26:46.604136",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "b77eefd1-8e5e-47b4-950b-38e71d4d4d01",
+    "fact": "修改** → 返回调整，重新评估",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604149",
+    "last_accessed": "2026-03-19T22:26:46.604150",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "278431ef-1bc1-42be-99c8-5cc86b98fd36",
+    "fact": "SatisfactionSolver** - 约束满足求解",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604534",
+    "last_accessed": "2026-03-19T22:26:46.604536",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

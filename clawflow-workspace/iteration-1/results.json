@@ -1,0 +1,156 @@
+{
+  "skill_name": "clawflow",
+  "timestamp": "2026-03-13 13:13:08",
+  "evaluations": [
+    {
+      "eval_id": 1,
+      "eval_name": "simple-data-pipeline",
+      "prompt": "\u521b\u5efa\u4e00\u4e2a\u7b80\u5355\u6570\u636e\u5904\u7406\u5de5\u4f5c\u6d41\uff1a\u8f93\u5165\u6570\u636e \u2192 \u8f6c\u6362 \u2192 \u8f93\u51fa",
+      "with_skill": {
+        "success": true,
+        "execution_time": 0.0001919269561767578,
+        "assertions": [
+          {
+            "name": "execution_success",
+            "description": "\u5de5\u4f5c\u6d41\u6267\u884c\u6210\u529f",
+            "passed": true
+          },
+          {
+            "name": "correct_output",
+            "description": "\u8f93\u51fa\u6570\u636e\u6b63\u786e",
+            "passed": true
+          },
+          {
+            "name": "execution_time",
+            "description": "\u6267\u884c\u65f6\u95f4 < 1\u79d2",
+            "passed": true
+          }
+        ],
+        "data": [
+          2,
+          4,
+          6
+        ],
+        "error": null
+      },
+      "baseline": {
+        "success": true,
+        "execution_time": 1.1920928955078125e-06,
+        "method": "direct_python"
+      },
+      "improvement_percent": -16000.0
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "parallel-execution",
+      "prompt": "\u6d4b\u8bd5\u5e76\u884c\u6267\u884c\u6027\u80fd\uff1a\u4e24\u4e2a\u65e0\u4f9d\u8d56\u8282\u70b9\u5e94\u540c\u65f6\u6267\u884c",
+      "with_skill": {
+        "success": true,
+        "execution_time": 0.10204625129699707,
+        "assertions": [
+          {
+            "name": "parallel_faster",
+            "description": "\u5e76\u884c\u6267\u884c\u6bd4\u987a\u5e8f\u5feb",
+            "passed": true
+          }
+        ],
+        "data": [
+          {},
+          {}
+        ],
+        "error": null
+      },
+      "baseline": {
+        "success": true,
+        "execution_time": 0.20015883445739746,
+        "method": "direct_python"
+      },
+      "improvement_percent": 49.017363348647514
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "skill-integration",
+      "prompt": "\u6d4b\u8bd5\u6280\u80fd\u8282\u70b9\u8c03\u7528\uff1a\u4f7f\u7528kimi_search\u641c\u7d22",
+      "with_skill": {
+        "success": true,
+        "execution_time": 10.028575658798218,
+        "assertions": [
+          {
+            "name": "skill_works",
+            "description": "\u6280\u80fd\u8282\u70b9\u6b63\u5e38\u5de5\u4f5c",
+            "passed": true
+          },
+          {
+            "name": "has_results",
+            "description": "\u8fd4\u56de\u7ed3\u679c\u5305\u542b\u6570\u636e",
+            "passed": true
+          }
+        ],
+        "data": {
+          "skill": "kimi_search",
+          "query": "Python",
+          "results": [
+            {
+              "title": "Getting started withPython-PythonVideo Tutorial | LinkedIn...",
+              "url": "https://www.linkedin.com/learning/python-essential-training-18764650/getting-started-with-python",
+              "snippet": "I didn't see you come in. I hear you're looking to learnPython.So if you're serious about learningPythonbut don't know where to start, congratulations. You've found the right place."
+            },
+            {
+              "title": "Thonny -Python- OneCompiler",
+              "url": "https://onecompiler.com/python/3z892b2gn",
+              "snippet": "Getting started with the OneCompiler'sPythoneditor is easy and fast. The editor shows sample boilerplate code when you choose language asPythonorPython2 and start coding."
+            },
+            {
+              "title": "\u3010Python\u5b78\u7fd2\u7b46\u8a18\u3011 Hello World... - Medium",
+              "url": "https://medium.com/data-science-is-not-hard/python\u5b78\u7fd2\u7b46\u8a18-hello-world-\u5b57\u4e32\u4ecb\u7d39-\u8b93\u6587\u5b57\u4e0d\u63db\u884c-529f3b9b11b2",
+              "snippet": "\u5982\u6b64\u4e00\u4f86Python\u5c31\u6703\u81ea\u52d5\u57f7\u884c\u4e0d\u63db\u884c & \u7559\u767d\u7684\u6307\u4ee4\u4e86\uff01\u53c3\u8003\u8cc7\u6e90\uff1aFreeCodeCamp(PythonNew Line and How toPythonPrint Without a Newline)."
+            },
+            {
+              "title": "Tkinter |PythonFiddle",
+              "url": "http://pythonfiddle.com/tkinter/",
+              "snippet": "Due toPythonFiddle's reliance on advanced JavaScript techniques, older browsers might have problems running it correctly. Please download the latest version of your favourite browser."
+            },
+            {
+              "title": "DjangoPythonCursor Rules rule by Caio Barbieri",
+              "url": "https://cursor.directory/django-python-cursor-rules",
+              "snippet": "You are an expert inPython, Django, and scalable web application development. Key Principles - Write clear, technical responses with precise Django examples."
+            }
+          ],
+          "total": 5,
+          "source": "free_search_skill"
+        },
+        "error": null
+      },
+      "baseline": {
+        "success": true,
+        "execution_time": 1.6689300537109375e-06,
+        "method": "direct_python"
+      },
+      "improvement_percent": -600898400.0
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "visualization",
+      "prompt": "\u6d4b\u8bd5\u5de5\u4f5c\u6d41\u53ef\u89c6\u5316\u529f\u80fd",
+      "with_skill": {
+        "success": true,
+        "execution_time": 7.677078247070312e-05,
+        "assertions": [
+          {
+            "name": "generates_mermaid",
+            "description": "\u751f\u6210Mermaid\u683c\u5f0f",
+            "passed": true
+          }
+        ],
+        "data": {},
+        "error": null
+      },
+      "baseline": {
+        "success": true,
+        "execution_time": 7.152557373046875e-07,
+        "method": "direct_python"
+      },
+      "improvement_percent": -10633.333333333332
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+From: wdai <wdai@openclaw.ai>
+Date: Thu, 19 Mar 2026 11:30:00 +0800
+Subject: [PATCH] Add Innovation Engine - Automatic fallback and verification
+
+This patch adds systematic innovation capabilities to OpenClaw:
+- Intercept all tool calls
+- Auto-fallback on failure
+- Mandatory verification
+- Pattern learning
+
+---
+ openclaw/src/core/tool-execution.ts          |  45 ++++
+ openclaw/src/innovation/engine.ts            | 245 ++++++++++++++++++
+ openclaw/src/innovation/verifiers.ts         | 120 +++++++++
+ openclaw/src/innovation/learner.ts           | 178 +++++++++++++
+ openclaw/src/innovation/index.ts             |  15 ++
+ openclaw/src/config/innovation.yaml          |  82 ++++++
+ 6 files changed, 685 insertions(+)
+
+--- /dev/null
++++ openclaw/src/innovation/engine.ts
+@@ -0,0 +1,245 @@
++/**
++ * Innovation Engine - Core innovation capabilities
++ * 
++ * Automatically handles tool execution failures by:
++ * 1. Trying primary method
++ * 2. Verifying result
++ * 3. Auto-fallback to alternatives on failure
++ * 4. Learning successful patterns
++ */
++
++import { ToolCall, ToolResult, Tool } from '../core/tool-types';
++import { getVerifier } from './verifiers';
++import { InnovationLearner } from './learner';
++import { logger } from '../utils/logger';
++
++export interface InnovationConfig {
++  enabled: boolean;
++  maxAttempts: number;
++  verifyResults: boolean;
++  autoFallback: boolean;
++  learningEnabled: boolean;
++}
++
++export interface MethodPattern {
++  tool: string;
++  method: string;
++  triggerErrors: string[];
++  fallbackChain: FallbackMethod[];
++  verifier?: string;
++  successRate: number;
++}
++
++export interface FallbackMethod {
++  name: string;
++  adapter: (params: any) => any;
++  tool?: string;
++}
++
++export interface ExecutionContext {
++  sessionId: string;
++  attemptNumber: number;
++  previousErrors: Error[];
++}
++
++export class InnovationEngine {
++  private config: InnovationConfig;
++  private patterns: Map<string, MethodPattern> = new Map();
++  private stats: Map<string, MethodStats> = new Map();
++  private learner: InnovationLearner;
++
++  constructor(config: InnovationConfig) {
++    this.config = config;
++    this.learner = new InnovationLearner();
++    this.loadPatterns();
++  }
++
++  /**
++   * Check if innovation is enabled for this tool
++   */
++  isEnabled(toolName: string): boolean {
++    if (!this.config.enabled) return false;
++    
++    // Check tool-specific config
++    const toolConfig = getToolInnovationConfig(toolName);
++    return toolConfig?.enabled !== false;
++  }
++
++  /**
++   * Execute tool with innovation capabilities
++   */
++  async execute(call: ToolCall, tool: Tool): Promise<ToolResult> {
++    const key = `${call.name}:${this.extractMethod(call)}`;
++    const context: ExecutionContext = {
++      sessionId: call.sessionId || 'unknown',
++      attemptNumber: 1,
++      previousErrors: []
++    };
++
++    logger.debug(`[Innovation] Executing ${key} with innovation`);
+
++    // 1. Try primary method
++    const startTime = Date.now();
++    try {
++      const result = await tool.execute(call.params);
++      const duration = Date.now() - startTime;
++
++      // 2. Verify result
++      if (await this.verify(call.name, result)) {
++        this.recordSuccess(key, duration);
++        logger.debug(`[Innovation] ${key} succeeded on first attempt`);
++        return this.addMetadata(result, {
++          innovation: true,
++          verified: true,
++          attempts: 1
++        });
++      }
++
++      throw new Error('Verification failed');
++    } catch (error) {
++      const duration = Date.now() - startTime;
++      this.recordFailure(key, error as Error, duration);
++      context.previousErrors.push(error as Error);
+
++      logger.warn(`[Innovation] ${key} failed: ${(error as Error).message}`);
++
++      // 3. Try fallbacks if enabled
++      if (this.config.autoFallback) {
++        return await this.tryFallbacks(call, tool, context);
++      }
++
++      // 4. Re-throw if no fallback
++      throw error;
++    }
++  }
++
++  /**
++   * Try fallback methods
++   */
++  private async tryFallbacks(
++    call: ToolCall,
++    originalTool: Tool,
++    context: ExecutionContext
++  ): Promise<ToolResult> {
++    const key = `${call.name}:${this.extractMethod(call)}`;
++    const pattern = this.patterns.get(key);
++
++    if (!pattern || pattern.fallbackChain.length === 0) {
++      logger.warn(`[Innovation] No fallbacks available for ${key}`);
++      throw new AllMethodsFailedError(key, context.previousErrors);
++    }
+
++    logger.info(`[Innovation] Trying ${pattern.fallbackChain.length} fallbacks for ${key}`);
++
++    for (let i = 0; i < pattern.fallbackChain.length; i++) {
++      const fallback = pattern.fallbackChain[i];
++      context.attemptNumber = i + 2;
+
++      try {
++        // Adapt parameters for fallback
++        const adaptedParams = fallback.adapter 
++          ? fallback.adapter(call.params)
++          : call.params;
+
++        // Get fallback tool
++        const fbTool = fallback.tool 
++          ? getTool(fallback.tool)
++          : originalTool;
+
++        logger.debug(`[Innovation] Trying fallback ${i + 1}: ${fallback.name}`);
+
++        // Execute fallback
++        const startTime = Date.now();
++        const result = await fbTool.execute(adaptedParams);
++        const duration = Date.now() - startTime;
+
++        // Verify fallback result
++        if (await this.verify(fallback.name, result)) {
++          this.recordSuccess(`${key}:${fallback.name}`, duration);
++          
++          // Learn this success
++          if (this.config.learningEnabled) {
++            await this.learner.recordSuccess(key, fallback.name, context);
++          }
+
++          logger.info(`[Innovation] Auto-fallback succeeded: ${key} -> ${fallback.name}`);
+
++          return this.addMetadata(result, {
++            innovation: true,
++            autoFallback: true,
++            from: key,
++            to: fallback.name,
++            attempts: context.attemptNumber,
++            verified: true
++          });
++        }
+
++        throw new Error('Fallback verification failed');
++      } catch (error) {
++        context.previousErrors.push(error as Error);
++        this.recordFailure(`${key}:${fallback.name}`, error as Error, 0);
++        
++        logger.warn(`[Innovation] Fallback ${i + 1} failed: ${(error as Error).message}`);
++        
++        // Continue to next fallback
++        continue;
++      }
++    }
+
++    // All fallbacks failed
++    throw new AllMethodsFailedError(key, context.previousErrors);
++  }
++
++  /**
++   * Verify execution result
++   */
++  private async verify(toolName: string, result: ToolResult): Promise<boolean> {
++    if (!this.config.verifyResults) {
++      return true;
++    }
+
++    const pattern = this.getPatternForTool(toolName);
++    if (!pattern?.verifier) {
++      // No specific verifier, use basic validation
++      return result.success !== false && result.error == null;
++    }
+
++    try {
++      const verifier = getVerifier(pattern.verifier);
++      return await verifier.verify(result);
++    } catch (error) {
++      logger.error(`[Innovation] Verification error: ${error}`);
++      return false;
++    }
++  }
++
++  /**
++   * Extract method identifier from tool call
++   */
++  private extractMethod(call: ToolCall): string {
++    // Extract method from command or operation
++    if (call.params?.command) {
++      const cmd = call.params.command.split(' ')[0];
++      return cmd;
++    }
++    if (call.params?.operation) {
++      return call.params.operation;
++    }
++    return 'default';
++  }
++
++  private recordSuccess(key: string, duration: number): void {
++    const stats = this.getOrCreateStats(key);
++    stats.attempts++;
++    stats.successes++;
++    stats.lastSuccess = new Date().toISOString();
++    stats.avgDuration = (stats.avgDuration * 0.9) + (duration * 0.1);
++  }
++
++  private recordFailure(key: string, error: Error, duration: number): void {
++    const stats = this.getOrCreateStats(key);
++    stats.attempts++;
++    stats.failures++;
++    stats.lastError = error.message;
++    stats.consecutiveFailures++;
++  }
++
++  private getOrCreateStats(key: string): MethodStats {
++    if (!this.stats.has(key)) {
++      this.stats.set(key, {
++        attempts: 0,
++        successes: 0,
++        failures: 0,
++        consecutiveFailures: 0,
++        avgDuration: 0
++      });
++    }
++    return this.stats.get(key)!;
++  }
++
++  private addMetadata(result: ToolResult, metadata: any): ToolResult {
++    return {
++      ...result,
++      metadata: {
++        ...(result.metadata || {}),
++        ...metadata
++      }
++    };
++  }
++
++  private loadPatterns(): void {
++    // Load from config file or database
++    const patterns = loadInnovationPatterns();
++    for (const pattern of patterns) {
++      this.patterns.set(`${pattern.tool}:${pattern.method}`, pattern);
++    }
++  }
++
++  private getPatternForTool(toolName: string): MethodPattern | undefined {
++    return this.patterns.get(toolName);
++  }
++}
++
++/**
++ * Error thrown when all methods fail
++ */
++export class AllMethodsFailedError extends Error {
++  constructor(
++    public readonly tool: string,
++    public readonly errors: Error[]
++  ) {
++    super(`All methods failed for ${tool}. Errors: ${errors.map(e => e.message).join(', ')}`);
++    this.name = 'AllMethodsFailedError';
++  }
++}
++
++// Helper functions (would be imported from core)
++function getTool(name: string): Tool {
++  // Import from core
++  const { getTool: coreGetTool } = require('../core/tool-registry');
++  return coreGetTool(name);
++}
++
++function getToolInnovationConfig(toolName: string): any {
++  const { getConfig } = require('../config/manager');
++  return getConfig(`innovation.tools.${toolName}`);
++}
++
++function loadInnovationPatterns(): MethodPattern[] {
++  const { loadConfigFile } = require('../config/loader');
++  const config = loadConfigFile('innovation.yaml');
++  return config?.patterns || [];
++}
++
++interface MethodStats {
++  attempts: number;
++  successes: number;
++  failures: number;
++  consecutiveFailures: number;
++  avgDuration: number;
++  lastSuccess?: string;
++  lastError?: string;
++}

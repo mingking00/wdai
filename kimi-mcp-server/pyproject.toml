@@ -1,0 +1,36 @@
+# Kimi MCP Server
+# Model Context Protocol Server for Kimi Claw
+
+[project]
+name = "kimi-mcp-server"
+version = "1.0.0"
+description = "MCP Server exposing Kimi Claw's capabilities as standardized tools"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=1.0.0",
+    "mcp>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

@@ -1,0 +1,141 @@
+[
+  {
+    "id": "ad0ee43d-40e8-431e-8ce9-dfd9303b6d8b",
+    "fact": "分别绘制两条线（arrowEnd 和 arrowBegin）",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072900",
+    "last_accessed": "2026-03-18T18:26:21.072901",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+        "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+        "5625953b-e11f-41e0-8c46-4f534f48cd24",
+        "5625953b-e11f-41e0-8c46-4f534f48cd24"
+      ]
+    }
+  },
+  {
+    "id": "0953e5ed-4619-472f-8515-e6e96f415fcd",
+    "fact": "用户在PowerPoint中手动运行）",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072913",
+    "last_accessed": "2026-03-18T18:26:21.072914",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3619f396-9585-4744-88fa-a38477787ff0",
+        "3619f396-9585-4744-88fa-a38477787ff0",
+        "16b7169d-e21a-49d4-b37b-01d5f186145f",
+        "16b7169d-e21a-49d4-b37b-01d5f186145f"
+      ]
+    }
+  },
+  {
+    "id": "dbf51d7a-9299-4f09-a6df-bc0f2ebb2027",
+    "fact": "先上传再分享，不能直接发送附件",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072937",
+    "last_accessed": "2026-03-18T18:26:21.072938",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+        "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+        "246a1368-b23c-4610-8c31-4388760a3528",
+        "246a1368-b23c-4610-8c31-4388760a3528"
+      ]
+    }
+  },
+  {
+    "id": "108300d6-a11b-41cc-8fd0-f226cfad4574",
+    "fact": "额外的参数或不同的调用方式",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072943",
+    "last_accessed": "2026-03-18T18:26:21.072944",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3ebb413e-8199-4042-8fe1-a7602fb32769",
+        "3ebb413e-8199-4042-8fe1-a7602fb32769",
+        "22c75efd-85ab-457c-9a15-6664eaf56988",
+        "22c75efd-85ab-457c-9a15-6664eaf56988"
+      ]
+    }
+  },
+  {
+    "id": "f965a041-8990-49ff-8e9b-cc8e29809fb7",
+    "fact": "进一步研究飞书开放平台的上传接口文档",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072948",
+    "last_accessed": "2026-03-18T18:26:21.072949",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "6daa847d-7768-47c0-9fba-c897df464334",
+        "6daa847d-7768-47c0-9fba-c897df464334",
+        "a6f82c09-e520-4393-8514-88c75dfe2214",
+        "a6f82c09-e520-4393-8514-88c75dfe2214"
+      ]
+    }
+  },
+  {
+    "id": "bec351be-81bc-4e6c-80e8-99003f958865",
+    "fact": "消耗: 80k tokens ≈ ¥12-30",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072959",
+    "last_accessed": "2026-03-18T18:26:21.072960",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "4c1c033d-f4e3-47db-a68a-bd623662a223",
+        "4c1c033d-f4e3-47db-a68a-bd623662a223"
+      ]
+    }
+  },
+  {
+    "id": "cb0a60f1-3bd2-44cd-92f2-5736f39a7076",
+    "fact": "ison | A (8",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.073294",
+    "last_accessed": "2026-03-18T18:26:21.073295",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

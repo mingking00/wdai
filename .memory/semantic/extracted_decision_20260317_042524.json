@@ -1,0 +1,117 @@
+[
+  {
+    "id": "a6d52b65-8892-4643-beb4-2767f701ace0",
+    "fact": "失误** - yt-dlp被412拦截3次才换路，违反\"3次失败强制换路\"原则",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567700",
+    "last_accessed": "2026-03-17T04:25:24.567702",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "08558537-1484-4b76-afc0-ca6a4d15fa3d",
+        "f9cdf7c8-8f7b-4ee7-901f-bfe45f6160d5",
+        "e31543b7-a04a-42b0-aaea-deffa27b0720",
+        "f9cdf7c8-8f7b-4ee7-901f-bfe45f6160d5",
+        "08558537-1484-4b76-afc0-ca6a4d15fa3d",
+        "e31543b7-a04a-42b0-aaea-deffa27b0720"
+      ]
+    }
+  },
+  {
+    "id": "2a696ff7-dd11-42d4-a88c-ced393c3dca0",
+    "fact": "/tmp/时系统会警告",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567710",
+    "last_accessed": "2026-03-17T04:25:24.567711",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "2f3f57fb-5d9a-4022-b6bd-8771bfdae2a8",
+        "d79d24a5-896f-4c95-b2a1-85de770d248c",
+        "eb027054-513e-4656-9c2a-8e1d20df130c",
+        "d79d24a5-896f-4c95-b2a1-85de770d248c",
+        "2f3f57fb-5d9a-4022-b6bd-8771bfdae2a8",
+        "eb027054-513e-4656-9c2a-8e1d20df130c"
+      ]
+    }
+  },
+  {
+    "id": "1b294dcd-d91d-4428-958c-53fbd739ec4e",
+    "fact": "大脑思考，使用手脚行动，持续进化 |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567720",
+    "last_accessed": "2026-03-17T04:25:24.567721",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3df722ee-7461-480a-9fa6-19e3e90833b9",
+        "f8788d3d-c503-4a7e-87b6-cf71f3e65f5a",
+        "9dc655f4-a63d-4fa5-a0a6-b5ecc834d021",
+        "f8788d3d-c503-4a7e-87b6-cf71f3e65f5a",
+        "3df722ee-7461-480a-9fa6-19e3e90833b9",
+        "9dc655f4-a63d-4fa5-a0a6-b5ecc834d021"
+      ]
+    }
+  },
+  {
+    "id": "92014f40-88d9-4826-ac15-6ed1f750118f",
+    "fact": "大模型思考，使用skills行动\"",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567726",
+    "last_accessed": "2026-03-17T04:25:24.567727",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "1835efb1-1ba3-40c2-8030-1ff0543df28b",
+        "2251f874-076a-4b9a-934c-f70f2c0afa14",
+        "bf88ecdb-0e0e-4725-9b20-cf727fbe9cdb",
+        "2251f874-076a-4b9a-934c-f70f2c0afa14",
+        "1835efb1-1ba3-40c2-8030-1ff0543df28b",
+        "bf88ecdb-0e0e-4725-9b20-cf727fbe9cdb"
+      ]
+    }
+  },
+  {
+    "id": "801c82c6-f39e-4a10-9730-7a8a2e9afe30",
+    "fact": "锤子、电脑 | 使用read、exec、web_search |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567733",
+    "last_accessed": "2026-03-17T04:25:24.567734",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d379fc6f-adde-4485-bd6e-051bb40228eb",
+        "ccfd0f29-3942-4587-9e81-d9ef16466259",
+        "e5fe58a5-57ae-4b20-9794-5012170ea286",
+        "ccfd0f29-3942-4587-9e81-d9ef16466259",
+        "d379fc6f-adde-4485-bd6e-051bb40228eb",
+        "e5fe58a5-57ae-4b20-9794-5012170ea286"
+      ]
+    }
+  }
+]

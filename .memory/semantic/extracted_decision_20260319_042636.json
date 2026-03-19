@@ -1,0 +1,52 @@
+[
+  {
+    "id": "d83ab1e2-64fd-4949-aedf-890cb1a1afaa",
+    "fact": "`[LLM Architect] 08 Dive into K2",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.863398",
+    "last_accessed": "2026-03-19T04:26:36.863401",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "b77a559e-8d01-4e8d-9852-11c76367c190",
+        "b77a559e-8d01-4e8d-9852-11c76367c190",
+        "b77a559e-8d01-4e8d-9852-11c76367c190",
+        "b77a559e-8d01-4e8d-9852-11c76367c190",
+        "29cecde0-2f80-4745-ab1a-bf0aaa043858",
+        "29cecde0-2f80-4745-ab1a-bf0aaa043858",
+        "29cecde0-2f80-4745-ab1a-bf0aaa043858",
+        "29cecde0-2f80-4745-ab1a-bf0aaa043858"
+      ]
+    }
+  },
+  {
+    "id": "0c884ced-6e5a-40cc-80b6-e671e9efe3de",
+    "fact": "本地视频文件、添加Cookie、或手动下载后处理",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.863411",
+    "last_accessed": "2026-03-19T04:26:36.863412",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "6804f221-e364-4955-9f78-eae7663a5262",
+        "6804f221-e364-4955-9f78-eae7663a5262",
+        "6804f221-e364-4955-9f78-eae7663a5262",
+        "6804f221-e364-4955-9f78-eae7663a5262",
+        "b0af15d7-9d08-4e8b-a006-1defcff63297",
+        "b0af15d7-9d08-4e8b-a006-1defcff63297",
+        "b0af15d7-9d08-4e8b-a006-1defcff63297",
+        "b0af15d7-9d08-4e8b-a006-1defcff63297"
+      ]
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "pat_1773335200": {
+    "pattern_id": "pat_1773335200",
+    "pattern_type": "strategy",
+    "trigger": "学习 怎么",
+    "action": "提供学习路径而非直接答案",
+    "confidence": 0.75,
+    "usage_count": 0,
+    "last_used": "2026-03-13T01:06:40.011895",
+    "success_rate": 0.0
+  }
+}

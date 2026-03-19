@@ -1,0 +1,17 @@
+rules:
+- id: python-weak-crypto-md5
+  message: 使用 MD5 哈希，已被证明不安全，建议改用 SHA-256
+  pattern: hashlib\.md5\s*\(|\.md5\s*\(
+  severity: medium
+- id: python-weak-crypto-sha1
+  message: 使用 SHA-1 哈希，已被证明不安全，建议改用 SHA-256
+  pattern: hashlib\.sha1\s*\(|\.sha1\s*\(
+  severity: medium
+- id: python-weak-random
+  message: 使用伪随机数生成器，不适用于安全场景（如密码、token）
+  pattern: random\.(?:random|randint|choice|shuffle)\s*\(
+  severity: medium
+- id: python-weak-ssl
+  message: 禁用 SSL 证书验证，存在中间人攻击风险
+  pattern: ssl\._create_unverified_context|ssl\.CERT_NONE
+  severity: high

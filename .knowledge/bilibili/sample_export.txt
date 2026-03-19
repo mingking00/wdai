@@ -1,0 +1,14 @@
+# B站收藏夹导出示例
+# 格式: BV号 | 标题 | UP主
+# 这是示例数据，实际使用时请替换为你的真实收藏
+
+BV1uowLz7Evr | OpenClaw 代理为何总失忆？完整内存架构解决方案 | AI技术探索
+BV1xyz123abc | 大模型微调实战：LoRA vs Full Fine-tuning | 深度学习实验室
+BV2abc456def | 分布式系统设计：从0到1构建高可用架构 | 后端技术专家
+BV3ghi789jkl | Graph Neural Network 图神经网络入门 | 机器学习研究院
+BV4mno012pqr | 联邦学习：隐私保护下的协同训练 | 隐私计算实验室
+BV5stu345vwx | Transformer架构深度解析 | NLP研究者
+BV6yza678bcd | AutoML 自动化机器学习综述 | AI工程实验室
+BV7efg901hij | 向量数据库与RAG应用实践 | 向量技术专家
+BV8klm234nop | 量子计算入门：从0到1理解量子比特 | 量子计算研究所
+BV9qrs567tuv | 操作系统内核设计与实现 | 系统编程专家

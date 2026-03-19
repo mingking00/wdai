@@ -1,0 +1,17 @@
+#!/bin/bash
+# Quick memory search using vector store
+cd /root/.openclaw/workspace
+python3 -c "
+import sys
+sys.path.insert(0, '.claw-status')
+from vector_memory import MemorySearchEnhanced
+
+search = MemorySearchEnhanced()
+query = ' '.join(sys.argv[1:]) if len(sys.argv) > 1 else input('Search: ')
+results = search.search(query, top_k=5)
+
+print(f'\\n🔍 Results for: {query}\\n')
+for i, r in enumerate(results, 1):
+    snippet = r['content'][:100].replace('\\n', ' ')
+    print(f'{i}. [{r[\"score\"]:.2f}] {snippet}...')
+" "$@"

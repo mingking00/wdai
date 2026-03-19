@@ -1,0 +1,17 @@
+[
+  {
+    "id": "82aa30fd-c41b-46ce-92c8-51f18216ab39",
+    "fact": "不逃避空转问题，而是主动创造解决方案",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T14:26:14.623954",
+    "last_accessed": "2026-03-19T14:26:14.623956",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

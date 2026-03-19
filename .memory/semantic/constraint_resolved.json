@@ -1,0 +1,5231 @@
+[
+  {
+    "id": "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T18:25:18.530090",
+    "last_accessed": "2026-03-17T18:25:18.530102",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701358",
+    "last_accessed": "2026-03-17T00:38:18.701381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值; Also: ** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701423",
+    "last_accessed": "2026-03-19T14:26:45.927609",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2a32ff09-6aec-470e-af1b-f84289edcf06",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.471840",
+    "last_accessed": "2026-03-18T01:25:15.471851",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694"
+      ]
+    }
+  },
+  {
+    "id": "5648fea1-5747-41f8-b457-759b81ca9e43",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.471876",
+    "last_accessed": "2026-03-18T01:25:15.471878",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948"
+      ]
+    }
+  },
+  {
+    "id": "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.653808",
+    "last_accessed": "2026-03-17T00:43:30.653825",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2"
+      ]
+    }
+  },
+  {
+    "id": "40807357-bfac-4206-ace5-5d59f5e64ccd",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值; Also: ** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.653860",
+    "last_accessed": "2026-03-19T14:26:45.927620",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25"
+      ]
+    }
+  },
+  {
+    "id": "6edf155f-ec94-4173-9b1f-642407a919c3",
+    "fact": "自主进化执行器配置了每7分钟状态记录、每小时外循环进化、每30分钟GitHub项目发现",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T07:25:00Z",
+    "last_accessed": "2026-03-17T07:25:00Z",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "conversation_analysis",
+      "session_id": "main",
+      "tags": [
+        "evolution",
+        "executor",
+        "schedule",
+        "config"
+      ]
+    }
+  },
+  {
+    "id": "4645ee1e-1002-4386-9e6e-41830167d98d",
+    "fact": "严格按照参考图的结构，不能自行调整布局方向",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310645",
+    "last_accessed": "2026-03-18T16:25:27.310659",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+    "fact": "分别绘制两条线（arrowEnd 和 arrowBegin）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310670",
+    "last_accessed": "2026-03-18T16:25:27.310671",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "3619f396-9585-4744-88fa-a38477787ff0",
+    "fact": "用户在PowerPoint中手动运行）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310679",
+    "last_accessed": "2026-03-18T16:25:27.310681",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+    "fact": "先上传再分享，不能直接发送附件",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310690",
+    "last_accessed": "2026-03-18T16:25:27.310691",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "3ebb413e-8199-4042-8fe1-a7602fb32769",
+    "fact": "额外的参数或不同的调用方式",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310696",
+    "last_accessed": "2026-03-18T16:25:27.310697",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "6daa847d-7768-47c0-9fba-c897df464334",
+    "fact": "进一步研究飞书开放平台的上传接口文档",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310701",
+    "last_accessed": "2026-03-18T16:25:27.310702",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "41cb4546-806b-408b-a07a-b59868778588",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802304",
+    "last_accessed": "2026-03-17T03:25:22.802314",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802344",
+    "last_accessed": "2026-03-17T03:25:22.802345",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "23acb9de-dc29-4c47-9474-1b7b2866053e",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:21.196063",
+    "last_accessed": "2026-03-18T01:25:21.196071",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "2719abd4-bc6d-4531-8115-9f6035b6126d",
+        "c9ef10ba-7531-44dd-a983-7279c3a6e877",
+        "2719abd4-bc6d-4531-8115-9f6035b6126d"
+      ]
+    }
+  },
+  {
+    "id": "57963d3f-2782-455d-98ab-7f260f5711e8",
+    "fact": "框架层支持（多个独立session）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835935",
+    "last_accessed": "2026-03-17T23:26:11.835949",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e5eb00e8-545e-4742-a3c6-2b69915be363",
+    "fact": "有验证步骤、跨Agent验证",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835963",
+    "last_accessed": "2026-03-17T23:26:11.835965",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "109d3337-7d94-4389-97ce-e52d51f752e9",
+    "fact": "在实际使用中验证效果：",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:20.967120",
+    "last_accessed": "2026-03-18T01:25:20.967130",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "46b2458b-25cb-4020-90a0-fc403ccadf10",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354739",
+    "last_accessed": "2026-03-17T16:25:31.354749",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "41cb4546-806b-408b-a07a-b59868778588"
+      ]
+    }
+  },
+  {
+    "id": "39dd7f92-da66-4502-8ab0-a75732dc8951",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354767",
+    "last_accessed": "2026-03-17T16:25:31.354768",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827"
+      ]
+    }
+  },
+  {
+    "id": "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T18:25:18.530090",
+    "last_accessed": "2026-03-17T18:25:18.530102",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701358",
+    "last_accessed": "2026-03-17T00:38:18.701381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值; Also: ** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701423",
+    "last_accessed": "2026-03-19T14:26:45.927629",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2a32ff09-6aec-470e-af1b-f84289edcf06",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.471840",
+    "last_accessed": "2026-03-18T01:25:15.471851",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694"
+      ]
+    }
+  },
+  {
+    "id": "5648fea1-5747-41f8-b457-759b81ca9e43",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.471876",
+    "last_accessed": "2026-03-18T01:25:15.471878",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948"
+      ]
+    }
+  },
+  {
+    "id": "bf837b1b-c46f-45d3-a4ba-8bffdae9a059",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268860",
+    "last_accessed": "2026-03-19T12:25:43.268871",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "31c97ea1-7606-493e-a791-44d72c4de7c1",
+        "05ec0f49-40f7-47d6-aaa3-b7302e36d0c0",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "05ec0f49-40f7-47d6-aaa3-b7302e36d0c0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "31c97ea1-7606-493e-a791-44d72c4de7c1",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "aef465b0-234a-4551-81fb-a1807f7f7d9f",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268883",
+    "last_accessed": "2026-03-19T12:25:43.268885",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5dff95f8-707e-4f81-a9ce-13f06f3cd19a",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "5dff95f8-707e-4f81-a9ce-13f06f3cd19a",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "484c4f4a-3f15-4428-8394-43eb3d305ecc",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268901",
+    "last_accessed": "2026-03-19T12:25:43.268902",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "fbb525f4-c69f-47a0-9db8-0a51e3340d61",
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693",
+        "fbb525f4-c69f-47a0-9db8-0a51e3340d61",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693"
+      ]
+    }
+  },
+  {
+    "id": "5cbed040-05b2-4e02-8855-7f0dedb9fd2f",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268914",
+    "last_accessed": "2026-03-19T12:25:43.268915",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1db1a90-e736-49fb-a902-2fe64b94b653",
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e",
+        "f1db1a90-e736-49fb-a902-2fe64b94b653",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e"
+      ]
+    }
+  },
+  {
+    "id": "9945bae6-d7c9-4243-a4cb-28b9f0e927c4",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268930",
+    "last_accessed": "2026-03-19T12:25:43.268931",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "18e64194-4386-4de6-874a-48f861ac9970",
+        "a557eb60-ef04-416d-8254-731ba66e39b8",
+        "18e64194-4386-4de6-874a-48f861ac9970",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "a557eb60-ef04-416d-8254-731ba66e39b8"
+      ]
+    }
+  },
+  {
+    "id": "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:26.654013",
+    "last_accessed": "2026-03-17T16:25:26.654025",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041"
+      ]
+    }
+  },
+  {
+    "id": "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值; Also: ** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:26.654049",
+    "last_accessed": "2026-03-19T14:26:45.927641",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:26.654013",
+    "last_accessed": "2026-03-17T16:25:26.654025",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041"
+      ]
+    }
+  },
+  {
+    "id": "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值; Also: ** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:26.654049",
+    "last_accessed": "2026-03-19T14:26:45.927652",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567206",
+    "last_accessed": "2026-03-17T04:25:24.567216",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970"
+      ]
+    }
+  },
+  {
+    "id": "41007e21-d784-479b-b98f-e5274234c901",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值; Also: ** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567239",
+    "last_accessed": "2026-03-19T14:26:45.927663",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c"
+      ]
+    }
+  },
+  {
+    "id": "31c97ea1-7606-493e-a791-44d72c4de7c1",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928123",
+    "last_accessed": "2026-03-19T08:25:39.928136",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "5dff95f8-707e-4f81-a9ce-13f06f3cd19a",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928148",
+    "last_accessed": "2026-03-19T08:25:39.928150",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "fbb525f4-c69f-47a0-9db8-0a51e3340d61",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928166",
+    "last_accessed": "2026-03-19T08:25:39.928167",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693"
+      ]
+    }
+  },
+  {
+    "id": "f1db1a90-e736-49fb-a902-2fe64b94b653",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928177",
+    "last_accessed": "2026-03-19T08:25:39.928178",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e"
+      ]
+    }
+  },
+  {
+    "id": "18e64194-4386-4de6-874a-48f861ac9970",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928192",
+    "last_accessed": "2026-03-19T08:25:39.928194",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "a557eb60-ef04-416d-8254-731ba66e39b8",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "a557eb60-ef04-416d-8254-731ba66e39b8"
+      ]
+    }
+  },
+  {
+    "id": "625e17eb-7833-4da2-b1c6-3d997e1b75ff",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894606",
+    "last_accessed": "2026-03-17T06:27:34.894607",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894608",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "27d1a470-41e4-4310-937f-94c5bd2738e8",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894617",
+    "last_accessed": "2026-03-17T06:27:34.894618",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894619",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "2eb805b3-daf0-414a-8441-a79b0e746a9d",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894666",
+    "last_accessed": "2026-03-17T06:27:34.894667",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894667",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "cac5a214-d027-4b11-adbe-d75c9ff9d73f",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991840",
+    "last_accessed": "2026-03-17T17:25:32.991841",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991842",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "9f89e9d6-b2fc-4761-8628-87470d2ffd57",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991851",
+    "last_accessed": "2026-03-17T17:25:32.991852",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991853",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "df12c5d4-e5db-4500-b965-2618911e005a",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991896",
+    "last_accessed": "2026-03-17T17:25:32.991897",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991898",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "b632b26e-d916-4a5c-ba79-c962a53bb964",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574486",
+    "last_accessed": "2026-03-17T20:25:28.574496",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059"
+      ]
+    }
+  },
+  {
+    "id": "02ddb573-5097-4625-88bc-439e945f17aa",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574518",
+    "last_accessed": "2026-03-17T20:25:28.574520",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f"
+      ]
+    }
+  },
+  {
+    "id": "c317d7b0-174a-42d5-87b4-459a80d87b9e",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:29.008631",
+    "last_accessed": "2026-03-19T04:26:29.008644",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "8f9506af-f311-4412-acab-a01f08e95f07",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "8f9506af-f311-4412-acab-a01f08e95f07",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041"
+      ]
+    }
+  },
+  {
+    "id": "71757bfa-a0d4-4019-a0df-f6f553e06754",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:29.008669",
+    "last_accessed": "2026-03-19T04:26:29.008670",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "0d66ecfd-857a-481a-a8f2-6b303759bd60",
+    "fact": "** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T14:26:14.623684",
+    "last_accessed": "2026-03-19T14:26:45.927571",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "71757bfa-a0d4-4019-a0df-f6f553e06754",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "71757bfa-a0d4-4019-a0df-f6f553e06754",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.653808",
+    "last_accessed": "2026-03-17T00:43:30.653825",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2"
+      ]
+    }
+  },
+  {
+    "id": "40807357-bfac-4206-ace5-5d59f5e64ccd",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.653860",
+    "last_accessed": "2026-03-17T00:43:30.653862",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25"
+      ]
+    }
+  },
+  {
+    "id": "af681b5b-d351-4aa5-ad48-5ee36ece2194",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:28.955505",
+    "last_accessed": "2026-03-19T04:26:28.955517",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "2a32ff09-6aec-470e-af1b-f84289edcf06",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "2a32ff09-6aec-470e-af1b-f84289edcf06",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "2a32ff09-6aec-470e-af1b-f84289edcf06",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "2a32ff09-6aec-470e-af1b-f84289edcf06",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694"
+      ]
+    }
+  },
+  {
+    "id": "7ac2f9bc-112e-4f8e-bdb6-2d36a9ebb6cd",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:28.955539",
+    "last_accessed": "2026-03-19T04:26:28.955540",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5648fea1-5747-41f8-b457-759b81ca9e43",
+        "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+        "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+        "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "5648fea1-5747-41f8-b457-759b81ca9e43",
+        "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "5648fea1-5747-41f8-b457-759b81ca9e43",
+        "5648fea1-5747-41f8-b457-759b81ca9e43",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948"
+      ]
+    }
+  },
+  {
+    "id": "ea9e0f3f-2ffd-4cbc-bd64-a0c8caff6c04",
+    "fact": "获取外界的高质量信息和高质量的项目有深远意义的项目，这是进化的燃料。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395318",
+    "last_accessed": "2026-03-17T02:26:03.395350",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "51acb347-fccc-4ca3-8016-3db2edc0cc16",
+    "fact": "寻找高质量的论文来提升元认知能力。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395368",
+    "last_accessed": "2026-03-17T02:26:03.395370",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e75a23e2-da9c-48f6-bca9-2a3914eee175",
+    "fact": "扩展外部信息来源，包括GitHub Trending和ArXiv。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395379",
+    "last_accessed": "2026-03-17T02:26:03.395381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "010d4fa5-293b-4bdb-9ce9-ae0ae9c77fe5",
+    "fact": "建立用户反馈收集机制。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395388",
+    "last_accessed": "2026-03-17T02:26:03.395389",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "0aaeb167-fc07-4c3d-951d-40712d485970",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163226",
+    "last_accessed": "2026-03-17T03:25:15.163236",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c"
+      ]
+    }
+  },
+  {
+    "id": "868114c1-c563-4e41-81ff-2bfb3d15552c",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163260",
+    "last_accessed": "2026-03-17T03:25:15.163262",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd"
+      ]
+    }
+  },
+  {
+    "id": "8f9506af-f311-4412-acab-a01f08e95f07",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T08:25:19.618085",
+    "last_accessed": "2026-03-18T08:25:19.618096",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041"
+      ]
+    }
+  },
+  {
+    "id": "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T08:25:19.618119",
+    "last_accessed": "2026-03-18T08:25:19.618120",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T18:25:18.530090",
+    "last_accessed": "2026-03-17T18:25:18.530102",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701358",
+    "last_accessed": "2026-03-17T00:38:18.701381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701423",
+    "last_accessed": "2026-03-17T00:38:18.701426",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2a32ff09-6aec-470e-af1b-f84289edcf06",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.471840",
+    "last_accessed": "2026-03-18T01:25:15.471851",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694"
+      ]
+    }
+  },
+  {
+    "id": "5648fea1-5747-41f8-b457-759b81ca9e43",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.471876",
+    "last_accessed": "2026-03-18T01:25:15.471878",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948"
+      ]
+    }
+  },
+  {
+    "id": "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.653808",
+    "last_accessed": "2026-03-17T00:43:30.653825",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2"
+      ]
+    }
+  },
+  {
+    "id": "40807357-bfac-4206-ace5-5d59f5e64ccd",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.653860",
+    "last_accessed": "2026-03-17T00:43:30.653862",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25"
+      ]
+    }
+  },
+  {
+    "id": "6edf155f-ec94-4173-9b1f-642407a919c3",
+    "fact": "自主进化执行器配置了每7分钟状态记录、每小时外循环进化、每30分钟GitHub项目发现",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T07:25:00Z",
+    "last_accessed": "2026-03-17T07:25:00Z",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "conversation_analysis",
+      "session_id": "main",
+      "tags": [
+        "evolution",
+        "executor",
+        "schedule",
+        "config"
+      ]
+    }
+  },
+  {
+    "id": "41cb4546-806b-408b-a07a-b59868778588",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802304",
+    "last_accessed": "2026-03-17T03:25:22.802314",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802344",
+    "last_accessed": "2026-03-17T03:25:22.802345",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "23acb9de-dc29-4c47-9474-1b7b2866053e",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:21.196063",
+    "last_accessed": "2026-03-18T01:25:21.196071",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "2719abd4-bc6d-4531-8115-9f6035b6126d",
+        "c9ef10ba-7531-44dd-a983-7279c3a6e877",
+        "2719abd4-bc6d-4531-8115-9f6035b6126d"
+      ]
+    }
+  },
+  {
+    "id": "57963d3f-2782-455d-98ab-7f260f5711e8",
+    "fact": "框架层支持（多个独立session）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835935",
+    "last_accessed": "2026-03-17T23:26:11.835949",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e5eb00e8-545e-4742-a3c6-2b69915be363",
+    "fact": "有验证步骤、跨Agent验证",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835963",
+    "last_accessed": "2026-03-17T23:26:11.835965",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "109d3337-7d94-4389-97ce-e52d51f752e9",
+    "fact": "在实际使用中验证效果：",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:20.967120",
+    "last_accessed": "2026-03-18T01:25:20.967130",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "46b2458b-25cb-4020-90a0-fc403ccadf10",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354739",
+    "last_accessed": "2026-03-17T16:25:31.354749",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "41cb4546-806b-408b-a07a-b59868778588"
+      ]
+    }
+  },
+  {
+    "id": "39dd7f92-da66-4502-8ab0-a75732dc8951",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354767",
+    "last_accessed": "2026-03-17T16:25:31.354768",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827"
+      ]
+    }
+  },
+  {
+    "id": "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T18:25:18.530090",
+    "last_accessed": "2026-03-17T18:25:18.530102",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701358",
+    "last_accessed": "2026-03-17T00:38:18.701381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701423",
+    "last_accessed": "2026-03-17T00:38:18.701426",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2a32ff09-6aec-470e-af1b-f84289edcf06",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.471840",
+    "last_accessed": "2026-03-18T01:25:15.471851",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694"
+      ]
+    }
+  },
+  {
+    "id": "5648fea1-5747-41f8-b457-759b81ca9e43",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.471876",
+    "last_accessed": "2026-03-18T01:25:15.471878",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948"
+      ]
+    }
+  },
+  {
+    "id": "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:26.654013",
+    "last_accessed": "2026-03-17T16:25:26.654025",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041"
+      ]
+    }
+  },
+  {
+    "id": "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:26.654049",
+    "last_accessed": "2026-03-17T16:25:26.654051",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:26.654013",
+    "last_accessed": "2026-03-17T16:25:26.654025",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041"
+      ]
+    }
+  },
+  {
+    "id": "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:26.654049",
+    "last_accessed": "2026-03-17T16:25:26.654051",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567206",
+    "last_accessed": "2026-03-17T04:25:24.567216",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970"
+      ]
+    }
+  },
+  {
+    "id": "41007e21-d784-479b-b98f-e5274234c901",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567239",
+    "last_accessed": "2026-03-17T04:25:24.567241",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c"
+      ]
+    }
+  },
+  {
+    "id": "625e17eb-7833-4da2-b1c6-3d997e1b75ff",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894606",
+    "last_accessed": "2026-03-17T06:27:34.894607",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894608",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "27d1a470-41e4-4310-937f-94c5bd2738e8",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894617",
+    "last_accessed": "2026-03-17T06:27:34.894618",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894619",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "2eb805b3-daf0-414a-8441-a79b0e746a9d",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894666",
+    "last_accessed": "2026-03-17T06:27:34.894667",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894667",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "cac5a214-d027-4b11-adbe-d75c9ff9d73f",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991840",
+    "last_accessed": "2026-03-17T17:25:32.991841",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991842",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "9f89e9d6-b2fc-4761-8628-87470d2ffd57",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991851",
+    "last_accessed": "2026-03-17T17:25:32.991852",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991853",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "df12c5d4-e5db-4500-b965-2618911e005a",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991896",
+    "last_accessed": "2026-03-17T17:25:32.991897",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991898",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "b632b26e-d916-4a5c-ba79-c962a53bb964",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574486",
+    "last_accessed": "2026-03-17T20:25:28.574496",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059"
+      ]
+    }
+  },
+  {
+    "id": "02ddb573-5097-4625-88bc-439e945f17aa",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574518",
+    "last_accessed": "2026-03-17T20:25:28.574520",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f"
+      ]
+    }
+  },
+  {
+    "id": "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.653808",
+    "last_accessed": "2026-03-17T00:43:30.653825",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2"
+      ]
+    }
+  },
+  {
+    "id": "40807357-bfac-4206-ace5-5d59f5e64ccd",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.653860",
+    "last_accessed": "2026-03-17T00:43:30.653862",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25"
+      ]
+    }
+  },
+  {
+    "id": "ea9e0f3f-2ffd-4cbc-bd64-a0c8caff6c04",
+    "fact": "获取外界的高质量信息和高质量的项目有深远意义的项目，这是进化的燃料。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395318",
+    "last_accessed": "2026-03-17T02:26:03.395350",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "51acb347-fccc-4ca3-8016-3db2edc0cc16",
+    "fact": "寻找高质量的论文来提升元认知能力。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395368",
+    "last_accessed": "2026-03-17T02:26:03.395370",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e75a23e2-da9c-48f6-bca9-2a3914eee175",
+    "fact": "扩展外部信息来源，包括GitHub Trending和ArXiv。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395379",
+    "last_accessed": "2026-03-17T02:26:03.395381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "010d4fa5-293b-4bdb-9ce9-ae0ae9c77fe5",
+    "fact": "建立用户反馈收集机制。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395388",
+    "last_accessed": "2026-03-17T02:26:03.395389",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "0aaeb167-fc07-4c3d-951d-40712d485970",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163226",
+    "last_accessed": "2026-03-17T03:25:15.163236",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c"
+      ]
+    }
+  },
+  {
+    "id": "868114c1-c563-4e41-81ff-2bfb3d15552c",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163260",
+    "last_accessed": "2026-03-17T03:25:15.163262",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd"
+      ]
+    }
+  },
+  {
+    "id": "84663be3-7676-4e15-a462-5eb96f0fd059",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511704",
+    "last_accessed": "2026-03-17T19:25:20.511717",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f"
+      ]
+    }
+  },
+  {
+    "id": "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511742",
+    "last_accessed": "2026-03-17T19:25:20.511743",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.026979",
+    "last_accessed": "2026-03-17T05:25:30.026989",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3"
+      ]
+    }
+  },
+  {
+    "id": "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027014",
+    "last_accessed": "2026-03-17T05:25:30.027015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901"
+      ]
+    }
+  },
+  {
+    "id": "46b2458b-25cb-4020-90a0-fc403ccadf10",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354739",
+    "last_accessed": "2026-03-17T16:25:31.354749",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "41cb4546-806b-408b-a07a-b59868778588"
+      ]
+    }
+  },
+  {
+    "id": "39dd7f92-da66-4502-8ab0-a75732dc8951",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354767",
+    "last_accessed": "2026-03-17T16:25:31.354768",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827"
+      ]
+    }
+  },
+  {
+    "id": "0aaeb167-fc07-4c3d-951d-40712d485970",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163226",
+    "last_accessed": "2026-03-17T03:25:15.163236",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c"
+      ]
+    }
+  },
+  {
+    "id": "868114c1-c563-4e41-81ff-2bfb3d15552c",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163260",
+    "last_accessed": "2026-03-17T03:25:15.163262",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd"
+      ]
+    }
+  },
+  {
+    "id": "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567206",
+    "last_accessed": "2026-03-17T04:25:24.567216",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970"
+      ]
+    }
+  },
+  {
+    "id": "41007e21-d784-479b-b98f-e5274234c901",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567239",
+    "last_accessed": "2026-03-17T04:25:24.567241",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c"
+      ]
+    }
+  },
+  {
+    "id": "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314004",
+    "last_accessed": "2026-03-17T21:25:12.314015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964"
+      ]
+    }
+  },
+  {
+    "id": "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314037",
+    "last_accessed": "2026-03-17T21:25:12.314039",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa"
+      ]
+    }
+  },
+  {
+    "id": "2719abd4-bc6d-4531-8115-9f6035b6126d",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:24.744742",
+    "last_accessed": "2026-03-17T19:25:24.744752",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "c9ef10ba-7531-44dd-a983-7279c3a6e877",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:16.790983",
+    "last_accessed": "2026-03-17T21:25:16.790992",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "2719abd4-bc6d-4531-8115-9f6035b6126d",
+        "2719abd4-bc6d-4531-8115-9f6035b6126d"
+      ]
+    }
+  },
+  {
+    "id": "84663be3-7676-4e15-a462-5eb96f0fd059",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511704",
+    "last_accessed": "2026-03-17T19:25:20.511717",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f"
+      ]
+    }
+  },
+  {
+    "id": "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511742",
+    "last_accessed": "2026-03-17T19:25:20.511743",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "b632b26e-d916-4a5c-ba79-c962a53bb964",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574486",
+    "last_accessed": "2026-03-17T20:25:28.574496",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059"
+      ]
+    }
+  },
+  {
+    "id": "02ddb573-5097-4625-88bc-439e945f17aa",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574518",
+    "last_accessed": "2026-03-17T20:25:28.574520",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f"
+      ]
+    }
+  },
+  {
+    "id": "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314004",
+    "last_accessed": "2026-03-17T21:25:12.314015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964"
+      ]
+    }
+  },
+  {
+    "id": "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314037",
+    "last_accessed": "2026-03-17T21:25:12.314039",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa"
+      ]
+    }
+  },
+  {
+    "id": "109d3337-7d94-4389-97ce-e52d51f752e9",
+    "fact": "在实际使用中验证效果：",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:20.967120",
+    "last_accessed": "2026-03-18T01:25:20.967130",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2719abd4-bc6d-4531-8115-9f6035b6126d",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:24.744742",
+    "last_accessed": "2026-03-17T19:25:24.744752",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "41cb4546-806b-408b-a07a-b59868778588",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802304",
+    "last_accessed": "2026-03-17T03:25:22.802314",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802344",
+    "last_accessed": "2026-03-17T03:25:22.802345",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "57963d3f-2782-455d-98ab-7f260f5711e8",
+    "fact": "框架层支持（多个独立session）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835935",
+    "last_accessed": "2026-03-17T23:26:11.835949",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e5eb00e8-545e-4742-a3c6-2b69915be363",
+    "fact": "有验证步骤、跨Agent验证",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835963",
+    "last_accessed": "2026-03-17T23:26:11.835965",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.026979",
+    "last_accessed": "2026-03-17T05:25:30.026989",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3"
+      ]
+    }
+  },
+  {
+    "id": "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027014",
+    "last_accessed": "2026-03-17T05:25:30.027015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901"
+      ]
+    }
+  },
+  {
+    "id": "ea9e0f3f-2ffd-4cbc-bd64-a0c8caff6c04",
+    "fact": "获取外界的高质量信息和高质量的项目有深远意义的项目，这是进化的燃料。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395318",
+    "last_accessed": "2026-03-17T02:26:03.395350",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "51acb347-fccc-4ca3-8016-3db2edc0cc16",
+    "fact": "寻找高质量的论文来提升元认知能力。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395368",
+    "last_accessed": "2026-03-17T02:26:03.395370",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e75a23e2-da9c-48f6-bca9-2a3914eee175",
+    "fact": "扩展外部信息来源，包括GitHub Trending和ArXiv。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395379",
+    "last_accessed": "2026-03-17T02:26:03.395381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "010d4fa5-293b-4bdb-9ce9-ae0ae9c77fe5",
+    "fact": "建立用户反馈收集机制。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395388",
+    "last_accessed": "2026-03-17T02:26:03.395389",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "625e17eb-7833-4da2-b1c6-3d997e1b75ff",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894606",
+    "last_accessed": "2026-03-17T06:27:34.894607",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894608",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "27d1a470-41e4-4310-937f-94c5bd2738e8",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894617",
+    "last_accessed": "2026-03-17T06:27:34.894618",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894619",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "2eb805b3-daf0-414a-8441-a79b0e746a9d",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894666",
+    "last_accessed": "2026-03-17T06:27:34.894667",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894667",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "cac5a214-d027-4b11-adbe-d75c9ff9d73f",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991840",
+    "last_accessed": "2026-03-17T17:25:32.991841",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991842",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "9f89e9d6-b2fc-4761-8628-87470d2ffd57",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991851",
+    "last_accessed": "2026-03-17T17:25:32.991852",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991853",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "df12c5d4-e5db-4500-b965-2618911e005a",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991896",
+    "last_accessed": "2026-03-17T17:25:32.991897",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991898",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "84663be3-7676-4e15-a462-5eb96f0fd059",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511704",
+    "last_accessed": "2026-03-17T19:25:20.511717",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f"
+      ]
+    }
+  },
+  {
+    "id": "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511742",
+    "last_accessed": "2026-03-17T19:25:20.511743",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "8f9506af-f311-4412-acab-a01f08e95f07",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T08:25:19.618085",
+    "last_accessed": "2026-03-18T08:25:19.618096",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041"
+      ]
+    }
+  },
+  {
+    "id": "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T08:25:19.618119",
+    "last_accessed": "2026-03-18T08:25:19.618120",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.026979",
+    "last_accessed": "2026-03-17T05:25:30.026989",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3"
+      ]
+    }
+  },
+  {
+    "id": "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027014",
+    "last_accessed": "2026-03-17T05:25:30.027015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901"
+      ]
+    }
+  },
+  {
+    "id": "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T22:26:01.452256",
+    "last_accessed": "2026-03-18T22:26:01.452270",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T22:26:01.452283",
+    "last_accessed": "2026-03-18T22:26:01.452284",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "46b2458b-25cb-4020-90a0-fc403ccadf10",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354739",
+    "last_accessed": "2026-03-17T16:25:31.354749",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "41cb4546-806b-408b-a07a-b59868778588"
+      ]
+    }
+  },
+  {
+    "id": "39dd7f92-da66-4502-8ab0-a75732dc8951",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354767",
+    "last_accessed": "2026-03-17T16:25:31.354768",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827"
+      ]
+    }
+  },
+  {
+    "id": "0aaeb167-fc07-4c3d-951d-40712d485970",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163226",
+    "last_accessed": "2026-03-17T03:25:15.163236",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c"
+      ]
+    }
+  },
+  {
+    "id": "868114c1-c563-4e41-81ff-2bfb3d15552c",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163260",
+    "last_accessed": "2026-03-17T03:25:15.163262",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd"
+      ]
+    }
+  },
+  {
+    "id": "8444bd9a-1def-4212-9819-b3ab366dedbb",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584126",
+    "last_accessed": "2026-03-19T06:25:24.584138",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "b98faecf-0c63-4376-806e-9ebde042743f",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584151",
+    "last_accessed": "2026-03-19T06:25:24.584152",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "8bfa4feb-692d-4c84-922f-5fdb31ef0693",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584172",
+    "last_accessed": "2026-03-19T06:25:24.584173",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "ff5299bd-b702-4926-9d40-51a8a499325d"
+      ]
+    }
+  },
+  {
+    "id": "a4c1e8b4-28b8-4a24-b800-78ece2576f0e",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584184",
+    "last_accessed": "2026-03-19T06:25:24.584185",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6"
+      ]
+    }
+  },
+  {
+    "id": "a557eb60-ef04-416d-8254-731ba66e39b8",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584202",
+    "last_accessed": "2026-03-19T06:25:24.584203",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c"
+      ]
+    }
+  },
+  {
+    "id": "eb71de44-a4b7-42d6-8219-330d7f27ac98",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.862862",
+    "last_accessed": "2026-03-19T04:26:36.862874",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588"
+      ]
+    }
+  },
+  {
+    "id": "21e2c835-e504-471a-b150-cdb6b1e5e831",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.862896",
+    "last_accessed": "2026-03-19T04:26:36.862898",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827"
+      ]
+    }
+  },
+  {
+    "id": "c317d7b0-174a-42d5-87b4-459a80d87b9e",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:29.008631",
+    "last_accessed": "2026-03-19T04:26:29.008644",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "8f9506af-f311-4412-acab-a01f08e95f07",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a0bbf3e1-0bc2-4ee8-93f5-aab45207b91b",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "8f9506af-f311-4412-acab-a01f08e95f07",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "9a7b41ad-8b14-40ed-84b2-dfaf0146b041"
+      ]
+    }
+  },
+  {
+    "id": "71757bfa-a0d4-4019-a0df-f6f553e06754",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:29.008669",
+    "last_accessed": "2026-03-19T04:26:29.008670",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "eb71de44-a4b7-42d6-8219-330d7f27ac98",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.862862",
+    "last_accessed": "2026-03-19T04:26:36.862874",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588"
+      ]
+    }
+  },
+  {
+    "id": "21e2c835-e504-471a-b150-cdb6b1e5e831",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.862896",
+    "last_accessed": "2026-03-19T04:26:36.862898",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827"
+      ]
+    }
+  },
+  {
+    "id": "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567206",
+    "last_accessed": "2026-03-17T04:25:24.567216",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970"
+      ]
+    }
+  },
+  {
+    "id": "41007e21-d784-479b-b98f-e5274234c901",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T04:25:24.567239",
+    "last_accessed": "2026-03-17T04:25:24.567241",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c"
+      ]
+    }
+  },
+  {
+    "id": "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314004",
+    "last_accessed": "2026-03-17T21:25:12.314015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964"
+      ]
+    }
+  },
+  {
+    "id": "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314037",
+    "last_accessed": "2026-03-17T21:25:12.314039",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa"
+      ]
+    }
+  },
+  {
+    "id": "4645ee1e-1002-4386-9e6e-41830167d98d",
+    "fact": "严格按照参考图的结构，不能自行调整布局方向",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310645",
+    "last_accessed": "2026-03-18T16:25:27.310659",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+    "fact": "分别绘制两条线（arrowEnd 和 arrowBegin）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310670",
+    "last_accessed": "2026-03-18T16:25:27.310671",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "3619f396-9585-4744-88fa-a38477787ff0",
+    "fact": "用户在PowerPoint中手动运行）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310679",
+    "last_accessed": "2026-03-18T16:25:27.310681",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+    "fact": "先上传再分享，不能直接发送附件",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310690",
+    "last_accessed": "2026-03-18T16:25:27.310691",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "3ebb413e-8199-4042-8fe1-a7602fb32769",
+    "fact": "额外的参数或不同的调用方式",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310696",
+    "last_accessed": "2026-03-18T16:25:27.310697",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "6daa847d-7768-47c0-9fba-c897df464334",
+    "fact": "进一步研究飞书开放平台的上传接口文档",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.310701",
+    "last_accessed": "2026-03-18T16:25:27.310702",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2719abd4-bc6d-4531-8115-9f6035b6126d",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:24.744742",
+    "last_accessed": "2026-03-17T19:25:24.744752",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "31c97ea1-7606-493e-a791-44d72c4de7c1",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928123",
+    "last_accessed": "2026-03-19T08:25:39.928136",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "5dff95f8-707e-4f81-a9ce-13f06f3cd19a",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928148",
+    "last_accessed": "2026-03-19T08:25:39.928150",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "fbb525f4-c69f-47a0-9db8-0a51e3340d61",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928166",
+    "last_accessed": "2026-03-19T08:25:39.928167",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693"
+      ]
+    }
+  },
+  {
+    "id": "f1db1a90-e736-49fb-a902-2fe64b94b653",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928177",
+    "last_accessed": "2026-03-19T08:25:39.928178",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e"
+      ]
+    }
+  },
+  {
+    "id": "18e64194-4386-4de6-874a-48f861ac9970",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T08:25:39.928192",
+    "last_accessed": "2026-03-19T08:25:39.928194",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "a557eb60-ef04-416d-8254-731ba66e39b8",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "a557eb60-ef04-416d-8254-731ba66e39b8"
+      ]
+    }
+  },
+  {
+    "id": "c9ef10ba-7531-44dd-a983-7279c3a6e877",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:16.790983",
+    "last_accessed": "2026-03-17T21:25:16.790992",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "2719abd4-bc6d-4531-8115-9f6035b6126d",
+        "2719abd4-bc6d-4531-8115-9f6035b6126d"
+      ]
+    }
+  },
+  {
+    "id": "84663be3-7676-4e15-a462-5eb96f0fd059",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511704",
+    "last_accessed": "2026-03-17T19:25:20.511717",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f"
+      ]
+    }
+  },
+  {
+    "id": "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511742",
+    "last_accessed": "2026-03-17T19:25:20.511743",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "3c572225-c4b5-4dc5-9661-9db72f6c36d2",
+    "fact": "严格按照参考图的结构，不能自行调整布局方向",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.071998",
+    "last_accessed": "2026-03-18T18:26:21.072011",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "4645ee1e-1002-4386-9e6e-41830167d98d",
+        "4645ee1e-1002-4386-9e6e-41830167d98d"
+      ]
+    }
+  },
+  {
+    "id": "639aeee8-7132-46d9-80a3-99d6ded5c1d1",
+    "fact": "分别绘制两条线（arrowEnd 和 arrowBegin）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072021",
+    "last_accessed": "2026-03-18T18:26:21.072022",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+        "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+        "5625953b-e11f-41e0-8c46-4f534f48cd24",
+        "5625953b-e11f-41e0-8c46-4f534f48cd24"
+      ]
+    }
+  },
+  {
+    "id": "98989c9c-5d08-4579-88ae-190b32c92abc",
+    "fact": "用户在PowerPoint中手动运行）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072030",
+    "last_accessed": "2026-03-18T18:26:21.072031",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3619f396-9585-4744-88fa-a38477787ff0",
+        "3619f396-9585-4744-88fa-a38477787ff0",
+        "16b7169d-e21a-49d4-b37b-01d5f186145f",
+        "16b7169d-e21a-49d4-b37b-01d5f186145f"
+      ]
+    }
+  },
+  {
+    "id": "9d52a43e-407c-47e8-a006-5b4e3d2550c9",
+    "fact": "先上传再分享，不能直接发送附件",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072040",
+    "last_accessed": "2026-03-18T18:26:21.072041",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+        "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+        "246a1368-b23c-4610-8c31-4388760a3528",
+        "246a1368-b23c-4610-8c31-4388760a3528"
+      ]
+    }
+  },
+  {
+    "id": "88233df0-954a-48d6-bada-6e60150769b4",
+    "fact": "额外的参数或不同的调用方式",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072046",
+    "last_accessed": "2026-03-18T18:26:21.072047",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3ebb413e-8199-4042-8fe1-a7602fb32769",
+        "3ebb413e-8199-4042-8fe1-a7602fb32769",
+        "22c75efd-85ab-457c-9a15-6664eaf56988",
+        "22c75efd-85ab-457c-9a15-6664eaf56988"
+      ]
+    }
+  },
+  {
+    "id": "c47dcfb7-5971-4a94-a911-cf59f09caa90",
+    "fact": "进一步研究飞书开放平台的上传接口文档",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072051",
+    "last_accessed": "2026-03-18T18:26:21.072052",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "6daa847d-7768-47c0-9fba-c897df464334",
+        "6daa847d-7768-47c0-9fba-c897df464334",
+        "a6f82c09-e520-4393-8514-88c75dfe2214",
+        "a6f82c09-e520-4393-8514-88c75dfe2214"
+      ]
+    }
+  },
+  {
+    "id": "b632b26e-d916-4a5c-ba79-c962a53bb964",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574486",
+    "last_accessed": "2026-03-17T20:25:28.574496",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059"
+      ]
+    }
+  },
+  {
+    "id": "02ddb573-5097-4625-88bc-439e945f17aa",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574518",
+    "last_accessed": "2026-03-17T20:25:28.574520",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f"
+      ]
+    }
+  },
+  {
+    "id": "0d66ecfd-857a-481a-a8f2-6b303759bd60",
+    "fact": "** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T14:26:14.623684",
+    "last_accessed": "2026-03-19T14:26:45.927588",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "71757bfa-a0d4-4019-a0df-f6f553e06754",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "71757bfa-a0d4-4019-a0df-f6f553e06754",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  },
+  {
+    "id": "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074878",
+    "last_accessed": "2026-03-19T00:25:37.074890",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "87cef969-8f72-4485-aa92-99413fc65284",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074903",
+    "last_accessed": "2026-03-19T00:25:37.074904",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "ff5299bd-b702-4926-9d40-51a8a499325d",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074923",
+    "last_accessed": "2026-03-19T00:25:37.074925",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074936",
+    "last_accessed": "2026-03-19T00:25:37.074937",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074955",
+    "last_accessed": "2026-03-19T00:25:37.074956",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314004",
+    "last_accessed": "2026-03-17T21:25:12.314015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964"
+      ]
+    }
+  },
+  {
+    "id": "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:12.314037",
+    "last_accessed": "2026-03-17T21:25:12.314039",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa"
+      ]
+    }
+  },
+  {
+    "id": "3c572225-c4b5-4dc5-9661-9db72f6c36d2",
+    "fact": "严格按照参考图的结构，不能自行调整布局方向",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.071998",
+    "last_accessed": "2026-03-18T18:26:21.072011",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "4645ee1e-1002-4386-9e6e-41830167d98d",
+        "4645ee1e-1002-4386-9e6e-41830167d98d"
+      ]
+    }
+  },
+  {
+    "id": "639aeee8-7132-46d9-80a3-99d6ded5c1d1",
+    "fact": "分别绘制两条线（arrowEnd 和 arrowBegin）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072021",
+    "last_accessed": "2026-03-18T18:26:21.072022",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+        "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+        "5625953b-e11f-41e0-8c46-4f534f48cd24",
+        "5625953b-e11f-41e0-8c46-4f534f48cd24"
+      ]
+    }
+  },
+  {
+    "id": "98989c9c-5d08-4579-88ae-190b32c92abc",
+    "fact": "用户在PowerPoint中手动运行）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072030",
+    "last_accessed": "2026-03-18T18:26:21.072031",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3619f396-9585-4744-88fa-a38477787ff0",
+        "3619f396-9585-4744-88fa-a38477787ff0",
+        "16b7169d-e21a-49d4-b37b-01d5f186145f",
+        "16b7169d-e21a-49d4-b37b-01d5f186145f"
+      ]
+    }
+  },
+  {
+    "id": "9d52a43e-407c-47e8-a006-5b4e3d2550c9",
+    "fact": "先上传再分享，不能直接发送附件",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072040",
+    "last_accessed": "2026-03-18T18:26:21.072041",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+        "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+        "246a1368-b23c-4610-8c31-4388760a3528",
+        "246a1368-b23c-4610-8c31-4388760a3528"
+      ]
+    }
+  },
+  {
+    "id": "88233df0-954a-48d6-bada-6e60150769b4",
+    "fact": "额外的参数或不同的调用方式",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072046",
+    "last_accessed": "2026-03-18T18:26:21.072047",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3ebb413e-8199-4042-8fe1-a7602fb32769",
+        "3ebb413e-8199-4042-8fe1-a7602fb32769",
+        "22c75efd-85ab-457c-9a15-6664eaf56988",
+        "22c75efd-85ab-457c-9a15-6664eaf56988"
+      ]
+    }
+  },
+  {
+    "id": "c47dcfb7-5971-4a94-a911-cf59f09caa90",
+    "fact": "进一步研究飞书开放平台的上传接口文档",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072051",
+    "last_accessed": "2026-03-18T18:26:21.072052",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "6daa847d-7768-47c0-9fba-c897df464334",
+        "6daa847d-7768-47c0-9fba-c897df464334",
+        "a6f82c09-e520-4393-8514-88c75dfe2214",
+        "a6f82c09-e520-4393-8514-88c75dfe2214"
+      ]
+    }
+  },
+  {
+    "id": "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074878",
+    "last_accessed": "2026-03-19T00:25:37.074890",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "87cef969-8f72-4485-aa92-99413fc65284",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074903",
+    "last_accessed": "2026-03-19T00:25:37.074904",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "ff5299bd-b702-4926-9d40-51a8a499325d",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074923",
+    "last_accessed": "2026-03-19T00:25:37.074925",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074936",
+    "last_accessed": "2026-03-19T00:25:37.074937",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T00:25:37.074955",
+    "last_accessed": "2026-03-19T00:25:37.074956",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "109d3337-7d94-4389-97ce-e52d51f752e9",
+    "fact": "在实际使用中验证效果：",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:20.967120",
+    "last_accessed": "2026-03-18T01:25:20.967130",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2719abd4-bc6d-4531-8115-9f6035b6126d",
+    "fact": "goroutine数量",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:24.744742",
+    "last_accessed": "2026-03-17T19:25:24.744752",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "af681b5b-d351-4aa5-ad48-5ee36ece2194",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:28.955505",
+    "last_accessed": "2026-03-19T04:26:28.955517",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "2a32ff09-6aec-470e-af1b-f84289edcf06",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "2a32ff09-6aec-470e-af1b-f84289edcf06",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "2a32ff09-6aec-470e-af1b-f84289edcf06",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "2a32ff09-6aec-470e-af1b-f84289edcf06",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "b632b26e-d916-4a5c-ba79-c962a53bb964",
+        "1b5e237f-578a-4d8e-8266-6d67d56a0694"
+      ]
+    }
+  },
+  {
+    "id": "7ac2f9bc-112e-4f8e-bdb6-2d36a9ebb6cd",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:28.955539",
+    "last_accessed": "2026-03-19T04:26:28.955540",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5648fea1-5747-41f8-b457-759b81ca9e43",
+        "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+        "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+        "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "5648fea1-5747-41f8-b457-759b81ca9e43",
+        "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "5648fea1-5747-41f8-b457-759b81ca9e43",
+        "5648fea1-5747-41f8-b457-759b81ca9e43",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948"
+      ]
+    }
+  },
+  {
+    "id": "41cb4546-806b-408b-a07a-b59868778588",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802304",
+    "last_accessed": "2026-03-17T03:25:22.802314",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802344",
+    "last_accessed": "2026-03-17T03:25:22.802345",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "8444bd9a-1def-4212-9819-b3ab366dedbb",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584126",
+    "last_accessed": "2026-03-19T06:25:24.584138",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "b98faecf-0c63-4376-806e-9ebde042743f",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584151",
+    "last_accessed": "2026-03-19T06:25:24.584152",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "8bfa4feb-692d-4c84-922f-5fdb31ef0693",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584172",
+    "last_accessed": "2026-03-19T06:25:24.584173",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "ff5299bd-b702-4926-9d40-51a8a499325d"
+      ]
+    }
+  },
+  {
+    "id": "a4c1e8b4-28b8-4a24-b800-78ece2576f0e",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584184",
+    "last_accessed": "2026-03-19T06:25:24.584185",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6"
+      ]
+    }
+  },
+  {
+    "id": "a557eb60-ef04-416d-8254-731ba66e39b8",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T06:25:24.584202",
+    "last_accessed": "2026-03-19T06:25:24.584203",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c"
+      ]
+    }
+  },
+  {
+    "id": "bf837b1b-c46f-45d3-a4ba-8bffdae9a059",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268860",
+    "last_accessed": "2026-03-19T12:25:43.268871",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "31c97ea1-7606-493e-a791-44d72c4de7c1",
+        "05ec0f49-40f7-47d6-aaa3-b7302e36d0c0",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "05ec0f49-40f7-47d6-aaa3-b7302e36d0c0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "31c97ea1-7606-493e-a791-44d72c4de7c1",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "aef465b0-234a-4551-81fb-a1807f7f7d9f",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268883",
+    "last_accessed": "2026-03-19T12:25:43.268885",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5dff95f8-707e-4f81-a9ce-13f06f3cd19a",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "5dff95f8-707e-4f81-a9ce-13f06f3cd19a",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "484c4f4a-3f15-4428-8394-43eb3d305ecc",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268901",
+    "last_accessed": "2026-03-19T12:25:43.268902",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "fbb525f4-c69f-47a0-9db8-0a51e3340d61",
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693",
+        "fbb525f4-c69f-47a0-9db8-0a51e3340d61",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693"
+      ]
+    }
+  },
+  {
+    "id": "5cbed040-05b2-4e02-8855-7f0dedb9fd2f",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268914",
+    "last_accessed": "2026-03-19T12:25:43.268915",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1db1a90-e736-49fb-a902-2fe64b94b653",
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e",
+        "f1db1a90-e736-49fb-a902-2fe64b94b653",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e"
+      ]
+    }
+  },
+  {
+    "id": "9945bae6-d7c9-4243-a4cb-28b9f0e927c4",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268930",
+    "last_accessed": "2026-03-19T12:25:43.268931",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "18e64194-4386-4de6-874a-48f861ac9970",
+        "a557eb60-ef04-416d-8254-731ba66e39b8",
+        "18e64194-4386-4de6-874a-48f861ac9970",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "a557eb60-ef04-416d-8254-731ba66e39b8"
+      ]
+    }
+  },
+  {
+    "id": "57963d3f-2782-455d-98ab-7f260f5711e8",
+    "fact": "框架层支持（多个独立session）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835935",
+    "last_accessed": "2026-03-17T23:26:11.835949",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e5eb00e8-545e-4742-a3c6-2b69915be363",
+    "fact": "有验证步骤、跨Agent验证",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835963",
+    "last_accessed": "2026-03-17T23:26:11.835965",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T22:26:01.452256",
+    "last_accessed": "2026-03-18T22:26:01.452270",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T22:26:01.452283",
+    "last_accessed": "2026-03-18T22:26:01.452284",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.026979",
+    "last_accessed": "2026-03-17T05:25:30.026989",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3"
+      ]
+    }
+  },
+  {
+    "id": "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027014",
+    "last_accessed": "2026-03-17T05:25:30.027015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901"
+      ]
+    }
+  },
+  {
+    "id": "ea9e0f3f-2ffd-4cbc-bd64-a0c8caff6c04",
+    "fact": "获取外界的高质量信息和高质量的项目有深远意义的项目，这是进化的燃料。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395318",
+    "last_accessed": "2026-03-17T02:26:03.395350",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "51acb347-fccc-4ca3-8016-3db2edc0cc16",
+    "fact": "寻找高质量的论文来提升元认知能力。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395368",
+    "last_accessed": "2026-03-17T02:26:03.395370",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e75a23e2-da9c-48f6-bca9-2a3914eee175",
+    "fact": "扩展外部信息来源，包括GitHub Trending和ArXiv。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395379",
+    "last_accessed": "2026-03-17T02:26:03.395381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "010d4fa5-293b-4bdb-9ce9-ae0ae9c77fe5",
+    "fact": "建立用户反馈收集机制。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395388",
+    "last_accessed": "2026-03-17T02:26:03.395389",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "625e17eb-7833-4da2-b1c6-3d997e1b75ff",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894606",
+    "last_accessed": "2026-03-17T06:27:34.894607",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894608",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "27d1a470-41e4-4310-937f-94c5bd2738e8",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894617",
+    "last_accessed": "2026-03-17T06:27:34.894618",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894619",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "2eb805b3-daf0-414a-8441-a79b0e746a9d",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894666",
+    "last_accessed": "2026-03-17T06:27:34.894667",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894667",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "cac5a214-d027-4b11-adbe-d75c9ff9d73f",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991840",
+    "last_accessed": "2026-03-17T17:25:32.991841",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991842",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "9f89e9d6-b2fc-4761-8628-87470d2ffd57",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991851",
+    "last_accessed": "2026-03-17T17:25:32.991852",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991853",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "df12c5d4-e5db-4500-b965-2618911e005a",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991896",
+    "last_accessed": "2026-03-17T17:25:32.991897",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991898",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "0d66ecfd-857a-481a-a8f2-6b303759bd60",
+    "fact": "** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T14:26:14.623684",
+    "last_accessed": "2026-03-19T14:26:14.623695",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "71757bfa-a0d4-4019-a0df-f6f553e06754",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "71757bfa-a0d4-4019-a0df-f6f553e06754",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  }
+]

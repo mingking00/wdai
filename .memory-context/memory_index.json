@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "id": "ed632a8a",
+      "source": "conversation",
+      "timestamp": "2026-03-12T12:51:49.125552",
+      "session_id": "20260312_125149"
+    },
+    {
+      "id": "12ef254b",
+      "source": "conversation",
+      "timestamp": "2026-03-12T15:53:39.464419",
+      "session_id": "20260312_155339"
+    },
+    {
+      "id": "8659a6a2",
+      "source": "conversation",
+      "timestamp": "2026-03-12T15:53:54.742404",
+      "session_id": "20260312_155354"
+    }
+  ],
+  "tags": {
+    "task": [
+      "ed632a8a"
+    ],
+    "agent": [
+      "ed632a8a"
+    ],
+    "skill": [
+      "ed632a8a"
+    ]
+  },
+  "sessions": [
+    "20260312_125149",
+    "20260312_155339",
+    "20260312_155354"
+  ]
+}

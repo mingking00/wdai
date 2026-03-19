@@ -1,0 +1,13 @@
+{
+  "date": "2026-03-20T00:30:17.711192",
+  "summary": {
+    "work_items_reviewed": 0,
+    "findings": 0,
+    "warnings": 0,
+    "status": "ok"
+  },
+  "work_items": [],
+  "findings": [],
+  "check_results": [],
+  "recommendations": []
+}

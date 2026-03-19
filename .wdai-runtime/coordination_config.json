@@ -1,0 +1,53 @@
+{
+  "architecture_version": "2.1",
+  "based_on": "circe-framework",
+  "message_bus": {
+    "enabled": true,
+    "type": "async_event_driven",
+    "channels": [
+      "task",
+      "status",
+      "result",
+      "error",
+      "coordination"
+    ]
+  },
+  "agent_orchestration": {
+    "coordinator": {
+      "role": "central_dispatcher",
+      "responsibilities": [
+        "task_routing",
+        "load_balancing",
+        "conflict_resolution",
+        "state_sync"
+      ]
+    },
+    "agents": [
+      {
+        "id": "coder",
+        "role": "implementation",
+        "priority": 1
+      },
+      {
+        "id": "reviewer",
+        "role": "validation",
+        "priority": 2
+      },
+      {
+        "id": "reflector",
+        "role": "analysis",
+        "priority": 3
+      },
+      {
+        "id": "evolution",
+        "role": "system_update",
+        "priority": 4
+      }
+    ]
+  },
+  "persistence": {
+    "memory_type": "file_based",
+    "sync_interval": 60,
+    "backup_enabled": true
+  }
+}

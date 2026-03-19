@@ -1,0 +1,102 @@
+[
+  {
+    "id": "eb71de44-a4b7-42d6-8219-330d7f27ac98",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.862862",
+    "last_accessed": "2026-03-19T04:26:36.862874",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "46b2458b-25cb-4020-90a0-fc403ccadf10",
+        "41cb4546-806b-408b-a07a-b59868778588"
+      ]
+    }
+  },
+  {
+    "id": "21e2c835-e504-471a-b150-cdb6b1e5e831",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.862896",
+    "last_accessed": "2026-03-19T04:26:36.862898",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "39dd7f92-da66-4502-8ab0-a75732dc8951",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827"
+      ]
+    }
+  },
+  {
+    "id": "d83ab1e2-64fd-4949-aedf-890cb1a1afaa",
+    "fact": "`[LLM Architect] 08 Dive into K2",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.863398",
+    "last_accessed": "2026-03-19T04:26:36.863401",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "b77a559e-8d01-4e8d-9852-11c76367c190",
+        "b77a559e-8d01-4e8d-9852-11c76367c190",
+        "b77a559e-8d01-4e8d-9852-11c76367c190",
+        "b77a559e-8d01-4e8d-9852-11c76367c190",
+        "29cecde0-2f80-4745-ab1a-bf0aaa043858",
+        "29cecde0-2f80-4745-ab1a-bf0aaa043858",
+        "29cecde0-2f80-4745-ab1a-bf0aaa043858",
+        "29cecde0-2f80-4745-ab1a-bf0aaa043858"
+      ]
+    }
+  },
+  {
+    "id": "0c884ced-6e5a-40cc-80b6-e671e9efe3de",
+    "fact": "本地视频文件、添加Cookie、或手动下载后处理",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T04:26:36.863411",
+    "last_accessed": "2026-03-19T04:26:36.863412",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "6804f221-e364-4955-9f78-eae7663a5262",
+        "6804f221-e364-4955-9f78-eae7663a5262",
+        "6804f221-e364-4955-9f78-eae7663a5262",
+        "6804f221-e364-4955-9f78-eae7663a5262",
+        "b0af15d7-9d08-4e8b-a006-1defcff63297",
+        "b0af15d7-9d08-4e8b-a006-1defcff63297",
+        "b0af15d7-9d08-4e8b-a006-1defcff63297",
+        "b0af15d7-9d08-4e8b-a006-1defcff63297"
+      ]
+    }
+  }
+]

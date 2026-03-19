@@ -1,0 +1,178 @@
+{
+  "system": {
+    "name": "灵感摄取系统",
+    "name_en": "Inspiration Ingestion System",
+    "version": "1.0.0",
+    "auto_crawl": true,
+    "require_human_review": true,
+    "default_priority": "medium",
+    "data_retention_days": 90
+  },
+  "arxiv": {
+    "enabled": true,
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "cs.IR",
+      "cs.MA"
+    ],
+    "keywords": [
+      "agent",
+      "llm",
+      "rag",
+      "retrieval",
+      "reasoning",
+      "multi-agent",
+      "multiagent",
+      "self-improving",
+      "self-improvement",
+      "autonomous",
+      "planning",
+      "tool use",
+      "function calling",
+      "chain of thought",
+      "prompt engineering",
+      "in-context learning",
+      "fine-tuning",
+      "alignment",
+      "safety",
+      "interpretability"
+    ],
+    "exclude_keywords": [
+      "medical",
+      "healthcare",
+      "drug",
+      "clinical",
+      "survey",
+      "review"
+    ],
+    "min_quality_score": 0.6,
+    "max_papers_per_run": 50,
+    "download_pdf": false,
+    "rss_url_template": "http://rss.arxiv.org/rss/{category}"
+  },
+  "github": {
+    "enabled": true,
+    "monitored_repos": [
+      {
+        "owner": "langchain-ai",
+        "repo": "langchain",
+        "priority": "high",
+        "track_releases": true,
+        "track_commits": false
+      },
+      {
+        "owner": "microsoft",
+        "repo": "autogen",
+        "priority": "high",
+        "track_releases": true,
+        "track_commits": false
+      },
+      {
+        "owner": "openai",
+        "repo": "openai-python",
+        "priority": "medium",
+        "track_releases": true,
+        "track_commits": false
+      },
+      {
+        "owner": "meta-llama",
+        "repo": "llama",
+        "priority": "medium",
+        "track_releases": true,
+        "track_commits": false
+      },
+      {
+        "owner": "hwchase17",
+        "repo": "langgraph",
+        "priority": "high",
+        "track_releases": true,
+        "track_commits": false
+      },
+      {
+        "owner": "mendableai",
+        "repo": "firecrawl",
+        "priority": "medium",
+        "track_releases": true,
+        "track_commits": false
+      },
+      {
+        "owner": "mem0ai",
+        "repo": "mem0",
+        "priority": "high",
+        "track_releases": true,
+        "track_commits": false
+      }
+    ],
+    "trending_languages": [
+      "python",
+      "typescript",
+      "javascript"
+    ],
+    "min_stars": 500,
+    "check_releases": true,
+    "check_trending": true,
+    "check_commits": false,
+    "api_token_env": "GITHUB_TOKEN"
+  },
+  "analysis": {
+    "deduplication": {
+      "enabled": true,
+      "title_similarity_threshold": 0.85,
+      "content_similarity_threshold": 0.80,
+      "url_exact_match": true
+    },
+    "quality_scoring": {
+      "enabled": true,
+      "weights": {
+        "relevance": 0.30,
+        "novelty": 0.25,
+        "impact": 0.25,
+        "timeliness": 0.20
+      },
+      "min_score_for_queue": 0.65
+    },
+    "trend_analysis": {
+      "enabled": true,
+      "window_days": 7,
+      "min_trend_score": 0.5
+    },
+    "summary_generation": {
+      "enabled": true,
+      "max_length": 500,
+      "extract_keywords": true
+    }
+  },
+  "queue": {
+    "max_pending": 100,
+    "auto_archive_rejected": true,
+    "archive_after_days": 30,
+    "priority_levels": ["critical", "high", "medium", "low"],
+    "default_ttl_days": 7
+  },
+  "evo_integration": {
+    "enabled": true,
+    "auto_trigger_on_approval": true,
+    "default_evo_priority": "medium",
+    "evo_task_template": "Based on inspiration: {title}\n\nSource: {url}\n\nSummary:\n{summary}\n\nSuggested evolution:\n- Analyze the approach\n- Identify applicable components\n- Design integration strategy",
+    "required_fields": [
+      "title",
+      "source",
+      "quality_score"
+    ]
+  },
+  "notification": {
+    "enabled": false,
+    "channels": [],
+    "on_new_inspiration": false,
+    "on_high_quality": true,
+    "on_queue_full": true
+  },
+  "logging": {
+    "level": "INFO",
+    "max_file_size_mb": 10,
+    "max_backup_files": 5,
+    "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  }
+}

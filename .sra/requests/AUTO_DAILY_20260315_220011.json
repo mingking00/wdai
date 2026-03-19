@@ -1,0 +1,9 @@
+{
+  "id": "AUTO_DAILY_20260315_220011",
+  "type": "daily",
+  "target_date": "2026-03-15",
+  "description": "Auto daily reflection",
+  "priority": 7,
+  "submitted_at": "2026-03-15T22:00:11.384641",
+  "source": "auto"
+}

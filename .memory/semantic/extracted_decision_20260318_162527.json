@@ -1,0 +1,32 @@
+[
+  {
+    "id": "57ec6141-dcc0-43bb-a177-12f7ca8f066b",
+    "fact": "PptxGenJS 库生成 PPT：",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.311075",
+    "last_accessed": "2026-03-18T16:25:27.311077",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2690d5d8-7dd4-41d4-bb78-0f0ca03103d0",
+    "fact": "水平布局，与参考图一致",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.311082",
+    "last_accessed": "2026-03-18T16:25:27.311083",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

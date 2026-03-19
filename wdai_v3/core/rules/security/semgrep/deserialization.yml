@@ -1,0 +1,13 @@
+rules:
+- id: python-deserialization-pickle
+  message: pickle 反序列化任意对象，可导致任意代码执行
+  pattern: pickle\.(?:load|loads)\s*\(
+  severity: critical
+- id: python-deserialization-yaml-unsafe
+  message: yaml.load 使用不安全加载器，可导致任意代码执行
+  pattern: yaml\.load\s*\([^)]*\)(?!.*(?:SafeLoader|CSafeLoader))
+  severity: critical
+- id: python-deserialization-marshal
+  message: marshal 反序列化不可信数据，可导致任意代码执行
+  pattern: marshal\.(?:load|loads)\s*\(
+  severity: critical

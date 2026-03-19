@@ -1,0 +1,10 @@
+{"timestamp": "2026-03-19T18:09:41.858427", "metric_name": "mod_abcdd3e15cb9_baseline", "value": 0.0, "context": {"modification_id": "abcdd3e15cb9", "phase": "baseline"}}
+{"timestamp": "2026-03-19T18:09:41.858526", "metric_name": "mod_abcdd3e15cb9_execution_time_ms", "value": 100.0, "context": {"modification_id": "abcdd3e15cb9", "phase": "post_deployment"}}
+{"timestamp": "2026-03-19T18:09:41.858582", "metric_name": "mod_abcdd3e15cb9_error_rate", "value": 0.01, "context": {"modification_id": "abcdd3e15cb9", "phase": "post_deployment"}}
+{"timestamp": "2026-03-19T18:09:41.858623", "metric_name": "mod_abcdd3e15cb9_throughput", "value": 1000.0, "context": {"modification_id": "abcdd3e15cb9", "phase": "post_deployment"}}
+{"timestamp": "2026-03-19T18:09:41.858659", "metric_name": "mod_abcdd3e15cb9_memory_usage_mb", "value": 50.0, "context": {"modification_id": "abcdd3e15cb9", "phase": "post_deployment"}}
+{"timestamp": "2026-03-19T18:16:09.987227", "metric_name": "mod_a1c674184eb5_baseline", "value": 0.0, "context": {"modification_id": "a1c674184eb5", "phase": "baseline"}}
+{"timestamp": "2026-03-19T18:16:09.987300", "metric_name": "mod_a1c674184eb5_execution_time_ms", "value": 100.0, "context": {"modification_id": "a1c674184eb5", "phase": "post_deployment"}}
+{"timestamp": "2026-03-19T18:16:09.987357", "metric_name": "mod_a1c674184eb5_error_rate", "value": 0.01, "context": {"modification_id": "a1c674184eb5", "phase": "post_deployment"}}
+{"timestamp": "2026-03-19T18:16:09.987393", "metric_name": "mod_a1c674184eb5_throughput", "value": 1000.0, "context": {"modification_id": "a1c674184eb5", "phase": "post_deployment"}}
+{"timestamp": "2026-03-19T18:16:09.987422", "metric_name": "mod_a1c674184eb5_memory_usage_mb", "value": 50.0, "context": {"modification_id": "a1c674184eb5", "phase": "post_deployment"}}

@@ -1,0 +1,1 @@
+{"msg_id": "6d4b3c0b", "from_agent": "coordinator", "to_agent": "coder", "msg_type": "task_assignment", "payload": {"original_from": "user", "task": {"task_type": "code", "description": "\u90e8\u7f72\u535a\u5ba2\u5230GitHub", "data": {"repo": "my-blog", "method": "github_api"}}, "request_id": "42419562"}, "timestamp": 1773682028.7168503, "priority": 0}

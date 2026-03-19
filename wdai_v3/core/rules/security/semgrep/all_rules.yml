@@ -1,0 +1,165 @@
+rules:
+- id: python-sql-injection-string-format
+  message: SQL 字符串格式化/拼接，存在 SQL 注入风险
+  pattern: (?:cursor|db|conn)\.(?:execute|executemany)\s*\(\s*["\'].*(?:%s|%d|\{.*\}|\+.*\+|\.format\()
+  severity: critical
+- id: python-command-injection-os-system
+  message: os.system/popen 使用动态命令，存在命令注入
+  pattern: os\.(?:system|popen)\s*\([^)]*(?:\+|\%|\.format\(|f["\'])
+  severity: critical
+- id: python-command-injection-subprocess
+  message: subprocess 使用 shell=True，存在命令注入风险
+  pattern: subprocess\.(?:call|run|Popen)\s*\([^)]*shell\s*=\s*True
+  severity: critical
+- id: python-ssti-jinja2
+  message: Jinja2 模板渲染用户输入，存在 SSTI 注入
+  pattern: (?:jinja2\.)?(?:Template|Environment)\s*\([^)]*\)\.render\s*\([^)]*(?:\+|\%|\.format\(|f["\'])
+  severity: critical
+- id: python-deserialization-pickle
+  message: pickle 反序列化任意对象，可导致任意代码执行
+  pattern: pickle\.(?:load|loads)\s*\(
+  severity: critical
+- id: python-deserialization-yaml-unsafe
+  message: yaml.load 使用不安全加载器，可导致任意代码执行
+  pattern: yaml\.load\s*\([^)]*\)(?!.*(?:SafeLoader|CSafeLoader))
+  severity: critical
+- id: python-deserialization-marshal
+  message: marshal 反序列化不可信数据，可导致任意代码执行
+  pattern: marshal\.(?:load|loads)\s*\(
+  severity: critical
+- id: python-deserialization-shelve
+  message: shelve 模块基于 pickle，存在反序列化风险
+  pattern: shelve\.(?:open|DbfilenameShelf)
+  severity: high
+- id: python-path-traversal-open
+  message: 使用用户输入作为文件路径，存在路径遍历风险
+  pattern: open\s*\([^)]*(?:user|input|request|params|args|argv)
+  severity: high
+- id: python-path-traversal-io
+  message: io 模块使用用户输入路径，存在路径遍历风险
+  pattern: io\.(?:open|FileIO)\s*\([^)]*(?:user|input|request)
+  severity: high
+- id: python-weak-crypto-md5
+  message: 使用 MD5 哈希，已被证明不安全，建议改用 SHA-256
+  pattern: hashlib\.md5\s*\(|\.md5\s*\(
+  severity: medium
+- id: python-weak-crypto-sha1
+  message: 使用 SHA-1 哈希，已被证明不安全，建议改用 SHA-256
+  pattern: hashlib\.sha1\s*\(|\.sha1\s*\(
+  severity: medium
+- id: python-weak-random
+  message: 使用伪随机数生成器，不适用于安全场景（如密码、token）
+  pattern: random\.(?:random|randint|choice|shuffle)\s*\(
+  severity: medium
+- id: python-weak-ssl
+  message: 禁用 SSL 证书验证，存在中间人攻击风险
+  pattern: ssl\._create_unverified_context|ssl\.CERT_NONE
+  severity: high
+- id: python-hardcoded-password
+  message: 可能的硬编码密码
+  pattern: (?:password|passwd|pwd)\s*=\s*["\'][^"\']{8,}["\']
+  severity: high
+- id: python-hardcoded-secret
+  message: 可能的硬编码密钥/令牌
+  pattern: (?:secret|api_key|apikey|token|access_key|private_key)\s*=\s*["\'][^"\']{16,}["\']
+  severity: high
+- id: python-aws-key
+  message: 检测到 AWS Access Key ID
+  pattern: AKIA[0-9A-Z]{16}
+  severity: critical
+- id: python-openai-key
+  message: 检测到 OpenAI API Key
+  pattern: sk-[a-zA-Z0-9]{48}
+  severity: critical
+- id: python-debug-enabled
+  message: 调试模式开启，生产环境应关闭
+  pattern: (?:debug|DEBUG)\s*=\s*True
+  severity: medium
+- id: python-ipdb-debug
+  message: 代码中包含调试器调用，应移除后再部署
+  pattern: import\s+(?:ipdb|pdb|breakpoint)|(?:ipdb|pdb)\.set_trace\(\)
+  severity: medium
+- id: python-insecure-http-verify
+  message: requests 禁用 SSL 验证，存在中间人攻击风险
+  pattern: requests\.(?:get|post|put|delete)\s*\([^)]*verify\s*=\s*False
+  severity: high
+- id: python-http-url
+  message: 使用 HTTP 而非 HTTPS，数据传输未加密
+  pattern: '["\'']http://[^"\'']+["\'']'
+  severity: low
+- id: python-ssrf-requests
+  message: requests 使用用户输入 URL，存在 SSRF 风险
+  pattern: requests\.(?:get|post)\s*\(\s*(?:user|input|request|params)
+  severity: high
+- id: python-ssrf-urllib
+  message: urllib 使用用户输入 URL，存在 SSRF 风险
+  pattern: urllib\.(?:request|urlopen)\s*\([^)]*(?:user|input|request)
+  severity: high
+- id: python-xxe-lxml
+  message: lxml 解析 XML，可能存在 XXE 漏洞，建议禁用外部实体
+  pattern: lxml\.etree\.(?:parse|fromstring|XML)\s*\(
+  severity: high
+- id: python-xxe-defused
+  message: 使用标准库解析 XML，建议使用 defusedxml 防止 XXE
+  pattern: xml\.(?:parse|etree)\.(?:parse|fromstring)
+  severity: medium
+- id: python-eval-exec
+  message: 使用 eval/exec 执行动态代码，存在代码注入风险
+  pattern: (?:eval|exec)\s*\(
+  severity: critical
+- id: python-compile-code
+  message: 动态编译执行代码，存在代码注入风险
+  pattern: compile\s*\([^)]*\).*exec|exec\s*\(\s*compile
+  severity: critical
+- id: python-os-chmod
+  message: 设置文件权限为 777，过于宽松
+  pattern: os\.chmod\s*\([^)]*0o777|os\.chmod\s*\([^)]*stat\.S_IRWXU
+  severity: medium
+- id: python-print-secret
+  message: 打印敏感信息，可能泄露到日志
+  pattern: print\s*\([^)]*(?:password|secret|token|key)
+  severity: medium
+- id: python-log-sensitive
+  message: 日志记录敏感信息，可能导致泄露
+  pattern: (?:logging|logger)\.(?:info|debug|warning|error)\s*\([^)]*(?:password|secret|token)
+  severity: medium
+- id: python-exception-sensitive
+  message: 异常信息包含敏感数据，可能泄露给用户
+  pattern: raise\s+\w+\s*\([^)]*(?:user|password|secret)
+  severity: medium
+- id: python-tempfile-mktemp
+  message: 使用不安全的 mktemp，存在竞态条件，建议使用 mkstemp
+  pattern: tempfile\.mktemp
+  severity: high
+- id: python-flask-debug
+  message: Flask 调试模式开启，存在远程代码执行风险
+  pattern: app\.run\s*\([^)]*debug\s*=\s*True
+  severity: critical
+- id: python-django-raw-sql
+  message: Django raw() 使用字符串格式化，存在 SQL 注入
+  pattern: \.raw\s*\(\s*["\'].*(?:%s|%d|\{.*\}|\.format\()
+  severity: critical
+- id: python-django-secret-key
+  message: Django SECRET_KEY 硬编码，应使用环境变量
+  pattern: SECRET_KEY\s*=\s*["\'][^"\']+["\']
+  severity: critical
+- id: python-jwt-weak-algorithm
+  message: JWT 使用 'none' 算法，存在严重的认证绕过风险
+  pattern: jwt\.encode\s*\([^)]*algorithm\s*=\s*["\']none["\']
+  severity: critical
+- id: python-jwt-no-verify
+  message: JWT 禁用签名验证，存在认证绕过风险
+  pattern: jwt\.decode\s*\([^)]*verify\s*=\s*False
+  severity: critical
+- id: python-telnetlib
+  message: 使用不安全的 telnetlib，数据传输明文，建议使用 SSH
+  pattern: import\s+telnetlib|from\s+telnetlib
+  severity: high
+- id: python-ftp-lib
+  message: 使用 FTP 明文传输，建议使用 SFTP/SCP
+  pattern: import\s+ftplib|from\s+ftplib
+  severity: medium
+- id: python-binding-all
+  message: 服务绑定到 0.0.0.0，监听所有接口，可能暴露到公网
+  pattern: '["\'']0\.0\.0\.0["\'']|bind.*0\.0\.0\.0'
+  severity: low

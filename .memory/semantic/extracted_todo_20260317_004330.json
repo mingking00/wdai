@@ -1,0 +1,21 @@
+[
+  {
+    "id": "39a23d75-d26a-4d35-a63c-01d21a389734",
+    "fact": "把自己定义为\"OpenClaw的Agent\"**",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:43:30.655297",
+    "last_accessed": "2026-03-17T00:43:30.655300",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "14e71812-9b90-4776-98fc-3249fdee8e1e",
+        "14e71812-9b90-4776-98fc-3249fdee8e1e"
+      ]
+    }
+  }
+]

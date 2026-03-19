@@ -1,0 +1,97 @@
+# Security Agent 规则配置
+# 可以热重载，无需重启服务
+
+rules:
+  # ========== Critical - 立即阻止 ==========
+  - id: exec-user-input
+    pattern: 'exec\s*\(\s*.*(?:user|input|request|params|form)'
+    severity: critical
+    message: "执行用户输入，可能导致远程代码执行 (RCE)"
+    
+  - id: eval-dangerous
+    pattern: 'eval\s*\(\s*.*(?:user|input|request|params|form)'
+    severity: critical
+    message: "eval() 处理用户输入，存在代码注入风险"
+    
+  - id: os-system-user-input
+    pattern: 'os\.system\s*\(\s*.*(?:user|input|request|params|f["\'])'
+    severity: critical
+    message: "os.system() 执行动态命令，存在命令注入风险"
+    
+  - id: subprocess-shell-true
+    pattern: 'subprocess\..*shell\s*=\s*True'
+    severity: critical
+    message: "subprocess 使用 shell=True，存在命令注入风险"
+    
+  - id: compile-exec
+    pattern: 'compile\s*\(.*\).*exec|exec\s*\(\s*compile'
+    severity: critical
+    message: "动态编译执行代码，存在代码注入风险"
+    
+  # ========== High - 需要人工审查 ==========
+  - id: sql-string-format
+    pattern: '(?:execute|query|raw)\s*\(\s*["\'].*(?:SELECT|INSERT|UPDATE|DELETE).*(?:%s|%d|\{.*\}|\+.*\+)'
+    severity: high
+    message: "SQL 字符串拼接/格式化，可能存在 SQL 注入"
+    
+  - id: pickle-load
+    pattern: 'pickle\.load|pickle\.loads'
+    severity: high
+    message: "pickle 反序列化不可信数据，可能导致任意代码执行"
+    
+  - id: yaml-unsafe-load
+    pattern: 'yaml\.load\s*\([^)]*\)(?!.*Loader\s*=\s*yaml\.SafeLoader)'
+    severity: high
+    message: "yaml.load() 使用不安全加载器，可能导致任意代码执行"
+    
+  - id: template-render-user
+    pattern: '\.render\s*\(.*(?:user|input|request|params)'
+    severity: high
+    message: "模板渲染用户输入，可能存在 SSTI 注入"
+    
+  - id: open-file-user-path
+    pattern: 'open\s*\(\s*.*(?:user|input|request|params)'
+    severity: high
+    message: "使用用户输入作为文件路径，存在路径遍历风险"
+    
+  # ========== Medium - 建议改进 ==========
+  - id: hardcoded-secret
+    pattern: '(?:password|secret|api_key|apikey|token|access_key)\s*=\s*["\'][^"\']{8,}["\']'
+    severity: medium
+    message: "可能的硬编码凭据"
+    
+  - id: debug-mode-enabled
+    pattern: 'debug\s*=\s*True|DEBUG\s*=\s*True'
+    severity: medium
+    message: "调试模式开启，生产环境应该关闭"
+    
+  - id: disabled-verification
+    pattern: 'verify\s*=\s*False|ssl_verify\s*=\s*False|CERT_NONE|CERT_OPTIONAL'
+    severity: medium
+    message: "SSL/TLS 验证被禁用，存在中间人攻击风险"
+    
+  - id: weak-hash-md5
+    pattern: 'hashlib\.md5|md5\s*\('
+    severity: medium
+    message: "使用 MD5 哈希，已被证明不安全，建议改用 SHA-256"
+    
+  - id: weak-random
+    pattern: 'random\.(random|randint|choice)'
+    severity: medium
+    message: "使用伪随机数生成器，不适用于安全场景"
+    
+  # ========== Low - 信息性 ==========
+  - id: todo-security
+    pattern: '#\s*TODO.*(?:security|vulnerability|fix|hack|bypass)'
+    severity: low
+    message: "安全相关的 TODO 注释，需要跟进"
+    
+  - id: broad-except
+    pattern: 'except\s*:\s*$|except\s+Exception\s*:'
+    severity: low
+    message: "过于宽泛的异常捕获，可能隐藏安全问题"
+    
+  - id: print-debug
+    pattern: 'print\s*\(\s*.*(?:password|secret|token|key)'
+    severity: low
+    message: "打印敏感信息，可能泄露到日志"

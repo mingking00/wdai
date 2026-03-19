@@ -1,0 +1,185 @@
+[
+  {
+    "bvid": "BV1uowLz7Evr",
+    "title": "OpenClaw 代理为何总失忆？完整内存架构解决方案",
+    "description": "探讨AI代理的内存管理、长期记忆、知识图谱等",
+    "owner": "AI技术探索",
+    "tags": [
+      "AI",
+      "agent",
+      "memory",
+      "RAG"
+    ],
+    "category": "科技",
+    "view_count": 15000,
+    "like_count": 800,
+    "favorite_count": 1200,
+    "pub_date": "2026-03-10",
+    "extracted_keywords": [
+      "agent",
+      "AI",
+      "embedding",
+      "vector database",
+      "RAG",
+      "retrieval augmented generation",
+      "memory"
+    ],
+    "related_papers": [
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "authors": [
+          "Lewis et al."
+        ],
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    ],
+    "related_repos": [
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "desc": "自主AI代理"
+      },
+      {
+        "name": "microsoft/autogen",
+        "desc": "多代理对话框架"
+      },
+      {
+        "name": "langchain-ai/langchain",
+        "desc": "构建RAG应用的框架"
+      },
+      {
+        "name": "chroma-core/chroma",
+        "desc": "向量数据库"
+      }
+    ],
+    "related_articles": [],
+    "analyzed_at": 1773686723.8310764,
+    "analysis_depth": 1
+  },
+  {
+    "bvid": "BV1xyz123",
+    "title": "大模型微调实战：LoRA vs Full Fine-tuning",
+    "description": "深入讲解大模型微调方法，LoRA原理和实现",
+    "owner": "深度学习实验室",
+    "tags": [
+      "LLM",
+      "fine-tuning",
+      "LoRA",
+      "transformer"
+    ],
+    "category": "科技",
+    "view_count": 25000,
+    "like_count": 1200,
+    "favorite_count": 2000,
+    "pub_date": "2026-03-08",
+    "extracted_keywords": [
+      "LLM",
+      "LoRA",
+      "attention mechanism",
+      "fine-tuning",
+      "transformer",
+      "large language model",
+      "RA"
+    ],
+    "related_papers": [
+      {
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": [
+          "Hu et al."
+        ],
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2106.09685"
+      },
+      {
+        "title": "Attention Is All You Need",
+        "authors": [
+          "Vaswani et al."
+        ],
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "authors": [
+          "Lewis et al."
+        ],
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    ],
+    "related_repos": [
+      {
+        "name": "openai/openai-python",
+        "desc": "OpenAI API客户端"
+      },
+      {
+        "name": "huggingface/transformers",
+        "desc": "预训练模型库"
+      },
+      {
+        "name": "langchain-ai/langchain",
+        "desc": "构建RAG应用的框架"
+      },
+      {
+        "name": "chroma-core/chroma",
+        "desc": "向量数据库"
+      }
+    ],
+    "related_articles": [],
+    "analyzed_at": 1773686723.83108,
+    "analysis_depth": 1
+  },
+  {
+    "bvid": "BV2abc456",
+    "title": "分布式系统设计：从0到1构建高可用架构",
+    "description": "分布式系统核心概念，CAP定理，一致性算法",
+    "owner": "后端技术专家",
+    "tags": [
+      "分布式",
+      "system design",
+      "microservices",
+      "cloud"
+    ],
+    "category": "科技",
+    "view_count": 18000,
+    "like_count": 900,
+    "favorite_count": 1500,
+    "pub_date": "2026-03-05",
+    "extracted_keywords": [
+      "consensus algorithm",
+      "算法",
+      "algorithm",
+      "distributed system",
+      "CAP",
+      "data structure",
+      "complexity analysis",
+      "分布式",
+      "microservices",
+      "system design",
+      "cloud"
+    ],
+    "related_papers": [
+      {
+        "title": "The Google File System",
+        "authors": [
+          "Ghemawat et al."
+        ],
+        "year": 2003,
+        "url": "https://research.google/pubs/pub51/"
+      }
+    ],
+    "related_repos": [
+      {
+        "name": "etcd-io/etcd",
+        "desc": "分布式键值存储"
+      },
+      {
+        "name": "hashicorp/consul",
+        "desc": "服务发现和配置"
+      }
+    ],
+    "related_articles": [],
+    "analyzed_at": 1773686723.8310826,
+    "analysis_depth": 1
+  }
+]

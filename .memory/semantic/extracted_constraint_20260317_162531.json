@@ -1,0 +1,40 @@
+[
+  {
+    "id": "46b2458b-25cb-4020-90a0-fc403ccadf10",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354739",
+    "last_accessed": "2026-03-17T16:25:31.354749",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "41cb4546-806b-408b-a07a-b59868778588",
+        "41cb4546-806b-408b-a07a-b59868778588"
+      ]
+    }
+  },
+  {
+    "id": "39dd7f92-da66-4502-8ab0-a75732dc8951",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T16:25:31.354767",
+    "last_accessed": "2026-03-17T16:25:31.354768",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+        "5f0d78c7-2d53-40dd-96d0-153a1f446827"
+      ]
+    }
+  }
+]

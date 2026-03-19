@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "uptime_seconds": 5.004507,
+    "tasks_completed": 1,
+    "tasks_failed": 0,
+    "success_rate": 1.0,
+    "avg_task_time": 2.0001635551452637,
+    "cache_hit_rate": 0.0,
+    "timestamp": "2026-03-19T21:26:28.641172"
+  },
+  "details": {
+    "task_times": [
+      {
+        "type": "inspiration_cycle",
+        "elapsed": 2.0001635551452637,
+        "success": true,
+        "timestamp": "2026-03-19T21:26:25.637255"
+      }
+    ],
+    "success_count": 1,
+    "failure_count": 0,
+    "cache_hits": 0,
+    "cache_misses": 0,
+    "start_time": "2026-03-19T21:26:23.636653",
+    "end_time": "2026-03-19T21:26:28.640957"
+  }
+}

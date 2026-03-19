@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.13",
+    "lastTouchedAt": "2026-03-19T19:20:00.000Z"
+  },
+  "env": {
+    "KIMI_API_KEY": "sk-kimi-YndGLibqutZ8z5H5Mdt1RYeB0RAztlSR9CvLdGqiPN0NW3JH0VZC4bJRLf6GGi0O",
+    "KIMI_PLUGIN_API_KEY": "sk-kimi-YndGLibqutZ8z5H5Mdt1RYeB0RAztlSR9CvLdGqiPN0NW3JH0VZC4bJRLf6GGi0O"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-12T07:12:52.620Z",
+    "lastRunVersion": "2026.2.13",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "logging": {
+    "file": "/root/.openclaw/logs/openclaw.log"
+  },
+  "browser": {
+    "executablePath": "/usr/bin/google-chrome",
+    "headless": true,
+    "noSandbox": true,
+    "defaultProfile": "openclaw"
+  },
+  "auth": {
+    "profiles": {
+      "kimi-coding:default": {
+        "provider": "kimi-coding",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "kimi-coding": {
+        "baseUrl": "https://api.kimi.com/coding",
+        "apiKey": "sk-kimi-YndGLibqutZ8z5H5Mdt1RYeB0RAztlSR9CvLdGqiPN0NW3JH0VZC4bJRLf6GGi0O",
+        "api": "anthropic-messages",
+        "headers": {
+          "User-Agent": "Kimi Claw Plugin",
+          "X-Kimi-Claw-ID": "19cd39af-6da2-82c8-8000-000037bb5d31"
+        },
+        "models": [
+          {
+            "id": "k2p5",
+            "name": "k2p5",
+            "reasoning": true,
+            "contextWindow": 131072,
+            "maxTokens": 32768,
+            "headers": {
+              "User-Agent": "Kimi Claw Plugin",
+              "X-Kimi-Claw-ID": "19cd39af-6da2-82c8-8000-000037bb5d31"
+            }
+          }
+        ]
+      },
+      "xiaomi": {
+        "baseUrl": "https://opencode.ai/zen/v1",
+        "apiKey": "123",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "mimo-v2-pro-free",
+            "name": "Xiaomi MiMo V2 Pro (Free)",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "mimo-v2-omni-free",
+            "name": "Xiaomi MiMo V2 Omni (Free)",
+            "reasoning": true,
+            "input": ["text", "image"],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 65536
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "kimi-coding/k2p5"
+      },
+      "models": {
+        "kimi-coding/k2p5": {
+          "alias": "Kimi K2.5"
+        },
+        "xiaomi/mimo-v2-pro-free": {
+          "alias": "MiMo V2 Pro (Free)"
+        },
+        "xiaomi/mimo-v2-omni-free": {
+          "alias": "MiMo V2 Omni (Free)"
+        }
+      },
+      "workspace": "/root/.openclaw/workspace",
+      "memorySearch": {
+        "enabled": true,
+        "provider": "openai",
+        "remote": {
+          "baseUrl": "https://api.kimi.com/coding/v1",
+          "apiKey": "sk-kimi-YndGLibqutZ8z5H5Mdt1RYeB0RAztlSR9CvLdGqiPN0NW3JH0VZC4bJRLf6GGi0O",
+          "headers": {
+            "x-canary-kfc": "always"
+          }
+        },
+        "model": "bge_m3_embed"
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "thinkingDefault": "high",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "profile": "full"
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true
+  },
+  "session": {
+    "dmScope": "main"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8707753256:AAEXSJo3NwLRi7PwCeQIQmo0EXe3UELGTJg",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    },
+    "feishu": {
+      "appId": "cli_a92704026df89bd2",
+      "appSecret": "mX3bYWiVCM1cQ0Lxe1ZJ6bjjwYMqxyaE",
+      "groupPolicy": "open",
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "requireMention": false,
+      "connectionMode": "websocket"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "1ba823b2ec1d449982c37905bb99b6291621e9ecf922095a"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "calendar.add",
+        "contacts.add",
+        "reminders.add"
+      ]
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": []
+    },
+    "entries": {
+      "feishu": {
+        "enabled": true
+      },
+      "dingtalk-connector": {
+        "enabled": true
+      },
+      "kimi-search": {
+        "enabled": true,
+        "config": {
+          "search": {
+            "baseUrl": "https://api.kimi.com/coding/v1/search"
+          },
+          "fetch": {
+            "baseUrl": "https://api.kimi.com/coding/v1/fetch"
+          }
+        }
+      },
+      "kimi-claw": {
+        "enabled": true,
+        "config": {
+          "bridge": {
+            "mode": "acp",
+            "url": "wss://www.kimi.com/api-claw/bots/agent-ws",
+            "kimiapiHost": "https://www.kimi.com/api-claw",
+            "instanceId": "connector-c-kimiclaw-test",
+            "deviceId": "c-kimiclaw-test",
+            "historyPendingTimeoutMs": 15000,
+            "shell": {
+              "enabled": true
+            },
+            "promptTimeoutMs": 1800000,
+            "bot_type": "remote",
+            "token": "sk-LLJEETJSC3MIP7VPOBAZFPYXON",
+            "kimiFileDownloadDir": "./openclaw/kimi/downloads",
+            "forwardThinking": false,
+            "forwardToolCalls": false,
+            "kimiCodeAPIKey": "sk-kimi-YndGLibqutZ8z5H5Mdt1RYeB0RAztlSR9CvLdGqiPN0NW3JH0VZC4bJRLf6GGi0O",
+            "kimiPluginAPIKey": "sk-kimi-YndGLibqutZ8z5H5Mdt1RYeB0RAztlSR9CvLdGqiPN0NW3JH0VZC4bJRLf6GGi0O",
+            "kimiCodeBaseURL": "https://api.kimi.com/coding"
+          },
+          "gateway": {
+            "url": "ws://127.0.0.1:18789",
+            "agentId": "main",
+            "token": "1ba823b2ec1d449982c37905bb99b6291621e9ecf922095a"
+          },
+          "retry": {
+            "baseMs": 1000,
+            "maxMs": 600000,
+            "maxAttempts": 0
+          },
+          "log": {
+            "enabled": true,
+            "verbose": false
+          },
+          "defaultModel": {
+            "enabled": true,
+            "provider": "kimi-coding",
+            "modelId": "k2p5",
+            "apiKey": "sk-kimi-YndGLibqutZ8z5H5Mdt1RYeB0RAztlSR9CvLdGqiPN0NW3JH0VZC4bJRLf6GGi0O",
+            "baseUrl": "https://api.kimi.com/coding"
+          }
+        }
+      },
+      "weibo": {
+        "enabled": true
+      },
+      "wecom-openclaw-plugin": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "innovation-tracker": {
+        "enabled": false
+      }
+    },
+    "installs": {
+      "feishu": {
+        "source": "npm",
+        "spec": "@m1heng-clawd/feishu",
+        "installPath": "/root/.openclaw/extensions/feishu",
+        "version": "0.1.9",
+        "installedAt": "2026-02-14T16:39:17.689Z"
+      },
+      "dingtalk-connector": {
+        "source": "npm",
+        "spec": "https://github.com/DingTalk-Real-AI/dingtalk-moltbot-connector",
+        "installPath": "/root/.openclaw/extensions/dingtalk-connector",
+        "version": "0.6.0",
+        "installedAt": "2026-02-14T16:41:33.851Z"
+      },
+      "kimi-claw": {
+        "source": "path",
+        "sourcePath": "/tmp/tmp.uASOq0MjCT/staged_main",
+        "installPath": "/root/.openclaw/extensions/kimi-claw",
+        "version": "0.7.1",
+        "installedAt": "2026-02-21T06:26:56.098Z"
+      },
+      "weibo": {
+        "source": "path",
+        "sourcePath": "/root/openclaw-weibo",
+        "installPath": "/root/.openclaw/extensions/weibo",
+        "version": "0.1.0",
+        "installedAt": "2026-03-06T05:13:23.641Z"
+      },
+      "wecom-openclaw-plugin": {
+        "source": "npm",
+        "spec": "@wecom/wecom-openclaw-plugin",
+        "installPath": "/root/.openclaw/extensions/wecom-openclaw-plugin",
+        "version": "1.0.6",
+        "installedAt": "2026-03-09T05:44:32.857Z"
+      }
+    }
+  }
+}

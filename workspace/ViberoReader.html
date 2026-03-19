@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibero Style Reader</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a28;
+            --accent: #ff6b6b;
+            --accent-gradient: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #606070;
+            --border: rgba(255,255,255,0.08);
+            --card-bg: rgba(255,255,255,0.03);
+            --hover-bg: rgba(255,255,255,0.06);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            line-height: 1.6;
+        }
+        
+        .app {
+            display: grid;
+            grid-template-rows: 60px 1fr;
+            height: 100vh;
+        }
+        
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .nav-tab {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text-secondary);
+        }
+        
+        .nav-tab:hover { background: var(--hover-bg); color: var(--text-primary); }
+        .nav-tab.active { background: var(--card-bg); color: var(--accent); }
+        
+        .header-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(255,107,107,0.3);
+        }
+        
+        .btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--hover-bg);
+            color: var(--text-primary);
+        }
+        
+        /* Main Layout */
+        .main {
+            display: grid;
+            grid-template-columns: 320px 1fr 360px;
+            overflow: hidden;
+        }
+        
+        /* Sidebar Left - Navigation */
+        .sidebar-left {
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 24px;
+        }
+        
+        .section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .section-count {
+            background: var(--card-bg);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+        
+        /* Chapter List */
+        .chapter-item {
+            padding: 12px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 4px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .chapter-item:hover {
+            background: var(--hover-bg);
+        }
+        
+        .chapter-item.active {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+        }
+        
+        .chapter-item.active .chapter-num {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .chapter-num {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            background: var(--bg-tertiary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        
+        .chapter-title {
+            flex: 1;
+        }
+        
+        .chapter-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        
+        /* Character Cards */
+        .char-grid {
+            display: grid;
+            gap: 8px;
+        }
+        
+        .char-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            border-radius: 12px;
+            background: var(--card-bg);
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        
+        .char-card:hover {
+            background: var(--hover-bg);
+            border-color: var(--border);
+            transform: translateX(4px);
+        }
+        
+        .char-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .char-info { flex: 1; }
+        .char-name { font-weight: 600; font-size: 14px; }
+        .char-en { font-size: 12px; color: var(--text-muted); }
+        .char-role {
+            font-size: 11px;
+            color: var(--accent);
+            margin-top: 2px;
+        }
+        
+        /* Concept Tags */
+        .concept-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .concept-item {
+            padding: 12px 16px;
+            border-radius: 10px;
+            background: var(--card-bg);
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        
+        .concept-item:hover {
+            border-color: var(--accent);
+            background: var(--hover-bg);
+        }
+        
+        .concept-name {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        
+        .concept-en {
+            font-size: 12px;
+            color: var(--accent);
+        }
+        
+        .concept-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+        
+        /* Reader Area */
+        .reader {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .reader-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 32px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-secondary);
+        }
+        
+        .view-options {
+            display: flex;
+            gap: 4px;
+            background: var(--bg-primary);
+            padding: 4px;
+            border-radius: 10px;
+        }
+        
+        .view-btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .view-btn.active {
+            background: var(--card-bg);
+            color: var(--text-primary);
+        }
+        
+        .progress-info {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        .reader-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 40px 48px;
+            scroll-behavior: smooth;
+        }
+        
+        .reader-content::-webkit-scrollbar { width: 8px; }
+        .reader-content::-webkit-scrollbar-track { background: transparent; }
+        .reader-content::-webkit-scrollbar-thumb {
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+        }
+        
+        /* Content Styles */
+        .chapter-header {
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .chapter-heading {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .chapter-subheading {
+            font-size: 20px;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        .para-block {
+            margin-bottom: 32px;
+            padding: 20px 24px;
+            border-radius: 16px;
+            background: var(--card-bg);
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .para-block:hover {
+            border-color: var(--border);
+            background: var(--hover-bg);
+        }
+        
+        .zh-text {
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        
+        .en-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            padding-left: 16px;
+            border-left: 3px solid var(--accent);
+        }
+        
+        /* Highlight Terms */
+        .term {
+            background: rgba(255,107,107,0.15);
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .term:hover {
+            background: rgba(255,107,107,0.3);
+        }
+        
+        /* Sidebar Right - Details */
+        .sidebar-right {
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .detail-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .detail-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .detail-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .detail-title {
+            flex: 1;
+        }
+        
+        .detail-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        
+        .detail-en {
+            font-size: 16px;
+            color: var(--accent);
+        }
+        
+        .detail-section {
+            margin-bottom: 20px;
+        }
+        
+        .detail-section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        
+        .detail-text {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+        
+        .quote-box {
+            background: var(--bg-tertiary);
+            border-left: 4px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        
+        /* Empty State */
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding: 48px;
+        }
+        
+        .empty-icon {
+            font-size: 80px;
+            margin-bottom: 24px;
+            opacity: 0.5;
+        }
+        
+        .empty-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .empty-desc {
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            max-width: 400px;
+            line-height: 1.7;
+        }
+        
+        /* Upload Area */
+        .upload-card {
+            border: 2px dashed var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 20px;
+        }
+        
+        .upload-card:hover {
+            border-color: var(--accent);
+            background: var(--hover-bg);
+        }
+        
+        .upload-icon { font-size: 48px; margin-bottom: 16px; }
+        .upload-text { font-size: 16px; margin-bottom: 8px; }
+        .upload-hint { font-size: 13px; color: var(--text-muted); }
+        
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+        }
+        
+        .modal-overlay.active { display: flex; }
+        
+        .modal {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            width: 90%;
+            max-width: 480px;
+            max-height: 80vh;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .modal-title { font-size: 18px; font-weight: 600; }
+        
+        .modal-close {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            border: none;
+            background: var(--card-bg);
+            color: var(--text-muted);
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .modal-close:hover {
+            background: var(--hover-bg);
+            color: var(--text-primary);
+        }
+        
+        .modal-body { padding: 24px; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-label {
+            display: block;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        /* Demo Button */
+        .demo-btn {
+            margin-top: 24px;
+            padding: 16px 32px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .demo-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        
+        @media (max-width: 1200px) {
+            .main { grid-template-columns: 280px 1fr 300px; }
+        }
+        @media (max-width: 1024px) {
+            .main { grid-template-columns: 1fr; }
+            .sidebar-left, .sidebar-right { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app" id="app">
+        <!-- Empty State -->
+        <div class="empty-state">
+            <div class="empty-icon">📚</div>
+            <div class="empty-title">Vibero Style Reader</div>
+            <div class="empty-desc">
+                Upload a Chinese novel TXT file to create an interactive bilingual learning experience.
+                <br><br>
+                AI will analyze structure, extract characters, and translate key terms.
+            </div>
+            <input type="file" id="fileInput" accept=".txt" hidden>
+            <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
+                📁 Upload Novel
+            </button>
+            
+            <button class="demo-btn" onclick="loadDemo()">
+                ✨ Try Demo (The Three-Body Problem)
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Demo Data - The Three-Body Problem Chapter 1
+        const demoData = {
+            title: "三体",
+            subtitle: "The Three-Body Problem",
+            author: "刘慈欣",
+            chapters: [
+                {
+                    id: 1,
+                    title: "第一章：疯狂年代",
+                    subtitle: "Chapter 1: The Madness Years",
+                    paragraphs: [
+                        {
+                            zh: "中国，1967年。",
+                            en: "China, 1967."
+                        },
+                        {
+                            zh: "【疯狂年代】红色的天空下，一场史无前例的政治运动正在席卷整个国家。北京大学的大字报栏前，人群熙熙攘攘，口号声此起彼伏。",
+                            en: "Beneath the crimson sky, an unprecedented political movement was sweeping across the entire nation. In front of the big-character poster boards at Peking University, crowds bustled and slogans rose and fell."
+                        },
+                        {
+                            zh: "叶文洁站在台下，看着台上那些曾经受人尊敬的教授们被红卫兵批斗。她的父亲，著名的理论物理学家叶哲泰，昨天刚刚在这场浩劫中离世。",
+                            en: "Ye Wenjie stood below the stage, watching the professors who had once been respected being publicly criticized by the Red Guards. Her father, the famous theoretical physicist Ye Zhetai, had died in this catastrophe just yesterday."
+                        },
+                        {
+                            zh: "【红岸基地】两年后，叶文洁被发配到内蒙古生产建设兵团。在这里，她的才华被军方注意到，被秘密选入红岸基地——一个寻找外星文明的绝密项目。",
+                            en: "Two years later, Ye Wenjie was sent to the Inner Mongolia Production and Construction Corps. Here, her talents were noticed by the military, and she was secretly selected for Red Coast Base—a top-secret project searching for extraterrestrial civilizations."
+                        }
+                    ]
+                },
+                {
+                    id: 2,
+                    title: "第二章：寂静的春天",
+                    subtitle: "Chapter 2: Silent Spring",
+                    paragraphs: [
+                        {
+                            zh: "在红岸基地的深夜里，叶文洁读到了那本改变她一生的书——雷切尔·卡森的《寂静的春天》。",
+                            en: "In the deep night at Red Coast Base, Ye Wenjie read the book that would change her life—Rachel Carson's Silent Spring."
+                        },
+                        {
+                            zh: "书中对人类破坏环境的批判，让叶文洁开始思考文明的本质。如果人类如此对待自己的家园，那么更高级的文明会如何看待人类？",
+                            en: "The book's criticism of humanity's destruction of the environment made Ye Wenjie begin to contemplate the nature of civilization. If humans treated their own home this way, how would a more advanced civilization view humanity?"
+                        }
+                    ]
+                }
+            ],
+            characters: [
+                {
+                    id: "yewenjie",
+                    name: "叶文洁",
+                    enName: "Ye Wenjie",
+                    role: "天体物理学家 / Astrophysicist",
+                    color: "#E74C3C",
+                    description: "红岸基地的天体物理学家，向三体文明发送了地球的第一声啼鸣。她既是人类文明的第一位叛徒，又是一位对人类彻底失望的理想主义者。",
+                    quote: "到这里来吧，我将帮助你们获得这个世界。"
+                },
+                {
+                    id: "yezhetai",
+                    name: "叶哲泰",
+                    enName: "Ye Zhetai",
+                    role: "理论物理学家 / Theoretical Physicist",
+                    color: "#9B59B6",
+                    description: "叶文洁的父亲，著名理论物理学家，在文化大革命中坚持科学真理，被红卫兵批斗致死。他的死成为叶文洁对人性失望的起点。",
+                    quote: "科学是不可战胜的。"
+                },
+                {
+                    id: "carson",
+                    name: "雷切尔·卡森",
+                    enName: "Rachel Carson",
+                    role: "生物学家 / Biologist",
+                    color: "#27AE60",
+                    description: "美国海洋生物学家，《寂静的春天》作者。她的著作唤起了叶文洁对文明本质的深刻思考。",
+                    quote: "The control of nature is a phrase conceived in arrogance."
+                },
+                {
+                    id: "wangmiao",
+                    name: "汪淼",
+                    enName: "Wang Miao",
+                    role: "纳米科学家 / Nanomaterials Scientist",
+                    color: "#3498DB",
+                    description: "第一部主角，纳米材料科学家。通过调查科学家自杀事件，逐步揭开了三体世界的真相。",
+                    quote: "物理学从来就没有存在过。"
+                }
+            ],
+            concepts: [
+                {
+                    id: "cultural-revolution",
+                    name: "文化大革命",
+                    enName: "Cultural Revolution",
+                    category: "历史事件",
+                    description: "1966-1976年中国政治运动，对知识分子和传统文化造成巨大冲击，是三体故事的重要历史背景。",
+                    importance: "故事的核心背景，直接影响了叶文洁的人生轨迹"
+                },
+                {
+                    id: "red-coast",
+                    name: "红岸基地",
+                    enName: "Red Coast Base",
+                    category: "军事设施",
+                    description: "中国1960年代建立的射电天文观测基地，表面研究太阳活动，实际任务是寻找地外文明。",
+                    importance: "叶文洁发送信号给三体世界的地点"
+                },
+                {
+                    id: "red-guards",
+                    name: "红卫兵",
+                    enName: "Red Guards",
+                    category: "政治组织",
+                    description: "文革期间的学生组织，以激进方式推行极左路线，造成大量知识分子被迫害。",
+                    importance: "直接导致叶哲泰死亡和叶文洁被发配"
+                },
+                {
+                    id: "trisolaris",
+                    name: "三体世界",
+                    enName: "Trisolaris",
+                    category: "科幻设定",
+                    description: "距离地球4光年的外星文明，因所在星系有三颗太阳，生存环境极其恶劣，决定入侵地球。",
+                    importance: "故事的核心冲突来源"
+                }
+            ]
+        };
+
+        let currentNovel = null;
+        let currentChapter = 0;
+        let selectedItem = null;
+
+        function initApp() {
+            document.getElementById('fileInput').addEventListener('change', handleFile);
+        }
+
+        function loadDemo() {
+            currentNovel = demoData;
+            renderApp();
+        }
+
+        function handleFile(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const text = e.target.result;
+                currentNovel = parseNovel(text, file.name.replace('.txt', ''));
+                renderApp();
+            };
+            reader.readAsText(file);
+        }
+
+        function parseNovel(text, title) {
+            // Simple parsing - split by chapters
+            const lines = text.split('\n').filter(l => l.trim());
+            const chapters = [];
+            let currentChapter = { title: 'Chapter 1', paragraphs: [] };
+            
+            lines.forEach(line => {
+                if (line.match(/^第[一二三四五六七八九十\d]+章/) || line.match(/^Chapter\s+\d+/i)) {
+                    if (currentChapter.paragraphs.length > 0) {
+                        chapters.push(currentChapter);
+                    }
+                    currentChapter = { 
+                        id: chapters.length + 1,
+                        title: line.trim(),
+                        subtitle: '',
+                        paragraphs: [] 
+                    };
+                } else if (line.length > 20) {
+                    currentChapter.paragraphs.push({
+                        zh: line.trim(),
+                        en: '[Translation requires API configuration]'
+                    });
+                }
+            });
+            
+            if (currentChapter.paragraphs.length > 0) {
+                chapters.push(currentChapter);
+            }
+            
+            return {
+                title: title,
+                subtitle: '',
+                chapters: chapters.length > 0 ? chapters : [{
+                    id: 1,
+                    title: '全文',
+                    subtitle: '',
+                    paragraphs: lines.filter(l => l.length > 20).map(l => ({
+                        zh: l,
+                        en: '[Translation requires API configuration]'
+                    }))
+                }],
+                characters: [],
+                concepts: []
+            };
+        }
+
+        function renderApp() {
+            const app = document.getElementById('app');
+            app.innerHTML = `
+                <header class="header">
+                    <div class="logo">📖 ${currentNovel.title}</div>
+                    <div class="nav-tabs">
+                        <div class="nav-tab active">阅读</div>
+                        <div class="nav-tab">人物</div>
+                        <div class="nav-tab">概念</div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-secondary" onclick="location.reload()">📁 新文件</button>
+                    </div>
+                </header>
+                
+                <div class="main">
+                    <aside class="sidebar-left">
+                        <div class="sidebar-section">
+                            <div class="section-title">
+                                章节
+                                <span class="section-count">${currentNovel.chapters.length}</span>
+                            </div>
+                            <div id="chapter-list"></div>
+                        </div>
+                        
+                        ${currentNovel.characters.length > 0 ? `
+                        <div class="sidebar-section">
+                            <div class="section-title">
+                                人物
+                                <span class="section-count">${currentNovel.characters.length}</span>
+                            </div>
+                            <div class="char-grid" id="char-list"></div>
+                        </div>
+                        ` : ''}
+                        
+                        ${currentNovel.concepts.length > 0 ? `
+                        <div class="sidebar-section">
+                            <div class="section-title">
+                                核心概念
+                                <span class="section-count">${currentNovel.concepts.length}</span>
+                            </div>
+                            <div class="concept-list" id="concept-list"></div>
+                        </div>
+                        ` : ''}
+                    </aside>
+                    
+                    <main class="reader">
+                        <div class="reader-toolbar">
+                            <div class="view-options">
+                                <button class="view-btn active" onclick="setView('bilingual')">双语</button>
+                                <button class="view-btn" onclick="setView('zh')">中文</button>
+                                <button class="view-btn" onclick="setView('en')">English</button>
+                            </div>
+                            <div class="progress-info">Chapter ${currentChapter + 1} / ${currentNovel.chapters.length}</div>
+                        </div>
+                        
+                        <div class="reader-content" id="reader-content"></div>
+                    </main>
+                    
+                    <aside class="sidebar-right" id="sidebar-right">
+                        <div class="detail-card">
+                            <div class="detail-section">
+                                <div class="detail-section-title">Select an item</div>
+                                <div class="detail-text">
+                                    Click on a character name or concept in the text to view detailed information here.
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            `;
+            
+            renderChapterList();
+            renderCharList();
+            renderConceptList();
+            renderChapter(0);
+        }
+
+        function renderChapterList() {
+            const container = document.getElementById('chapter-list');
+            container.innerHTML = currentNovel.chapters.map((ch, i) => `
+                <div class="chapter-item ${i === currentChapter ? 'active' : ''}" onclick="goToChapter(${i})">
+                    <div class="chapter-num">${ch.id || i + 1}</div>
+                    <div class="chapter-title">
+                        <div>${ch.title}</div>
+                        ${ch.subtitle ? `<div class="chapter-sub">${ch.subtitle}</div>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderCharList() {
+            const container = document.getElementById('char-list');
+            if (!container) return;
+            container.innerHTML = currentNovel.characters.map(char => `
+                <div class="char-card" onclick="showCharDetail('${char.id}')">
+                    <div class="char-avatar" style="background: ${char.color}">${char.name[0]}</div>
+                    <div class="char-info">
+                        <div class="char-name">${char.name}</div>
+                        <div class="char-en">${char.enName}</div>
+                        <div class="char-role">${char.role}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderConceptList() {
+            const container = document.getElementById('concept-list');
+            if (!container) return;
+            container.innerHTML = currentNovel.concepts.map(concept => `
+                <div class="concept-item" onclick="showConceptDetail('${concept.id}')">
+                    <div class="concept-name">${concept.name}</div>
+                    <div class="concept-en">${concept.enName}</div>
+                    <div class="concept-desc">${concept.description.substring(0, 60)}...</div>
+                </div>
+            `).join('');
+        }
+
+        function renderChapter(index) {
+            currentChapter = index;
+            const chapter = currentNovel.chapters[index];
+            const container = document.getElementById('reader-content');
+            
+            let html = `
+                <div class="chapter-header">
+                    <h1 class="chapter-heading">${chapter.title}</h1>
+                    ${chapter.subtitle ? `<div class="chapter-subheading">${chapter.subtitle}</div>` : ''}
+                </div>
+            `;
+            
+            chapter.paragraphs.forEach((para, i) => {
+                html += `<div class="para-block" id="para-${i}">`;
+                html += `<div class="zh-text">${highlightTerms(para.zh)}</div>`;
+                if (para.en && para.en !== '[Translation requires API configuration]') {
+                    html += `<div class="en-text">${para.en}</div>`;
+                }
+                html += `</div>`;
+            });
+            
+            container.innerHTML = html;
+            container.scrollTop = 0;
+            
+            // Update chapter list active state
+            document.querySelectorAll('.chapter-item').forEach((el, i) => {
+                el.classList.toggle('active', i === index);
+            });
+            
+            // Update progress
+            document.querySelector('.progress-info').textContent = 
+                `Chapter ${index + 1} / ${currentNovel.chapters.length}`;
+        }
+
+        function highlightTerms(text) {
+            if (!currentNovel) return text;
+            
+            // Highlight characters
+            currentNovel.characters.forEach(char => {
+                text = text.replace(
+                    new RegExp(char.name, 'g'),
+                    `<span class="term" onclick="event.stopPropagation(); showCharDetail('${char.id}')">${char.name}</span>`
+                );
+            });
+            
+            // Highlight concepts
+            currentNovel.concepts.forEach(concept => {
+                text = text.replace(
+                    new RegExp(concept.name, 'g'),
+                    `<span class="term" onclick="event.stopPropagation(); showConceptDetail('${concept.id}')">${concept.name}</span>`
+                );
+            });
+            
+            return text;
+        }
+
+        function goToChapter(index) {
+            renderChapter(index);
+        }
+
+        function showCharDetail(charId) {
+            const char = currentNovel.characters.find(c => c.id === charId);
+            if (!char) return;
+            
+            document.getElementById('sidebar-right').innerHTML = `
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <div class="detail-avatar" style="background: ${char.color}">${char.name[0]}</div>
+                        <div class="detail-title">
+                            <div class="detail-name">${char.name}</div>
+                            <div class="detail-en">${char.enName}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <div class="detail-section-title">Role</div>
+                        <div class="detail-text">${char.role}</div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <div class="detail-section-title">Description</div>
+                        <div class="detail-text">${char.description}</div>
+                    </div>
+                    
+                    ${char.quote ? `
+                    <div class="detail-section">
+                        <div class="detail-section-title">Quote</div>
+                        <div class="quote-box">"${char.quote}"</div>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function showConceptDetail(conceptId) {
+            const concept = currentNovel.concepts.find(c => c.id === conceptId);
+            if (!concept) return;
+            
+            document.getElementById('sidebar-right').innerHTML = `
+                <div class="detail-card">
+                    <div class="detail-section">
+                        <div class="detail-name" style="font-size: 24px; margin-bottom: 4px;">${concept.name}</div>
+                        <div class="detail-en">${concept.enName}</div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <div class="detail-section-title">Category</div>
+                        <span style="background: var(--card-bg); padding: 4px 12px; border-radius: 8px; font-size: 13px;">${concept.category}</span>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <div class="detail-section-title">Description</div>
+                        <div class="detail-text">${concept.description}</div>
+                    </div>
+                    
+                    ${concept.importance ? `
+                    <div class="detail-section">
+                        <div class="detail-section-title">Importance</div>
+                        <div class="quote-box">${concept.importance}</div>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function setView(mode) {
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(mode === 'bilingual' ? '双语' : mode === 'zh' ? '中文' : 'English')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            document.querySelectorAll('.para-block').forEach(block => {
+                const zh = block.querySelector('.zh-text');
+                const en = block.querySelector('.en-text');
+                
+                if (zh) zh.style.display = mode === 'en' ? 'none' : 'block';
+                if (en) en.style.display = mode === 'zh' ? 'none' : 'block';
+            });
+        }
+
+        initApp();
+    </script>
+</body>
+</html>

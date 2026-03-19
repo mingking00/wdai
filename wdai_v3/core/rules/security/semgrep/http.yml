@@ -1,0 +1,13 @@
+rules:
+- id: python-insecure-http-verify
+  message: requests 禁用 SSL 验证，存在中间人攻击风险
+  pattern: requests\.(?:get|post|put|delete)\s*\([^)]*verify\s*=\s*False
+  severity: high
+- id: python-http-url
+  message: 使用 HTTP 而非 HTTPS，数据传输未加密
+  pattern: '["\'']http://[^"\'']+["\'']'
+  severity: low
+- id: python-jwt-no-verify
+  message: JWT 禁用签名验证，存在认证绕过风险
+  pattern: jwt\.decode\s*\([^)]*verify\s*=\s*False
+  severity: critical

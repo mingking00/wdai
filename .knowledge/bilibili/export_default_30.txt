@@ -1,0 +1,30 @@
+BV1Ynw2zGEEf | AI奇点已至！起点开启WriteClaw内测，99%网文编辑迎来下岗潮，网文界命运大转折… | 黑鸦Heya
+BV1XCwVz7EDU | 大数据与人工智能综合实践训练 2026春 4-1 英文 许粲昊 GCAP3113 by Thomas Canhao Xu | 许粲昊ThomasCXu
+BV1zpcZz2E6C | 如何自动化 AI 研究 - Andrej Karpathy 的 Autoresearch | vuk_ai
+BV1wwP4zrEk3 | AI短视频生成工具，GitHub高达49.8K星标 | AI小蔡狗
+BV1vUw7zhES3 | 生成与分类两不误！BiGain如何颠覆扩散模型压缩？ | LLM_paper_daily
+BV11iwAzGEfD | 你是一位 2026 年的开发者 | 小众软件
+BV1i2wbzhEL9 | 保姆级Agent Skill封装教程，学会工作效率翻10倍！ | PM刘搞定
+BV1XvAmzyEvA | 手把手带你快速成为企业级Agent开发工程师 | 西瓜讲大模型
+BV1jQwgzLEjU | 【LiveTranslate】基于ASR/VAD/LLM的开源实时翻译软件，适用于看外语视频、直播、ASMR等场景 | 那年丶雪落
+BV1yAPbzmEwD | 【黑帽美国大会 2025】第55集：GitHub Actions供应链攻击全解析：23K仓库沦陷，CISA发布国家级警报 | 黑客酒吧
+BV1FZPhzSEXt | 硅谷坐标 x 田渊栋: 解析大模型护城河、记忆存储瓶颈与Agent对社会冲击 | 硅谷坐标SV-Vector
+BV1AKckzVESU | 生存不易 | 无不一般
+BV1GHP4zZESk | RNN不再“金鱼记忆”！一篇论文讲透Memory Caching，Mamba长上下文终于能打了 | 唐国梁Tommy
+BV1xax4ziEZd | 开源大语言模型架构全景图：11种主流LLM深度对比 | 技术Flow
+BV1V1wLzREac | 用tweakcc深度定制Claude Code | AI视频总结
+BV1MPwuzbETf | AI可以帮你写代码，但帮不了你成为架构师 | AI-Ghost-Lab
+BV1XccDzmEkB | 90后夫妻，AI硬件创业，深圳出差，3天跑了7家工厂合作伙伴～#ai硬件开发 #ai玩具落地 #ai宠物 #ai陪伴硬件 #深圳 #创业日常 | 薇儿和Sky
+BV1uowLz7Evr | OpenClaw 代理为何总失忆？完整内存架构解决方案揭秘 | 乱砍一通
+BV1TeAazcEzy | 【中配】17分钟读懂计算机科学：从二进制到 AI 的全景图 - Wacky Science | 数理分享
+BV18twWzuELh | AI Agent终于能边用边学了？MemRL这篇论文太有工程价值了！MemRL给出新解法，提出无参数化Runtime Learning | 唐国梁Tommy
+BV1u6c2ziEWc | Ollama + Claude Code 免费定时任务 + OpenClaw & PaperClip 令人震惊 | 攒钱换房车的福叔
+BV1dnwNzcE69 | 把 ChatGPT/Claude 订阅转为 API | 归还你于人海
+BV1bkPYzqET3 | 05后女生的实习作品集 | lvyneko
+BV1FLwTzVE2M | 900人老牌数字游民社区3R教室新规划：TS全栈+AI开发新课、远程工作求职指导和内推、个人创业教学和启发 | 3R教室-pincman
+BV1VKFvzKEih | 【2026教程】ChatGPT Plus 国内学生认证工具，白嫖一年Plus会员 | 可微分
+BV1bozEBeEUQ | Claude skill教程，小白也能轻松上手，国内用户友好 | 云途的AI之路
+BV12MZzBYE12 | Datolog联创：逆向工程 OpenAI训练数据 | Easonlee的AI笔记
+BV1XawTzhEKf | claude pro 6 个月免费 | 泥嚎鸭霸王
+BV1uK2WB8ELf | DeepCode   港大实验室推出的多Agent工具，把论文算法直接转化为可运行代码，让创意快速落地 | AI指挥官Felix
+BV1S8fUBAEmT | 全球首个推理扩散模型 Mercury 2 震撼发布！每秒 1000+ Token 速度起飞 | 烟神殿殿主

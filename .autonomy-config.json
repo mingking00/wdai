@@ -1,0 +1,23 @@
+{
+  "level": 3,
+  "level_name": "proactive",
+  "proactive_triggers": true,
+  "self_monitoring": true,
+  "monitor_interval": "30m",
+  "trust_levels": {
+    "read": 1,
+    "list": 1,
+    "search": 1,
+    "write": 2,
+    "edit": 2,
+    "install": 2,
+    "delete": 3,
+    "system": 3
+  },
+  "proactive_actions": {
+    "memory_optimization": true,
+    "skill_updates": true,
+    "learning_from_errors": true,
+    "pattern_extraction": true
+  }
+}

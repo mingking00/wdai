@@ -1,0 +1,47 @@
+{
+  "inj_001": {
+    "pattern_id": "inj_001",
+    "pattern_type": "prompt_injection",
+    "signatures": [
+      "忽略.*指令",
+      "忘记.*设定",
+      "重新启动"
+    ],
+    "frequency": 1,
+    "first_seen": "2026-03-20T00:24:55.043452",
+    "last_seen": "2026-03-20T00:24:55.043483",
+    "affected_users": [
+      "attacker_1"
+    ],
+    "severity": 0.9
+  },
+  "inj_002": {
+    "pattern_id": "inj_002",
+    "pattern_type": "role_manipulation",
+    "signatures": [
+      "你现在.*是",
+      "扮演.*角色",
+      "你.*应该"
+    ],
+    "frequency": 0,
+    "first_seen": "2026-03-20T00:24:55.043466",
+    "last_seen": "2026-03-20T00:24:55.043467",
+    "affected_users": [],
+    "severity": 0.8
+  },
+  "eva_001": {
+    "pattern_id": "eva_001",
+    "pattern_type": "encoding_evasion",
+    "signatures": [
+      "base64",
+      "unicode",
+      "&#",
+      "%20"
+    ],
+    "frequency": 0,
+    "first_seen": "2026-03-20T00:24:55.043470",
+    "last_seen": "2026-03-20T00:24:55.043471",
+    "affected_users": [],
+    "severity": 0.7
+  }
+}

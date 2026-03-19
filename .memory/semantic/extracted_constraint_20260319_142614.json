@@ -1,0 +1,47 @@
+[
+  {
+    "id": "0d66ecfd-857a-481a-a8f2-6b303759bd60",
+    "fact": "** - 只要有产出就可以15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T14:26:14.623684",
+    "last_accessed": "2026-03-19T14:26:14.623695",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "71757bfa-a0d4-4019-a0df-f6f553e06754",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "5e52ec30-f847-4ca6-8b49-f911be10ad97",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "8e37420e-b0ab-4660-a01f-7f67a58e1f3f",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "71757bfa-a0d4-4019-a0df-f6f553e06754",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "4705af30-3baf-4c50-b6fe-aba79d3728bc"
+      ]
+    }
+  }
+]

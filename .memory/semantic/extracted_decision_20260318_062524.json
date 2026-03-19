@@ -1,0 +1,168 @@
+[
+  {
+    "id": "c9d217e7-5eef-4025-b1f4-ea001f9f42e9",
+    "fact": "性\"回头看\"前面所有 Agent 的输出",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T06:25:24.066999",
+    "last_accessed": "2026-03-18T06:25:24.067012",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "c9a23d8c-ad33-451b-9167-549ad4437468",
+        "a210ee57-7a07-4475-85fd-2ec410426685",
+        "b351f130-4b10-4dde-99f5-4bd8602a9b85",
+        "b351f130-4b10-4dde-99f5-4bd8602a9b85",
+        "b351f130-4b10-4dde-99f5-4bd8602a9b85",
+        "b351f130-4b10-4dde-99f5-4bd8602a9b85",
+        "b351f130-4b10-4dde-99f5-4bd8602a9b85",
+        "a210ee57-7a07-4475-85fd-2ec410426685",
+        "c9a23d8c-ad33-451b-9167-549ad4437468"
+      ]
+    }
+  },
+  {
+    "id": "eb5c7624-c7b6-42ea-8bc8-f47681a6751a",
+    "fact": "采用 Zep 的自动摘要机制，使用异步处理。**",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T06:25:24.067031",
+    "last_accessed": "2026-03-18T06:25:24.067033",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "462d53f4-1a8e-4fb9-8fb1-ba55090e6c6d",
+        "70edabf8-0288-4c1f-bad5-a10ee52b411e",
+        "13724243-37cf-4d8b-a425-9b8aee005969",
+        "4b021d20-2165-4967-8908-c0b9f38e7913",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "13724243-37cf-4d8b-a425-9b8aee005969",
+        "4b021d20-2165-4967-8908-c0b9f38e7913",
+        "462d53f4-1a8e-4fb9-8fb1-ba55090e6c6d",
+        "70edabf8-0288-4c1f-bad5-a10ee52b411e"
+      ]
+    }
+  },
+  {
+    "id": "d5fc83a8-c9da-409e-aafa-c125a678b0c9",
+    "fact": "采用 Zep 的自动摘要机制，使用异步处理。",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T06:25:24.067040",
+    "last_accessed": "2026-03-18T06:25:24.067041",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "462d53f4-1a8e-4fb9-8fb1-ba55090e6c6d",
+        "70edabf8-0288-4c1f-bad5-a10ee52b411e",
+        "13724243-37cf-4d8b-a425-9b8aee005969",
+        "4b021d20-2165-4967-8908-c0b9f38e7913",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "37c923b8-acbe-42ff-9ec1-18a27d2d0ed0",
+        "1b4cf188-7241-4ac3-8e64-6ea9ed416c2a",
+        "13724243-37cf-4d8b-a425-9b8aee005969",
+        "4b021d20-2165-4967-8908-c0b9f38e7913",
+        "462d53f4-1a8e-4fb9-8fb1-ba55090e6c6d",
+        "70edabf8-0288-4c1f-bad5-a10ee52b411e"
+      ]
+    }
+  },
+  {
+    "id": "56175948-b7df-4dcb-8a8b-207696de2fce",
+    "fact": "搜索 Kimi 的 Attention Resi",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T06:25:24.067048",
+    "last_accessed": "2026-03-18T06:25:24.067049",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3f843e4a-b2be-4750-b7d5-0d61d7401faf",
+        "96e8c3c0-8d36-4576-923f-66a3f84f3c02",
+        "fe94ea51-e730-40d7-ab2f-5e4d5136cb7d",
+        "55fa7d73-baa2-4ee3-ad69-eabafdc2e8a8",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "fe94ea51-e730-40d7-ab2f-5e4d5136cb7d",
+        "55fa7d73-baa2-4ee3-ad69-eabafdc2e8a8",
+        "3f843e4a-b2be-4750-b7d5-0d61d7401faf",
+        "96e8c3c0-8d36-4576-923f-66a3f84f3c02"
+      ]
+    }
+  },
+  {
+    "id": "091cd123-c184-481c-acdb-e3d75c6a9b97",
+    "fact": "搜索 Kimi 的 Attention Residuals 技术报告。",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T06:25:24.067055",
+    "last_accessed": "2026-03-18T06:25:24.067056",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3f843e4a-b2be-4750-b7d5-0d61d7401faf",
+        "96e8c3c0-8d36-4576-923f-66a3f84f3c02",
+        "fe94ea51-e730-40d7-ab2f-5e4d5136cb7d",
+        "55fa7d73-baa2-4ee3-ad69-eabafdc2e8a8",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "1c9c0187-ac14-402c-992c-eceed62eb6f4",
+        "179630af-c4eb-4b16-bc4f-632eb7f37baf",
+        "fe94ea51-e730-40d7-ab2f-5e4d5136cb7d",
+        "55fa7d73-baa2-4ee3-ad69-eabafdc2e8a8",
+        "3f843e4a-b2be-4750-b7d5-0d61d7401faf",
+        "96e8c3c0-8d36-4576-923f-66a3f84f3c02"
+      ]
+    }
+  }
+]

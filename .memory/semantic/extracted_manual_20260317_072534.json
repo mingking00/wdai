@@ -1,0 +1,124 @@
+[
+  {
+    "id": "62232154-61fd-4242-a9ad-0aedc293b29e",
+    "fact": "记忆提取任务于2026-03-17 07:25执行，从对话记录中提取关键事实",
+    "category": "fact",
+    "confidence": 1.0,
+    "created_at": "2026-03-17T07:25:00Z",
+    "last_accessed": "2026-03-17T07:25:00Z",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "cron_job",
+      "session_id": "memory-extraction-242b0fcc",
+      "tags": [
+        "memory",
+        "extraction",
+        "cron",
+        "task"
+      ]
+    }
+  },
+  {
+    "id": "17d834be-459a-4621-9303-60f9eee9250d",
+    "fact": "自主进化执行器在2026-03-17凌晨运行约2小时，完成3次外循环进化",
+    "category": "fact",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T07:25:00Z",
+    "last_accessed": "2026-03-17T07:25:00Z",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "conversation_analysis",
+      "session_id": "main",
+      "tags": [
+        "evolution",
+        "executor",
+        "autonomous",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "6edf155f-ec94-4173-9b1f-642407a919c3",
+    "fact": "自主进化执行器配置了每7分钟状态记录、每小时外循环进化、每30分钟GitHub项目发现",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T07:25:00Z",
+    "last_accessed": "2026-03-17T07:25:00Z",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "conversation_analysis",
+      "session_id": "main",
+      "tags": [
+        "evolution",
+        "executor",
+        "schedule",
+        "config"
+      ]
+    }
+  },
+  {
+    "id": "a6773b07-75e2-4e43-9b77-bb43d61820cf",
+    "fact": "IER-KG记忆系统包含5,328个代码实体和34个经验节点，状态健康",
+    "category": "fact",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T07:25:00Z",
+    "last_accessed": "2026-03-17T07:25:00Z",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "work_monitor_report",
+      "session_id": "main",
+      "tags": [
+        "ier-kg",
+        "memory",
+        "code",
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "b19077e4-4643-4afa-b9b4-e579f74f085a",
+    "fact": "常驻服务包括SEA Service(系统进化)、MARS Service(并行研究)、SRA Service(自我复盘)、CodeDev Agent，全部运行中",
+    "category": "fact",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T07:25:00Z",
+    "last_accessed": "2026-03-17T07:25:00Z",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "work_monitor_report",
+      "session_id": "main",
+      "tags": [
+        "services",
+        "sea",
+        "mars",
+        "sra",
+        "codedev",
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "85c75e78-74ef-4d1a-82b3-ee39f525ef89",
+    "fact": "AI服务在2026-03-17凌晨多次暂时过载，影响部分cron任务执行",
+    "category": "fact",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T07:25:00Z",
+    "last_accessed": "2026-03-17T07:25:00Z",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "cron_reports",
+      "session_id": "main",
+      "tags": [
+        "error",
+        "ai_service",
+        "overload",
+        "cron"
+      ]
+    }
+  }
+]

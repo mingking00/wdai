@@ -1,0 +1,181 @@
+[
+  {
+    "id": "BV1nvcuz5Ewj_moment_01",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "title": "[LLM Architect] 08 Dive into K2.5",
+      "platform": "bilibili",
+      "timestamp": "00:00:45",
+      "url": "https://www.bilibili.com/video/BV1nvcuz5Ewj?t=00:00:45"
+    },
+    "content": {
+      "text": "Kimi K2.5是一个原生多模态大模型，这是它最大的特点",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_01.jpg",
+      "keywords": [
+        "特点",
+        "原生多模态"
+      ],
+      "summary": "视频关键时刻 - 00:00:45"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T21:58:41.466297",
+      "importance_score": 7,
+      "analysis_method": "keyword_scoring"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_02",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "title": "[LLM Architect] 08 Dive into K2.5",
+      "platform": "bilibili",
+      "timestamp": "00:01:30",
+      "url": "https://www.bilibili.com/video/BV1nvcuz5Ewj?t=00:01:30"
+    },
+    "content": {
+      "text": "原生多模态的意思是，模型从一开始就用图文混合数据训练，而不是后期拼接",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_02.jpg",
+      "keywords": [
+        "原生多模态"
+      ],
+      "summary": "视频关键时刻 - 00:01:30"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T21:58:41.466313",
+      "importance_score": 6,
+      "analysis_method": "keyword_scoring"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_03",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "title": "[LLM Architect] 08 Dive into K2.5",
+      "platform": "bilibili",
+      "timestamp": "00:02:15",
+      "url": "https://www.bilibili.com/video/BV1nvcuz5Ewj?t=00:02:15"
+    },
+    "content": {
+      "text": "关键架构设计：视觉编码器采用了一种创新的分层策略",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_03.jpg",
+      "keywords": [
+        "关键",
+        "创新",
+        "架构设计",
+        "视觉编码器"
+      ],
+      "summary": "视频关键时刻 - 00:02:15"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T21:58:41.466318",
+      "importance_score": 13,
+      "analysis_method": "keyword_scoring"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_04",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "title": "[LLM Architect] 08 Dive into K2.5",
+      "platform": "bilibili",
+      "timestamp": "00:03:00",
+      "url": "https://www.bilibili.com/video/BV1nvcuz5Ewj?t=00:03:00"
+    },
+    "content": {
+      "text": "注意力机制上，K2.5使用了改进的稀疏注意力，降低长上下文计算的复杂度",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_04.jpg",
+      "keywords": [
+        "注意力机制",
+        "长上下文"
+      ],
+      "summary": "视频关键时刻 - 00:03:00"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T21:58:41.466323",
+      "importance_score": 8,
+      "analysis_method": "keyword_scoring"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_05",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "title": "[LLM Architect] 08 Dive into K2.5",
+      "platform": "bilibili",
+      "timestamp": "00:04:30",
+      "url": "https://www.bilibili.com/video/BV1nvcuz5Ewj?t=00:04:30"
+    },
+    "content": {
+      "text": "Agent Swarm是另一个亮点，多个Agent协作完成任务",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_05.jpg",
+      "keywords": [
+        "Agent Swarm"
+      ],
+      "summary": "视频关键时刻 - 00:04:30"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T21:58:41.466326",
+      "importance_score": 6,
+      "analysis_method": "keyword_scoring"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_06",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "title": "[LLM Architect] 08 Dive into K2.5",
+      "platform": "bilibili",
+      "timestamp": "00:05:45",
+      "url": "https://www.bilibili.com/video/BV1nvcuz5Ewj?t=00:05:45"
+    },
+    "content": {
+      "text": "总结来说，Kimi K2.5的核心创新有三点：原生多模态、Agent Swarm、长上下文优化",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_06.jpg",
+      "keywords": [
+        "核心",
+        "总结",
+        "创新",
+        "原生多模态",
+        "Agent Swarm",
+        "长上下文"
+      ],
+      "summary": "视频关键时刻 - 00:05:45"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T21:58:41.466329",
+      "importance_score": 21,
+      "analysis_method": "keyword_scoring"
+    }
+  },
+  {
+    "id": "BV1nvcuz5Ewj_moment_07",
+    "type": "video_keyframe",
+    "source": {
+      "video_id": "BV1nvcuz5Ewj",
+      "title": "[LLM Architect] 08 Dive into K2.5",
+      "platform": "bilibili",
+      "timestamp": "00:07:00",
+      "url": "https://www.bilibili.com/video/BV1nvcuz5Ewj?t=00:07:00"
+    },
+    "content": {
+      "text": "对比GPT-4o，K2.5在多模态理解上有明显优势，特别是在中文场景",
+      "image_path": "keyframes/BV1nvcuz5Ewj_keyframe_07.jpg",
+      "keywords": [
+        "对比",
+        "优势"
+      ],
+      "summary": "视频关键时刻 - 00:07:00"
+    },
+    "metadata": {
+      "extracted_at": "2026-03-15T21:58:41.466332",
+      "importance_score": 5,
+      "analysis_method": "keyword_scoring"
+    }
+  }
+]

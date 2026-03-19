@@ -1,0 +1,25 @@
+[
+  {
+    "id": "98bdd72b-917e-46af-a1ab-7187f65a7eec",
+    "fact": ".json | 120s |",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-20T00:25:20.266525",
+    "last_accessed": "2026-03-20T00:25:20.266527",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f8959ff3-1540-4605-b8fb-b60a22322518",
+        "24d9f5ee-33b1-455f-96d2-0bac27db67b1",
+        "7621e49c-9e4a-4e8d-a9e0-562ad517641b",
+        "24d9f5ee-33b1-455f-96d2-0bac27db67b1",
+        "7621e49c-9e4a-4e8d-a9e0-562ad517641b",
+        "f8959ff3-1540-4605-b8fb-b60a22322518"
+      ]
+    }
+  }
+]

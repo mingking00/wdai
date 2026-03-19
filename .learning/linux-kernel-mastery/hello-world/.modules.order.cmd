@@ -1,0 +1,1 @@
+savedcmd_/root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/modules.order := {   echo /root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/hello-world.o; :; } > /root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/modules.order

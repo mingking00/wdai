@@ -1,0 +1,165 @@
+[
+  {
+    "name": "TomasHer/prompting-blueprints",
+    "description": "Your guide to the Agentic AI evolution. **Prompting Blueprints** offers a curated collection of concepts and tactics for building autonomous AI workflows. Master tool-specific playbooks, backed by structured prompt packs and rigorous evaluations for the latest AI models.",
+    "url": "https://github.com/TomasHer/prompting-blueprints",
+    "discovered_at": "2026-03-17T03:16:48.273712",
+    "details": {
+      "stars": 8,
+      "forks": 4,
+      "language": "HTML",
+      "created_at": "2025-09-06T10:39:38Z",
+      "updated_at": "2026-03-15T08:28:38Z",
+      "topics": [
+        "chatgpt",
+        "context-engineering",
+        "gemini",
+        "generative-ai",
+        "llm",
+        "mkdocs",
+        "prompt-engineering",
+        "prompt-library",
+        "promptfoo"
+      ],
+      "has_wiki": true,
+      "has_pages": true,
+      "open_issues": 0,
+      "license": "MIT License"
+    },
+    "readme_preview": "<img src=\"assets/prompting_blueprints_herda.png\" alt=\"Prompting Blueprints\" width=\"100%\">\n\n# Prompting Blueprints\n\nYour guide to the Agentic AI evolution. **Prompting Blueprints** offers a curated collection of concepts and tactics for building autonomous AI workflows. Master tool-specific playbooks, backed by structured prompt packs and rigorous evaluations for the latest AI models.\n\n<p align=\"left\">\n  <a href=\"./LICENSE\"><img alt=\"License: MIT\" src=\"https://img.shields.io/badge/code-MIT-green.",
+    "key_insights": [
+      "Agent架构",
+      "进化系统",
+      "自主性",
+      "Prompt工程",
+      "工作流"
+    ],
+    "applicability_to_wdai": 0.6,
+    "recommendation": "推荐 - 值得参考"
+  },
+  {
+    "name": "dennysjmarquez/artisan-symbolic-dsl-LLMs",
+    "description": "Artisan System DSL (Domain-Specific Language) A symbolic governance framework for LLMs. Implements deterministic control, Zero Trust security, and autonomous evolution through domain-specific language architecture.",
+    "url": "https://github.com/dennysjmarquez/artisan-symbolic-dsl-LLMs",
+    "discovered_at": "2026-03-17T03:16:48.273728",
+    "details": {
+      "stars": 0,
+      "forks": 0,
+      "language": "ASL",
+      "created_at": "2025-12-05T22:34:01Z",
+      "updated_at": "2026-03-14T15:37:37Z",
+      "topics": [],
+      "has_wiki": false,
+      "has_pages": false,
+      "open_issues": 0,
+      "license": "Apache License 2.0"
+    },
+    "readme_preview": "# 🜸 Artisan System DSL v3.0.0 – *La Voluntad Sólida* Model-as-an-Interpreter ❤️ I LOVER\n\nEste proyecto se basa en el paradigma \"Model-as-an-Interpreter\" utilizando \"State-Machine Prompting\" se alinea con frameworks como:\n\n- LMQL (Language Model Query Language)\n- Microsoft Guidance (templates + constraints)\n- DSPy (pipelines declarativos)\n- REACT frameworks (Reasoning + Acting)\n\n\n[!IMPORTANT]\nScientific Validation & Technical Scope:\n\"The Artis-OEC v3.2.2 DSL is an advanced engineering tool for Ne",
+    "key_insights": [
+      "进化系统",
+      "自主性",
+      "治理框架",
+      "领域特定语言"
+    ],
+    "applicability_to_wdai": 0.6,
+    "recommendation": "推荐 - 值得参考"
+  },
+  {
+    "name": "dennysjmarquez-dev/artisan-symbolic-dsl-LLMs",
+    "description": "Artisan System DSL (Domain-Specific Language) A symbolic governance framework for LLMs. Implements deterministic control,  Zero Trust security, and autonomous evolution through domain-specific  language architecture.",
+    "url": "https://github.com/dennysjmarquez-dev/artisan-symbolic-dsl-LLMs",
+    "discovered_at": "2026-03-17T03:16:48.273730",
+    "details": {
+      "stars": 0,
+      "forks": 0,
+      "language": "ASL",
+      "created_at": "2025-12-03T21:43:58Z",
+      "updated_at": "2026-03-14T15:36:46Z",
+      "topics": [],
+      "has_wiki": false,
+      "has_pages": false,
+      "open_issues": 0,
+      "license": "Apache License 2.0"
+    },
+    "readme_preview": "# 🜸 Artisan System DSL v3.0.0 – *La Voluntad Sólida* Model-as-an-Interpreter ❤️ I LOVER\n\nEste proyecto se basa en el paradigma \"Model-as-an-Interpreter\" utilizando \"State-Machine Prompting\" se alinea con frameworks como:\n\n- LMQL (Language Model Query Language)\n- Microsoft Guidance (templates + constraints)\n- DSPy (pipelines declarativos)\n- REACT frameworks (Reasoning + Acting)\n\n\n[!IMPORTANT]\nScientific Validation & Technical Scope:\n\"The Artis-OEC v3.2.2 DSL is an advanced engineering tool for Ne",
+    "key_insights": [
+      "进化系统",
+      "自主性",
+      "治理框架",
+      "领域特定语言"
+    ],
+    "applicability_to_wdai": 0.6,
+    "recommendation": "推荐 - 值得参考"
+  },
+  {
+    "name": "genejr2025/circe-framework",
+    "description": "CIRCE: Collaborative Intelligent Response Circular Evolution — A framework for autonomous multi-agent AI coordination with persistent memory, file-based protocols, and human oversight.",
+    "url": "https://github.com/genejr2025/circe-framework",
+    "discovered_at": "2026-03-17T03:16:48.273731",
+    "details": {
+      "stars": 1,
+      "forks": 0,
+      "language": "Shell",
+      "created_at": "2025-09-07T22:56:45Z",
+      "updated_at": "2026-03-12T19:29:15Z",
+      "topics": [
+        "agent-orchestration",
+        "ai-framework",
+        "autonomous-agents",
+        "llm",
+        "multi-agent"
+      ],
+      "has_wiki": true,
+      "has_pages": false,
+      "open_issues": 0,
+      "license": "MIT License"
+    },
+    "readme_preview": "# CIRCE Framework\n\n**Multi-Agent Orchestration on 25 Watts**\n\n> An entire AI operations center — 15+ agents, voice interface, RAG, dev+prod stacks — running on a single Jetson Orin Nano. Less power than a lightbulb.\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n[![Status](https://img.shields.io/badge/status-Production-green.svg)](#current-status)\n[![Agents](https://img.shields.io/badge/agents-15+-blue.svg)](#agent-roles)\n[![Sessions](https://img.shields.io/badg",
+    "key_insights": [
+      "Agent架构",
+      "进化系统",
+      "记忆系统",
+      "多Agent协作",
+      "自主性",
+      "协调机制"
+    ],
+    "applicability_to_wdai": 0.8,
+    "recommendation": "高度推荐 - 核心相关"
+  },
+  {
+    "name": "YIING99/agent-evolution-protocol",
+    "description": "A safe, transparent, and human-controlled self-evolution framework for AI agents. Three-zone safety architecture ensures AI learns autonomously while humans stay in control.",
+    "url": "https://github.com/YIING99/agent-evolution-protocol",
+    "discovered_at": "2026-03-17T03:16:48.273733",
+    "details": {
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "created_at": "2026-03-11T01:16:15Z",
+      "updated_at": "2026-03-11T01:16:31Z",
+      "topics": [
+        "agent-evolution",
+        "ai-agent",
+        "anti-hallucination",
+        "human-in-the-loop",
+        "llm",
+        "openclaw",
+        "safety",
+        "self-evolution"
+      ],
+      "has_wiki": true,
+      "has_pages": false,
+      "open_issues": 0,
+      "license": "MIT License"
+    },
+    "readme_preview": "# Agent Evolution Protocol (AEP)\n\n> A safe, transparent, and human-controlled self-evolution framework for AI agents.\n\nYour AI agent scans tech communities daily, discovers valuable skills, tests them in real conversations, and proposes verified improvements for your approval. **AI can learn on its own, but cannot modify itself without human permission.**\n\n## Why AEP?\n\nMost \"auto-update\" systems for AI agents are black boxes — they silently modify your agent's behavior, send data to third-party ",
+    "key_insights": [
+      "Agent架构",
+      "进化系统",
+      "自主性",
+      "安全机制"
+    ],
+    "applicability_to_wdai": 0.8,
+    "recommendation": "高度推荐 - 核心相关"
+  }
+]

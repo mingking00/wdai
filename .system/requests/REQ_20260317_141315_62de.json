@@ -1,0 +1,9 @@
+{
+  "id": "REQ_20260317_141315_62de",
+  "type": "improve",
+  "description": "\u4f18\u5316\u9519\u8bef\u5904\u7406\uff0c\u6dfb\u52a0\u8be6\u7ec6\u5f02\u5e38\u4fe1\u606f\u548c\u65e5\u5fd7",
+  "changes": {
+    "test_module.py": "\ndef example_function():\n    \"\"\"\u793a\u4f8b\u51fd\u6570 - \u9700\u8981\u4f18\u5316\u9519\u8bef\u5904\u7406\"\"\"\n    try:\n        result = risky_operation()\n        return result\n    except:\n        return None  # \u9700\u8981\u66f4\u597d\u7684\u9519\u8bef\u5904\u7406\n"
+  },
+  "submitted_at": "2026-03-17T14:13:15.768277"
+}

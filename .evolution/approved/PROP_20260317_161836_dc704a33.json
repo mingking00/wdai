@@ -1,0 +1,31 @@
+{
+  "id": "PROP_20260317_161836_dc704a33",
+  "title": "Agent角色专业化重构",
+  "created_at": "2026-03-17T16:18:36.527408",
+  "type": "其他",
+  "impact": "medium",
+  "content": {
+    "problem": "当前Agent角色定义不够清晰，缺乏标准化的技能定义和产出格式。",
+    "solution": "细化wdai Agent角色定义：\n1. 为每个Agent定义明确的goal、skills、constraints\n2. 标准化输入输出格式（如PRD、设计文档模板）\n3. 创建角色配置文件\n4. 定义角色间协作协议\n5. 添加角色能力评估",
+    "expected_effect": "Agent专业化程度提高，产出质量提升，协作更清晰。",
+    "risk_assessment": "低风险。主要是文档和配置变更。",
+    "implementation_steps": [
+      "分析现有Agent职责",
+      "设计角色定义Schema",
+      "创建角色配置文件",
+      "标准化产出模板",
+      "更新Agent实现"
+    ]
+  },
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T16:24:39.411223",
+    "decision_reason": "基于OpenHands + MetaGPT研究，架构升级需要"
+  },
+  "execution": {
+    "executed_at": null,
+    "result": null,
+    "logs": []
+  }
+}

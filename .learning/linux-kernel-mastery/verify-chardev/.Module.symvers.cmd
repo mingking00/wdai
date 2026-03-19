@@ -1,0 +1,1 @@
+savedcmd_/root/.openclaw/workspace/.learning/linux-kernel-mastery/verify-chardev/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /root/.openclaw/workspace/.learning/linux-kernel-mastery/verify-chardev/Module.symvers -T /root/.openclaw/workspace/.learning/linux-kernel-mastery/verify-chardev/modules.order -i Module.symvers -e 

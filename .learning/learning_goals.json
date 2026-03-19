@@ -1,0 +1,99 @@
+[
+  {
+    "id": "learn-系统架构-20260310",
+    "title": "掌握系统架构",
+    "description": "系统学习系统架构知识，从当前水平1提升到8",
+    "priority": "high",
+    "status": "planned",
+    "created_at": "2026-03-10T05:52:33.485085",
+    "target_completion": "2026-03-24T05:52:33.485089",
+    "knowledge_domain": "系统架构",
+    "current_level": 1,
+    "target_level": 8,
+    "tasks": [
+      {
+        "step": 1,
+        "title": "设计模式",
+        "duration_hours": 4,
+        "deliverable": "模式应用"
+      },
+      {
+        "step": 2,
+        "title": "可扩展性",
+        "duration_hours": 5,
+        "deliverable": "扩展方案"
+      },
+      {
+        "step": 3,
+        "title": "性能优化",
+        "duration_hours": 6,
+        "deliverable": "优化实现"
+      },
+      {
+        "step": 4,
+        "title": "架构评审",
+        "duration_hours": 3,
+        "deliverable": "改进报告"
+      }
+    ],
+    "validation_criteria": "能够独立设计和实现系统架构相关系统，通过测试验证",
+    "application_target": "应用到当前多智能体系统优化"
+  },
+  {
+    "id": "learn-系统架构-20260310",
+    "title": "掌握系统架构",
+    "description": "系统学习系统架构知识，从当前水平1提升到8",
+    "priority": "high",
+    "status": "planned",
+    "created_at": "2026-03-10T05:52:44.395760",
+    "target_completion": "2026-03-24T05:52:44.395764",
+    "knowledge_domain": "系统架构",
+    "current_level": 1,
+    "target_level": 8,
+    "tasks": [
+      {
+        "step": 1,
+        "title": "设计模式",
+        "content": "学习常见设计模式，理解SOLID原则",
+        "resources": [
+          "Design Patterns Book",
+          "Refactoring Guru"
+        ],
+        "duration_hours": 4,
+        "deliverable": "模式应用笔记"
+      },
+      {
+        "step": 2,
+        "title": "可扩展性",
+        "content": "研究水平/垂直扩展策略，负载均衡",
+        "resources": [
+          "Designing Data-Intensive Applications"
+        ],
+        "duration_hours": 5,
+        "deliverable": "扩展方案设计"
+      },
+      {
+        "step": 3,
+        "title": "性能优化",
+        "content": "学习性能分析工具和优化技术",
+        "resources": [
+          "Systems Performance"
+        ],
+        "duration_hours": 6,
+        "deliverable": "优化实现案例"
+      },
+      {
+        "step": 4,
+        "title": "架构评审",
+        "content": "评审现有系统架构，提出改进建议",
+        "resources": [
+          "当前代码库"
+        ],
+        "duration_hours": 3,
+        "deliverable": "架构改进报告"
+      }
+    ],
+    "validation_criteria": "能够独立设计和实现系统架构相关系统，通过测试验证",
+    "application_target": "应用到当前多智能体系统优化"
+  }
+]

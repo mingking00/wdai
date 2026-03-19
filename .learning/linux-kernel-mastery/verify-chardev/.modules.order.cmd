@@ -1,0 +1,1 @@
+savedcmd_/root/.openclaw/workspace/.learning/linux-kernel-mastery/verify-chardev/modules.order := {   echo /root/.openclaw/workspace/.learning/linux-kernel-mastery/verify-chardev/chardev.o; :; } > /root/.openclaw/workspace/.learning/linux-kernel-mastery/verify-chardev/modules.order

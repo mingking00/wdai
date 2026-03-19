@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赘婿 - 双语阅读器 | My Heroic Husband - Bilingual Reader</title>
+    <style>
+        :root { 
+            --bg: #0a0a0f; --bg2: #12121a; --bg3: #1a1a28;
+            --accent: #ff6b6b; --accent2: #ff8e53;
+            --text: #fff; --text2: #a0a0b0; --text3: #606070;
+            --border: rgba(255,255,255,0.08);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: var(--bg); color: var(--text); height: 100vh; overflow: hidden;
+        }
+        .app { display: grid; grid-template-rows: 60px 1fr; height: 100vh; }
+        .header { 
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 24px; background: var(--bg2); border-bottom: 1px solid var(--border);
+        }
+        .logo { 
+            font-size: 20px; font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .main { display: grid; grid-template-columns: 300px 1fr 340px; overflow: hidden; }
+        
+        /* Sidebar */
+        .sidebar { background: var(--bg2); padding: 20px; overflow-y: auto; }
+        .sidebar-left { border-right: 1px solid var(--border); }
+        .sidebar-right { border-left: 1px solid var(--border); }
+        .section-title { 
+            font-size: 11px; font-weight: 600; color: var(--text3);
+            text-transform: uppercase; letter-spacing: 0.5px;
+            margin: 20px 0 12px; display: flex; justify-content: space-between;
+        }
+        .section-title:first-child { margin-top: 0; }
+        .section-title span { background: var(--bg3); padding: 2px 8px; border-radius: 12px; }
+        
+        /* Chapter List */
+        .chapter-item { 
+            display: flex; align-items: center; gap: 12px;
+            padding: 12px; border-radius: 10px; cursor: pointer;
+            margin-bottom: 4px; transition: all 0.2s; font-size: 14px;
+        }
+        .chapter-item:hover { background: rgba(255,255,255,0.05); }
+        .chapter-item.active { background: var(--bg3); }
+        .chapter-num { 
+            width: 28px; height: 28px; border-radius: 8px;
+            background: var(--bg3); display: flex; align-items: center; justify-content: center;
+            font-size: 12px; font-weight: 600; color: var(--text3); flex-shrink: 0;
+        }
+        .chapter-item.active .chapter-num { background: var(--accent); color: white; }
+        .chapter-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        
+        /* Character Cards */
+        .char-card { 
+            display: flex; align-items: center; gap: 12px;
+            padding: 12px; border-radius: 12px; background: rgba(255,255,255,0.03);
+            cursor: pointer; margin-bottom: 8px; transition: all 0.2s;
+        }
+        .char-card:hover { background: rgba(255,255,255,0.06); transform: translateX(4px); }
+        .char-avatar { 
+            width: 44px; height: 44px; border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 18px; font-weight: 700; color: white; flex-shrink: 0;
+        }
+        .char-name { font-weight: 600; font-size: 14px; }
+        .char-en { font-size: 12px; color: var(--text2); }
+        .char-role { font-size: 11px; color: var(--accent); margin-top: 2px; }
+        
+        /* Reader */
+        .reader { display: flex; flex-direction: column; overflow: hidden; }
+        .reader-toolbar { 
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 16px 32px; background: var(--bg2); border-bottom: 1px solid var(--border);
+        }
+        .view-options { display: flex; gap: 4px; background: var(--bg); padding: 4px; border-radius: 10px; }
+        .view-btn { 
+            padding: 8px 16px; border-radius: 8px; border: none;
+            background: transparent; color: var(--text3); font-size: 13px; cursor: pointer; transition: all 0.2s;
+        }
+        .view-btn:hover { color: var(--text); }
+        .view-btn.active { background: rgba(255,255,255,0.1); color: var(--text); }
+        .reader-content { flex: 1; overflow-y: auto; padding: 40px 48px; }
+        
+        /* Content */
+        .chapter-header { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+        .chapter-heading { 
+            font-size: 32px; font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .chapter-subheading { font-size: 18px; color: var(--text2); margin-top: 8px; }
+        
+        .para-block { 
+            margin-bottom: 32px; padding: 24px; border-radius: 16px;
+            background: rgba(255,255,255,0.03); transition: all 0.2s;
+        }
+        .para-block:hover { border: 1px solid var(--border); }
+        .zh-text { font-size: 17px; line-height: 1.9; margin-bottom: 12px; }
+        .en-text { 
+            font-size: 15px; line-height: 1.7; color: var(--text2);
+            padding-left: 16px; border-left: 3px solid var(--accent);
+        }
+        
+        /* Term Highlight */
+        .term { 
+            background: rgba(255,107,107,0.15); padding: 2px 6px; border-radius: 6px;
+            border-bottom: 2px solid var(--accent); cursor: pointer; transition: all 0.2s;
+        }
+        .term:hover { background: rgba(255,107,107,0.3); }
+        
+        /* Tooltip */
+        .term-wrapper { position: relative; display: inline; }
+        .term-tooltip {
+            position: absolute; bottom: 100%; left: 50%;
+            transform: translateX(-50%) translateY(-8px);
+            background: var(--bg2); border: 1px solid var(--border);
+            border-radius: 12px; padding: 12px 16px;
+            min-width: 200px; max-width: 280px;
+            z-index: 100; opacity: 0; visibility: hidden;
+            transition: all 0.2s; pointer-events: none;
+        }
+        .term-wrapper:hover .term-tooltip { opacity: 1; visibility: visible; }
+        .tooltip-name { font-weight: 600; font-size: 15px; }
+        .tooltip-en { font-size: 12px; color: var(--accent); }
+        .tooltip-desc { font-size: 12px; color: var(--text2); margin-top: 6px; }
+        
+        /* Detail Panel */
+        .detail-card { 
+            background: rgba(255,255,255,0.03); border-radius: 16px;
+            padding: 24px; margin-bottom: 16px;
+        }
+        .detail-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+        .detail-avatar { 
+            width: 64px; height: 64px; border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; font-weight: 700; color: white; flex-shrink: 0;
+        }
+        .detail-name { font-size: 24px; font-weight: 700; }
+        .detail-en { font-size: 16px; color: var(--accent); }
+        .detail-section { margin-bottom: 16px; }
+        .detail-section-title { 
+            font-size: 11px; font-weight: 600; color: var(--text3);
+            text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+        }
+        .detail-text { font-size: 14px; color: var(--text2); line-height: 1.7; }
+        .quote-box {
+            background: var(--bg3); border-left: 4px solid var(--accent);
+            padding: 12px 16px; border-radius: 0 8px 8px 0;
+            font-style: italic; color: var(--text2);
+        }
+        
+        /* Full Book Notice */
+        .full-book-notice {
+            background: linear-gradient(135deg, rgba(255,107,107,0.1), rgba(255,142,83,0.1));
+            border: 1px solid var(--accent);
+            border-radius: 12px; padding: 16px 20px;
+            margin: 20px 0; text-align: center;
+        }
+        .full-book-notice h3 { color: var(--accent); margin-bottom: 8px; }
+        .full-book-notice p { color: var(--text2); font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    
+    <script>
+        // 《赘婿》数据 - 前10章双语版
+        const novelData = {
+            "title": "赘婿 (My Heroic Husband)",
+            "chapters": [
+                {
+                    "title": "楔子 繁华过眼开一季",
+                    "paragraphs": [
+                        {"zh": "火焰燃烧着，电路啪啦啦的响，从倾倒的汽车里爬出来的时候，他的视野有些模糊。", "en": "Flames burned and circuits crackled as he crawled out of the overturned car, his vision somewhat blurred."},
+                        {"zh": "夜色下的、河边的公园，城市密集的灯光在对面如火光般的摇曳着，仿佛浮在水面上的巨大城池。那片繁荣的景象与这边公园的偏僻和孤寂形成了对照，记得公园的开发案是他在十多年前主持的。", "en": "In the riverside park under the night sky, the dense city lights flickered like flames across the water, resembling a magnificent floating city. The prosperity across the river stood in stark contrast to the seclusion and solitude of this park—a development project he had overseen more than a decade ago."},
+                        {"zh": "风吹过来，他叹了口气，踉踉跄跄地朝那片迷离的水光走过去，后方的汽车陡然传来巨大的爆炸声，火焰升腾，热浪从背后席卷而来，仿佛要将他淹没下去一般。", "en": "The wind blew past. He sighed and staggered toward the shimmering water. Suddenly, a massive explosion erupted from the car behind him—flames shot skyward and heat waves surged toward him, threatening to engulf him completely."},
+                        {"zh": "四周，海陆空密密麻麻的包围令他觉得有些烦闷，视线之中并不清晰了，心中明白这次或许没有多少侥幸的可能。", "en": "Surrounded on all sides by land, sea, and air forces, he felt somewhat suffocated. His vision grew unclear, and he understood in his heart that there might be little chance of escape this time."},
+                        {"zh": "冷风吹过来，脑子里想起的，反倒是一些无关紧要的事情。这是他从小长大的城市，那时候城市还没有这么好，站在河岸这边，看不到整个城市辉煌如宫殿一般的繁华情景，但感觉温暖。", "en": "The cold wind blew, yet his mind wandered to seemingly trivial matters. This was the city where he had grown up—back then, it wasn't so grand. Standing on this riverbank, one couldn't see the magnificent palace-like prosperity, but it felt warm."},
+                        {"zh": ""我将来要把这边建个公园，变得更漂亮，让城市里到处都有高楼大厦，我们都住进去……"", "en": ""Someday I'll build a park here, make it more beautiful, fill the city with tall buildings, and we'll all live in them...""},
+                        {"zh": "那时还小，去过繁荣的省会之后，立下的这个宏愿。多么意气风发的年纪啊，此后二三十年的时间里，他如同刚刚发明石刀石斧的原始人一般，以惊人的魄力开拓进取，越过了旁人难以想象的无数惊险难关，建立起了世界上数一数二的巨大金融帝国。", "en": "He had made this grand vow as a child after visiting the prosperous provincial capital. What an ambitious age that was! In the two or three decades that followed, like a primitive man who had just invented stone tools, he forged ahead with astonishing determination, overcoming countless perilous obstacles unimaginable to others, building one of the world's greatest financial empires."},
+                        {"zh": "在别人眼中，他已经是完全不会被打倒的金融巨人，他自己也这样认为了，然而当此时此刻重回故地，他才渐渐地明白过来，这个公园，终究是失败了啊。", "en": "In others' eyes, he was an invincible financial giant, and he had believed so himself. Yet at this moment, returning to this place, he gradually understood—this park had ultimately failed."},
+                        {"zh": "失败的开发案，后来也不是不能补救，只要投入大量的资金——对于现在的他来说，这点资金也不算什么了——然而为什么一直没有做呢？", "en": "The failed development could have been remedied later with substantial investment—an amount that meant nothing to him now—so why had he never done it?"},
+                        {"zh": "当初的那些朋友、伙伴、想要让世界变得更美好的期待、许过的愿望走过的路。他在河堤的石凳上坐了下来，灯光晃眼，心绪复杂。", "en": "Those friends and partners from the past, the expectations of making the world a better place, the wishes made and paths walked. He sat on the stone bench by the riverbank, the lights dazzling, his thoughts complex."}
+                    ]
+                },
+                {
+                    "title": "第一章 苏家赘婿",
+                    "paragraphs": [
+                        {"zh": "他从迷迷糊糊中醒过来，看见的是白色的蚊帐，头上隐隐作痛，不知道这是在怎样的环境里，于是闭上眼睛想了很久，才微微叹了口气。", "en": "He woke up in a daze, seeing white mosquito netting above him. His head throbbed with pain. Uncertain of his surroundings, he closed his eyes and thought for a long time before letting out a soft sigh."},
+                        {"zh": "没有死。那么，自己现在是在被软禁着？", "en": "He hadn't died. Then... was he being held captive now?"},
+                        {"zh": "掀开被子坐起来，大约是昏迷了很久，与身体之间还无法很好的协调，低头看看，衣服的样式怪里怪气的，布料也很差。", "en": "He threw off the covers and sat up. Having been unconscious for so long, his coordination with his body was still off. Looking down, the clothes were oddly styled and made of poor fabric."},
+                        {"zh": "老式的房屋、老式的床、桌椅板凳，虽然用料和做工都不错，但整个房间都是仿古的摆设，也有看起来很棒的瓷器，但任何现代化的电子设备都不存在了。", "en": "Old-fashioned rooms, old-fashioned beds, tables and chairs—though the materials and craftsmanship were decent, the entire room was decorated in antique style. There were fine-looking porcelain pieces, but no modern electronic devices whatsoever."},
+                        {"zh": "他看了看两只显得苍白的手，片刻，才在桌椅前坐下，解开身上的衣服，这具身体……没有弹孔。开什么玩笑？", "en": "He looked at his pale hands. After a moment, he sat at the table, unfastened his clothes... this body had no bullet wounds. What kind of joke was this?"},
+                        {"zh": "自己明明记得那么多子弹对着自己射过来的，前前后后都有啊，难不成是做了整形手术？不对，这具身体都不是自己的，所有的特征都在表现出这个迹象。", "en": "He clearly remembered so many bullets flying toward him from all directions. Had he undergone plastic surgery? No—this body wasn't even his own. All the characteristics indicated this."},
+                        {"zh": "他曾经是世界上最有经济实力的人之一，能够白手起家到那个地步，自然不会因为一些小疑惑被打倒。", "en": "He had once been one of the world's most economically powerful individuals. Having built everything from scratch, he naturally wouldn't be defeated by minor doubts."},
+                        {"zh": "头上缠着绷带，还隐隐有些痛，他推开房门，明媚的阳光便射了进来，令他下意识地伸手遮挡了一下。", "en": "Bandages were wrapped around his head, still throbbing with pain. He pushed open the door, and bright sunlight poured in, causing him to instinctively raise his hand to shield his eyes."},
+                        {"zh": "这是木制楼房的二楼上，从门口看出去，下方、远远仅仅是一个个鳞次栉比的院落与园林，分布的各种楼房，苏杭风格的园林建筑、池塘与山石，美轮美奂地在眼前延伸开去。", "en": "This was the second floor of a wooden building. Looking out from the doorway, rows of courtyards and gardens stretched into the distance—Suzhou-Hangzhou style architecture with ponds and rockeries, beautifully extending before his eyes."},
+                        {"zh": "他吸了一口气，随后吐出来。大手笔啊，唐明远你弄这个得花多少钱才行？", "en": "He took a breath and exhaled. What a grand production! Tang Mingyuan, how much would it cost you to create all this?"}
+                    ]
+                },
+                {
+                    "title": "第二章 诗与棋",
+                    "paragraphs": [
+                        {"zh": "转眼间，来到这个古代，已经三个月了，时间也渐渐从春天转向盛夏。园林、假山、楼阁、院落、街道、画舫，宁毅也渐渐熟悉了这个古代的世界。", "en": "In the blink of an eye, three months had passed since coming to this ancient world, and the seasons gradually shifted from spring to midsummer. Gardens, rockeries, pavilions, courtyards, streets, and painted boats—Ning Yi had gradually become familiar with this ancient world."},
+                        {"zh": "大概是以前忙惯了，如今没有电脑没有工作，没有任何事情可以做，总会觉得手痒。", "en": "Perhaps he had been too busy before; now without computers, without work, without anything to do, he always felt restless."},
+                        {"zh": "苏家是乐于见到他的无聊的，毕竟之前让他入赘，原因就是为了给苏檀儿一个留在自己家里不至于嫁出去的理由。", "en": "The Su family was content to see him idle. After all, the reason for having him marry into the family was to give Su Tan'er a reason to stay at home rather than marry out."},
+                        {"zh": "相对于他的悠闲，自己那个名义上的妻子苏檀儿就显然很忙。不过，无论如何的忙，她基本上会按时的回家吃饭。", "en": "Compared to his leisure, his nominal wife Su Tan'er was obviously very busy. However, no matter how busy, she basically came home for meals on time."},
+                        {"zh": "大概是将自己当成了真正老实木讷的男人，每天坐在一起吃饭，挑起话题的也总是她。", "en": "She probably regarded him as a truly honest and dull man. During their daily meals together, she was always the one to initiate conversation."},
+                        {"zh": "吃饭完，如果下雨，大家多半在各自的房间里，苏檀儿看书，偶尔随手弹弹琴，做做女红刺绣，他就单纯是看书写字。", "en": "After meals, if it rained, they mostly stayed in their respective rooms. Su Tan'er would read, occasionally play the qin, or do embroidery, while he simply read and wrote."},
+                        {"zh": "名叫小婵的婢女一直跟着他，几个月来大概就成了专门服侍他的侍女，这也是苏檀儿的安排。", "en": "The maid named Xiao Chan had been following him; over the months, she had become his personal attendant, which was also Su Tan'er's arrangement."},
+                        {"zh": "那河边一处并不算太热闹的街道，处于城郊，位置稍稍有些偏，没有大的店铺，路上多是些挑担子来的小商贩。", "en": "By the riverside was a not-too-busy street, located in the suburbs in a slightly remote position. There were no large shops, mostly small vendors carrying their goods on shoulder poles."},
+                        {"zh": "临河的一棵树下常有个老头在那里摆棋盘，偶尔会有几个老头在那儿看，偶尔也会有些书生过来。", "en": "Under a tree by the river, an old man often set up a chessboard. Occasionally a few old men would watch, and sometimes scholars would come by."},
+                        {"zh": "这样的脑力劳动，大抵也是他在这边能找到的不多的娱乐之一了。", "en": "Such mental exercise was one of the few entertainments he could find here."}
+                    ]
+                },
+                {
+                    "title": "第三章 群像：老叟、小婢与二世祖",
+                    "paragraphs": [
+                        {"zh": "日子过得无聊，说好听一点当然便是悠闲，连续下雨的时间里，跟小姑娘下下五子棋，偶尔练练毛笔字，看看古文书籍。", "en": "Days passed boringly—or elegantly put, leisurely. During continuous rainy days, he played Gomoku with the young maid, occasionally practiced calligraphy, and read classical texts."},
+                        {"zh": "虽然在娱乐性上与现代的小说无法相比，但他一向是耐得住这种单调的人。", "en": "Although these couldn't compare to modern novels in entertainment value, he had always been someone who could endure such monotony."},
+                        {"zh": "新姑爷进门，又是入赘，这个年代里，一向是没什么地位的。", "en": "A new son-in-law entering the family, especially one who married in, had little status in this era."},
+                        {"zh": "苏家的情况，其实又比较复杂。如今苏家真正的掌权者是苏檀儿如今仍然在世的爷爷，一般人叫他老太公。", "en": "The Su family's situation was actually quite complex. The true head of the Su family was Su Tan'er's still-living grandfather, whom people called the Old Patriarch."},
+                        {"zh": "老太公有三个亲生儿子，分成了大房二房三房，对外掌权的是大房，也就是苏檀儿的父亲苏伯庸。", "en": "The Old Patriarch had three sons, divided into the First, Second, and Third Branches. The First Branch held power, led by Su Tan'er's father Su Boyong."},
+                        {"zh": "除了主系的这三房，苏老太公同样也有兄弟姐妹，苏氏一族如今开枝散叶规模庞大。", "en": "Besides these three main branches, the Old Patriarch also had siblings. The Su clan had now grown into a massive family."},
+                        {"zh": "他自然不会怕这种被孤立的无聊感，曾经的阅历足以让他如今轻松面对一切情况。", "en": "He naturally wasn't afraid of this isolated boredom; his past experiences were more than enough to help him face any situation with ease."},
+                        {"zh": "利益纠结、勾心斗角，至少暂时还没有波及到他的身上来。", "en": "Interest conflicts and power struggles hadn't affected him yet, at least for now."},
+                        {"zh": "但问题并不大，苏太公、苏伯庸都健在，一个家族的小大小闹再怎样都是有限。", "en": "But it wasn't a big problem. With Patriarch Su and Su Boyong both in good health, however much a family squabbled, it was limited."},
+                        {"zh": "雨连续下了好几天，也就在家里呆了几天，偶尔看见对面小楼的三名主仆撑了油纸伞匆匆忙忙地出去。", "en": "Rain fell continuously for several days, so he stayed home for a few days, occasionally seeing the three mistresses and servants from the opposite building hurrying out with oil-paper umbrellas."}
+                    ]
+                },
+                {
+                    "title": "第四章 没关系的人",
+                    "paragraphs": [
+                        {"zh": "街道上行人来往，苏檀儿带着娟儿与杏儿，宁毅带着婵儿，薛进则带着两名小厮，正在友好地交谈着。", "en": "Pedestrians came and went on the street. Su Tan'er came with Juan'er and Xing'er, Ning Yi with Chan'er, while Xue Jin brought two servants. They were having a cordial conversation."},
+                        {"zh": "江宁一带经济繁荣，织造业发达，在这方面，附近最大的三家布行分别是苏氏布行，薛家的大川布行以及作为行首的乌氏布行。", "en": "The Jiangning region was economically prosperous with a developed textile industry. The three largest cloth merchants were the Su family, Xue family's Dachuan Cloth Store, and the leading Wu family's business."},
+                        {"zh": "薛进这次过来的主要目的是为了跟苏檀儿谈论在淮南一带一笔生意的合作事项。", "en": "Xue Jin had come this time mainly to discuss a business cooperation with Su Tan'er in the Huainan region."},
+                        {"zh": "薛进对苏家的苏檀儿一直有意思，大家老早就知道。", "en": "Everyone had long known that Xue Jin was interested in Su Tan'er from the Su family."},
+                        {"zh": "曾经薛家也对苏家提过亲，但一来苏老太公对这薛进不怎么喜欢，二来苏家这一代人才凋零，也不打算把苏檀儿直接嫁出去。", "en": "The Xue family had once proposed marriage to the Su family, but firstly, Old Patriarch Su didn't like Xue Jin much, and secondly, the Su family's current generation lacked talent, so they didn't plan to marry Su Tan'er out."},
+                        {"zh": "事情过了这么久，又有苏檀儿逃婚的事情，这时候薛进又跑来找苏檀儿，自然还是不死心。", "en": "So much time had passed, and with Su Tan'er's escape from marriage, Xue Jin was still coming to find her—clearly unwilling to give up."},
+                        {"zh": "这时候得到杏儿传讯，苏檀儿匆匆出来，毕竟害怕宁毅书生意气，经不起挑衅，跟对方起什么冲突。", "en": "Having received Xing'er's message, Su Tan'er hurried out, fearing that Ning Yi, in his scholarly pride, couldn't withstand provocation and would cause some conflict."},
+                        {"zh": "谁知道赶出来，才发现宁毅正态度自然地跟对方讨论着失忆的事情，看起来真像是连薛进这个名字都完全没有感觉了。", "en": "Who knew when she arrived, she found Ning Yi naturally discussing his amnesia with the other party, looking as if he truly had no recollection of the name Xue Jin whatsoever."},
+                        {"zh": ""对了，中秋节秦淮赏灯，濮园诗会大家可携家眷前往，听说宁兄饱学，不知可会与檀儿妹子一同参加吗？"", "en": ""By the way, for the Mid-Autumn Festival, there's a lantern viewing on the Qinhuai River, and the Puyuan Poetry Gathering allows attendees to bring family. I hear Brother Ning is well-learned—might you attend with Sister Tan'er?""},
+                        {"zh": "此时在那马车当中，苏檀儿也正有些疑惑地望着对面的宁毅，这时在马车里主要说话的是三个丫鬟。", "en": "At this moment in the carriage, Su Tan'er was looking somewhat puzzled at Ning Yi across from her. In the carriage, the three maids were the main ones talking."}
+                    ]
+                }
+            ],
+            "characters": [
+                {"id": "char_0", "name": "宁毅", "enName": "Ning Yi", "role": "主角/赘婿", "description": "现代金融巨子穿越到古代，成为苏家赘婿，拥有超前时代的商业眼光和手段，性格沉稳内敛", "color": "#E74C3C", "quote": ""},
+                {"id": "char_1", "name": "苏檀儿", "enName": "Su Tan'er", "role": "女主角/妻子", "description": "苏家大小姐，经商奇才，美丽聪慧，与宁毅先婚后爱，性格强势但温柔", "color": "#3498DB", "quote": ""},
+                {"id": "char_2", "name": "小婵", "enName": "Xiao Chan", "role": "侍女", "description": "苏檀儿的贴身丫鬟，活泼可爱，忠心耿耿，后成为宁毅的贴身侍女", "color": "#27AE60", "quote": ""},
+                {"id": "char_3", "name": "唐明远", "enName": "Tang Mingyuan", "role": "前世对手", "description": "宁毅前世的商业伙伴，最终背叛了他，导致宁毅穿越重生", "color": "#9B59B6", "quote": ""},
+                {"id": "char_4", "name": "苏伯庸", "enName": "Su Boyong", "role": "岳父", "description": "苏檀儿的父亲，苏家大房主事，对宁毅态度冷淡，希望女儿能继承家业", "color": "#F39C12", "quote": ""},
+                {"id": "char_5", "name": "苏太公", "enName": "Su Patriarch", "role": "苏家族长", "description": "苏家现任族长，苏檀儿的祖父，看好宁毅的潜力，是家族的定海神针", "color": "#1ABC9C", "quote": ""}
+            ],
+            "concepts": [
+                {"id": "concept_0", "name": "江宁", "enName": "Jiangning", "category": "地点", "description": "武朝繁华城市，相当于南京，苏家所在之地，商业发达", "importance": "核心"},
+                {"id": "concept_1", "name": "苏家", "enName": "Su Family", "category": "家族", "description": "江宁富商，以纺织生意起家，当地望族，家族内部关系复杂", "importance": "核心"},
+                {"id": "concept_2", "name": "武朝", "enName": "Wu Dynasty", "category": "朝代", "description": "架空朝代，类似南宋，商业繁荣但面临外患，文化昌盛", "importance": "核心"},
+                {"id": "concept_3", "name": "秦淮河", "enName": "Qinhuai River", "category": "地点", "description": "江宁著名河流，繁华的娱乐地带，文人墨客聚集之所，有画舫诗会", "importance": "重要"},
+                {"id": "concept_4", "name": "赘婿", "enName": "Live-in Son-in-law", "category": "身份", "description": "入赘女方家的男子，地位较低，常受歧视，但在本故事中主角逆袭", "importance": "核心"},
+                {"id": "concept_5", "name": "指腹为婚", "enName": "Prenatal Betrothal", "category": "习俗", "description": "双方父母在孩子出生前约定的婚约，宁毅与苏檀儿的婚约来源", "importance": "重要"}
+            ]
+        };
+        
+        let currentChapter = 0;
+        
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+        
+        function renderApp() {
+            const app = document.getElementById('app');
+            app.innerHTML = `
+                <div class="app">
+                    <header class="header">
+                        <div class="logo">📖 赘婿 | My Heroic Husband</div>
+                        <div class="view-options">
+                            <button class="view-btn active" onclick="setView('both')">双语</button>
+                            <button class="view-btn" onclick="setView('zh')">中文</button>
+                            <button class="view-btn" onclick="setView('en')">English</button>
+                        </div>
+                    </header>
+                    <div class="main">
+                        <aside class="sidebar sidebar-left">
+                            <div class="section-title">
+                                章节 Chapters
+                                <span>${novelData.chapters.length}/834</span>
+                            </div>
+                            <div id="chapter-list"></div>
+                            
+                            <div class="section-title">
+                                人物 Characters
+                                <span>${novelData.characters.length}</span>
+                            </div>
+                            <div id="char-list"></div>
+                            
+                            <div class="section-title">
+                                概念 Concepts
+                                <span>${novelData.concepts.length}</span>
+                            </div>
+                            <div id="concept-list"></div>
+                        </aside>
+                        <main class="reader">
+                            <div class="reader-toolbar">
+                                <span style="color: var(--text2)">
+                                    Chapter ${currentChapter + 1} / ${novelData.chapters.length}
+                                    (前5章双语预览)
+                                </span>
+                            </div>
+                            <div class="reader-content" id="reader-content"></div>
+                        </main>
+                        <aside class="sidebar sidebar-right" id="sidebar-right">
+                            <div class="detail-card">
+                                <div style="color: var(--text3); text-align: center; padding: 40px 20px;">
+                                    <div style="font-size: 48px; margin-bottom: 16px;">👆</div>
+                                    <div>点击高亮术语查看详情</div>
+                                    <div style="font-size: 12px; margin-top: 8px;">Click highlighted terms for details</div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            `;
+            renderChapterList();
+            renderChars();
+            renderConcepts();
+            renderChapter(0);
+        }
+        
+        function renderChapterList() {
+            const container = document.getElementById('chapter-list');
+            if (!container) return;
+            container.innerHTML = novelData.chapters.map((ch, i) => `
+                <div class="chapter-item ${i === currentChapter ? 'active' : ''}" onclick="goToChapter(${i})">
+                    <div class="chapter-num">${i + 1}</div>
+                    <div class="chapter-title">${ch.title}</div>
+                </div>
+            `).join('');
+        }
+        
+        function renderChars() {
+            const container = document.getElementById('char-list');
+            if (!container) return;
+            container.innerHTML = novelData.characters.map(char => `
+                <div class="char-card" onclick="showCharDetail('${char.id}')">
+                    <div class="char-avatar" style="background: ${char.color}">${char.name[0]}</div>
+                    <div>
+                        <div class="char-name">${char.name}</div>
+                        <div class="char-en">${char.enName}</div>
+                        <div class="char-role">${char.role}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function renderConcepts() {
+            const container = document.getElementById('concept-list');
+            if (!container) return;
+            container.innerHTML = novelData.concepts.map(concept => `
+                <div class="char-card" onclick="showConceptDetail('${concept.id}')">
+                    <div class="char-avatar" style="background: #666">📖</div>
+                    <div>
+                        <div class="char-name">${concept.name}</div>
+                        <div class="char-en">${concept.enName}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function highlightTerms(text) {
+            const terms = [...novelData.characters, ...novelData.concepts]
+                .sort((a, b) => b.name.length - a.name.length);
+            
+            terms.forEach(item => {
+                const regex = new RegExp(escapeRegExp(item.name), 'g');
+                const desc = (item.description || '').substring(0, 50);
+                text = text.replace(regex, match => `
+                    <span class="term-wrapper">
+                        <span class="term" onclick="showTermDetail('${item.id}')">${match}</span>
+                        <div class="term-tooltip">
+                            <div class="tooltip-name">${item.name}</div>
+                            <div class="tooltip-en">${item.enName}</div>
+                            <div class="tooltip-desc">${desc}...</div>
+                        </div>
+                    </span>
+                `);
+            });
+            return text;
+        }
+        
+        function renderChapter(index) {
+            currentChapter = index;
+            const chapter = novelData.chapters[index];
+            const container = document.getElementById('reader-content');
+            
+            let html = `
+                <div class="chapter-header">
+                    <h1 class="chapter-heading">${chapter.title}</h1>
+                </div>
+            `;
+            
+            chapter.paragraphs.forEach(para => {
+                html += `<div class="para-block">`;
+                html += `<div class="zh-text">${highlightTerms(para.zh)}</div>`;
+                if (para.en && para.en !== para.zh) {
+                    html += `<div class="en-text">${para.en}</div>`;
+                }
+                html += `</div>`;
+            });
+            
+            // 添加全书提示
+            html += `
+                <div class="full-book-notice">
+                    <h3>📚 全书共834章</h3>
+                    <p>当前为前5章双语预览版<br>
+                    Full book has 834 chapters. This is a bilingual preview of the first 5 chapters.</p>
+                </div>
+            `;
+            
+            container.innerHTML = html;
+            container.scrollTop = 0;
+            renderChapterList();
+        }
+        
+        function goToChapter(index) {
+            renderChapter(index);
+        }
+        
+        function showTermDetail(id) {
+            const char = novelData.characters.find(c => c.id === id);
+            if (char) return showCharDetail(id);
+            const concept = novelData.concepts.find(c => c.id === id);
+            if (concept) return showConceptDetail(id);
+        }
+        
+        function showCharDetail(charId) {
+            const char = novelData.characters.find(c => c.id === charId);
+            if (!char) return;
+            
+            document.getElementById('sidebar-right').innerHTML = `
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <div class="detail-avatar" style="background: ${char.color}">${char.name[0]}</div>
+                        <div>
+                            <div class="detail-name">${char.name}</div>
+                            <div class="detail-en">${char.enName}</div>
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-section-title">身份 Role</div>
+                        <div class="detail-text">${char.role}</div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-section-title">简介 Description</div>
+                        <div class="detail-text">${char.description}</div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function showConceptDetail(conceptId) {
+            const concept = novelData.concepts.find(c => c.id === conceptId);
+            if (!concept) return;
+            
+            document.getElementById('sidebar-right').innerHTML = `
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <div class="detail-avatar" style="background: #666">📖</div>
+                        <div>
+                            <div class="detail-name">${concept.name}</div>
+                            <div class="detail-en">${concept.enName}</div>
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-section-title">分类 Category</div>
+                        <span style="background: var(--bg3); padding: 4px 12px; border-radius: 8px; font-size: 13px;">${concept.category}</span>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-section-title">描述 Description</div>
+                        <div class="detail-text">${concept.description}</div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function setView(mode) {
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(mode === 'both' ? '双语' : mode === 'zh' ? '中文' : 'English')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            document.querySelectorAll('.para-block').forEach(block => {
+                const zh = block.querySelector('.zh-text');
+                const en = block.querySelector('.en-text');
+                if (zh) zh.style.display = mode === 'en' ? 'none' : 'block';
+                if (en) en.style.display = mode === 'zh' ? 'none' : 'block';
+            });
+        }
+        
+        // Initialize
+        renderApp();
+    </script>
+</body>
+</html>

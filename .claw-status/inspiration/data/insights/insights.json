@@ -1,0 +1,133 @@
+[
+  {
+    "id": "arch_20260319145750_0",
+    "type": "pattern",
+    "source": "github",
+    "content": "claude code best practices should use self-healing patterns for better reliability",
+    "confidence": 0.7,
+    "impact": "medium",
+    "related_items": [
+      "3"
+    ],
+    "generated_at": "2026-03-19T14:57:50.620002",
+    "status": "pending"
+  },
+  {
+    "id": "pain_20260319145750_1",
+    "type": "pain_point",
+    "source": "reddit",
+    "content": "\u53d1\u73b0\u75db\u70b9: current system has timeout issues users report frequent network timeouts when crawling",
+    "confidence": 0.6,
+    "impact": "high",
+    "related_items": [
+      "2"
+    ],
+    "generated_at": "2026-03-19T14:57:50.620020",
+    "status": "pending"
+  },
+  {
+    "id": "arch_20260319152232_0",
+    "type": "pattern",
+    "source": "github",
+    "content": "claude-code: best practices for self-healing systems our experience shows that circuit breaker patterns combined with exponential backoff reduce system failures by 60%",
+    "confidence": 0.7,
+    "impact": "medium",
+    "related_items": [
+      "github_001"
+    ],
+    "generated_at": "2026-03-19T15:22:32.157924",
+    "status": "pending"
+  },
+  {
+    "id": "arch_20260319152232_1",
+    "type": "pattern",
+    "source": "github",
+    "content": "key insight: healing should be gradual, not aggressive",
+    "confidence": 0.7,
+    "impact": "medium",
+    "related_items": [
+      "github_001"
+    ],
+    "generated_at": "2026-03-19T15:22:32.157960",
+    "status": "pending"
+  },
+  {
+    "id": "pain_20260319152232_2",
+    "type": "pain_point",
+    "source": "github",
+    "content": "\u53d1\u73b0\u75db\u70b9: claude-code: best practices for self-healing systems our experience shows that circuit breaker patterns combined with exponential backoff reduce system failures by 60%",
+    "confidence": 0.6,
+    "impact": "high",
+    "related_items": [
+      "github_001"
+    ],
+    "generated_at": "2026-03-19T15:22:32.158001",
+    "status": "pending"
+  },
+  {
+    "id": "pain_20260319152232_3",
+    "type": "pain_point",
+    "source": "reddit",
+    "content": "\u53d1\u73b0\u75db\u70b9: pain point: current rss feeds miss 30% of relevant papers i've been using arxiv rss for my research but it consistently misses papers that appear in other sources",
+    "confidence": 0.6,
+    "impact": "high",
+    "related_items": [
+      "reddit_001"
+    ],
+    "generated_at": "2026-03-19T15:22:32.158027",
+    "status": "pending"
+  },
+  {
+    "id": "opp_20260319152232_4",
+    "type": "opportunity",
+    "source": "arxiv",
+    "content": "\u6f5c\u5728\u673a\u4f1a: experimental results show 40% improvement in agent task completion rates",
+    "confidence": 0.5,
+    "impact": "medium",
+    "related_items": [
+      "arxiv_001"
+    ],
+    "generated_at": "2026-03-19T15:22:32.158071",
+    "status": "pending"
+  },
+  {
+    "id": "opp_20260319152232_5",
+    "type": "opportunity",
+    "source": "arxiv",
+    "content": "\u6f5c\u5728\u673a\u4f1a: mem0: self-improving memory systems for ai agents we present mem0, a memory architecture that enables agents to learn from interactions and improve retrieval quality over time without retraining",
+    "confidence": 0.5,
+    "impact": "medium",
+    "related_items": [
+      "arxiv_002"
+    ],
+    "generated_at": "2026-03-19T15:22:32.158090",
+    "status": "pending"
+  },
+  {
+    "id": "opp_20260319152232_6",
+    "type": "opportunity",
+    "source": "github",
+    "content": "\u6f5c\u5728\u673a\u4f1a: feature request: multi-source aggregation for better coverage it would be great if the inspiration system could aggregate from multiple academic sources (semantic scholar, papers with code) to improve coverage beyond just arxiv",
+    "confidence": 0.5,
+    "impact": "medium",
+    "related_items": [
+      "github_002"
+    ],
+    "generated_at": "2026-03-19T15:22:32.158117",
+    "status": "pending"
+  },
+  {
+    "id": "trend_20260319212034_0",
+    "type": "trend",
+    "source": "aggregated_from_2_items",
+    "content": "'AI Agents' \u88ab\u591a\u6b21\u63d0\u53ca\uff0c\u53ef\u80fd\u4ee3\u8868\u91cd\u8981\u6280\u672f\u8d8b\u52bf",
+    "confidence": 0.7,
+    "impact": "medium",
+    "related_items": [
+      "2603.17787",
+      "2603.17787"
+    ],
+    "generated_at": "2026-03-19T21:20:34.771115",
+    "status": "pending"
+  }
+]

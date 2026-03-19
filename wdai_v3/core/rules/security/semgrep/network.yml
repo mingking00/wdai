@@ -1,0 +1,13 @@
+rules:
+- id: python-telnetlib
+  message: 使用不安全的 telnetlib，数据传输明文，建议使用 SSH
+  pattern: import\s+telnetlib|from\s+telnetlib
+  severity: high
+- id: python-ftp-lib
+  message: 使用 FTP 明文传输，建议使用 SFTP/SCP
+  pattern: import\s+ftplib|from\s+ftplib
+  severity: medium
+- id: python-binding-all
+  message: 服务绑定到 0.0.0.0，监听所有接口，可能暴露到公网
+  pattern: '["\'']0\.0\.0\.0["\'']|bind.*0\.0\.0\.0'
+  severity: low

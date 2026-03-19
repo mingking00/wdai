@@ -1,0 +1,35 @@
+{
+  "agent_stats": {
+    "coordinator": {
+      "tasks_completed": 0,
+      "tasks_failed": 0,
+      "reviews_passed": 0,
+      "reviews_failed": 0
+    },
+    "coder": {
+      "tasks_completed": 1,
+      "tasks_failed": 0,
+      "reviews_passed": 0,
+      "reviews_failed": 0
+    },
+    "reviewer": {
+      "tasks_completed": 0,
+      "tasks_failed": 0,
+      "reviews_passed": 0,
+      "reviews_failed": 0
+    },
+    "reflector": {
+      "tasks_completed": 0,
+      "tasks_failed": 0,
+      "reviews_passed": 0,
+      "reviews_failed": 0
+    },
+    "evolution": {
+      "tasks_completed": 0,
+      "tasks_failed": 0,
+      "reviews_passed": 0,
+      "reviews_failed": 0
+    }
+  },
+  "timestamp": 1773686227.1958694
+}

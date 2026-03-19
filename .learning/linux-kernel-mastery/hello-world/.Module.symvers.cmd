@@ -1,0 +1,1 @@
+savedcmd_/root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/Module.symvers -T /root/.openclaw/workspace/.learning/linux-kernel-mastery/hello-world/modules.order -i Module.symvers -e 

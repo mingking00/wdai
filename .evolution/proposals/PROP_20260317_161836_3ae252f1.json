@@ -1,0 +1,31 @@
+{
+  "id": "PROP_20260317_161836_3ae252f1",
+  "title": "实现消息池系统 (Message Pool)",
+  "created_at": "2026-03-17T16:18:36.527007",
+  "type": "架构",
+  "impact": "high",
+  "content": {
+    "problem": "当前wdai的Agent间通过直接函数调用通信，耦合度高，难以监控和调试。无法支持多Agent订阅同一消息，缺乏统一的通信机制。",
+    "solution": "基于MetaGPT架构实现消息池系统：\n1. 全局消息存储（持久化到文件/数据库）\n2. 发布-订阅通信机制\n3. Agent订阅感兴趣的消息类型\n4. 消息路由和过滤\n5. 与现有MemRL记忆系统集成",
+    "expected_effect": "Agent间通信解耦，支持多对多通信，提高系统可观察性和可调试性。",
+    "risk_assessment": "中风险。需要重构现有Agent通信方式，但可逐步迁移。",
+    "implementation_steps": [
+      "设计Message和MessagePool类",
+      "实现发布-订阅机制",
+      "创建消息持久化存储",
+      "重构现有Agent使用消息池",
+      "测试和验证"
+    ]
+  },
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T16:24:39.408545",
+    "decision_reason": "基于OpenHands + MetaGPT研究，架构升级需要"
+  },
+  "execution": {
+    "executed_at": null,
+    "result": null,
+    "logs": []
+  }
+}

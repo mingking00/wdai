@@ -1,0 +1,17 @@
+[
+  {
+    "id": "7343e248-9ccb-4c60-9368-d14a4b22197a",
+    "fact": "：超时检查、心跳、定期清理 |",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T21:25:16.758720",
+    "last_accessed": "2026-03-17T21:25:16.758722",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

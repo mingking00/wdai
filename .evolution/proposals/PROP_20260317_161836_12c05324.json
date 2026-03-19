@@ -1,0 +1,31 @@
+{
+  "id": "PROP_20260317_161836_12c05324",
+  "title": "Docker沙盒执行环境（长期）",
+  "created_at": "2026-03-17T16:18:36.527715",
+  "type": "其他",
+  "impact": "high",
+  "content": {
+    "problem": "当前代码执行在主机上，虽有安全检查但隔离性不足。执行任意代码有安全风险。",
+    "solution": "基于OpenHands实现Docker沙盒执行：\n1. 创建Docker运行时客户端\n2. Action沙盒化执行\n3. 资源限制（CPU、内存、网络）\n4. 工作空间挂载和隔离\n5. 可选启用（不影响现有功能）",
+    "expected_effect": "代码执行完全隔离，安全性大幅提升。",
+    "risk_assessment": "高风险。需要Docker基础设施，增加复杂性。",
+    "implementation_steps": [
+      "研究OpenHands Runtime实现",
+      "设计Docker客户端",
+      "实现Action沙盒化",
+      "添加资源限制",
+      "集成和测试"
+    ]
+  },
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T16:24:39.411864",
+    "decision_reason": "基于OpenHands + MetaGPT研究，架构升级需要"
+  },
+  "execution": {
+    "executed_at": null,
+    "result": null,
+    "logs": []
+  }
+}

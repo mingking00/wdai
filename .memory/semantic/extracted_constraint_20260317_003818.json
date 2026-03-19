@@ -1,0 +1,32 @@
+[
+  {
+    "id": "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701358",
+    "last_accessed": "2026-03-17T00:38:18.701381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T00:38:18.701423",
+    "last_accessed": "2026-03-17T00:38:18.701426",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

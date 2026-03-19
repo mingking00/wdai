@@ -1,0 +1,12 @@
+{
+  "rule_001": {
+    "aggregated_improvement": -3.941256618610661,
+    "consensus_count": 3,
+    "last_updated": "2026-03-20T00:22:11.901899"
+  },
+  "rule_002": {
+    "aggregated_improvement": 21.354957353819458,
+    "consensus_count": 3,
+    "last_updated": "2026-03-20T00:22:11.901913"
+  }
+}

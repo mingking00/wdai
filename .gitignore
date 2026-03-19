@@ -63,3 +63,56 @@ node_modules/
 
 # Cache
 .cache/
+
+# ============================================
+# SECURITY - SENSITIVE INFORMATION
+# ============================================
+
+# API Keys and Tokens
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+secrets.json
+tokens.json
+
+# GitHub Tokens (NEVER commit these)
+# ghp_*
+# github_token*
+.token
+token.txt
+
+# User Personal Information
+user_profile_private.json
+private_data/
+personal/
+
+# Session files that may contain sensitive data
+.session/
+session_keys.txt
+
+# Backup files that may contain secrets
+*.backup
+backup/
+*.bak
+
+# Credential files
+credentials.json
+.aws/
+.gcp/
+.azure/
+
+# Config files with sensitive data
+config.local.json
+settings.local.json
+.learning/linux-kernel-mastery/kernel-src
+.study/c-patterns/redis
+# Embedded git repositories
+.learning/linux-kernel-mastery/kernel-src
+.study/c-patterns/redis
+.study/go-patterns/gnet
+.study/rust-patterns/actix-web
+.study/rust-patterns/rathole
+projects/personal-blog

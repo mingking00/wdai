@@ -1,0 +1,141 @@
+[
+  {
+    "id": "b632b26e-d916-4a5c-ba79-c962a53bb964",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574486",
+    "last_accessed": "2026-03-17T20:25:28.574496",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "84663be3-7676-4e15-a462-5eb96f0fd059",
+        "84663be3-7676-4e15-a462-5eb96f0fd059"
+      ]
+    }
+  },
+  {
+    "id": "02ddb573-5097-4625-88bc-439e945f17aa",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.574518",
+    "last_accessed": "2026-03-17T20:25:28.574520",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f"
+      ]
+    }
+  },
+  {
+    "id": "55c74400-f3d1-49ff-a7f6-e031be193baa",
+    "fact": "Python `ast` 模块分析代码",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.575091",
+    "last_accessed": "2026-03-17T20:25:28.575092",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "e668dc1b-dfe1-4c92-8375-a292208d96eb",
+        "e668dc1b-dfe1-4c92-8375-a292208d96eb"
+      ]
+    }
+  },
+  {
+    "id": "39e5424e-175b-4068-8356-34b45fd4ffc6",
+    "fact": "B（停下来测试现有功能）",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.575101",
+    "last_accessed": "2026-03-17T20:25:28.575102",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "e372552c-e035-4764-a61d-a1ee2da06371",
+        "e372552c-e035-4764-a61d-a1ee2da06371"
+      ]
+    }
+  },
+  {
+    "id": "6d8d89a5-323b-4b00-b38c-0653fed9d0da",
+    "fact": "B），是**执行力**问题（没有直接执行，而是重复确认）。",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.575107",
+    "last_accessed": "2026-03-17T20:25:28.575108",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "52dc23d5-6857-4095-8322-0a5b69fe565a",
+        "52dc23d5-6857-4095-8322-0a5b69fe565a"
+      ]
+    }
+  },
+  {
+    "id": "92bd6796-7e03-40b3-aaf1-3c83f64abafa",
+    "fact": "后，**直接执行**，不再确认",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.575113",
+    "last_accessed": "2026-03-17T20:25:28.575114",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "a92e4ef6-ae7b-4ae6-b54e-5aef63064d55",
+        "a92e4ef6-ae7b-4ae6-b54e-5aef63064d55"
+      ]
+    }
+  },
+  {
+    "id": "68d987a7-ac85-4703-9697-57625bde77a0",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T20:25:28.575766",
+    "last_accessed": "2026-03-17T20:25:28.575768",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f"
+      ]
+    }
+  }
+]

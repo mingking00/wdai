@@ -1,0 +1,9 @@
+{
+  "id": "REQ_20260315_152634_d3b2",
+  "type": "research",
+  "query": "GitHub multi-agent systems projects frameworks 2024 2025",
+  "priority": 8,
+  "max_parallel": 5,
+  "enable_conflict_resolution": true,
+  "submitted_at": "2026-03-15T15:26:34.526696"
+}

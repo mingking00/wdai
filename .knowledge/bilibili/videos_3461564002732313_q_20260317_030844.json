@@ -1,0 +1,398 @@
+{
+  "uid": "3461564002732313",
+  "favorite": "q",
+  "count": 39,
+  "export_time": "2026-03-17T03:08:44.291888",
+  "videos": [
+    {
+      "bvid": "BV1xnPjzmEKW",
+      "title": "【Transformer】绝对是目前B站讲的最好的Transformer教程，2026最新版！从理论到实战全讲明白了！看完少走99%弯路！",
+      "owner": "ai大模型工程师",
+      "intro": "制作不易，大家喜欢视频记得点点关注，一键三连呀【点赞、投币、收藏】感谢支持！ \n本视频配套课件笔记代码/学习大纲及更多大模型学习资料戳这里获取→https://www.bilibili.com/rea",
+      "ctime": 1772445223,
+      "pubtime": 1772445223,
+      "fav_time": 1772959489,
+      "duration": 32990
+    },
+    {
+      "bvid": "BV1D15HzwEGh",
+      "title": "【双语视界】Linux信号机制：我花了两年才搞懂的核心原理（附ARM64内核源码解析）",
+      "owner": "双语视界-与时俱进",
+      "intro": "欢迎点赞、投币、收藏一键三连，或点个关注支持我~\n\n1. 信号触发与中断劫持\n硬件中断机制：外部事件（如键盘输入）触发CPU跳转至内核中断处理程序，自动保存用户态程序计数器（PC）至elr_el1寄存",
+      "ctime": 1745021709,
+      "pubtime": 1745021709,
+      "fav_time": 1770273753,
+      "duration": 1284
+    },
+    {
+      "bvid": "BV1r54y1m7gd",
+      "title": "一个视频说清整个英语语法体系(重塑你的语法认知框架)",
+      "owner": "英语兔",
+      "intro": "我希望通过这个视频帮你在脑中构建 -- 甚至重塑 -- 你对英语语法的认知.\n我知道, 这听上去像是说大话, 但是请让我证明给你看.\n这个视频比较长, 但是它也许会是你看的最重要的英语学习视频... ",
+      "ctime": 1596713888,
+      "pubtime": 1596713888,
+      "fav_time": 1769682621,
+      "duration": 1627
+    },
+    {
+      "bvid": "BV1zd4y157Ny",
+      "title": "李艳芳考研数学基础班 | 官方正版 全站最全 | 走盗版的路，让盗版无路可走",
+      "owner": "世纪高教在线",
+      "intro": "走盗版的路，让盗版无路可走！李艳芳老师绝版基础班全部放出。这个课程的配套课堂笔记会更新在官方群里（见评）。课程的讲义和配套的同步习题解析册，这个就不提供和公开了。很多人问教辅，还有人问基础班的讲义，如",
+      "ctime": 1673522291,
+      "pubtime": 1673877634,
+      "fav_time": 1769415676,
+      "duration": 309908
+    },
+    {
+      "bvid": "BV1hHqdBKEdV",
+      "title": "空置域，轻而易举啊！",
+      "owner": "多点触碰",
+      "intro": "特别鸣谢：@柠喵喵喵  ，@因为所以工作室  ，@Aurover诶呦呦呦  \n\n再次迭代，重构绝大部分模块，将主要电路设计在一个区块内，模块间结合更紧密。\n模块连接点统一采用底盘+活塞杆的形式，通过改",
+      "ctime": 1766126058,
+      "pubtime": 1766134800,
+      "fav_time": 1767764763,
+      "duration": 282
+    },
+    {
+      "bvid": "BV16u4m1T7k7",
+      "title": "【小白学统计】7分钟Excel完成层次分析法，AHP层次分析法权重计算及一致性检验Excel演示",
+      "owner": "小白在学统计",
+      "intro": "",
+      "ctime": 1711010862,
+      "pubtime": 1711010862,
+      "fav_time": 1767176100,
+      "duration": 510
+    },
+    {
+      "bvid": "BV15JUjBsEHk",
+      "title": "新年寄语2026年",
+      "owner": "陈志新bnu",
+      "intro": "新年寄语，寄得早了些。怕远，新年钟声敲响之前，没收到。走过2025，迎来2026，共祝愿，同快乐！",
+      "ctime": 1763722058,
+      "pubtime": 1763722057,
+      "fav_time": 1763742730,
+      "duration": 385
+    },
+    {
+      "bvid": "BV1kpCEBaE2A",
+      "title": "【108集全】（无需付费）吊打付费教程！198小时讲完的钢琴入门学习教程！全程干货无废话！通俗易懂！这还没人看，我不更了！",
+      "owner": "爱音乐的小九",
+      "intro": "╔══════════════════╗\n╠ 学钢琴加溦：yueer6180       ╣\n╚══════════════════╝",
+      "ctime": 1762936574,
+      "pubtime": 1762948800,
+      "fav_time": 1763551515,
+      "duration": 25463
+    },
+    {
+      "bvid": "BV1L2gxzVEgs",
+      "title": "「Archlinux究极指南2025」从手动安装到显卡直通，最后删除Linux",
+      "owner": "林长枫Shorin709",
+      "intro": "文档链接：https://github.com/SHORiN-KiWATA/ShorinArchExperience-ArchlinuxGuide",
+      "ctime": 1752976377,
+      "pubtime": 1752976377,
+      "fav_time": 1763526394,
+      "duration": 3855
+    },
+    {
+      "bvid": "BV1QRstz1EGt",
+      "title": "歌词显示插件 BetterLyrics 食用演示 | Windows 独占 | 深度自定义 | 沉浸式体验 | 流畅设计 | 开源",
+      "owner": "摘叶飞镖",
+      "intro": "一款 C# 开发的 Windows 原生歌词应用 —— BetterLyrics\n\n通过 SMTC 和专用插件，较为完美适配了 Spotify、网易云、QQ 音乐、Apple Music、PotPla",
+      "ctime": 1761101375,
+      "pubtime": 1761101375,
+      "fav_time": 1762489169,
+      "duration": 245
+    },
+    {
+      "bvid": "BV1SU43zYEWG",
+      "title": "外刊逐句精读｜《经济学人》：明星为何纷纷下场做自己的品牌？｜CATTI一级译员外刊精读｜MTI考研备考实用表达",
+      "owner": "三言两语杂货社",
+      "intro": "如需获取原文PDF，请前往微信公众号「三言两语杂货社」，后台回复「明星品牌」。",
+      "ctime": 1760265073,
+      "pubtime": 1760272200,
+      "fav_time": 1762483870,
+      "duration": 3142
+    },
+    {
+      "bvid": "BV1wDyDBtEjY",
+      "title": "从三本到外交圈：不想背锅？解析系统中的权力代谢机制",
+      "owner": "小军师M姐",
+      "intro": "终于发出来了……写作不是最大的问题，每次拍视频妆造确实需要花点功夫（也不知道现在的妆容大家评价如何），最大的问题是剪辑！！！原计划想八点就发出来，但是一直没剪完……现在这个点了也不知道大家睡了没……抱",
+      "ctime": 1762012072,
+      "pubtime": 1762012071,
+      "fav_time": 1762442547,
+      "duration": 824
+    },
+    {
+      "bvid": "BV1EDyvB3EvR",
+      "title": "年轻时学一点点黑格尔，就足够乱杀了！",
+      "owner": "_李继东",
+      "intro": "黑格尔是我个人很喜欢的一位哲学家，自从2023年读毕《精神现象学》，我再也没有完整读过一本哲学专著。\n趁着做这个视频的机会，梳理一下黑格尔的思想脉络，也推动自己再读一读哲学。\n读了才发现，嘿，果然，之",
+      "ctime": 1761862272,
+      "pubtime": 1761912000,
+      "fav_time": 1762427960,
+      "duration": 980
+    },
+    {
+      "bvid": "BV13oWyzxEpF",
+      "title": "【超深度】“正确答案”不存在的时代，我该如何面对生活？对谈顶级教授马兆远｜TIANYU2FM - E134",
+      "owner": "TIANYU2FM",
+      "intro": "马兆远\n南方科技大学教授、英国物理学会会士\n牛津大学物理学博士、18岁取得全国物理竞赛金牌保送到北大\n曾任英国谢菲尔德大学教授、清华大学未来实验室先进制造研究中心主任、中科院“百人计划”研究员\n参与设",
+      "ctime": 1760967833,
+      "pubtime": 1761222600,
+      "fav_time": 1762409150,
+      "duration": 6070
+    },
+    {
+      "bvid": "BV1kzpbzZEQW",
+      "title": "01.这可能是B站最详细的ArchLinux安装教程",
+      "owner": "傻馒我们结婚吧",
+      "intro": "希望通过这系列视频结交更多喜欢Linux的小伙伴！",
+      "ctime": 1758127029,
+      "pubtime": 1758127029,
+      "fav_time": 1762062409,
+      "duration": 2009
+    },
+    {
+      "bvid": "BV1KFafzgEKN",
+      "title": "秒懂，如何快速听懂美国人正常语速说话，同时拥有地道英语口音 468",
+      "owner": "Mike_Woo",
+      "intro": "-",
+      "ctime": 1757333043,
+      "pubtime": 1757333042,
+      "fav_time": 1759565664,
+      "duration": 1232
+    },
+    {
+      "bvid": "BV18wpTzyEar",
+      "title": "一张图搞懂web3专属名词",
+      "owner": "Web3程序员-蒙奇",
+      "intro": "一张图搞懂web3专属名词   #web3  #web3怎么样 #web3入行 #web3薪资 #web3技能  #web3导图 #web3远程工作  #web3攻略 #web3学习 #web3学习与",
+      "ctime": 1757920651,
+      "pubtime": 1758020700,
+      "fav_time": 1759545658,
+      "duration": 704
+    },
+    {
+      "bvid": "BV1CynEzoENm",
+      "title": "【吊打付费】 MySQL零基础从入门到精通，MySQL数据库实战精讲教程（全100集）",
+      "owner": "我跟师兄学",
+      "intro": "",
+      "ctime": 1758965115,
+      "pubtime": 1758965114,
+      "fav_time": 1759454391,
+      "duration": 68644
+    },
+    {
+      "bvid": "BV1UKGXzGEtW",
+      "title": "手把手带你读VSCode开发文档",
+      "owner": "北望智能",
+      "intro": "",
+      "ctime": 1745982540,
+      "pubtime": 1745982539,
+      "fav_time": 1759242657,
+      "duration": 396
+    },
+    {
+      "bvid": "BV1oZp9zQELm",
+      "title": "Linux系统挂载磁盘",
+      "owner": "IT塔台",
+      "intro": "",
+      "ctime": 1758378878,
+      "pubtime": 1758378878,
+      "fav_time": 1759217443,
+      "duration": 135
+    },
+    {
+      "bvid": "BV16PpbzXENG",
+      "title": "Linux 10分钟速通：为什么全世界的超级计算机都在用它？| 主流发行版 / 服务器与云计算 / 软件开发 / DevOps / 物联网 / 超级计算机",
+      "owner": "赛博门外憨",
+      "intro": "我们将用最直观、最有趣的方式，为你揭开Linux的神秘面纱。课程从Linux的核心架构讲起，深入浅出地剖析其工作原理，并带你掌握高效的命令行工具。你不仅会了解Ubuntu、Red Hat等主流发行版的",
+      "ctime": 1758104154,
+      "pubtime": 1758112200,
+      "fav_time": 1759059665,
+      "duration": 553
+    },
+    {
+      "bvid": "BV1wLJXzQEns",
+      "title": "10分钟搞定MySQL 每个程序员都该掌握的技能 数据库技术速成",
+      "owner": "吴悠讲编程",
+      "intro": "MySQL 是世界上 使用最广泛的关系型数据库，几乎所有你能想到的公司和项目中，都能看到它的身影。\n本集视频包含了MySQL的安装、命令行和可视化工具的使用、SQL操作、云数据库的创建与本地访问。\n\n",
+      "ctime": 1758693024,
+      "pubtime": 1758700800,
+      "fav_time": 1759059047,
+      "duration": 681
+    },
+    {
+      "bvid": "BV1944y1x7SW",
+      "title": "你觉得这辈子都学不会编程？超基础Python课程，3小时快速入门｜自学Python教程｜零基础Python｜计算机二级Python｜Python期末速成",
+      "owner": "林粒粒呀",
+      "intro": "如果你觉得这辈子都学不会编程的话……要不要再试一次？∠( ᐛ 」∠)_\n超级超级基础 Python 入门教程，已经帮助无数同学成功入门Python啦\n\n在你看完这套Python入门教程后：\n想继续巩固",
+      "ctime": 1634921797,
+      "pubtime": 1634944509,
+      "fav_time": 1759058965,
+      "duration": 12018
+    },
+    {
+      "bvid": "BV1mMHyz3Erk",
+      "title": "16分钟讲明白：程序、进程、内存和CPU到底啥关系？| 静态文件 / 地址空间 / 计算机底层",
+      "owner": "赛博门外憨",
+      "intro": "双击程序图标后，计算机内部究竟发生了什么？本课程将带您深入操作系统的核心，以通俗易懂的方式揭示“程序”如何转变为“进程”。我们将探讨操作系统如何为每个进程分配和管理内存（即“地址空间”），并解开现代计",
+      "ctime": 1757420277,
+      "pubtime": 1757462400,
+      "fav_time": 1759058893,
+      "duration": 1001
+    },
+    {
+      "bvid": "BV1gtnEzzEUs",
+      "title": "搞懂逆向工程，一切都是开源的！| CTF挑战 / 二进制安全 / 反汇编工具 /  代码逻辑分析 / 自动化破解",
+      "owner": "赛博门外憨",
+      "intro": "无论你是网络安全新手，还是对编程充满热情的开发者，逆向工程都是一项能让你技术水平实现质的飞跃的核心技能。本课程将通过一个名为“FlagCasino”的CTF（夺旗赛）实战挑战，手把手带你入门逆向工程。",
+      "ctime": 1758968244,
+      "pubtime": 1758968243,
+      "fav_time": 1759019561,
+      "duration": 1127
+    },
+    {
+      "bvid": "BV1d6p3zPEWk",
+      "title": "绝了，四六级听力，一遍听懂！考试神器！【四级，2020年9月第1套，Passage 3 手机影响生活】#英语四六级 #四级听力 #六级听力 #雅思 #快听听力",
+      "owner": "快听听力",
+      "intro": "",
+      "ctime": 1757677859,
+      "pubtime": 1757677858,
+      "fav_time": 1758989412,
+      "duration": 1036
+    },
+    {
+      "bvid": "BV142wkebEzb",
+      "title": "2025最新！PVE8.3AIO保姆级教程,开启核显sriov,N卡Unlock_vGPU安装ikuai,openwrt,win10,飞牛nas,HA智能家居",
+      "owner": "小陈折腾日记",
+      "intro": "求个一键三连点个关注,优先回复粉丝评论\n提前祝大家新年快乐\n视频地址:https://www.geekxw.top/2280\n博客:https://www.geekxw.top\n制作不易希望多多点赞关",
+      "ctime": 1737300172,
+      "pubtime": 1737341000,
+      "fav_time": 1758967763,
+      "duration": 2817
+    },
+    {
+      "bvid": "BV1JnaJzpEB4",
+      "title": "2025年怎样高效的练字，拒绝无效练字",
+      "owner": "老妖怪-收学员版",
+      "intro": "2025年怎样高效的练字，拒绝无效练字",
+      "ctime": 1756699417,
+      "pubtime": 1756699417,
+      "fav_time": 1758428233,
+      "duration": 540
+    },
+    {
+      "bvid": "BV1WFu2zGETb",
+      "title": "用雅思的方式写考研英语作文/手把手逐字逐句带写/从逻辑到遣词造句",
+      "owner": "缪老师讲地道英语写作",
+      "intro": "这是一篇非模板化考研英语作文，欢迎大家在评论区分享听课反馈",
+      "ctime": 1752838068,
+      "pubtime": 1752838067,
+      "fav_time": 1758098588,
+      "duration": 1800
+    },
+    {
+      "bvid": "BV1hK4y1S7hz",
+      "title": "日语学习 0-N1语法全掌握1.0",
+      "owner": "日语翻译小昊子",
+      "intro": "我的系统日语课程\n日语语音 BV1kF41197qN\n0-N1+古典日语语法合集\nhttps://www.bilibili.com/cheese/play/ss108786387\n按词频学习日语词汇 ",
+      "ctime": 1613725059,
+      "pubtime": 1613725059,
+      "fav_time": 1758080592,
+      "duration": 39165
+    },
+    {
+      "bvid": "BV1ZepnzFEQq",
+      "title": "（50小时完结）重新婴儿，喝奶就能变强……",
+      "owner": "爱吃大闸蟹的小女孩",
+      "intro": "重新婴儿，喝奶就能变强……",
+      "ctime": 1757786675,
+      "pubtime": 1757844000,
+      "fav_time": 1757886924,
+      "duration": 109823
+    },
+    {
+      "bvid": "BV1phynYEEBx",
+      "title": "【全243集】看美剧学英语【老友记】 逐字逐句讲解让你的英语水平暴涨 影子跟读",
+      "owner": "学霸知识宝库",
+      "intro": "网络\n【全243集】看美剧学英语【老友记】 逐字逐句讲解让你的英语水平暴涨 影子跟读",
+      "ctime": 1729560783,
+      "pubtime": 1730592902,
+      "fav_time": 1757756860,
+      "duration": 57011
+    },
+    {
+      "bvid": "BV1juVxzJEQd",
+      "title": "【25篇合集】外刊逐句精读+翻译+逻辑分析 | 外刊精读 | 原创译文 | 四六级 | 考研英语 | CATTI | MTI | 考研翻译",
+      "owner": "爱翻译的桃子",
+      "intro": "有需要所有外刊精读PDF笔记的同学，可以在gong xhong hao「桃子爱学习」后台回复「我爱学习」，自己扫码进群，资料都在「qun公告」里。",
+      "ctime": 1746580319,
+      "pubtime": 1746592200,
+      "fav_time": 1757154429,
+      "duration": 95712
+    },
+    {
+      "bvid": "BV1ZYaYzDEuo",
+      "title": "【漫士】量子计算：如何用量子效应突破计算的边界",
+      "owner": "漫士沉思录",
+      "intro": "",
+      "ctime": 1757086212,
+      "pubtime": 1757127600,
+      "fav_time": 1757153658,
+      "duration": 2344
+    },
+    {
+      "bvid": "BV1BdTizKEAe",
+      "title": "秒懂，如何快速听懂美国人正常语速说话，同时拥有地道英语口音 462",
+      "owner": "Mike_Woo",
+      "intro": "-",
+      "ctime": 1749470178,
+      "pubtime": 1749470178,
+      "fav_time": 1757056824,
+      "duration": 809
+    },
+    {
+      "bvid": "BV1C38tzCEUK",
+      "title": "初升高必备！45篇短文搞定3500词 第3篇 举重奶奶的逆龄人生丨背单词，看这个就够了！",
+      "owner": "一英儿",
+      "intro": "讲义在评论区置顶！\n还有每周必刷题都可以在笔袋APP获取\n下载链接：https://gaojiua.com/app\n\n@一化儿 学习化学\n@一生儿 学习生物\n@一地er 学习地理\n@一英儿 学习英语\n",
+      "ctime": 1753522002,
+      "pubtime": 1753522002,
+      "fav_time": 1757045962,
+      "duration": 4335
+    },
+    {
+      "bvid": "BV11xpjezEBV",
+      "title": "全面解析！如何做出软烂不柴、红亮颤悠的红烧肉【解构家常菜】",
+      "owner": "杨光_建厨师",
+      "intro": "为了视频看得清楚，我在很多镜头里都用了不锈钢锅具，大家可以自由选择趁手的锅。",
+      "ctime": 1725873897,
+      "pubtime": 1725873897,
+      "fav_time": 1726062704,
+      "duration": 599
+    },
+    {
+      "bvid": "BV1bW42197mB",
+      "title": "如何有效阅读？分享我的阅读方法和心态【杜素娟答年轻人问】",
+      "owner": "杜素娟聊文学",
+      "intro": "",
+      "ctime": 1722184076,
+      "pubtime": 1722222000,
+      "fav_time": 1722791418,
+      "duration": 947
+    },
+    {
+      "bvid": "BV1sC411V7ha",
+      "title": "理解傅立叶变换，从量子力学开始 - Physics with Elliot",
+      "owner": "黑纹白斑马",
+      "intro": "To Understand the Fourier Transform, Start From Quantum Mechanics\nhttps://www.youtube.com/watch?v=W8",
+      "ctime": 1712892221,
+      "pubtime": 1712892220,
+      "fav_time": 1714575294,
+      "duration": 1807
+    }
+  ]
+}

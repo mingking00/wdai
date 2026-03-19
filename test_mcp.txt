@@ -1,0 +1,4 @@
+# MCP Test File
+
+This file was created by Kimi MCP Server demo.
+Timestamp: 2026-03-10

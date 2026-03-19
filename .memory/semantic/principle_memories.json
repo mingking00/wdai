@@ -1,0 +1,192 @@
+[
+  {
+    "id": "9f14cac3-a00f-4170-a0c0-3e35e7501748",
+    "fact": "创新能力定义为死局中找到活路的能力，同一方法失败3次必须强制换路",
+    "category": "principle",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894547",
+    "last_accessed": "2026-03-17T06:27:34.894557",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894558",
+      "tags": [
+        "创新",
+        "失败处理",
+        "核心原则"
+      ]
+    }
+  },
+  {
+    "id": "2e84ff71-5886-41e9-a973-80932d592098",
+    "fact": "验证本能是报告成功前必须验证结果的铁律，未经验证的成功报告是严重违规",
+    "category": "principle",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894566",
+    "last_accessed": "2026-03-17T06:27:34.894568",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894569",
+      "tags": [
+        "验证",
+        "核心原则",
+        "质量控制"
+      ]
+    }
+  },
+  {
+    "id": "3a354a15-61b8-4565-90d4-55e6017efab4",
+    "fact": "系统强制执行依赖P0-P4优先级、自动检查点和失败锁定机制",
+    "category": "principle",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894576",
+    "last_accessed": "2026-03-17T06:27:34.894577",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894578",
+      "tags": [
+        "执行",
+        "优先级",
+        "系统"
+      ]
+    }
+  },
+  {
+    "id": "5f090847-88e4-4029-b939-3d04d47c7e00",
+    "fact": "Agent配合的完整循环是：感知→决策→执行→反思→进化",
+    "category": "principle",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894589",
+    "last_accessed": "2026-03-17T06:27:34.894590",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894591",
+      "tags": [
+        "Agent",
+        "工作流",
+        "循环"
+      ]
+    }
+  },
+  {
+    "id": "f267b19f-f413-4be1-ba97-daead2a0644b",
+    "fact": "长任务必须分段实时保存，每完成一段立即append到输出文件，不要等全部完成",
+    "category": "principle",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894611",
+    "last_accessed": "2026-03-17T06:27:34.894612",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894613",
+      "tags": [
+        "任务管理",
+        "持久化",
+        "长任务"
+      ]
+    }
+  },
+  {
+    "id": "48104591-ed2d-4b6f-8241-61a56959d6fa",
+    "fact": "创新能力定义为死局中找到活路的能力，同一方法失败3次必须强制换路",
+    "category": "principle",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991785",
+    "last_accessed": "2026-03-17T17:25:32.991794",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991795",
+      "tags": [
+        "创新",
+        "失败处理",
+        "核心原则"
+      ]
+    }
+  },
+  {
+    "id": "3f969829-938d-46eb-926d-ab49bc9fa5ff",
+    "fact": "验证本能是报告成功前必须验证结果的铁律，未经验证的成功报告是严重违规",
+    "category": "principle",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991804",
+    "last_accessed": "2026-03-17T17:25:32.991805",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991806",
+      "tags": [
+        "验证",
+        "核心原则",
+        "质量控制"
+      ]
+    }
+  },
+  {
+    "id": "d1428cd6-fa64-4f61-9982-90deff9542d1",
+    "fact": "系统强制执行依赖P0-P4优先级、自动检查点和失败锁定机制",
+    "category": "principle",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991811",
+    "last_accessed": "2026-03-17T17:25:32.991812",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991813",
+      "tags": [
+        "执行",
+        "优先级",
+        "系统"
+      ]
+    }
+  },
+  {
+    "id": "7eac79f2-75f1-4991-b171-7ba1a7fb35c5",
+    "fact": "Agent配合的完整循环是：感知→决策→执行→反思→进化",
+    "category": "principle",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991823",
+    "last_accessed": "2026-03-17T17:25:32.991824",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991825",
+      "tags": [
+        "Agent",
+        "工作流",
+        "循环"
+      ]
+    }
+  },
+  {
+    "id": "2d880522-54e8-4b9f-85f1-d8c4d7aa55c2",
+    "fact": "长任务必须分段实时保存，每完成一段立即append到输出文件，不要等全部完成",
+    "category": "principle",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991845",
+    "last_accessed": "2026-03-17T17:25:32.991846",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991847",
+      "tags": [
+        "任务管理",
+        "持久化",
+        "长任务"
+      ]
+    }
+  }
+]

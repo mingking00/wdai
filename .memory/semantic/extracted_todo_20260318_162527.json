@@ -1,0 +1,92 @@
+[
+  {
+    "id": "5625953b-e11f-41e0-8c46-4f534f48cd24",
+    "fact": "分别绘制两条线（arrowEnd 和 arrowBegin）",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.311409",
+    "last_accessed": "2026-03-18T16:25:27.311411",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "16b7169d-e21a-49d4-b37b-01d5f186145f",
+    "fact": "用户在PowerPoint中手动运行）",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.311421",
+    "last_accessed": "2026-03-18T16:25:27.311422",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "246a1368-b23c-4610-8c31-4388760a3528",
+    "fact": "先上传再分享，不能直接发送附件",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.311444",
+    "last_accessed": "2026-03-18T16:25:27.311445",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "22c75efd-85ab-457c-9a15-6664eaf56988",
+    "fact": "额外的参数或不同的调用方式",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.311450",
+    "last_accessed": "2026-03-18T16:25:27.311451",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "a6f82c09-e520-4393-8514-88c75dfe2214",
+    "fact": "进一步研究飞书开放平台的上传接口文档",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.311455",
+    "last_accessed": "2026-03-18T16:25:27.311456",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "4c1c033d-f4e3-47db-a68a-bd623662a223",
+    "fact": "消耗: 80k tokens ≈ ¥12-30",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T16:25:27.311466",
+    "last_accessed": "2026-03-18T16:25:27.311467",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

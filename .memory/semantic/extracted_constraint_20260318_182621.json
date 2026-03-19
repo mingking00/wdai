@@ -1,0 +1,126 @@
+[
+  {
+    "id": "3c572225-c4b5-4dc5-9661-9db72f6c36d2",
+    "fact": "严格按照参考图的结构，不能自行调整布局方向",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.071998",
+    "last_accessed": "2026-03-18T18:26:21.072011",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "4645ee1e-1002-4386-9e6e-41830167d98d",
+        "4645ee1e-1002-4386-9e6e-41830167d98d"
+      ]
+    }
+  },
+  {
+    "id": "639aeee8-7132-46d9-80a3-99d6ded5c1d1",
+    "fact": "分别绘制两条线（arrowEnd 和 arrowBegin）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072021",
+    "last_accessed": "2026-03-18T18:26:21.072022",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+        "ed33db1e-d9c0-4ce3-b3c9-bd31ff3bd5e3",
+        "5625953b-e11f-41e0-8c46-4f534f48cd24",
+        "5625953b-e11f-41e0-8c46-4f534f48cd24"
+      ]
+    }
+  },
+  {
+    "id": "98989c9c-5d08-4579-88ae-190b32c92abc",
+    "fact": "用户在PowerPoint中手动运行）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072030",
+    "last_accessed": "2026-03-18T18:26:21.072031",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3619f396-9585-4744-88fa-a38477787ff0",
+        "3619f396-9585-4744-88fa-a38477787ff0",
+        "16b7169d-e21a-49d4-b37b-01d5f186145f",
+        "16b7169d-e21a-49d4-b37b-01d5f186145f"
+      ]
+    }
+  },
+  {
+    "id": "9d52a43e-407c-47e8-a006-5b4e3d2550c9",
+    "fact": "先上传再分享，不能直接发送附件",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072040",
+    "last_accessed": "2026-03-18T18:26:21.072041",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+        "47e797e7-ea0d-4eba-86e6-93bf07d9b565",
+        "246a1368-b23c-4610-8c31-4388760a3528",
+        "246a1368-b23c-4610-8c31-4388760a3528"
+      ]
+    }
+  },
+  {
+    "id": "88233df0-954a-48d6-bada-6e60150769b4",
+    "fact": "额外的参数或不同的调用方式",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072046",
+    "last_accessed": "2026-03-18T18:26:21.072047",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3ebb413e-8199-4042-8fe1-a7602fb32769",
+        "3ebb413e-8199-4042-8fe1-a7602fb32769",
+        "22c75efd-85ab-457c-9a15-6664eaf56988",
+        "22c75efd-85ab-457c-9a15-6664eaf56988"
+      ]
+    }
+  },
+  {
+    "id": "c47dcfb7-5971-4a94-a911-cf59f09caa90",
+    "fact": "进一步研究飞书开放平台的上传接口文档",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T18:26:21.072051",
+    "last_accessed": "2026-03-18T18:26:21.072052",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "6daa847d-7768-47c0-9fba-c897df464334",
+        "6daa847d-7768-47c0-9fba-c897df464334",
+        "a6f82c09-e520-4393-8514-88c75dfe2214",
+        "a6f82c09-e520-4393-8514-88c75dfe2214"
+      ]
+    }
+  }
+]

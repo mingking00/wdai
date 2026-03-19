@@ -1,0 +1,71 @@
+# 物理约束数据库 (Physical Constraints Database)
+# 用于物理现实检查的快速参考
+
+constraints:
+  # 人类响应时间
+  human_response:
+    real_time_attention: "seconds to minutes"  # 实时关注
+    notification_response: "minutes to hours"   # 通知响应
+    async_review: "hours to days"              # 异步审核
+    decision_making: "hours to weeks"          # 决策制定
+    
+  # 计算资源
+  compute:
+    cpu_single_core: "~3-5 GHz"
+    memory_access: "~100 ns"
+    disk_read: "~10 ms (HDD), ~0.1 ms (SSD)"
+    network_latency_local: "~1 ms"
+    network_latency_internet: "~20-200 ms"
+    
+  # API限制
+  api_limits:
+    github_search: "10 requests/minute (unauthenticated), 30/min (authenticated)"
+    openai_gpt4: "variable based on tier"
+    brave_search: "2000 queries/month (free tier)"
+    rate_limit_backoff: "exponential, starting at 1s"
+    
+  # 文件系统
+  filesystem:
+    max_filename_length: "255 bytes (Linux)"
+    max_path_length: "4096 bytes (Linux)"
+    max_file_size: "16 EB (ext4 theoretical)"
+    concurrent_open_files: "~1M per process (Linux limit)"
+    
+  # 时间尺度
+  time_scales:
+    instant: "< 100 ms"      # 用户感知即时
+    quick: "< 1 second"      # 快速响应
+    interactive: "< 3 seconds" # 可交互
+    wait_acceptable: "< 10 seconds" # 可接受等待
+    background: "minutes to hours" # 后台任务
+    
+  # 经济约束
+  economic:
+    gpt4_token_cost: "~$0.03/1K tokens (input)"
+    gpt4_output_cost: "~$0.06/1K tokens (output)"
+    storage_cost_cloud: "~$0.023/GB/month (S3)"
+    compute_cost_vps: "~$5-50/month (基础配置)"
+    
+  # 组织约束
+  organizational:
+    approval_chain_length: "2-5 levels typical"
+    meeting_scheduling: "days to weeks"
+    procurement_cycle: "weeks to months"
+    training_effectiveness: "weeks to show results"
+
+# 物理现实检查清单
+checklist:
+  - question: "这个设计假设人类能实时响应吗？"
+    constraint: human_response.real_time_attention
+    
+  - question: "有考虑API速率限制吗？"
+    constraint: api_limits
+    
+  - question: "文件大小/数量合理吗？"
+    constraint: filesystem
+    
+  - question: "成本在可接受范围吗？"
+    constraint: economic
+    
+  - question: "时间估计符合实际吗？"
+    constraint: time_scales

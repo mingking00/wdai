@@ -1,0 +1,10 @@
+{
+  "id": "c3a3378f_exp2",
+  "hypothesis": "实验3: 真实代码执行",
+  "metrics": {
+    "execution_time": 0.10019659996032715,
+    "success": 1
+  },
+  "success": true,
+  "real_execution": true
+}

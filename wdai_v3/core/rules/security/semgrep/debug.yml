@@ -1,0 +1,13 @@
+rules:
+- id: python-debug-enabled
+  message: 调试模式开启，生产环境应关闭
+  pattern: (?:debug|DEBUG)\s*=\s*True
+  severity: medium
+- id: python-ipdb-debug
+  message: 代码中包含调试器调用，应移除后再部署
+  pattern: import\s+(?:ipdb|pdb|breakpoint)|(?:ipdb|pdb)\.set_trace\(\)
+  severity: medium
+- id: python-flask-debug
+  message: Flask 调试模式开启，存在远程代码执行风险
+  pattern: app\.run\s*\([^)]*debug\s*=\s*True
+  severity: critical

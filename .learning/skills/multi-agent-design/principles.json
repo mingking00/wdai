@@ -1,0 +1,13 @@
+[
+  {
+    "name": "multi-agent-design::Resilient Multi-Agent Orchestrator",
+    "abstract_pattern": "组合技巧: def resolve_conflict(agents): →     for agent in a...",
+    "origin_domain": "multi-agent-design",
+    "potential_domains": [
+      "其他编程领域",
+      "系统设计",
+      "问题解决"
+    ],
+    "verification_count": 3
+  }
+]

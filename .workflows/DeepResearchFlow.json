@@ -1,0 +1,19 @@
+{
+  "name": "DeepResearchFlow",
+  "id": "WF-1773079872",
+  "pattern": "orchestrator-worker",
+  "description": "Central coordinator with specialized workers",
+  "nodes": [
+    {"id": "orchestrator", "type": "agent", "role": "coordinator", "function": "delegate_and_synthesize"},
+    {"id": "researcher", "type": "agent", "role": "specialist", "function": "gather_information"},
+    {"id": "analyst", "type": "agent", "role": "specialist", "function": "analyze_data"},
+    {"id": "writer", "type": "agent", "role": "specialist", "function": "generate_output"}
+  ],
+  "edges": [
+    {"from": "orchestrator", "to": "researcher", "label": "delegate_research"},
+    {"from": "researcher", "to": "analyst", "label": "pass_data"},
+    {"from": "analyst", "to": "writer", "label": "pass_insights"},
+    {"from": "writer", "to": "orchestrator", "label": "deliver_result"}
+  ],
+  "state": {"persistent": true, "shared_memory": true}
+}

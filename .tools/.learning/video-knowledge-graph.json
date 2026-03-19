@@ -1,0 +1,94 @@
+{
+  "concepts": {
+    "C-JEPA": {
+      "aliases": [],
+      "definition": "LeCun团队提出的C-JEPA方法",
+      "related": [],
+      "sources": [
+        "BV1e4cyziEqH"
+      ]
+    },
+    "JEPA": {
+      "aliases": [],
+      "definition": "LeCun团队提出的C-JEPA方法",
+      "related": [],
+      "sources": [
+        "BV1e4cyziEqH"
+      ]
+    },
+    "世界模型": {
+      "aliases": [],
+      "definition": "当前世界模型计算成本高昂，需要大量Token",
+      "related": [],
+      "sources": [
+        "BV1e4cyziEqH"
+      ]
+    },
+    "对象级干预": {
+      "aliases": [],
+      "definition": "C-JEPA基于JEPA架构，通过对象级干预，只处理变化的部分",
+      "related": [],
+      "sources": [
+        "BV1e4cyziEqH"
+      ]
+    },
+    "Token冗余": {
+      "aliases": [],
+      "definition": "技术细节：C-JEPA的算力优化达到99%Token冗余消除",
+      "related": [],
+      "sources": [
+        "BV1e4cyziEqH"
+      ]
+    },
+    "算力优化": {
+      "aliases": [],
+      "definition": "技术细节：C-JEPA的算力优化达到99%Token冗余消除",
+      "related": [],
+      "sources": [
+        "BV1e4cyziEqH"
+      ]
+    },
+    "自监督学习": {
+      "aliases": [],
+      "definition": "对比传统自监督学习方法，效率提升显著",
+      "related": [],
+      "sources": [
+        "BV1e4cyziEqH"
+      ]
+    },
+    "LeCun": {
+      "aliases": [],
+      "definition": "LeCun团队提出的C-JEPA方法",
+      "related": [],
+      "sources": [
+        "BV1e4cyziEqH"
+      ]
+    }
+  },
+  "relations": [
+    {
+      "source": "LeCun团队发布C-JEPA，",
+      "target": "世界模型算力极限",
+      "type": "improves",
+      "evidence": "From title: 告别99%的Token冗余：LeCun团队发布C-JEPA，通过对象级干预重塑世界模型算力极限"
+    },
+    {
+      "source": "C-JEPA",
+      "target": "JEPA",
+      "type": "based_on",
+      "evidence": "LeCun团队提出的C-JEPA方法。C-JEPA基于JEPA架构，通过对象级干预，只处理变化的部分。"
+    },
+    {
+      "source": "C-JEPA",
+      "target": "JEPA",
+      "type": "contrasts_with",
+      "evidence": "技术细节：C-JEPA的算力优化达到99%Token冗余消除。对比传统自监督学习方法，效率提升显著。"
+    },
+    {
+      "source": "C-JEPA",
+      "target": "JEPA",
+      "type": "better_than",
+      "evidence": "实验结果和未来展望。C-JEPA在多个世界模型基准测试中的表现优于传统方法。"
+    }
+  ]
+}

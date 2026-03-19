@@ -1,0 +1,116 @@
+[
+  {
+    "id": "625e17eb-7833-4da2-b1c6-3d997e1b75ff",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894606",
+    "last_accessed": "2026-03-17T06:27:34.894607",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894608",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "27d1a470-41e4-4310-937f-94c5bd2738e8",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894617",
+    "last_accessed": "2026-03-17T06:27:34.894618",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894619",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "2eb805b3-daf0-414a-8441-a79b0e746a9d",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894666",
+    "last_accessed": "2026-03-17T06:27:34.894667",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894667",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  },
+  {
+    "id": "cac5a214-d027-4b11-adbe-d75c9ff9d73f",
+    "fact": "禁止将重要结果保存在/tmp/或/var/tmp/等临时目录，必须使用workspace/持久化目录",
+    "category": "constraint",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991840",
+    "last_accessed": "2026-03-17T17:25:32.991841",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991842",
+      "tags": [
+        "文件管理",
+        "持久化",
+        "约束"
+      ]
+    }
+  },
+  {
+    "id": "9f89e9d6-b2fc-4761-8628-87470d2ffd57",
+    "fact": "系统对>20分钟的进程自动SIGKILL清理，预估耗时>15分钟时必须缩短分段或并行处理",
+    "category": "constraint",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991851",
+    "last_accessed": "2026-03-17T17:25:32.991852",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991853",
+      "tags": [
+        "系统限制",
+        "进程管理",
+        "时间约束"
+      ]
+    }
+  },
+  {
+    "id": "df12c5d4-e5db-4500-b965-2618911e005a",
+    "fact": "用户要求执行前先想三遍，交付后再查五遍",
+    "category": "constraint",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991896",
+    "last_accessed": "2026-03-17T17:25:32.991897",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991898",
+      "tags": [
+        "用户要求",
+        "质量控制",
+        "工作方式"
+      ]
+    }
+  }
+]

@@ -1,0 +1,5 @@
+rules:
+- id: python-tempfile-mktemp
+  message: 使用不安全的 mktemp，存在竞态条件，建议使用 mkstemp
+  pattern: tempfile\.mktemp
+  severity: high

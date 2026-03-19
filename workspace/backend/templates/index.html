@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibero Reader - AI双语小说学习器</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a28;
+            --accent: #ff6b6b;
+            --accent-gradient: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #606070;
+            --border: rgba(255,255,255,0.08);
+            --card-bg: rgba(255,255,255,0.03);
+            --hover-bg: rgba(255,255,255,0.06);
+            --success: #27ae60;
+            --warning: #f39c12;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            line-height: 1.6;
+        }
+        
+        .app {
+            display: grid;
+            grid-template-rows: 60px 1fr;
+            height: 100vh;
+        }
+        
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .nav-tab {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text-secondary);
+        }
+        
+        .nav-tab:hover { background: var(--hover-bg); color: var(--text-primary); }
+        .nav-tab.active { background: var(--card-bg); color: var(--accent); }
+        
+        .header-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .api-status {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            background: var(--card-bg);
+        }
+        .api-status.connected { background: rgba(39,174,96,0.2); color: var(--success); }
+        .api-status.disconnected { background: rgba(243,156,18,0.2); color: var(--warning); }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(255,107,107,0.3);
+        }
+        
+        .btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--hover-bg);
+            color: var(--text-primary);
+        }
+        
+        /* Main Layout */
+        .main {
+            display: grid;
+            grid-template-columns: 320px 1fr 360px;
+            overflow: hidden;
+        }
+        
+        /* Sidebar Left */
+        .sidebar-left {
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .sidebar-section { margin-bottom: 24px; }
+        
+        .section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .section-count {
+            background: var(--card-bg);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+        
+        /* Chapter List */
+        .chapter-item {
+            padding: 12px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 4px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .chapter-item:hover { background: var(--hover-bg); }
+        .chapter-item.active {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+        }
+        .chapter-item.active .chapter-num {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .chapter-num {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            background: var(--bg-tertiary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        
+        .chapter-title { flex: 1; }
+        .chapter-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        
+        /* Character Cards */
+        .char-grid { display: grid; gap: 8px; }
+        
+        .char-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            border-radius: 12px;
+            background: var(--card-bg);
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        
+        .char-card:hover {
+            background: var(--hover-bg);
+            border-color: var(--border);
+            transform: translateX(4px);
+        }
+        
+        .char-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .char-info { flex: 1; }
+        .char-name { font-weight: 600; font-size: 14px; }
+        .char-en { font-size: 12px; color: var(--text-muted); }
+        .char-role {
+            font-size: 11px;
+            color: var(--accent);
+            margin-top: 2px;
+        }
+        
+        /* Concept Tags */
+        .concept-list { display: flex; flex-direction: column; gap: 8px; }
+        
+        .concept-item {
+            padding: 12px 16px;
+            border-radius: 10px;
+            background: var(--card-bg);
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        
+        .concept-item:hover {
+            border-color: var(--accent);
+            background: var(--hover-bg);
+        }
+        
+        .concept-name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+        .concept-en { font-size: 12px; color: var(--accent); }
+        .concept-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+        
+        /* Reader Area */
+        .reader { display: flex; flex-direction: column; overflow: hidden; }
+        
+        .reader-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 32px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-secondary);
+        }
+        
+        .view-options {
+            display: flex;
+            gap: 4px;
+            background: var(--bg-primary);
+            padding: 4px;
+            border-radius: 10px;
+        }
+        
+        .view-btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .view-btn.active {
+            background: var(--card-bg);
+            color: var(--text-primary);
+        }
+        
+        .progress-info { font-size: 13px; color: var(--text-muted); }
+        
+        .reader-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 40px 48px;
+            scroll-behavior: smooth;
+        }
+        
+        .reader-content::-webkit-scrollbar { width: 8px; }
+        .reader-content::-webkit-scrollbar-track { background: transparent; }
+        .reader-content::-webkit-scrollbar-thumb {
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+        }
+        
+        /* Content Styles */
+        .chapter-header {
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .chapter-heading {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .chapter-subheading {
+            font-size: 20px;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        .para-block {
+            margin-bottom: 32px;
+            padding: 20px 24px;
+            border-radius: 16px;
+            background: var(--card-bg);
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .para-block:hover { border-color: var(--border); background: var(--hover-bg); }
+        
+        .zh-text {
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        
+        .en-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            padding-left: 16px;
+            border-left: 3px solid var(--accent);
+        }
+        
+        /* ===== TERM TOOLTIP SYSTEM ===== */
+        .term-wrapper {
+            position: relative;
+            display: inline;
+        }
+        
+        .term {
+            background: rgba(255,107,107,0.15);
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-bottom: 2px solid var(--accent);
+            position: relative;
+        }
+        
+        .term:hover {
+            background: rgba(255,107,107,0.3);
+        }
+        
+        /* Tooltip Card */
+        .term-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-8px);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            min-width: 240px;
+            max-width: 320px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        
+        .term-wrapper:hover .term-tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-4px);
+        }
+        
+        .term-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 8px solid transparent;
+            border-top-color: var(--border);
+        }
+        
+        .tooltip-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .tooltip-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .tooltip-title { flex: 1; }
+        .tooltip-zh { font-size: 16px; font-weight: 600; }
+        .tooltip-en { font-size: 13px; color: var(--accent); }
+        .tooltip-category {
+            font-size: 11px;
+            color: var(--text-muted);
+            background: var(--card-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 4px;
+        }
+        
+        .tooltip-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .tooltip-click-hint {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-align: center;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+        }
+        
+        /* Sidebar Right */
+        .sidebar-right {
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .detail-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .detail-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .detail-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .detail-title { flex: 1; }
+        .detail-name { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .detail-en { font-size: 16px; color: var(--accent); }
+        
+        .detail-section { margin-bottom: 20px; }
+        .detail-section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        
+        .detail-text {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+        
+        .quote-box {
+            background: var(--bg-tertiary);
+            border-left: 4px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        
+        /* Empty State */
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding: 48px;
+        }
+        
+        .empty-icon { font-size: 80px; margin-bottom: 24px; opacity: 0.5; }
+        .empty-title { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+        .empty-desc {
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            max-width: 450px;
+            line-height: 1.7;
+        }
+        
+        /* Upload Area */
+        .upload-section {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+        }
+        
+        .upload-card {
+            border: 2px dashed var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .upload-card:hover { border-color: var(--accent); background: var(--hover-bg); }
+        .upload-icon { font-size: 48px; margin-bottom: 16px; }
+        .upload-text { font-size: 16px; margin-bottom: 8px; }
+        .upload-hint { font-size: 13px; color: var(--text-muted); }
+        
+        /* Progress Bar */
+        .progress-container {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 24px;
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background: var(--bg-tertiary);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--accent-gradient);
+            width: 0%;
+            transition: width 0.3s;
+        }
+        
+        .progress-text {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+        }
+        
+        .modal-overlay.active { display: flex; }
+        
+        .modal {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            width: 90%;
+            max-width: 480px;
+            max-height: 80vh;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .modal-title { font-size: 18px; font-weight: 600; }
+        
+        .modal-close {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            border: none;
+            background: var(--card-bg);
+            color: var(--text-muted);
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .modal-close:hover { background: var(--hover-bg); color: var(--text-primary); }
+        .modal-body { padding: 24px; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-label {
+            display: block;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        .form-input, .form-select {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .form-input:focus, .form-select:focus { outline: none; border-color: var(--accent); }
+        
+        .demo-btn {
+            margin-top: 16px;
+            padding: 16px 32px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .demo-btn:hover { border-color: var(--accent); color: var(--accent); }
+        
+        .config-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .config-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        
+        .config-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+        
+        .config-item:last-child { border-bottom: none; }
+        .config-label { color: var(--text-muted); }
+        .config-value { color: var(--text-secondary); font-family: monospace; }
+        
+        @media (max-width: 1200px) { .main { grid-template-columns: 280px 1fr 300px; } }
+        @media (max-width: 1024px) { .main { grid-template-columns: 1fr; } .sidebar-left, .sidebar-right { display: none; } }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- Empty State -->
+        <div class="empty-state">
+            <div class="empty-icon">📚</div>
+            <div class="empty-title">Vibero Reader</div>
+            <div class="empty-desc">
+                AI-powered bilingual novel reader. Upload a Chinese novel to automatically analyze structure, extract characters, and translate with AI.
+            </div>
+            
+            <div class="upload-section">
+                <input type="file" id="fileInput" accept=".txt" hidden>
+                <div class="upload-card" onclick="document.getElementById('fileInput').click()">
+                    <div class="upload-icon">📖</div>
+                    <div class="upload-text">Upload Chinese Novel (TXT)</div>
+                    <div class="upload-hint">Click or drag file here</div>
+                </div>
+                
+                <div class="progress-container" id="progressContainer" style="display: none;">
+                    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+                    <div class="progress-text" id="progressText">Analyzing...</div>
+                </div>
+                
+                <button class="demo-btn" onclick="loadDemo()">✨ Try Demo (The Three-Body Problem)</button>
+            </div>
+            
+            <div class="config-section">
+                <div class="config-title">Backend Configuration</div>
+                <div class="config-item">
+                    <span class="config-label">API Endpoint:</span>
+                    <span class="config-value" id="apiEndpoint">http://localhost:5000</span>
+                </div>
+                <div class="config-item">
+                    <span class="config-label">Status:</span>
+                    <span class="config-value" id="backendStatus">Checking...</span>
+                </div>
+                <div style="margin-top: 12px; font-size: 12px; color: var(--text-muted);">
+                    Run: <code style="background: var(--bg-tertiary); padding: 4px 8px; border-radius: 4px;">python app.py</code> in backend folder
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal-overlay" id="settingsModal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title">⚙️ API Configuration</div>
+                <button class="modal-close" onclick="closeSettings()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">AI Provider</label>
+                    <select class="form-select" id="aiProvider">
+                        <option value="moonshot">Kimi (Moonshot)</option>
+                        <option value="openai">OpenAI</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">API Base URL</label>
+                    <input type="text" class="form-input" id="apiBase" placeholder="https://api.moonshot.cn/v1">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">API Key</label>
+                    <input type="password" class="form-input" id="apiKey" placeholder="sk-...">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Model</label>
+                    <input type="text" class="form-input" id="apiModel" placeholder="moonshot-v1-8k">
+                </div>
+                <button class="btn btn-primary" style="width: 100%;" onclick="saveSettings()">Save Configuration</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ===== CONFIGURATION =====
+        const API_BASE = 'http://localhost:5000';
+        let apiConfig = {
+            provider: 'moonshot',
+            base_url: 'https://api.moonshot.cn/v1',
+            api_key: localStorage.getItem('api_key') || '',
+            model: 'moonshot-v1-8k'
+        };
+
+        // ===== STATE =====
+        let currentNovel = null;
+        let currentChapter = 0;
+        let isTranslatingAll = false;
+
+        // ===== ESCAPE REGEX SPECIAL CHARACTERS =====
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        // ===== DEMO DATA =====
+        const demoData = {
+            title: "三体",
+            subtitle: "The Three-Body Problem",
+            author: "刘慈欣",
+            chapters: [
+                {
+                    id: 1,
+                    title: "第一章：疯狂年代",
+                    subtitle: "Chapter 1: The Madness Years",
+                    paragraphs: [
+                        { zh: "中国，1967年。", en: "China, 1967." },
+                        { zh: "【疯狂年代】红色的天空下，一场史无前例的政治运动正在席卷整个国家。北京大学的大字报栏前，人群熙熙攘攘，口号声此起彼伏。", en: "Beneath the crimson sky, an unprecedented political movement was sweeping across the entire nation. In front of the big-character poster boards at Peking University, crowds bustled and slogans rose and fell." },
+                        { zh: "叶文洁站在台下，看着台上那些曾经受人尊敬的教授们被红卫兵批斗。她的父亲，著名的理论物理学家叶哲泰，昨天刚刚在这场浩劫中离世。", en: "Ye Wenjie stood below the stage, watching the professors who had once been respected being publicly criticized by the Red Guards. Her father, the famous theoretical physicist Ye Zhetai, had died in this catastrophe just yesterday." }
+                    ]
+                },
+                {
+                    id: 2,
+                    title: "第二章：寂静的春天",
+                    subtitle: "Chapter 2: Silent Spring",
+                    paragraphs: [
+                        { zh: "在红岸基地的深夜里，叶文洁读到了那本改变她一生的书——雷切尔·卡森的《寂静的春天》。", en: "In the deep night at Red Coast Base, Ye Wenjie read the book that would change her life—Rachel Carson's Silent Spring." },
+                        { zh: "书中对人类破坏环境的批判，让叶文洁开始思考文明的本质。", en: "The book's criticism of humanity's destruction of the environment made Ye Wenjie begin to contemplate the nature of civilization." }
+                    ]
+                }
+            ],
+            characters: [
+                { id: "char_yewenjie", name: "叶文洁", enName: "Ye Wenjie", role: "天体物理学家", color: "#E74C3C", description: "红岸基地的天体物理学家，向三体文明发送了地球的第一声啼鸣。她是人类文明的第一位叛徒，也是一位对人类彻底失望的理想主义者。", quote: "到这里来吧，我将帮助你们获得这个世界。" },
+                { id: "char_yezhetai", name: "叶哲泰", enName: "Ye Zhetai", role: "理论物理学家", color: "#9B59B6", description: "叶文洁的父亲，著名理论物理学家，在文化大革命中坚持科学真理，被红卫兵批斗致死。", quote: "科学是不可战胜的。" },
+                { id: "char_carson", name: "雷切尔·卡森", enName: "Rachel Carson", role: "生物学家", color: "#27AE60", description: "美国海洋生物学家，《寂静的春天》作者。她的著作唤起了叶文洁对文明本质的深刻思考。", quote: "The control of nature is a phrase conceived in arrogance." },
+                { id: "char_wangmiao", name: "汪淼", enName: "Wang Miao", role: "纳米科学家", color: "#3498DB", description: "第一部主角，纳米材料科学家。通过调查科学家自杀事件，逐步揭开了三体世界的真相。", quote: "物理学从来就没有存在过。" }
+            ],
+            concepts: [
+                { id: "conc_cultural_revolution", name: "文化大革命", enName: "Cultural Revolution", category: "历史事件", description: "1966-1976年中国政治运动，对知识分子和传统文化造成巨大冲击，是三体故事的重要历史背景。", importance: "故事的核心背景，直接影响了叶文洁的人生轨迹" },
+                { id: "conc_red_coast", name: "红岸基地", enName: "Red Coast Base", category: "军事设施", description: "中国1960年代建立的射电天文观测基地，表面研究太阳活动，实际任务是寻找地外文明。", importance: "叶文洁发送信号给三体世界的地点" },
+                { id: "conc_red_guards", name: "红卫兵", enName: "Red Guards", category: "政治组织", description: "文革期间的学生组织，以激进方式推行极左路线，造成大量知识分子被迫害。", importance: "直接导致叶哲泰死亡和叶文洁被发配" },
+                { id: "conc_trisolaris", name: "三体世界", enName: "Trisolaris", category: "科幻设定", description: "距离地球4光年的外星文明，因所在星系有三颗太阳，生存环境极其恶劣。", importance: "故事的核心冲突来源" }
+            ]
+        };
+
+        // ===== INIT =====
+        async function checkBackend() {
+            try {
+                await fetch(`${API_BASE}/api/analyze`, { method: 'OPTIONS' });
+                updateStatus('Connected ✅', 'var(--success)');
+            } catch (e) {
+                updateStatus('Not Running ⚠️', 'var(--warning)');
+            }
+        }
+
+        function updateStatus(text, color) {
+            const el = document.getElementById('backendStatus');
+            if (el) {
+                el.textContent = text;
+                el.style.color = color;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            checkBackend();
+            document.getElementById('fileInput').addEventListener('change', handleFile);
+        });
+
+        // ===== FILE HANDLING =====
+        async function handleFile(e) {
+            const file = e.target.files[0];
+            if (file) await processFile(file);
+        }
+
+        async function processFile(file) {
+            if (!file.name.endsWith('.txt')) {
+                alert('Please upload a .txt file');
+                return;
+            }
+
+            showProgress(5, 'Uploading file...');
+
+            try {
+                // Step 1: Analyze structure
+                showProgress(15, 'Analyzing novel structure...');
+                const formData = new FormData();
+                formData.append('file', file);
+
+                const analyzeResponse = await fetch(`${API_BASE}/api/analyze`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!analyzeResponse.ok) throw new Error('Backend not running');
+
+                const analysis = await analyzeResponse.json();
+                
+                // Build novel structure
+                currentNovel = {
+                    title: analysis.filename || file.name.replace('.txt', ''),
+                    subtitle: '',
+                    chapters: analysis.chapters.map((ch, i) => ({
+                        id: i + 1,
+                        title: ch.title,
+                        subtitle: '',
+                        paragraphs: ch.content.map(text => ({ zh: text, en: '' }))
+                    })),
+                    characters: [],
+                    concepts: []
+                };
+
+                // Step 2: Extract ALL terms from whole book
+                if (apiConfig.api_key && currentNovel.chapters.length > 0) {
+                    showProgress(30, 'Extracting terms from whole book...');
+                    
+                    try {
+                        const termsResponse = await fetch(`${API_BASE}/api/extract-book-terms`, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ 
+                                chapters: analysis.chapters, 
+                                api_config: apiConfig 
+                            })
+                        });
+                        
+                        if (termsResponse.ok) {
+                            const termsData = await termsResponse.json();
+                            
+                            // Convert terms to characters and concepts
+                            termsData.terms?.forEach((term, idx) => {
+                                const safeId = `term_${idx}_${term.name.replace(/\s+/g, '_')}`;
+                                const baseItem = {
+                                    id: safeId,
+                                    name: term.name,
+                                    enName: term.enName || term.name,
+                                    description: term.description || 'No description available.',
+                                    color: getRandomColor()
+                                };
+                                
+                                if (term.category === '人物') {
+                                    currentNovel.characters.push({
+                                        ...baseItem,
+                                        role: term.role || 'Character',
+                                        quote: ''
+                                    });
+                                } else {
+                                    currentNovel.concepts.push({
+                                        ...baseItem,
+                                        category: term.category || 'Concept',
+                                        importance: term.importance || ''
+                                    });
+                                }
+                            });
+                            
+                            console.log(`Extracted ${currentNovel.characters.length} characters and ${currentNovel.concepts.length} concepts`);
+                        }
+                    } catch (e) {
+                        console.log('Term extraction failed:', e);
+                    }
+                }
+
+                showProgress(50, 'Rendering reader...');
+                renderApp();
+                hideProgress();
+                
+                // Auto-translate first chapter
+                if (apiConfig.api_key) {
+                    setTimeout(() => translateChapter(0), 500);
+                }
+
+            } catch (error) {
+                alert('Error: ' + error.message);
+                hideProgress();
+            }
+        }
+
+        async function translateChapter(chapterIndex) {
+            const chapter = currentNovel.chapters[chapterIndex];
+            if (!chapter || !apiConfig.api_key) return;
+
+            const textsToTranslate = chapter.paragraphs
+                .map((p, i) => ({ index: i, text: p.zh }))
+                .filter(item => !chapter.paragraphs[item.index].en);
+
+            for (const item of textsToTranslate) {
+                try {
+                    const response = await fetch(`${API_BASE}/api/translate`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ text: item.text, api_config: apiConfig })
+                    });
+                    
+                    if (response.ok) {
+                        const result = await response.json();
+                        chapter.paragraphs[item.index].en = result.translation;
+                    }
+                } catch (e) {
+                    chapter.paragraphs[item.index].en = '[Translation failed]';
+                }
+            }
+            
+            // Update UI if currently viewing this chapter
+            if (currentChapter === chapterIndex) {
+                renderChapter(chapterIndex);
+            }
+        }
+
+        // ===== TRANSLATE ALL CHAPTERS =====
+        async function translateAllChapters() {
+            if (!apiConfig.api_key || !currentNovel || isTranslatingAll) return;
+            
+            isTranslatingAll = true;
+            
+            // Update button
+            const btn = document.getElementById('translateAllBtn');
+            if (btn) {
+                btn.disabled = true;
+                btn.textContent = '⏳ Translating...';
+            }
+            
+            const totalChapters = currentNovel.chapters.length;
+            
+            for (let i = 0; i < totalChapters; i++) {
+                // Update progress
+                const progress = Math.round(((i + 1) / totalChapters) * 100);
+                if (btn) {
+                    btn.textContent = `⏳ ${progress}% (${i+1}/${totalChapters})`;
+                }
+                
+                // Translate this chapter
+                await translateChapter(i);
+                
+                // Small delay to avoid rate limiting
+                if (i < totalChapters - 1) {
+                    await new Promise(r => setTimeout(r, 200));
+                }
+            }
+            
+            // Refresh current chapter view
+            renderChapter(currentChapter);
+            
+            isTranslatingAll = false;
+            
+            if (btn) {
+                btn.disabled = false;
+                btn.textContent = '✅ All Translated';
+                setTimeout(() => {
+                    btn.textContent = '🔥 Translate All';
+                }, 3000);
+            }
+        }
+
+        function showProgress(percent, text) {
+            document.getElementById('progressContainer').style.display = 'block';
+            document.getElementById('progressFill').style.width = percent + '%';
+            document.getElementById('progressText').textContent = text;
+        }
+
+        function hideProgress() {
+            document.getElementById('progressContainer').style.display = 'none';
+        }
+
+        function getRandomColor() {
+            const colors = ['#E74C3C', '#3498DB', '#27AE60', '#9B59B6', '#F39C12', '#1ABC9C', '#E67E22', '#8E44AD'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        function loadDemo() {
+            currentNovel = JSON.parse(JSON.stringify(demoData));
+            renderApp();
+        }
+
+        // ===== RENDER APP =====
+        function renderApp() {
+            const app = document.getElementById('app');
+            app.className = 'app';
+            app.innerHTML = `
+                <header class="header">
+                    <div class="logo">📖 ${currentNovel.title}</div>
+                    <div class="nav-tabs">
+                        <div class="nav-tab active">阅读</div>
+                        <div class="nav-tab">人物</div>
+                        <div class="nav-tab">概念</div>
+                    </div>
+                    <div class="header-actions">
+                        <span class="api-status ${apiConfig.api_key ? 'connected' : 'disconnected'}">
+                            ${apiConfig.api_key ? 'API Connected' : 'API Not Configured'}
+                        </span>
+                        <button class="btn btn-secondary" onclick="showSettings()">⚙️</button>
+                        <button class="btn btn-secondary" onclick="location.reload()">📁</button>
+                    </div>
+                </header>
+                <div class="main">
+                    <aside class="sidebar-left">
+                        <div class="sidebar-section">
+                            <div class="section-title">
+                                章节
+                                <span class="section-count">${currentNovel.chapters.length}</span>
+                            </div>
+                            <div id="chapter-list"></div>
+                        </div>
+                        ${currentNovel.characters.length > 0 ? `
+                        <div class="sidebar-section">
+                            <div class="section-title">
+                                人物
+                                <span class="section-count">${currentNovel.characters.length}</span>
+                            </div>
+                            <div class="char-grid" id="char-list"></div>
+                        </div>
+                        ` : ''}
+                        ${currentNovel.concepts.length > 0 ? `
+                        <div class="sidebar-section">
+                            <div class="section-title">
+                                核心概念
+                                <span class="section-count">${currentNovel.concepts.length}</span>
+                            </div>
+                            <div class="concept-list" id="concept-list"></div>
+                        </div>
+                        ` : ''}
+                    </aside>
+                    <main class="reader">
+                        <div class="reader-toolbar">
+                            <div style="display: flex; align-items: center; gap: 16px;">
+                                <div class="view-options">
+                                    <button class="view-btn active" onclick="setView('bilingual')">双语</button>
+                                    <button class="view-btn" onclick="setView('zh')">中文</button>
+                                    <button class="view-btn" onclick="setView('en')">English</button>
+                                </div>
+                                ${apiConfig.api_key ? `
+                                <button class="btn btn-primary" id="translateAllBtn" onclick="translateAllChapters()" style="padding: 8px 16px; font-size: 13px;"
+                                    ${isTranslatingAll ? 'disabled' : ''}>
+                                    ${isTranslatingAll ? '⏳ Translating...' : '🔥 Translate All'}
+                                </button>
+                                ` : ''}
+                            </div>
+                            <div class="progress-info">Chapter ${currentChapter + 1} / ${currentNovel.chapters.length}</div>
+                        </div>
+                        <div class="reader-content" id="reader-content"></div>
+                    </main>
+                    <aside class="sidebar-right" id="sidebar-right">
+                        <div class="detail-card">
+                            <div class="detail-section">
+                                <div class="detail-section-title">Welcome</div>
+                                <div class="detail-text">
+                                    Hover over highlighted terms to see quick info.<br>
+                                    Click to view full details here.
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            `;
+            
+            renderChapterList();
+            renderCharList();
+            renderConceptList();
+            renderChapter(0);
+        }
+
+        // ===== RENDER COMPONENTS =====
+        function renderChapterList() {
+            const container = document.getElementById('chapter-list');
+            if (!container) return;
+            container.innerHTML = currentNovel.chapters.map((ch, i) => `
+                <div class="chapter-item ${i === currentChapter ? 'active' : ''}" onclick="goToChapter(${i})">
+                    <div class="chapter-num">${ch.id || i + 1}</div>
+                    <div class="chapter-title">
+                        <div>${ch.title}</div>
+                        ${ch.subtitle ? `<div class="chapter-sub">${ch.subtitle}</div>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderCharList() {
+            const container = document.getElementById('char-list');
+            if (!container) return;
+            container.innerHTML = currentNovel.characters.map(char => `
+                <div class="char-card" onclick="showCharDetail('${char.id}')">
+                    <div class="char-avatar" style="background: ${char.color}">${char.name[0]}</div>
+                    <div class="char-info">
+                        <div class="char-name">${char.name}</div>
+                        <div class="char-en">${char.enName}</div>
+                        <div class="char-role">${char.role}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderConceptList() {
+            const container = document.getElementById('concept-list');
+            if (!container) return;
+            container.innerHTML = currentNovel.concepts.map(concept => `
+                <div class="concept-item" onclick="showConceptDetail('${concept.id}')">
+                    <div class="concept-name">${concept.name}</div>
+                    <div class="concept-en">${concept.enName}</div>
+                    <div class="concept-desc">${concept.description?.substring(0, 60) || ''}...</div>
+                </div>
+            `).join('');
+        }
+
+        async function renderChapter(index) {
+            currentChapter = index;
+            const chapter = currentNovel.chapters[index];
+            
+            if (chapter.paragraphs.some(p => !p.en) && apiConfig.api_key) {
+                await translateChapter(index);
+            }
+            
+            const container = document.getElementById('reader-content');
+            if (!container) return;
+            
+            let html = `
+                <div class="chapter-header">
+                    <h1 class="chapter-heading">${chapter.title}</h1>
+                    ${chapter.subtitle ? `<div class="chapter-subheading">${chapter.subtitle}</div>` : ''}
+                    ${chapter.paragraphs.some(p => !p.en) && apiConfig.api_key ? `
+                    <div style="margin-top: 12px; padding: 8px 16px; background: var(--card-bg); border-radius: 8px; font-size: 13px; color: var(--text-muted); display: inline-flex; align-items: center; gap: 8px;">
+                        ⏳ 正在翻译本章... | <a href="#" onclick="event.preventDefault(); translateAllChapters();" style="color: var(--accent);">翻译全书</a>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+            
+            chapter.paragraphs.forEach((para, i) => {
+                html += `<div class="para-block" id="para-${i}">`;
+                html += `<div class="zh-text">${highlightTerms(para.zh)}</div>`;
+                html += para.en 
+                    ? `<div class="en-text">${para.en}</div>` 
+                    : `<div class="en-text" style="color: var(--text-muted); font-style: italic;">[Click to translate]</div>`;
+                html += `</div>`;
+            });
+            
+            container.innerHTML = html;
+            container.scrollTop = 0;
+            
+            document.querySelectorAll('.chapter-item').forEach((el, i) => {
+                el.classList.toggle('active', i === index);
+            });
+            
+            const progressInfo = document.querySelector('.progress-info');
+            if (progressInfo) {
+                progressInfo.textContent = `Chapter ${index + 1} / ${currentNovel.chapters.length}`;
+            }
+        }
+
+        // ===== HIGHLIGHT TERMS WITH TOOLTIP =====
+        function highlightTerms(text) {
+            if (!currentNovel) return text;
+            
+            // Sort by length (longest first) to avoid partial matches
+            const allTerms = [
+                ...currentNovel.characters.map(c => ({ ...c, type: 'char' })),
+                ...currentNovel.concepts.map(c => ({ ...c, type: 'concept' }))
+            ].sort((a, b) => b.name.length - a.name.length);
+            
+            // Build a map to track replaced positions
+            let result = text;
+            const replacements = [];
+            
+            allTerms.forEach(item => {
+                const escapedName = escapeRegExp(item.name);
+                const regex = new RegExp(escapedName, 'g');
+                
+                result = result.replace(regex, match => {
+                    const tooltipHtml = buildTooltip(item);
+                    return `<span class="term-wrapper">
+                        <span class="term" onclick="handleTermClick('${item.id}', '${item.type}')">${match}</span>
+                        ${tooltipHtml}
+                    </span>`;
+                });
+            });
+            
+            return result;
+        }
+
+        function buildTooltip(item) {
+            const isChar = item.type === 'char';
+            return `
+                <div class="term-tooltip">
+                    <div class="tooltip-header">
+                        <div class="tooltip-avatar" style="background: ${item.color || '#666'}">
+                            ${item.name[0]}
+                        </div>
+                        <div class="tooltip-title">
+                            <div class="tooltip-zh">${item.name}</div>
+                            <div class="tooltip-en">${item.enName}</div>
+                            <span class="tooltip-category">${isChar ? item.role : item.category}</span>
+                        </div>
+                    </div>
+                    <div class="tooltip-desc">${item.description?.substring(0, 100) || 'No description'}${item.description?.length > 100 ? '...' : ''}</div>
+                    <div class="tooltip-click-hint">👆 Click for full details</div>
+                </div>
+            `;
+        }
+
+        function handleTermClick(id, type) {
+            if (type === 'char') {
+                showCharDetail(id);
+            } else {
+                showConceptDetail(id);
+            }
+        }
+
+        // ===== NAVIGATION =====
+        async function goToChapter(index) {
+            await renderChapter(index);
+        }
+
+        // ===== SHOW DETAILS =====
+        function showCharDetail(charId) {
+            const char = currentNovel.characters.find(c => c.id === charId);
+            if (!char) {
+                console.error('Character not found:', charId);
+                return;
+            }
+            
+            const sidebar = document.getElementById('sidebar-right');
+            if (!sidebar) return;
+            
+            sidebar.innerHTML = `
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <div class="detail-avatar" style="background: ${char.color}">${char.name[0]}</div>
+                        <div class="detail-title">
+                            <div class="detail-name">${char.name}</div>
+                            <div class="detail-en">${char.enName}</div>
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-section-title">Role</div>
+                        <div class="detail-text">${char.role}</div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-section-title">Description</div>
+                        <div class="detail-text">${char.description || 'No description available.'}</div>
+                    </div>
+                    ${char.quote ? `
+                    <div class="detail-section">
+                        <div class="detail-section-title">Quote</div>
+                        <div class="quote-box">"${char.quote}"</div>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function showConceptDetail(conceptId) {
+            const concept = currentNovel.concepts.find(c => c.id === conceptId);
+            if (!concept) {
+                console.error('Concept not found:', conceptId);
+                return;
+            }
+            
+            const sidebar = document.getElementById('sidebar-right');
+            if (!sidebar) return;
+            
+            sidebar.innerHTML = `
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <div class="detail-avatar" style="background: linear-gradient(135deg, #666, #888)">📖</div>
+                        <div class="detail-title">
+                            <div class="detail-name">${concept.name}</div>
+                            <div class="detail-en">${concept.enName}</div>
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-section-title">Category</div>
+                        <span style="background: var(--card-bg); padding: 4px 12px; border-radius: 8px; font-size: 13px;">${concept.category}</span>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-section-title">Description</div>
+                        <div class="detail-text">${concept.description || 'No description available.'}</div>
+                    </div>
+                    ${concept.importance ? `
+                    <div class="detail-section">
+                        <div class="detail-section-title">Importance</div>
+                        <div class="quote-box">${concept.importance}</div>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        // ===== VIEW MODE =====
+        function setView(mode) {
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(mode === 'bilingual' ? '双语' : mode === 'zh' ? '中文' : 'English')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            document.querySelectorAll('.para-block').forEach(block => {
+                const zh = block.querySelector('.zh-text');
+                const en = block.querySelector('.en-text');
+                if (zh) zh.style.display = mode === 'en' ? 'none' : 'block';
+                if (en) en.style.display = mode === 'zh' ? 'none' : 'block';
+            });
+        }
+
+        // ===== SETTINGS =====
+        function showSettings() {
+            document.getElementById('aiProvider').value = apiConfig.provider;
+            document.getElementById('apiBase').value = apiConfig.base_url;
+            document.getElementById('apiKey').value = apiConfig.api_key;
+            document.getElementById('apiModel').value = apiConfig.model;
+            document.getElementById('settingsModal').classList.add('active');
+        }
+
+        function closeSettings() {
+            document.getElementById('settingsModal').classList.remove('active');
+        }
+
+        function saveSettings() {
+            apiConfig.provider = document.getElementById('aiProvider').value;
+            apiConfig.base_url = document.getElementById('apiBase').value;
+            apiConfig.api_key = document.getElementById('apiKey').value;
+            apiConfig.model = document.getElementById('apiModel').value;
+            
+            localStorage.setItem('api_key', apiConfig.api_key);
+            
+            closeSettings();
+            
+            const statusEl = document.querySelector('.api-status');
+            if (statusEl) {
+                statusEl.className = 'api-status ' + (apiConfig.api_key ? 'connected' : 'disconnected');
+                statusEl.textContent = apiConfig.api_key ? 'API Connected' : 'API Not Configured';
+            }
+        }
+    </script>
+</body>
+</html>

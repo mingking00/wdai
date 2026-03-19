@@ -1,0 +1,257 @@
+[
+  {
+    "id": "18681bad-13ee-41fd-8031-d166b755b44f",
+    "fact": "运行次数** → 取消12次/天上限",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604084",
+    "last_accessed": "2026-03-19T22:26:46.604095",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "87ae6e86-c41e-4187-8993-cd5adbdd3be4",
+    "fact": "，只要产出可15分钟一次",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604107",
+    "last_accessed": "2026-03-19T22:26:46.604109",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "bd17dc0a-0f84-4d51-beda-42ab2c1c3ead",
+    "fact": "次数 → 限制无效**: 不限制运行次数，限制的是\"无效空转\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604117",
+    "last_accessed": "2026-03-19T22:26:46.604118",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "d6082202-70e8-403d-b2db-850c871d5e9b",
+    "fact": "风险控制**: 不是什么都自动实施",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604135",
+    "last_accessed": "2026-03-19T22:26:46.604136",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "b77eefd1-8e5e-47b4-950b-38e71d4d4d01",
+    "fact": "修改** → 返回调整，重新评估",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604149",
+    "last_accessed": "2026-03-19T22:26:46.604150",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "278431ef-1bc1-42be-99c8-5cc86b98fd36",
+    "fact": "SatisfactionSolver** - 约束满足求解",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.604534",
+    "last_accessed": "2026-03-19T22:26:46.604536",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "192a812b-526a-4c51-b9f4-6960f13f638d",
+    "fact": "Planner-Executor 分离模式",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.605123",
+    "last_accessed": "2026-03-19T22:26:46.605124",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "8b2fae97-f98e-48e9-885b-11f1d67cbeb5",
+    "fact": "简单时间间隔检查，未应用CS162调度原语",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.605132",
+    "last_accessed": "2026-03-19T22:26:46.605133",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e7e399c6-dc31-4ade-8f5a-7682d3477e70",
+    "fact": "| 无限增长 | LRU淘汰 | 固定上限1000条 |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.605148",
+    "last_accessed": "2026-03-19T22:26:46.605149",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "2787f9b0-0ae2-4df4-9046-a8735271e771",
+    "fact": "项到evolution_todo",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.606030",
+    "last_accessed": "2026-03-19T22:26:46.606032",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "f1424637-84b2-49d3-ad6a-de91ec062b80",
+    "fact": ".json     # 待实施任务",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.606047",
+    "last_accessed": "2026-03-19T22:26:46.606048",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "157981e4-b451-467d-ad0f-14e61cc2352c",
+    "fact": "风险控制**: 不是什么都自动实施",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.606064",
+    "last_accessed": "2026-03-19T22:26:46.606065",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "7110ce3b-d81c-401b-a9d0-c3f75c1f859f",
+    "fact": "清单，生成决策清单，**暂停等待**",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.606095",
+    "last_accessed": "2026-03-19T22:26:46.606096",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "043fe426-23e8-4168-a956-e1d37e499314",
+    "fact": "修改** → 返回调整，重新评估",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.606102",
+    "last_accessed": "2026-03-19T22:26:46.606103",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "f745089a-842d-4408-92d0-c3656d95f201",
+    "fact": "→ 用户决策 → 实施",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.606109",
+    "last_accessed": "2026-03-19T22:26:46.606110",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "a0c164ed-45f7-4b27-a2db-99c3648a4ec3",
+    "fact": "清单 | 用户决策管理 | ✅ |",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.606121",
+    "last_accessed": "2026-03-19T22:26:46.606122",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "6447dea2-c463-43d2-9746-e89daf72c012",
+    "fact": "Management*",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T22:26:46.606127",
+    "last_accessed": "2026-03-19T22:26:46.606128",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "history": [
+    {
+      "id": "INT-1773334515381",
+      "timestamp": "2026-03-13T00:55:15.381702",
+      "original_query": "股票明天会涨吗？",
+      "my_response": "【这是AI的回答】: 关于'股票明天会涨吗？'，我认为...",
+      "feedback_type": "correction",
+      "user_feedback": "不对，我是问长期趋势，不是预测明天",
+      "correction_applied": true,
+      "lesson_extracted": "在回答'股票明天会涨吗？...'类问题时，我应该说'不对，我是问长期趋势，不是预测明天...'而不是'【这是AI的回答】: 关于'股票明天会涨吗？'，我认为......'"
+    },
+    {
+      "id": "INT-1773334631918",
+      "timestamp": "2026-03-13T00:57:11.918617",
+      "original_query": "Python的列表推导式怎么用？",
+      "my_response": "Python列表推导式的语法是 [x for x in iterable]，可以快速生成列表。",
+      "feedback_type": "positive",
+      "user_feedback": "对的，谢谢",
+      "correction_applied": false,
+      "lesson_extracted": "回答'Python的列表推导式怎么用？...'的方式是正确的，值得保持"
+    },
+    {
+      "id": "INT-1773334631918",
+      "timestamp": "2026-03-13T00:57:11.918845",
+      "original_query": "明天股市会涨吗？",
+      "my_response": "根据当前趋势，明天股市可能会上涨。",
+      "feedback_type": "correction",
+      "user_feedback": "不对，我是问分析方法，不是预测",
+      "correction_applied": true,
+      "lesson_extracted": "在回答'明天股市会涨吗？...'类问题时，我应该说'不对，我是问分析方法，不是预测...'而不是'根据当前趋势，明天股市可能会上涨。...'"
+    },
+    {
+      "id": "INT-1773334631919",
+      "timestamp": "2026-03-13T00:57:11.919249",
+      "original_query": "解释一下量子纠缠",
+      "my_response": "量子纠缠是量子力学现象，两个粒子可以即时关联...",
+      "feedback_type": "clarification",
+      "user_feedback": "没理解，能更简单点吗？",
+      "correction_applied": true,
+      "lesson_extracted": "回答'解释一下量子纠缠...'时需要更清晰的解释，用户没有理解"
+    }
+  ],
+  "patterns": {
+    "general": {
+      "correct_approach": "在回答'明天股市会涨吗？...'类问题时，我应该说'不对，我是问分析方法，不是预测...'而不是'根据当前趋势，明天股市可能会上涨。...'",
+      "last_corrected": "2026-03-13T00:57:11.918845"
+    }
+  },
+  "correction_count": 3,
+  "last_updated": "2026-03-13T00:57:11.919270"
+}

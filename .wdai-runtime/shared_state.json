@@ -1,0 +1,110 @@
+{
+  "agent:coordinator": {
+    "agent_id": "coordinator",
+    "agent_type": "coordinator",
+    "status": "stopped",
+    "current_task": null,
+    "memory_usage": 0.0,
+    "last_heartbeat": 1773682434.5977352,
+    "capabilities": []
+  },
+  "agent:coder": {
+    "agent_id": "coder",
+    "agent_type": "coder",
+    "status": "stopped",
+    "current_task": null,
+    "memory_usage": 0.0,
+    "last_heartbeat": 1773682434.5977485,
+    "capabilities": []
+  },
+  "agent:reflector": {
+    "agent_id": "reflector",
+    "agent_type": "reflector",
+    "status": "stopped",
+    "current_task": null,
+    "memory_usage": 0.0,
+    "last_heartbeat": 1773682434.597763,
+    "capabilities": []
+  },
+  "agent:evolution": {
+    "agent_id": "evolution",
+    "agent_type": "evolution",
+    "status": "stopped",
+    "current_task": null,
+    "memory_usage": 0.0,
+    "last_heartbeat": 1773682434.5977695,
+    "capabilities": []
+  },
+  "reflections": [
+    {
+      "timestamp": 1773682000.2243898,
+      "task": {},
+      "insights": []
+    },
+    {
+      "timestamp": 1773682032.0181286,
+      "task": {},
+      "insights": []
+    },
+    {
+      "timestamp": 1773682406.179247,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682410.3822422,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682414.5969865,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682415.8868794,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682416.8879912,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682438.0008204,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682441.0031877,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682444.0053165,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682445.0063481,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    },
+    {
+      "timestamp": 1773682446.0113556,
+      "task": {},
+      "locked_method": null,
+      "insights": []
+    }
+  ]
+}

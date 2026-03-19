@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-03-17T10:16:20.455114",
+  "agents": {
+    "coordinator": {
+      "role": "\u6307\u6325\u5bb6",
+      "success_rate": 0.0,
+      "tasks_completed": 0
+    },
+    "coder": {
+      "role": "\u7f16\u7801\u5b9e\u73b0",
+      "success_rate": 0.0,
+      "tasks_completed": 0
+    },
+    "reviewer": {
+      "role": "\u5ba1\u67e5\u9a8c\u8bc1",
+      "success_rate": 0.0,
+      "tasks_completed": 0
+    },
+    "reflector": {
+      "role": "\u53cd\u601d\u5206\u6790",
+      "success_rate": 0.0,
+      "tasks_completed": 0
+    },
+    "evolution": {
+      "role": "\u7cfb\u7edf\u8fdb\u5316",
+      "success_rate": 0.0,
+      "tasks_completed": 0
+    }
+  },
+  "queue_size": 0,
+  "active_tasks": 1,
+  "completed_tasks": 0
+}

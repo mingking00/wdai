@@ -1,0 +1,17 @@
+{
+  "total_queries": 6,
+  "declarations": 3,
+  "by_level": {
+    "critical": 2,
+    "high": 1,
+    "medium": 0,
+    "low": 3
+  },
+  "by_type": {
+    "domain_medical": 1,
+    "none": 2,
+    "time_sensitive": 1,
+    "personal_emotional": 1,
+    "domain_financial": 1
+  }
+}

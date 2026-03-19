@@ -1,0 +1,130 @@
+[
+  {
+    "paper_title": "PMAx: An Agentic Framework for AI-Driven Process Mining",
+    "paper_url": "https://arxiv.org/abs/2603.15351",
+    "analyzed_at": "2026-03-19T18:39:35.846428",
+    "core_problem": "流程挖掘需要大量人工分析，效率低",
+    "key_insight": "AI Agent可以自动化流程发现和分析",
+    "relevance_score": 1.0,
+    "action_priority": "high",
+    "technical_contributions": [
+      {
+        "title": "多代理协作框架",
+        "description": "定义多个专业代理如何协作完成任务",
+        "novelty": "明确的角色分工和协作协议",
+        "impact": "可以应用于复杂任务自动化"
+      },
+      {
+        "title": "可扩展Agent框架",
+        "description": "提供标准化的Agent开发和集成接口",
+        "novelty": "模块化设计，易于扩展",
+        "impact": "降低多代理系统开发门槛"
+      },
+      {
+        "title": "流程自动化",
+        "description": "自动发现和优化业务流程",
+        "novelty": "结合AI和流程挖掘技术",
+        "impact": "提升运营效率"
+      }
+    ],
+    "applicable_techniques": [
+      {
+        "name": "多源内容分析代理分工",
+        "description": "灵感摄取系统可以分为：抓取代理、分析代理、洞察生成代理",
+        "application_scenario": "灵感摄取系统架构优化",
+        "estimated_benefit": "解决当前\"只抓标题不分析\"的问题"
+      }
+    ],
+    "improvement_suggestions": [
+      "[多源内容分析代理分工] 解决当前\"只抓标题不分析\"的问题 (高优先级：解决当前痛点)"
+    ]
+  },
+  {
+    "paper_title": "SynthAgent: A Multi-Agent LLM Framework for Realistic Patient Simulation",
+    "paper_url": "https://arxiv.org/abs/2602.08254",
+    "analyzed_at": "2026-03-19T18:39:40.854701",
+    "core_problem": "单代理系统难以处理复杂任务，需要多代理协作",
+    "key_insight": "通过任务分解和代理协作提升系统能力",
+    "relevance_score": 1.0,
+    "action_priority": "high",
+    "technical_contributions": [
+      {
+        "title": "多代理协作框架",
+        "description": "定义多个专业代理如何协作完成任务",
+        "novelty": "明确的角色分工和协作协议",
+        "impact": "可以应用于复杂任务自动化"
+      },
+      {
+        "title": "可扩展Agent框架",
+        "description": "提供标准化的Agent开发和集成接口",
+        "novelty": "模块化设计，易于扩展",
+        "impact": "降低多代理系统开发门槛"
+      }
+    ],
+    "applicable_techniques": [
+      {
+        "name": "专业代理分工协作",
+        "description": "不同代理负责不同专业领域，通过协作完成复杂任务",
+        "application_scenario": "需要多种技能的复杂任务",
+        "estimated_benefit": "提升系统能力覆盖范围"
+      },
+      {
+        "name": "多源内容分析代理分工",
+        "description": "灵感摄取系统可以分为：抓取代理、分析代理、洞察生成代理",
+        "application_scenario": "灵感摄取系统架构优化",
+        "estimated_benefit": "解决当前\"只抓标题不分析\"的问题"
+      }
+    ],
+    "improvement_suggestions": [
+      "[专业代理分工协作] 提升系统能力覆盖范围",
+      "[多源内容分析代理分工] 解决当前\"只抓标题不分析\"的问题 (高优先级：解决当前痛点)"
+    ]
+  },
+  {
+    "paper_title": "MLE-Ideator: A Dual-Agent Framework for Machine Learning Engineering",
+    "paper_url": "https://arxiv.org/abs/2601.17596",
+    "analyzed_at": "2026-03-19T18:39:45.862016",
+    "core_problem": "ML工程流程繁琐，需要自动化",
+    "key_insight": "双代理框架可以自动规划和执行ML任务",
+    "relevance_score": 0.6,
+    "action_priority": "medium",
+    "technical_contributions": [
+      {
+        "title": "可扩展Agent框架",
+        "description": "提供标准化的Agent开发和集成接口",
+        "novelty": "模块化设计，易于扩展",
+        "impact": "降低多代理系统开发门槛"
+      }
+    ],
+    "applicable_techniques": [
+      {
+        "name": "任务分解与规划-执行分离",
+        "description": "将任务分为规划阶段和执行阶段，由不同组件负责",
+        "application_scenario": "复杂多步骤任务",
+        "estimated_benefit": "提升任务完成率，减少错误"
+      }
+    ],
+    "improvement_suggestions": [
+      "[任务分解与规划-执行分离] 提升任务完成率，减少错误"
+    ]
+  },
+  {
+    "paper_title": "The Controllability Trap: A Governance Framework for Military AI Agents",
+    "paper_url": "https://arxiv.org/abs/2603.03515",
+    "analyzed_at": "2026-03-19T18:39:50.868957",
+    "core_problem": "AI Agent需要安全治理框架",
+    "key_insight": "形式化方法可以约束Agent行为",
+    "relevance_score": 0.5,
+    "action_priority": "low",
+    "technical_contributions": [
+      {
+        "title": "可扩展Agent框架",
+        "description": "提供标准化的Agent开发和集成接口",
+        "novelty": "模块化设计，易于扩展",
+        "impact": "降低多代理系统开发门槛"
+      }
+    ],
+    "applicable_techniques": [],
+    "improvement_suggestions": []
+  }
+]

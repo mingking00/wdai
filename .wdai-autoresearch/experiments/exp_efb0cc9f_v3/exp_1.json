@@ -1,0 +1,11 @@
+{
+  "id": "efb0cc9f_v3_exp1",
+  "metrics": {
+    "sequential_time": 0.2506,
+    "parallel_time": 0.0502,
+    "speedup": 4.99,
+    "success": 1
+  },
+  "success": true,
+  "version": "v3.0"
+}

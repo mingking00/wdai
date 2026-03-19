@@ -1,0 +1,9 @@
+rules:
+- id: python-eval-exec
+  message: 使用 eval/exec 执行动态代码，存在代码注入风险
+  pattern: (?:eval|exec)\s*\(
+  severity: critical
+- id: python-os-chmod
+  message: 设置文件权限为 777，过于宽松
+  pattern: os\.chmod\s*\([^)]*0o777|os\.chmod\s*\([^)]*stat\.S_IRWXU
+  severity: medium

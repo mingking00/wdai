@@ -1,0 +1,21 @@
+{
+  "id": "innovation-tracker",
+  "name": "Innovation Tracker Plugin",
+  "description": "自动追踪工具调用失败，实现3次失败锁定机制，强制创新换路",
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "stateFile": {
+        "type": "string",
+        "description": "失败状态文件路径",
+        "default": ".claw-status/innovation_state.json"
+      },
+      "maxFailures": {
+        "type": "number",
+        "description": "触发锁定的最大失败次数",
+        "default": 3
+      }
+    }
+  }
+}

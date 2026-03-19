@@ -1,0 +1,15 @@
+{
+  "tips": [
+    {
+      "tip_id": "tip_31f2c6e0",
+      "content": "⏳ 限流错误 - 添加重试逻辑或降低请求频率",
+      "source_task": "调用GitHub API获取仓库信息",
+      "source_error": "API rate limit exceeded. Please try again later.",
+      "context": "任务类型: 网络",
+      "created_at": "2026-03-20T01:57:43.077317",
+      "usage_count": 1,
+      "effectiveness": 0.6
+    }
+  ],
+  "updated_at": "2026-03-20T01:57:43.078413"
+}

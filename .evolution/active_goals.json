@@ -1,6 +1,6 @@
 [
   {
-    "goal_id": "goal_1773684887_w1",
+    "goal_id": "goal_1773867609_w1",
     "dimension": "Dimension.WISDOM",
     "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
     "current_state": 0.75,
@@ -10,27 +10,27 @@
     },
     "priority": 1,
     "status": "pending",
-    "created_at": 1773684887.2369623,
+    "created_at": 1773867609.6871343,
     "started_at": null,
     "completed_at": null
   },
   {
-    "goal_id": "goal_1773684887_c1",
+    "goal_id": "goal_1773867609_c1",
     "dimension": "Dimension.COMPREHENSIVENESS",
     "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
-    "current_state": 0.24,
+    "current_state": 0.26,
     "target_state": 0.85,
     "success_metrics": {
       "tool_coverage": 0.85
     },
     "priority": 2,
     "status": "pending",
-    "created_at": 1773684887.236966,
+    "created_at": 1773867609.6871374,
     "started_at": null,
     "completed_at": null
   },
   {
-    "goal_id": "goal_1773684887_e1",
+    "goal_id": "goal_1773867609_e1",
     "dimension": "Dimension.EFFICIENCY",
     "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
     "current_state": 0.2,
@@ -40,7 +40,7 @@
     },
     "priority": 3,
     "status": "pending",
-    "created_at": 1773684887.2369685,
+    "created_at": 1773867609.6871393,
     "started_at": null,
     "completed_at": null
   }

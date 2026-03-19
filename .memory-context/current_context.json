@@ -1,0 +1,43 @@
+{
+  "session_id": "20260312_155354",
+  "timestamp": "2026-03-12T15:53:54.742624",
+  "entries": [
+    {
+      "id": "ed632a8a",
+      "content": "用户需要生成实用的AI Agent Skills",
+      "source": "conversation",
+      "importance": 8.0,
+      "tags": [
+        "task",
+        "agent",
+        "skill"
+      ],
+      "timestamp": "2026-03-12T12:51:49.125552",
+      "session_id": "20260312_125149",
+      "access_count": 0,
+      "last_accessed": "2026-03-12T12:51:49.125552"
+    },
+    {
+      "id": "12ef254b",
+      "content": "测试条目: CLI-Anything架构研究",
+      "source": "conversation",
+      "importance": 8.0,
+      "tags": [],
+      "timestamp": "2026-03-12T15:53:39.464419",
+      "session_id": "20260312_155339",
+      "access_count": 0,
+      "last_accessed": "2026-03-12T15:53:39.464419"
+    },
+    {
+      "id": "8659a6a2",
+      "content": "测试条目: CLI-Anything架构研究",
+      "source": "conversation",
+      "importance": 8.0,
+      "tags": [],
+      "timestamp": "2026-03-12T15:53:54.742404",
+      "session_id": "20260312_155354",
+      "access_count": 0,
+      "last_accessed": "2026-03-12T15:53:54.742404"
+    }
+  ]
+}

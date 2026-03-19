@@ -1,0 +1,9 @@
+rules:
+- id: python-ssrf-requests
+  message: requests 使用用户输入 URL，存在 SSRF 风险
+  pattern: requests\.(?:get|post)\s*\(\s*(?:user|input|request|params)
+  severity: high
+- id: python-ssrf-urllib
+  message: urllib 使用用户输入 URL，存在 SSRF 风险
+  pattern: urllib\.(?:request|urlopen)\s*\([^)]*(?:user|input|request)
+  severity: high

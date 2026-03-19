@@ -1,0 +1,107 @@
+[
+  {
+    "id": "e31543b7-a04a-42b0-aaea-deffa27b0720",
+    "fact": "失误** - yt-dlp被412拦截3次才换路，违反\"3次失败强制换路\"原则",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163733",
+    "last_accessed": "2026-03-17T03:25:15.163735",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "08558537-1484-4b76-afc0-ca6a4d15fa3d",
+        "f9cdf7c8-8f7b-4ee7-901f-bfe45f6160d5",
+        "f9cdf7c8-8f7b-4ee7-901f-bfe45f6160d5",
+        "08558537-1484-4b76-afc0-ca6a4d15fa3d"
+      ]
+    }
+  },
+  {
+    "id": "eb027054-513e-4656-9c2a-8e1d20df130c",
+    "fact": "/tmp/时系统会警告",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163743",
+    "last_accessed": "2026-03-17T03:25:15.163744",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "2f3f57fb-5d9a-4022-b6bd-8771bfdae2a8",
+        "d79d24a5-896f-4c95-b2a1-85de770d248c",
+        "d79d24a5-896f-4c95-b2a1-85de770d248c",
+        "2f3f57fb-5d9a-4022-b6bd-8771bfdae2a8"
+      ]
+    }
+  },
+  {
+    "id": "9dc655f4-a63d-4fa5-a0a6-b5ecc834d021",
+    "fact": "大脑思考，使用手脚行动，持续进化 |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163753",
+    "last_accessed": "2026-03-17T03:25:15.163754",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3df722ee-7461-480a-9fa6-19e3e90833b9",
+        "f8788d3d-c503-4a7e-87b6-cf71f3e65f5a",
+        "f8788d3d-c503-4a7e-87b6-cf71f3e65f5a",
+        "3df722ee-7461-480a-9fa6-19e3e90833b9"
+      ]
+    }
+  },
+  {
+    "id": "bf88ecdb-0e0e-4725-9b20-cf727fbe9cdb",
+    "fact": "大模型思考，使用skills行动\"",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163759",
+    "last_accessed": "2026-03-17T03:25:15.163760",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "1835efb1-1ba3-40c2-8030-1ff0543df28b",
+        "2251f874-076a-4b9a-934c-f70f2c0afa14",
+        "2251f874-076a-4b9a-934c-f70f2c0afa14",
+        "1835efb1-1ba3-40c2-8030-1ff0543df28b"
+      ]
+    }
+  },
+  {
+    "id": "e5fe58a5-57ae-4b20-9794-5012170ea286",
+    "fact": "锤子、电脑 | 使用read、exec、web_search |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:15.163765",
+    "last_accessed": "2026-03-17T03:25:15.163766",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d379fc6f-adde-4485-bd6e-051bb40228eb",
+        "ccfd0f29-3942-4587-9e81-d9ef16466259",
+        "ccfd0f29-3942-4587-9e81-d9ef16466259",
+        "d379fc6f-adde-4485-bd6e-051bb40228eb"
+      ]
+    }
+  }
+]

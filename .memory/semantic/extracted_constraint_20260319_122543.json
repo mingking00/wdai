@@ -1,0 +1,129 @@
+[
+  {
+    "id": "bf837b1b-c46f-45d3-a4ba-8bffdae9a059",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268860",
+    "last_accessed": "2026-03-19T12:25:43.268871",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "31c97ea1-7606-493e-a791-44d72c4de7c1",
+        "05ec0f49-40f7-47d6-aaa3-b7302e36d0c0",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "05ec0f49-40f7-47d6-aaa3-b7302e36d0c0",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+        "b2a2ed7a-fbb6-42ef-88d9-48c4ee6723f0",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "2b81e658-d059-495a-84bf-361e9e98568f",
+        "31c97ea1-7606-493e-a791-44d72c4de7c1",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "2d6a96fc-9d5d-4d46-848f-db67945bf92e",
+        "8f6a1069-d1ba-477b-b4d8-11968ee30dcb",
+        "8444bd9a-1def-4212-9819-b3ab366dedbb",
+        "cb2d6992-e5f8-4089-8b2e-df62ffe67c10"
+      ]
+    }
+  },
+  {
+    "id": "aef465b0-234a-4551-81fb-a1807f7f7d9f",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268883",
+    "last_accessed": "2026-03-19T12:25:43.268885",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "5dff95f8-707e-4f81-a9ce-13f06f3cd19a",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "5dff95f8-707e-4f81-a9ce-13f06f3cd19a",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "87cef969-8f72-4485-aa92-99413fc65284",
+        "b98faecf-0c63-4376-806e-9ebde042743f",
+        "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d"
+      ]
+    }
+  },
+  {
+    "id": "484c4f4a-3f15-4428-8394-43eb3d305ecc",
+    "fact": "| `extended_constraints",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268901",
+    "last_accessed": "2026-03-19T12:25:43.268902",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "fbb525f4-c69f-47a0-9db8-0a51e3340d61",
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693",
+        "fbb525f4-c69f-47a0-9db8-0a51e3340d61",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "ff5299bd-b702-4926-9d40-51a8a499325d",
+        "8bfa4feb-692d-4c84-922f-5fdb31ef0693"
+      ]
+    }
+  },
+  {
+    "id": "5cbed040-05b2-4e02-8855-7f0dedb9fd2f",
+    "fact": "规则扩展: 代码安全 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268914",
+    "last_accessed": "2026-03-19T12:25:43.268915",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1db1a90-e736-49fb-a902-2fe64b94b653",
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e",
+        "f1db1a90-e736-49fb-a902-2fe64b94b653",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "44614234-9b4d-4b01-84a7-23a7b5ccd5c6",
+        "a4c1e8b4-28b8-4a24-b800-78ece2576f0e"
+      ]
+    }
+  },
+  {
+    "id": "9945bae6-d7c9-4243-a4cb-28b9f0e927c4",
+    "fact": "** (evo-005) |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-19T12:25:43.268930",
+    "last_accessed": "2026-03-19T12:25:43.268931",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "18e64194-4386-4de6-874a-48f861ac9970",
+        "a557eb60-ef04-416d-8254-731ba66e39b8",
+        "18e64194-4386-4de6-874a-48f861ac9970",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "fe934dd1-90f4-4bd3-9b9a-8be537d0149c",
+        "a557eb60-ef04-416d-8254-731ba66e39b8"
+      ]
+    }
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "abcdd3e15cb9",
+    "timestamp": "2026-03-19T18:09:41.858211",
+    "design_id": "test_design_001",
+    "pattern_id": "add_caching",
+    "target_file": "scheduler.py",
+    "changes": [],
+    "risk_score": 30,
+    "deployed": true,
+    "deployed_at": "2026-03-19T18:09:41.858913",
+    "runtime_metrics": {
+      "execution_time_ms": 100.0,
+      "error_rate": 0.01,
+      "throughput": 1000.0,
+      "memory_usage_mb": 50.0
+    },
+    "success": true,
+    "performance_delta": {
+      "execution_time": 9.090909090909092,
+      "throughput": 11.11111111111111
+    },
+    "reliability_delta": {},
+    "attribution": {
+      "modification_id": "abcdd3e15cb9",
+      "analyzed_at": "2026-03-19T18:09:41.858715",
+      "success_factors": [
+        "\u6a21\u5f0f add_caching \u6709\u6548"
+      ],
+      "failure_factors": [],
+      "pattern_effectiveness": 0.8,
+      "risk_accuracy": 0.8
+    },
+    "learned_insights": [
+      "\u6a21\u5f0f 'add_caching' \u5728\u672c\u6b21\u573a\u666f\u4e2d\u8868\u73b0\u826f\u597d",
+      "\u8be5\u6a21\u5f0f\u80fd\u663e\u8457\u63d0\u5347\u541e\u5410\u91cf"
+    ]
+  },
+  {
+    "id": "a1c674184eb5",
+    "timestamp": "2026-03-19T18:16:09.986988",
+    "design_id": "add_run_statistics_001",
+    "pattern_id": "add_monitoring",
+    "target_file": "scheduler.py",
+    "changes": [],
+    "risk_score": 15,
+    "deployed": true,
+    "deployed_at": "2026-03-19T18:16:09.987644",
+    "runtime_metrics": {
+      "execution_time_ms": 100.0,
+      "error_rate": 0.01,
+      "throughput": 1000.0,
+      "memory_usage_mb": 50.0
+    },
+    "success": true,
+    "performance_delta": {
+      "execution_time": 0.0,
+      "throughput": 0.0
+    },
+    "reliability_delta": {},
+    "attribution": {
+      "modification_id": "a1c674184eb5",
+      "analyzed_at": "2026-03-19T18:16:09.987464",
+      "success_factors": [
+        "\u6a21\u5f0f add_monitoring \u6709\u6548"
+      ],
+      "failure_factors": [],
+      "pattern_effectiveness": 0.8,
+      "risk_accuracy": 0.8
+    },
+    "learned_insights": [
+      "\u6a21\u5f0f 'add_monitoring' \u5728\u672c\u6b21\u573a\u666f\u4e2d\u8868\u73b0\u826f\u597d"
+    ]
+  }
+]

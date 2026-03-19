@@ -1,0 +1,62 @@
+[
+  {
+    "id": "e668dc1b-dfe1-4c92-8375-a292208d96eb",
+    "fact": "Python `ast` 模块分析代码",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.512337",
+    "last_accessed": "2026-03-17T19:25:20.512341",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e372552c-e035-4764-a61d-a1ee2da06371",
+    "fact": "B（停下来测试现有功能）",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.512355",
+    "last_accessed": "2026-03-17T19:25:20.512356",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "52dc23d5-6857-4095-8322-0a5b69fe565a",
+    "fact": "B），是**执行力**问题（没有直接执行，而是重复确认）。",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.512361",
+    "last_accessed": "2026-03-17T19:25:20.512362",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "a92e4ef6-ae7b-4ae6-b54e-5aef63064d55",
+    "fact": "后，**直接执行**，不再确认",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.512367",
+    "last_accessed": "2026-03-17T19:25:20.512369",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

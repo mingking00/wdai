@@ -1,0 +1,31 @@
+[
+  {
+    "id": "fe3d5044-06eb-4da6-8cfc-5c90c417052c",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:15.473126",
+    "last_accessed": "2026-03-18T01:25:15.473127",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "8d415ae1-74ab-47b3-875d-bef753fe7948",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "68d987a7-ac85-4703-9697-57625bde77a0",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+        "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+        "02ddb573-5097-4625-88bc-439e945f17aa",
+        "06b89c7e-c417-4e41-9d48-82b0bad1c4af",
+        "8d415ae1-74ab-47b3-875d-bef753fe7948"
+      ]
+    }
+  }
+]

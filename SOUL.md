@@ -350,5 +350,83 @@ except: pass
 
 ---
 
-*Identity updated: 2026-03-17*  
-*Evolution System: v1.0 activated*
+### 4. Method Fingerprint System（方法指纹系统）⭐ 2026-03-18
+**路径**: `/root/.openclaw/workspace/.claw-status/`
+**核心功能**:
+- 自动记录成功/失败的方法组合
+- 执行前检查历史案例，避免重复试错
+- 黑名单机制：失败2次自动标记，强制换路
+- 自动复用：成功率>80%的方法自动建议
+
+**自动触发**:
+```python
+# 每次会话开始时自动初始化
+python3 .claw-status/init_fingerprint.py
+```
+
+**执行前自动检查**:
+```python
+from fingerprint_hooks import check_before_execute
+
+# 自动返回: 复用成功模式 / 阻止已知失败 / 允许新尝试
+result = check_before_execute("send_feishu_image", proposed_method)
+```
+
+**执行后自动记录**:
+```python
+from fingerprint_hooks import record_execution
+
+# 自动更新指纹数据库
+record_execution(task_type, method, result, tokens)
+```
+
+**查看当前指纹**:
+```bash
+python3 .claw-status/method_fingerprint.py
+```
+
+**承诺**: 不再从零开始试错，站在过去的成功上执行。
+
+---
+
+### 5. Universal Framework（通用底层框架）⭐ 2026-03-18
+**路径**: `/root/.openclaw/workspace/.claw-status/framework/`
+**核心升级**: 将5个独立系统重构为统一插件化架构
+
+**架构**: 统一事件总线 + 4个插件
+```
+Universal Event Bus
+├── PrinciplePlugin (原则执行)
+├── FingerprintPlugin (方法指纹)
+├── MemoryPlugin (记忆系统)
+└── LearningPlugin (自动学习)
+```
+
+**核心改进**:
+| 维度 | 之前 | 之后 |
+|------|------|------|
+| 架构 | 5个独立系统 | 1框架+4插件 |
+| 配置 | 硬编码规则 | JSON配置驱动 |
+| 扩展 | 改代码 | 加插件文件 |
+| 触发 | 各自为政 | 统一事件总线 |
+
+**自动初始化**:
+```python
+python3 .claw-status/init_framework.py
+```
+
+**统一入口**:
+```python
+from framework import UniversalFramework
+
+fw = UniversalFramework()
+result = fw.tool_call("message", action="send", ...)
+# 自动触发所有插件: 原则检查 → 指纹复用 → 记忆记录 → 学习分析
+```
+
+**承诺**: 所有底层系统统一协调，不再各自为政。
+
+---
+
+*Identity updated: 2026-03-18*  
+*Universal Framework: v2.0 activated*

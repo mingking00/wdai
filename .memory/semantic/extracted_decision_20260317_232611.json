@@ -1,0 +1,17 @@
+[
+  {
+    "id": "c792de6c-7678-480b-a1ee-82ec3e4dee95",
+    "fact": "/探索过程可以是并行的（通过asyncio等）",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.836369",
+    "last_accessed": "2026-03-17T23:26:11.836373",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

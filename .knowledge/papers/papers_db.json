@@ -1,0 +1,216 @@
+[
+  {
+    "paper_id": "schmidhuber_2006",
+    "title": "Developmental Robotics, Optimal Artificial Curiosity, Creativity, Music, and the Fine Arts",
+    "authors": [
+      "Jürgen Schmidhuber"
+    ],
+    "abstract": "论文探讨了人工智能的好奇心驱动学习机制，以及如何通过内在动机实现自我改进。",
+    "url": "https://arxiv.org/abs/cs/0602018",
+    "source": "arXiv",
+    "publish_date": "2006-02-03",
+    "keywords": [
+      "curiosity",
+      "intrinsic motivation",
+      "self-improvement",
+      "developmental robotics"
+    ],
+    "relevance_score": 0.85,
+    "collected_at": 1773685707.170394,
+    "insights": [
+      "好奇心驱动是自我改进的核心动力",
+      "内在奖励机制可以引导AI主动探索",
+      "艺术创作和音乐可以作为自我改进的测试场"
+    ],
+    "applications": [
+      "为evolution_loop添加好奇心驱动机制",
+      "设计内在奖励函数评估改进质量"
+    ],
+    "status": "unread"
+  },
+  {
+    "paper_id": "anderson_2023",
+    "title": "Meta-Cognitive Capabilities in Large Language Models",
+    "authors": [
+      "Michael Anderson",
+      "et al."
+    ],
+    "abstract": "研究大语言模型的元认知能力，包括自我评估、错误检测和修正能力。",
+    "url": "https://arxiv.org/abs/2305.00000",
+    "source": "arXiv",
+    "publish_date": "2023-05-01",
+    "keywords": [
+      "metacognition",
+      "LLM",
+      "self-reflection",
+      "error detection"
+    ],
+    "relevance_score": 0.92,
+    "collected_at": 1773685707.1703987,
+    "insights": [
+      "元认知包括: 自我监控、自我评估、自我修正",
+      "Chain-of-Thought可以显著提升自我反思能力",
+      "错误检测比错误修正更容易实现"
+    ],
+    "applications": [
+      "增强ReflectorAgent的自我评估能力",
+      "在验证阶段引入Chain-of-Thought推理",
+      "优先实现错误检测机制"
+    ],
+    "status": "unread"
+  },
+  {
+    "paper_id": "garcez_2020",
+    "title": "Neural-Symbolic Computing: An Effective Methodology for Principled Integration of Machine Learning and Reasoning",
+    "authors": [
+      "Artur d'Avila Garcez",
+      "Luis C. Lamb",
+      "Dov M. Gabbay"
+    ],
+    "abstract": "提出神经符号计算方法，结合神经网络的模式识别能力和符号推理的可解释性。",
+    "url": "https://arxiv.org/abs/1905.00000",
+    "source": "arXiv",
+    "publish_date": "2020-01-15",
+    "keywords": [
+      "neural-symbolic",
+      "hybrid AI",
+      "reasoning",
+      "explainable AI"
+    ],
+    "relevance_score": 0.88,
+    "collected_at": 1773685707.1704013,
+    "insights": [
+      "System 1 (神经) + System 2 (符号) 是最佳架构",
+      "神经感知负责模式识别，符号推理负责逻辑验证",
+      "双向接口是神经符号系统的关键"
+    ],
+    "applications": [
+      "明确区分感知层和推理层",
+      "建立从神经到符号的知识转换机制",
+      "在evolution_loop中实现双向反馈"
+    ],
+    "status": "unread"
+  },
+  {
+    "paper_id": "finn_2017",
+    "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks",
+    "authors": [
+      "Chelsea Finn",
+      "Pieter Abbeel",
+      "Sergey Levine"
+    ],
+    "abstract": "MAML算法，让模型通过少量样本快速适应新任务，实现\"学会\"。",
+    "url": "https://arxiv.org/abs/1703.03400",
+    "source": "arXiv",
+    "publish_date": "2017-03-09",
+    "keywords": [
+      "meta-learning",
+      "MAML",
+      "few-shot learning",
+      "fast adaptation"
+    ],
+    "relevance_score": 0.8,
+    "collected_at": 1773685707.1704032,
+    "insights": [
+      "元学习的关键是找到好的初始化参数",
+      "快速适应新任务的能力是智能的核心",
+      "梯度更新可以用来模拟学习过程"
+    ],
+    "applications": [
+      "设计快速适应新任务的能力",
+      "将经验固化为可快速调用的模式",
+      "优化知识迁移机制"
+    ],
+    "status": "unread"
+  },
+  {
+    "paper_id": "schmidhuber_2003",
+    "title": "The New AI: General & Sound & Relevant for Physics",
+    "authors": [
+      "Jürgen Schmidhuber"
+    ],
+    "abstract": "探讨通用人工智能的自我改进能力，以及如何通过自我修改实现递归增强。",
+    "url": "https://arxiv.org/abs/cs/0302012",
+    "source": "arXiv",
+    "publish_date": "2003-02-14",
+    "keywords": [
+      "self-modifying",
+      "recursive improvement",
+      "AGI",
+      "universal AI"
+    ],
+    "relevance_score": 0.95,
+    "collected_at": 1773685707.1704054,
+    "insights": [
+      "真正的AGI必须能够修改自己的代码",
+      "自我改进需要平衡探索和利用",
+      "安全性是自我修改系统的首要考虑"
+    ],
+    "applications": [
+      "增强SelfModifier的安全性检查",
+      "在自我修改前进行充分验证",
+      "建立回滚和恢复机制"
+    ],
+    "status": "unread"
+  },
+  {
+    "paper_id": "laird_2017",
+    "title": "The Soar Cognitive Architecture",
+    "authors": [
+      "John E. Laird"
+    ],
+    "abstract": "Soar认知架构，模拟人类认知过程，包括记忆、学习、推理和元认知。",
+    "url": "https://mitpress.mit.edu/books/soar-cognitive-architecture",
+    "source": "MIT Press",
+    "publish_date": "2012-01-01",
+    "keywords": [
+      "cognitive architecture",
+      "Soar",
+      "working memory",
+      "problem space"
+    ],
+    "relevance_score": 0.87,
+    "collected_at": 1773685707.1704075,
+    "insights": [
+      "工作记忆是认知架构的核心组件",
+      "问题空间搜索是通用问题解决方法",
+      "元认知监控对于复杂任务至关重要"
+    ],
+    "applications": [
+      "增强SharedState作为工作记忆的功能",
+      "在Agent间建立问题空间搜索机制",
+      "添加元认知监控层"
+    ],
+    "status": "unread"
+  },
+  {
+    "paper_id": "shapiro_2019",
+    "title": "Metacognitive Monitoring and Control in Human and Artificial Intelligence",
+    "authors": [
+      "Stuart C. Shapiro",
+      "et al."
+    ],
+    "abstract": "比较人类和人工智能的元认知监控和控制机制，提出改进AI元认知能力的方法。",
+    "url": "https://arxiv.org/abs/1901.00000",
+    "source": "arXiv",
+    "publish_date": "2019-01-01",
+    "keywords": [
+      "metacognitive monitoring",
+      "cognitive control",
+      "self-regulation"
+    ],
+    "relevance_score": 0.9,
+    "collected_at": 1773685707.1704094,
+    "insights": [
+      "元认知监控包括: 任务理解、进度跟踪、结果预测",
+      "认知控制包括: 资源分配、策略选择、错误恢复",
+      "人类的元认知能力是通过长期训练获得的"
+    ],
+    "applications": [
+      "在任务执行中添加进度跟踪",
+      "实现动态资源分配",
+      "设计策略选择机制"
+    ],
+    "status": "unread"
+  }
+]

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClawFlow Research - Cover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a1628;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            overflow: hidden;
+        }
+        
+        .cover {
+            width: 1200px;
+            height: 1600px;
+            position: relative;
+            background: linear-gradient(180deg, #0a1628 0%, #0d1f3a 50%, #0a1628 100%);
+            overflow: hidden;
+        }
+        
+        /* Aurora background effect */
+        .aurora {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 30%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(255, 159, 67, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 70%);
+            filter: blur(60px);
+        }
+        
+        /* Particle field */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(0, 212, 255, 0.6);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); opacity: 0.3; }
+            50% { transform: translate(30px, -50px); opacity: 1; }
+        }
+        
+        /* Central workflow diagram */
+        .workflow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 400px;
+        }
+        
+        .node {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 2px solid #00d4ff;
+            border-radius: 12px;
+            background: rgba(0, 212, 255, 0.1);
+            box-shadow: 
+                0 0 30px rgba(0, 212, 255, 0.5),
+                inset 0 0 20px rgba(0, 212, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: #00d4ff;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .node:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+        .node:nth-child(2) { top: 50%; left: 0; transform: translateY(-50%); }
+        .node:nth-child(3) { top: 50%; right: 0; transform: translateY(-50%); }
+        .node:nth-child(4) { bottom: 0; left: 50%; transform: translateX(-50%); }
+        
+        /* Connection lines with glow */
+        .connection {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+            box-shadow: 0 0 10px #00d4ff;
+        }
+        
+        .conn-1 { 
+            width: 200px; 
+            top: 25%; 
+            left: 20%; 
+            transform: rotate(45deg);
+        }
+        .conn-2 { 
+            width: 200px; 
+            top: 25%; 
+            right: 20%; 
+            transform: rotate(-45deg);
+        }
+        .conn-3 { 
+            width: 200px; 
+            bottom: 25%; 
+            left: 20%; 
+            transform: rotate(-45deg);
+        }
+        .conn-4 { 
+            width: 200px; 
+            bottom: 25%; 
+            right: 20%; 
+            transform: rotate(45deg);
+        }
+        
+        /* Flow particles on lines */
+        .flow-particle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #ff9f43;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #ff9f43;
+            animation: flow 3s infinite linear;
+        }
+        
+        @keyframes flow {
+            0% { transform: translateX(-100px); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateX(100px); opacity: 0; }
+        }
+        
+        /* Title */
+        .title {
+            position: absolute;
+            bottom: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        
+        .title h1 {
+            font-size: 120px;
+            font-weight: 900;
+            letter-spacing: 20px;
+            color: #f1faee;
+            text-transform: uppercase;
+            text-shadow: 
+                0 0 20px rgba(0, 212, 255, 0.5),
+                0 0 40px rgba(0, 212, 255, 0.3),
+                0 0 80px rgba(0, 212, 255, 0.1);
+            background: linear-gradient(180deg, #f1faee 0%, #a8dadc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            color: #a8dadc;
+            letter-spacing: 8px;
+            margin-top: 20px;
+            opacity: 0.8;
+            text-transform: uppercase;
+        }
+        
+        /* Metadata */
+        .meta {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #6b8a9a;
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+        
+        /* Geometric accent */
+        .accent {
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            width: 150px;
+            height: 150px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            transform: rotate(45deg);
+        }
+        
+        .accent::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 1px solid rgba(255, 159, 67, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div class="aurora"></div>
+        
+        <div class="particles">
+            <div class="particle" style="top: 10%; left: 15%; animation-delay: 0s;"></div>
+            <div class="particle" style="top: 20%; left: 80%; animation-delay: 2s;"></div>
+            <div class="particle" style="top: 40%; left: 25%; animation-delay: 4s;"></div>
+            <div class="particle" style="top: 60%; left: 70%; animation-delay: 1s;"></div>
+            <div class="particle" style="top: 80%; left: 40%; animation-delay: 3s;"></div>
+            <div class="particle" style="top: 30%; left: 60%; animation-delay: 5s;"></div>
+            <div class="particle" style="top: 70%; left: 10%; animation-delay: 2.5s;"></div>
+            <div class="particle" style="top: 50%; left: 90%; animation-delay: 1.5s;"></div>
+        </div>
+        
+        <div class="accent"></div>
+        
+        <div class="workflow">
+            <div class="connection conn-1"></div>
+            <div class="connection conn-2"></div>
+            <div class="connection conn-3"></div>
+            <div class="connection conn-4"></div>
+            
+            <div class="node">Search</div>
+            <div class="node">Analyze</div>
+            <div class="node">Report</div>
+            <div class="node">Output</div>
+            
+            <div class="flow-particle" style="top: 25%; left: 30%;"></div>
+            <div class="flow-particle" style="top: 25%; left: 60%; animation-delay: 1s;"></div>
+            <div class="flow-particle" style="top: 70%; left: 30%; animation-delay: 0.5s;"></div>
+            <div class="flow-particle" style="top: 70%; left: 60%; animation-delay: 1.5s;"></div>
+        </div>
+        
+        <div class="title">
+            <h1>CLAWFLOW</h1>
+            <div class="subtitle">Research Pipeline</div>
+        </div>
+        
+        <div class="meta">
+            Automated Research & Analysis System
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/root/.openclaw/workspace"],
+      "description": "安全的文件系统访问"
+    },
+    "sqlite": {
+      "command": "python3",
+      "args": ["-m", "sqlite_mcp", "--db-path", "/root/.openclaw/workspace/.mcp-servers/data.db"],
+      "description": "SQLite数据库操作(73+工具)"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"],
+      "description": "浏览器自动化测试"
+    },
+    "chroma": {
+      "command": "python3",
+      "args": ["-m", "chroma_mcp.server", "--data-dir", "/root/.openclaw/workspace/.chroma"],
+      "description": "向量数据库/RAG"
+    },
+    "obsidian": {
+      "command": "npx",
+      "args": ["-y", "mcp-obsidian", "--vault-path", "/root/.openclaw/workspace/notes"],
+      "env": {"OBSIDIAN_API_KEY": "${OBSIDIAN_API_KEY}"},
+      "description": "Obsidian知识库集成"
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {"NOTION_API_TOKEN": "${NOTION_TOKEN}"},
+      "description": "Notion工作空间管理"
+    }
+  },
+  "note": "GitHub和Docker MCP需要额外配置Token/Docker环境",
+  "pending": ["github", "docker", "pymupdf", "csv-excel"]
+}

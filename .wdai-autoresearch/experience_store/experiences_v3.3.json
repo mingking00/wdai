@@ -1,0 +1,171 @@
+[
+  {
+    "id": "task001",
+    "timestamp": "2026-03-17T13:04:06.184002",
+    "topic": "Python asyncio并发性能优化",
+    "hypothesis": "asyncio可以提高I/O密集型任务性能",
+    "queries": [
+      {
+        "query": "Python asyncio并发性能优化 asyncio可以提高I/O密集型任务性能 validation",
+        "dimension": "validation",
+        "priority": 0.95,
+        "source": "new"
+      },
+      {
+        "query": "Python asyncio并发性能优化 2024 latest",
+        "dimension": "timeliness",
+        "priority": 0.9,
+        "source": "new"
+      },
+      {
+        "query": "Python asyncio并发性能优化 alternatives comparison",
+        "dimension": "curiosity",
+        "priority": 0.7,
+        "source": "new"
+      }
+    ],
+    "dimensions": [
+      "validation",
+      "timeliness",
+      "curiosity"
+    ],
+    "successful_results": 6,
+    "effectiveness_score": 0.84
+  },
+  {
+    "id": "task002",
+    "timestamp": "2026-03-17T13:04:06.184430",
+    "topic": "Python threading并发性能优化",
+    "hypothesis": "threading可以提高CPU密集型任务性能",
+    "queries": [
+      {
+        "query": "Python threading并发性能优化 threading可以提高CPU密集型任务性能 validation",
+        "dimension": "validation",
+        "priority": 0.95,
+        "source": "new"
+      },
+      {
+        "query": "Python threading并发性能优化 2024 latest",
+        "dimension": "timeliness",
+        "priority": 0.9,
+        "source": "new"
+      },
+      {
+        "query": "Python threading并发性能优化 alternatives comparison",
+        "dimension": "curiosity",
+        "priority": 0.63,
+        "source": "reused",
+        "source_experience": "task001"
+      }
+    ],
+    "dimensions": [
+      "validation",
+      "timeliness",
+      "curiosity"
+    ],
+    "successful_results": 6,
+    "effectiveness_score": 0.84
+  },
+  {
+    "id": "90955ec3",
+    "timestamp": "2026-03-17T13:22:29.869314",
+    "topic": "Python asyncio并发性能优化",
+    "hypothesis": "asyncio.gather可以比顺序执行提高3倍以上速度",
+    "queries": [
+      {
+        "query": "Python asyncio并发性能优化 asyncio.gather可以比顺序执行提高3倍以上速度 validation",
+        "dimension": "validation",
+        "priority": 0.95,
+        "source": "new"
+      },
+      {
+        "query": "Python asyncio并发性能优化 2024 latest",
+        "dimension": "timeliness",
+        "priority": 0.9,
+        "source": "new"
+      },
+      {
+        "query": "Python asyncio并发性能优化 alternatives comparison",
+        "dimension": "curiosity",
+        "priority": 0.63,
+        "source": "reused",
+        "source_experience": "task001"
+      }
+    ],
+    "dimensions": [
+      "validation",
+      "timeliness",
+      "curiosity"
+    ],
+    "successful_results": 6,
+    "effectiveness_score": 0.84
+  },
+  {
+    "id": "063a27ba",
+    "timestamp": "2026-03-17T13:22:45.555926",
+    "topic": "Python asyncio并发性能优化",
+    "hypothesis": "asyncio.gather可以比顺序执行提高3倍以上速度",
+    "queries": [
+      {
+        "query": "Python asyncio并发性能优化 asyncio.gather可以比顺序执行提高3倍以上速度 validation",
+        "dimension": "validation",
+        "priority": 0.95,
+        "source": "new"
+      },
+      {
+        "query": "Python asyncio并发性能优化 2024 latest",
+        "dimension": "timeliness",
+        "priority": 0.9,
+        "source": "new"
+      },
+      {
+        "query": "Python asyncio并发性能优化 alternatives comparison",
+        "dimension": "curiosity",
+        "priority": 0.63,
+        "source": "reused",
+        "source_experience": "task001"
+      }
+    ],
+    "dimensions": [
+      "validation",
+      "timeliness",
+      "curiosity"
+    ],
+    "successful_results": 6,
+    "effectiveness_score": 0.84
+  },
+  {
+    "id": "3450e782",
+    "timestamp": "2026-03-17T14:00:36.018938",
+    "topic": "Python asyncio并发性能优化",
+    "hypothesis": "asyncio.gather可以比顺序执行提高3倍以上速度",
+    "queries": [
+      {
+        "query": "Python asyncio并发性能优化 asyncio.gather可以比顺序执行提高3倍以上速度 validation",
+        "dimension": "validation",
+        "priority": 0.95,
+        "source": "new"
+      },
+      {
+        "query": "Python asyncio并发性能优化 2024 latest",
+        "dimension": "timeliness",
+        "priority": 0.9,
+        "source": "new"
+      },
+      {
+        "query": "Python asyncio并发性能优化 alternatives comparison",
+        "dimension": "curiosity",
+        "priority": 0.63,
+        "source": "reused",
+        "source_experience": "task001"
+      }
+    ],
+    "dimensions": [
+      "validation",
+      "timeliness",
+      "curiosity"
+    ],
+    "successful_results": 6,
+    "effectiveness_score": 0.84
+  }
+]

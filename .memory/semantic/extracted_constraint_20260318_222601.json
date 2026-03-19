@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cb2d6992-e5f8-4089-8b2e-df62ffe67c10",
+    "fact": "精简优化结构设计进而减少token！\"",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T22:26:01.452256",
+    "last_accessed": "2026-03-18T22:26:01.452270",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "d6e5006e-d927-4ae2-affe-ff1e2d1c4c1d",
+    "fact": "规则扩展：代码安全与性能 | 8k |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T22:26:01.452283",
+    "last_accessed": "2026-03-18T22:26:01.452284",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

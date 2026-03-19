@@ -50,5 +50,693 @@
       "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 565) (<unknown>, line 565)",
       "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260317_021447.py"
     }
+  },
+  {
+    "timestamp": 1773746146.0334408,
+    "goal_id": "goal_1773746146_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260317_191546.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773746146.0347877,
+    "goal_id": "goal_1773746146_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773746146.0397797,
+    "goal_id": "goal_1773746146_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773813845.5195515,
+    "goal_id": "goal_1773813845_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260318_140405.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773813845.5211115,
+    "goal_id": "goal_1773813845_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773813845.5244136,
+    "goal_id": "goal_1773813845_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773821059.7397964,
+    "goal_id": "goal_1773821059_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260318_160419.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773821059.741492,
+    "goal_id": "goal_1773821059_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773821059.7464197,
+    "goal_id": "goal_1773821059_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773828247.5157125,
+    "goal_id": "goal_1773828247_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260318_180407.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773828247.5169492,
+    "goal_id": "goal_1773828247_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773828247.5205717,
+    "goal_id": "goal_1773828247_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773831610.670426,
+    "goal_id": "goal_1773831610_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260318_190010.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773831610.6717758,
+    "goal_id": "goal_1773831610_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773831610.675427,
+    "goal_id": "goal_1773831610_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773835387.826178,
+    "goal_id": "goal_1773835387_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260318_200307.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773835387.8276737,
+    "goal_id": "goal_1773835387_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773835387.8314548,
+    "goal_id": "goal_1773835387_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773842645.366191,
+    "goal_id": "goal_1773842645_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260318_220405.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773842645.36787,
+    "goal_id": "goal_1773842645_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773842645.3720968,
+    "goal_id": "goal_1773842645_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773846125.0855916,
+    "goal_id": "goal_1773846125_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260318_230205.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773846125.0872326,
+    "goal_id": "goal_1773846125_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773846125.091236,
+    "goal_id": "goal_1773846125_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773849798.4127676,
+    "goal_id": "goal_1773849798_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260319_000318.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773849798.414541,
+    "goal_id": "goal_1773849798_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773849798.419034,
+    "goal_id": "goal_1773849798_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773853213.4287002,
+    "goal_id": "goal_1773853213_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260319_010013.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773853213.4307878,
+    "goal_id": "goal_1773853213_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773853213.4350097,
+    "goal_id": "goal_1773853213_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773857001.6213412,
+    "goal_id": "goal_1773857001_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260319_020321.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773857001.6233075,
+    "goal_id": "goal_1773857001_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773857001.628074,
+    "goal_id": "goal_1773857001_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773859291.5723672,
+    "goal_id": "goal_1773859291_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260319_024131.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773859291.5744727,
+    "goal_id": "goal_1773859291_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773859291.578961,
+    "goal_id": "goal_1773859291_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773860650.104946,
+    "goal_id": "goal_1773860650_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260319_030410.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773860650.1081645,
+    "goal_id": "goal_1773860650_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773860650.115679,
+    "goal_id": "goal_1773860650_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773860675.371009,
+    "goal_id": "goal_1773860675_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260319_030435.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773860675.3733277,
+    "goal_id": "goal_1773860675_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773860675.3779612,
+    "goal_id": "goal_1773860675_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773864084.848653,
+    "goal_id": "goal_1773864084_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260319_040124.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773864084.851057,
+    "goal_id": "goal_1773864084_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773864084.8558488,
+    "goal_id": "goal_1773864084_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
+  },
+  {
+    "timestamp": 1773867609.6925735,
+    "goal_id": "goal_1773867609_w1",
+    "dimension": "wisdom",
+    "description": "\u63d0\u5347\u51b3\u7b56\u51c6\u786e\u7387",
+    "success": true,
+    "message": "",
+    "details": {
+      "success": true,
+      "backup": "/root/.openclaw/workspace/.evolution/backups/evolution_loop_20260319_050009.py",
+      "bytes_changed": 81,
+      "risk_level": "high",
+      "security_level": 5,
+      "based_on_paper": "Schmidhuber, 2003 - The New AI"
+    }
+  },
+  {
+    "timestamp": 1773867609.6951146,
+    "goal_id": "goal_1773867609_c1",
+    "dimension": "comprehensive",
+    "description": "\u6269\u5c55\u5de5\u5177\u8986\u76d6\u7387",
+    "success": true,
+    "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+    "details": {
+      "success": true,
+      "message": "\u521b\u5efa\u4e86\u6280\u80fd\u626b\u63cf\u5668: auto_skill_scanner.py",
+      "file_created": "/root/.openclaw/workspace/.evolution/auto_skill_scanner.py"
+    }
+  },
+  {
+    "timestamp": 1773867609.6999512,
+    "goal_id": "goal_1773867609_e1",
+    "dimension": "efficiency",
+    "description": "\u964d\u4f4e\u91cd\u590d\u5de5\u4f5c\u7387",
+    "success": false,
+    "message": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+    "details": {
+      "success": false,
+      "error": "\u8bed\u6cd5\u9519\u8bef: unterminated string literal (detected at line 764) (<unknown>, line 764)",
+      "backup_restored": true,
+      "security_level": 5
+    }
   }
 ]

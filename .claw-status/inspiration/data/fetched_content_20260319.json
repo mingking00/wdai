@@ -1,0 +1,126 @@
+{
+  "fetch_timestamp": "2026-03-19T16:15:00+08:00",
+  "mode": "auto_force_fetch",
+  "source": "alternative_search",
+  "papers": [
+    {
+      "title": "PMAx: An Agentic Framework for AI-Driven Process Mining",
+      "url": "https://arxiv.org/abs/2603.15351",
+      "authors": "Anton Antonov, Humam Kourani, Alessandro Berti, Gyunam Park, Wil M.P. van der Aalst",
+      "category": "cs.AI, cs.MA",
+      "source": "arxiv_blog_20260317",
+      "type": "multiagent_system"
+    },
+    {
+      "title": "SynthAgent: A Multi-Agent LLM Framework for Realistic Patient Simulation",
+      "url": "https://arxiv.org/abs/2602.08254",
+      "authors": "Arman Aghaee, Sepehr Asgarian, Jouhyun Jeon",
+      "category": "cs.AI, cs.IR, cs.MA",
+      "source": "arxiv_blog_20260210",
+      "type": "multiagent_system",
+      "notes": "AAAI 2026 workshop"
+    },
+    {
+      "title": "The Controllability Trap: A Governance Framework for Military AI Agents",
+      "url": "https://arxiv.org/abs/2603.03515",
+      "authors": "Subramanyam Sahoo",
+      "category": "AI Safety, Governance",
+      "source": "arxiv_202603",
+      "type": "ai_safety",
+      "notes": "Accepted at ICLR 2026 Workshop on Agents in the Wild"
+    },
+    {
+      "title": "MLE-Ideator: A Dual-Agent Framework for Machine Learning Engineering",
+      "url": "https://arxiv.org/abs/2601.17596",
+      "authors": "Yunxiang Zhang et al. (AWS AI Labs, University of Michigan)",
+      "category": "cs.CL",
+      "source": "arxiv_blog_20260127",
+      "type": "agent_framework",
+      "notes": "EACL 2026 main conference"
+    },
+    {
+      "title": "LexChronos: An Agentic Framework for Structured Event Timeline Extraction",
+      "url": "https://arxiv.org/abs/2603.01651",
+      "authors": "Anka Chandrahas Tummepalli, Preethu Rose Anish",
+      "category": "cs.CL, cs.AI",
+      "source": "arxiv_blog_20260303",
+      "type": "agent_framework",
+      "notes": "AILaw @ AAAI 2026"
+    },
+    {
+      "title": "Agent Contracts: A Formal Framework for Resource-Bounded Autonomous AI Systems",
+      "url": "https://arxiv.org/abs/2601.08815",
+      "authors": "Q. Ye, J. Tan",
+      "category": "AI Theory",
+      "source": "arxiv_202601",
+      "type": "theory"
+    },
+    {
+      "title": "Agentic Much? Adoption of Coding Agents on GitHub",
+      "url": "https://arxiv.org/abs/2601.18541",
+      "authors": "R. Robbes et al.",
+      "category": "Software Engineering",
+      "source": "arxiv_202601",
+      "type": "empirical_study"
+    }
+  ],
+  "news": [
+    {
+      "title": "Cerebras CS-3 coming to AWS Bedrock",
+      "source": "AI News Briefs March 2026",
+      "date": "2026-03-16",
+      "type": "industry",
+      "summary": "AWS deploying Cerebras CS-3 for fastest AI inference, 5x token throughput boost via disaggregated architecture"
+    },
+    {
+      "title": "Yann LeCun's AMI Labs raises $1.03B for world models",
+      "source": "AI News Briefs March 2026",
+      "date": "2026-03-10",
+      "type": "funding",
+      "summary": "One of the largest seed rounds ever for European company to build world models"
+    },
+    {
+      "title": "Moonshot AI Attention Residuals (AttnRes)",
+      "source": "AI News Briefs March 2026",
+      "date": "2026-03-16",
+      "type": "research",
+      "summary": "New method lets transformer layers look back at earlier layers, 1.25x less compute for same training loss"
+    },
+    {
+      "title": "DeepSeek V4 Released",
+      "source": "Kersai Research",
+      "date": "2026-03-03",
+      "type": "model_release",
+      "summary": "1 trillion parameters, open weights, 1M context window, multimodal, Apache 2.0 license"
+    },
+    {
+      "title": "GPT-5.4 Surpasses Human Performance",
+      "source": "Kersai Research",
+      "date": "2026-03-06",
+      "type": "model_release",
+      "summary": "OSWorld-Verified: 75.0% vs human 72.4%, first AI to exceed human desktop task performance"
+    },
+    {
+      "title": "Google Bayesian Teaching Method",
+      "source": "AI News Briefs March 2026",
+      "date": "2026-03-05",
+      "type": "research",
+      "summary": "Trains LLMs to update beliefs as new information appears, 81% accuracy in recommendation tasks"
+    },
+    {
+      "title": "Andrej Karpathy AutoResearch Open Sourced",
+      "source": "AI News Briefs March 2026",
+      "date": "2026-03-09",
+      "type": "open_source",
+      "summary": "AI-driven research loops on single-GPU LLM training setup for iterative code improvement"
+    }
+  ],
+  "trends": [
+    "Multi-agent frameworks dominating research (PMAx, SynthAgent, MLE-Ideator, LexChronos)",
+    "World models becoming major focus (LeCun's $1B bet)",
+    "Agent governance and safety gaining attention (ICLR 2026 workshop)",
+    "Efficient architectures: Attention Residuals, hybrid models (Olmo Hybrid)",
+    "Coding agents adoption being empirically studied on GitHub",
+    "Long-context race: 1M tokens now standard (GPT-5.4, DeepSeek V4, Claude 4.6)"
+  ]
+}

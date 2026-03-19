@@ -1,0 +1,314 @@
+[
+  {
+    "id": "99acbae1-fb50-40a8-8162-a6c200a401a6",
+    "fact": "5个Agent形成完整循环：Coordinator(协调)、Coder(编码)、Reflector(反思)、Evolution(进化)、Reviewer(审查)",
+    "category": "fact",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894583",
+    "last_accessed": "2026-03-17T06:27:34.894584",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894585",
+      "tags": [
+        "Agent",
+        "架构",
+        "多Agent协作"
+      ]
+    }
+  },
+  {
+    "id": "37c5e938-dbea-440d-a845-ca019f3f4d12",
+    "fact": "MemRL集成完成，提供带Q值的记忆、两阶段检索(语义+Q值重排)、自动学习机制",
+    "category": "fact",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894595",
+    "last_accessed": "2026-03-17T06:27:34.894596",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894596",
+      "tags": [
+        "MemRL",
+        "记忆系统",
+        "Q值",
+        "学习"
+      ]
+    }
+  },
+  {
+    "id": "945cd288-d995-49e2-83a8-7190d0328e77",
+    "fact": "MemRL记忆三元组：(意图嵌入z, 原始经验e, 效用值Q)，任务完成自动更新Q值",
+    "category": "fact",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894600",
+    "last_accessed": "2026-03-17T06:27:34.894601",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894602",
+      "tags": [
+        "MemRL",
+        "记忆结构",
+        "强化学习"
+      ]
+    }
+  },
+  {
+    "id": "587a2479-9592-48a6-abb8-79114bd2dd10",
+    "fact": "B站API可直接获取视频播放地址(无需cookie)，从dash.audio中提取baseUrl",
+    "category": "fact",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894622",
+    "last_accessed": "2026-03-17T06:27:34.894623",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894624",
+      "tags": [
+        "B站",
+        "API",
+        "技术细节"
+      ]
+    }
+  },
+  {
+    "id": "9adbd3f5-3853-44da-b328-c4744e2233c5",
+    "fact": "自主进化执行器v2.0已启动，每7分钟记录状态、每小时执行外循环、每30分钟发现GitHub项目",
+    "category": "fact",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T06:27:34.894628",
+    "last_accessed": "2026-03-17T06:27:34.894629",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894630",
+      "tags": [
+        "自主执行",
+        "进化",
+        "定时任务"
+      ]
+    }
+  },
+  {
+    "id": "c7426a5f-7b73-44dd-b03b-28a67139f86b",
+    "fact": "发现的GitHub项目：TomasHer/prompting-blueprints(Agentic AI进化指南)、dennysjmarquez/artisan-symbolic-dsl-LLMs(LLM符号治理框架)",
+    "category": "fact",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894635",
+    "last_accessed": "2026-03-17T06:27:34.894636",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894637",
+      "tags": [
+        "GitHub",
+        "项目发现",
+        "AI",
+        "Agent"
+      ]
+    }
+  },
+  {
+    "id": "e8ddcac1-fefe-416a-8197-020cfbce7d6d",
+    "fact": "发现的GitHub项目：genejr2025/circe-framework(多Agent协作框架)、YIING99/agent-evolution-protocol(Agent安全自进化框架)",
+    "category": "fact",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T06:27:34.894641",
+    "last_accessed": "2026-03-17T06:27:34.894642",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894643",
+      "tags": [
+        "GitHub",
+        "项目发现",
+        "多Agent",
+        "进化"
+      ]
+    }
+  },
+  {
+    "id": "9d17963a-7bbf-424c-8b26-f21b9e24cf7a",
+    "fact": "github_api方法已被锁定(3次失败)，强制换用git CLI",
+    "category": "fact",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T06:27:34.894671",
+    "last_accessed": "2026-03-17T06:27:34.894672",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T06:27:34.894673",
+      "tags": [
+        "方法锁定",
+        "github",
+        "失败处理",
+        "创新"
+      ]
+    }
+  },
+  {
+    "id": "439e9266-5c28-467f-84c3-000a76c317a5",
+    "fact": "5个Agent形成完整循环：Coordinator(协调)、Coder(编码)、Reflector(反思)、Evolution(进化)、Reviewer(审查)",
+    "category": "fact",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991817",
+    "last_accessed": "2026-03-17T17:25:32.991818",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991819",
+      "tags": [
+        "Agent",
+        "架构",
+        "多Agent协作"
+      ]
+    }
+  },
+  {
+    "id": "7eb604b9-f4c1-4f60-ac3c-b89c426f57d0",
+    "fact": "MemRL集成完成，提供带Q值的记忆、两阶段检索(语义+Q值重排)、自动学习机制",
+    "category": "fact",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991829",
+    "last_accessed": "2026-03-17T17:25:32.991830",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991831",
+      "tags": [
+        "MemRL",
+        "记忆系统",
+        "Q值",
+        "学习"
+      ]
+    }
+  },
+  {
+    "id": "d5a53c4d-d806-48d1-94ab-0fb105b02636",
+    "fact": "MemRL记忆三元组：(意图嵌入z, 原始经验e, 效用值Q)，任务完成自动更新Q值",
+    "category": "fact",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991834",
+    "last_accessed": "2026-03-17T17:25:32.991835",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991836",
+      "tags": [
+        "MemRL",
+        "记忆结构",
+        "强化学习"
+      ]
+    }
+  },
+  {
+    "id": "e3b9ffda-3598-4dfe-a95a-8bbce57b9328",
+    "fact": "B站API可直接获取视频播放地址(无需cookie)，从dash.audio中提取baseUrl",
+    "category": "fact",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991856",
+    "last_accessed": "2026-03-17T17:25:32.991857",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991858",
+      "tags": [
+        "B站",
+        "API",
+        "技术细节"
+      ]
+    }
+  },
+  {
+    "id": "48ec60f6-2f9d-42e0-875c-610839aa09a3",
+    "fact": "自主进化执行器v2.0已启动，每7分钟记录状态、每小时执行外循环、每30分钟发现GitHub项目",
+    "category": "fact",
+    "confidence": 0.9,
+    "created_at": "2026-03-17T17:25:32.991861",
+    "last_accessed": "2026-03-17T17:25:32.991862",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991863",
+      "tags": [
+        "自主执行",
+        "进化",
+        "定时任务"
+      ]
+    }
+  },
+  {
+    "id": "9817ef59-c298-4b14-877f-177db125a594",
+    "fact": "发现的GitHub项目：TomasHer/prompting-blueprints(Agentic AI进化指南)、dennysjmarquez/artisan-symbolic-dsl-LLMs(LLM符号治理框架)",
+    "category": "fact",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991868",
+    "last_accessed": "2026-03-17T17:25:32.991869",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991870",
+      "tags": [
+        "GitHub",
+        "项目发现",
+        "AI",
+        "Agent"
+      ]
+    }
+  },
+  {
+    "id": "13425b28-ffed-414d-afca-187ec83d9e1a",
+    "fact": "发现的GitHub项目：genejr2025/circe-framework(多Agent协作框架)、YIING99/agent-evolution-protocol(Agent安全自进化框架)",
+    "category": "fact",
+    "confidence": 0.85,
+    "created_at": "2026-03-17T17:25:32.991874",
+    "last_accessed": "2026-03-17T17:25:32.991875",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991875",
+      "tags": [
+        "GitHub",
+        "项目发现",
+        "多Agent",
+        "进化"
+      ]
+    }
+  },
+  {
+    "id": "77eaf7c0-6e08-4b13-978b-05c958762449",
+    "fact": "github_api方法已被锁定(3次失败)，强制换用git CLI",
+    "category": "fact",
+    "confidence": 0.95,
+    "created_at": "2026-03-17T17:25:32.991901",
+    "last_accessed": "2026-03-17T17:25:32.991902",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "metadata": {
+      "source": "manual_extraction",
+      "extracted_at": "2026-03-17T17:25:32.991903",
+      "tags": [
+        "方法锁定",
+        "github",
+        "失败处理",
+        "创新"
+      ]
+    }
+  }
+]

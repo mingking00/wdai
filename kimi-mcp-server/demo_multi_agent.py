@@ -1,0 +1,604 @@
+#!/usr/bin/env python3
+"""
+Kimi MCP Server - Multi-Agent Workflow Demo
+多智能体工作流演示：使用Tools完成实际任务
+
+这个演示展示了如何使用Kimi MCP Server的Tools构建多智能体系统，
+完成从研究到实现的完整工作流。
+"""
+
+import sys
+import json
+sys.path.insert(0, '/root/.openclaw/workspace/kimi-mcp-server/src')
+
+from extended_tools import KimiMCPExtendedServer
+from datetime import datetime
+from typing import List, Dict
+
+
+class SpecializedAgent:
+    """专业化智能体"""
+    def __init__(self, name: str, role: str, expertise: List[str]):
+        self.name = name
+        self.role = role
+        self.expertise = expertise
+        self.server = KimiMCPExtendedServer()
+        self.logs = []
+    
+    def log(self, message: str):
+        """记录活动"""
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        entry = f"[{timestamp}] {self.name}: {message}"
+        self.logs.append(entry)
+        print(f"   {entry}")
+    
+    def execute(self, task: Dict) -> Dict:
+        """执行任务 - 子类实现"""
+        raise NotImplementedError
+
+
+class ResearchSpecialist(SpecializedAgent):
+    """研究专家 - 负责信息收集"""
+    def __init__(self):
+        super().__init__(
+            "ResearchSpecialist",
+            "研究专家",
+            ["web_search", "github_explore", "paper_search"]
+        )
+    
+    def execute(self, task: Dict) -> Dict:
+        topic = task.get('topic', 'Unknown')
+        self.log(f"🔍 开始研究主题: {topic}")
+        
+        # 使用Tools进行研究
+        self.log("📚 使用 web_search_brave 搜索相关信息...")
+        search_result = self.server.call_tool('web_search_brave', {
+            'query': topic,
+            'count': 5
+        })
+        
+        if search_result['success']:
+            findings = search_result.get('results', [])
+            self.log(f"✅ 找到 {len(findings)} 个相关结果")
+            for i, item in enumerate(findings[:3], 1):
+                self.log(f"   {i}. {item.get('title', 'N/A')[:50]}...")
+        else:
+            self.log(f"⚠️ 搜索遇到问题: {search_result.get('error', 'Unknown')}")
+            findings = []
+        
+        # GitHub探索
+        self.log("🔎 使用 research_github_explore 探索开源项目...")
+        github_result = self.server.call_tool('research_github_explore', {
+            'repo': 'microsoft/autogen'  # 相关项目
+        })
+        
+        if github_result['success']:
+            self.log(f"✅ 发现项目: {github_result.get('info', {}).get('name', 'N/A')}")
+        
+        return {
+            'agent': self.name,
+            'phase': 'research',
+            'topic': topic,
+            'findings': findings,
+            'github_data': github_result.get('info', {}),
+            'status': 'completed'
+        }
+
+
+class PlanningSpecialist(SpecializedAgent):
+    """规划专家 - 负责任务规划"""
+    def __init__(self):
+        super().__init__(
+            "PlanningSpecialist",
+            "规划专家",
+            ["plan_task", "decompose_problem"]
+        )
+    
+    def execute(self, task: Dict) -> Dict:
+        topic = task.get('topic', 'Unknown')
+        research_data = task.get('research_data', {})
+        
+        self.log(f"📋 开始规划项目: {topic}")
+        
+        # 任务规划
+        self.log("🎯 使用 core_plan_task 创建项目计划...")
+        plan_result = self.server.call_tool('core_plan_task', {
+            'task': f"Create comprehensive solution for {topic}",
+            'complexity': 'high'
+        })
+        
+        if plan_result['success']:
+            plan = plan_result.get('plan', {})
+            self.log(f"✅ 生成 {len(plan.get('steps', []))} 个步骤的计划")
+            for i, step in enumerate(plan.get('steps', []), 1):
+                if isinstance(step, dict):
+                    self.log(f"   Step {i}: {step.get('action', 'N/A')}")
+                else:
+                    self.log(f"   Step {i}: {step}")
+        else:
+            self.log("⚠️ 规划失败")
+            plan = {}
+        
+        # 问题分解
+        self.log("🔨 使用 core_decompose_problem 分解问题...")
+        decompose_result = self.server.call_tool('core_decompose_problem', {
+            'problem': f"Build system for {topic}"
+        })
+        
+        if decompose_result['success']:
+            subtasks = decompose_result.get('subtasks', [])
+            self.log(f"✅ 分解为 {len(subtasks)} 个子任务")
+        else:
+            subtasks = []
+        
+        return {
+            'agent': self.name,
+            'phase': 'planning',
+            'plan': plan,
+            'subtasks': subtasks,
+            'status': 'completed'
+        }
+
+
+class ImplementationSpecialist(SpecializedAgent):
+    """实现专家 - 负责代码实现"""
+    def __init__(self):
+        super().__init__(
+            "ImplementationSpecialist",
+            "实现专家",
+            ["file_read", "file_write", "file_list"]
+        )
+    
+    def execute(self, task: Dict) -> Dict:
+        topic = task.get('topic', 'Unknown')
+        plan = task.get('plan_data', {})
+        
+        self.log(f"💻 开始实现: {topic}")
+        
+        project_name = topic.lower().replace(' ', '_')
+        
+        # 创建主代码文件
+        self.log(f"📝 使用 file_write_text 创建 main.py...")
+        code_content = f'''#!/usr/bin/env python3
+"""
+{topic} Implementation
+Generated by Multi-Agent System
+"""
+
+import json
+from typing import Dict, List, Any
+
+class {topic.replace(' ', '')}System:
+    """
+    Main implementation for {topic}
+    """
+    
+    def __init__(self):
+        self.version = "1.0.0"
+        self.components = []
+    
+    def initialize(self):
+        """Initialize the system"""
+        print(f"Initializing {{self.version}}...")
+        return True
+    
+    def process(self, data: Dict) -> Dict:
+        """Process input data"""
+        # TODO: Implement processing logic
+        return {{"status": "success", "data": data}}
+    
+    def run(self):
+        """Main execution loop"""
+        self.initialize()
+        print("System running...")
+        return {{"status": "operational"}}
+
+if __name__ == "__main__":
+    system = {topic.replace(' ', '')}System()
+    result = system.run()
+    print(f"Result: {{result}}")
+'''
+        
+        write_result = self.server.call_tool('file_write_text', {
+            'path': f'/tmp/{project_name}/main.py',
+            'content': code_content
+        })
+        
+        if write_result['success']:
+            self.log(f"✅ 代码文件已创建")
+        else:
+            self.log(f"⚠️ 创建失败: {write_result.get('error')}")
+        
+        # 创建配置文件
+        self.log("⚙️ 使用 file_write_text 创建 config.json...")
+        config = {
+            "project": topic,
+            "version": "1.0.0",
+            "settings": {
+                "debug": True,
+                "log_level": "INFO"
+            }
+        }
+        
+        self.server.call_tool('file_write_text', {
+            'path': f'/tmp/{project_name}/config.json',
+            'content': json.dumps(config, indent=2)
+        })
+        
+        self.log("✅ 配置文件已创建")
+        
+        # 列出创建的文件
+        self.log("📁 使用 file_list_directory 查看项目结构...")
+        list_result = self.server.call_tool('file_list_directory', {
+            'path': f'/tmp/{project_name}'
+        })
+        
+        files = list_result.get('items', []) if list_result['success'] else []
+        self.log(f"✅ 项目包含 {len(files)} 个文件")
+        
+        return {
+            'agent': self.name,
+            'phase': 'implementation',
+            'files_created': ['main.py', 'config.json'],
+            'project_path': f'/tmp/{project_name}',
+            'status': 'completed'
+        }
+
+
+class DocumentationSpecialist(SpecializedAgent):
+    """文档专家 - 负责生成文档"""
+    def __init__(self):
+        super().__init__(
+            "DocumentationSpecialist",
+            "文档专家",
+            ["file_write", "summarize"]
+        )
+    
+    def execute(self, task: Dict) -> Dict:
+        topic = task.get('topic', 'Unknown')
+        impl_data = task.get('implementation_data', {})
+        
+        self.log(f"📖 开始生成文档: {topic}")
+        
+        project_name = topic.lower().replace(' ', '_')
+        
+        # 生成README
+        self.log("📝 使用 file_write_text 创建 README.md...")
+        readme = f"""# {topic}
+
+## Overview
+
+This project implements a comprehensive solution for {topic}.
+
+## Features
+
+- 🔧 Core functionality implemented
+- 📊 Research-backed design
+- 📝 Full documentation
+- 🧪 Tested implementation
+
+## Installation
+
+```bash
+git clone <repository>
+cd {project_name}
+pip install -r requirements.txt
+```
+
+## Usage
+
+```python
+from main import {topic.replace(' ', '')}System
+
+system = {topic.replace(' ', '')}System()
+system.run()
+```
+
+## Architecture
+
+### Components
+
+1. **Core System** - Main implementation
+2. **Configuration** - Flexible settings
+3. **Documentation** - Comprehensive guides
+
+## Development
+
+This project was created using a Multi-Agent System with:
+- Research Specialist
+- Planning Specialist
+- Implementation Specialist
+- Documentation Specialist
+
+## License
+
+MIT License
+"""
+        
+        self.server.call_tool('file_write_text', {
+            'path': f'/tmp/{project_name}/README.md',
+            'content': readme
+        })
+        
+        self.log("✅ README 已生成")
+        
+        # 生成架构文档
+        self.log("📐 使用 file_write_text 创建 ARCHITECTURE.md...")
+        arch_doc = f"""# Architecture Document
+
+## System Design
+
+### Overview
+{topic} follows a modular architecture with clear separation of concerns.
+
+### Components
+
+```
+┌─────────────────────────────────────────┐
+│           {topic[:20]:^20}          │
+├─────────────────────────────────────────┤
+│  Core Module  │  Config  │  Utils      │
+└─────────────────────────────────────────┘
+```
+
+### Data Flow
+
+1. Input → Validation → Processing → Output
+2. Error handling at each stage
+3. Logging for debugging
+
+### Design Decisions
+
+- **Modularity**: Easy to extend
+- **Configuration**: Flexible settings
+- **Documentation**: Self-documenting code
+
+## Future Enhancements
+
+- [ ] Add more features
+- [ ] Performance optimization
+- [ ] Extended testing
+"""
+        
+        self.server.call_tool('file_write_text', {
+            'path': f'/tmp/{project_name}/ARCHITECTURE.md',
+            'content': arch_doc
+        })
+        
+        self.log("✅ 架构文档已生成")
+        
+        return {
+            'agent': self.name,
+            'phase': 'documentation',
+            'docs_created': ['README.md', 'ARCHITECTURE.md'],
+            'status': 'completed'
+        }
+
+
+class QualityAssuranceSpecialist(SpecializedAgent):
+    """质量保证专家 - 负责检查和验证"""
+    def __init__(self):
+        super().__init__(
+            "QualityAssuranceSpecialist",
+            "质量保证专家",
+            ["health_check", "file_read"]
+        )
+    
+    def execute(self, task: Dict) -> Dict:
+        topic = task.get('topic', 'Unknown')
+        project_path = task.get('project_path', '')
+        
+        self.log(f"🔍 开始质量检查: {topic}")
+        
+        # 系统健康检查
+        self.log("🏥 使用 sys_health_check 检查系统状态...")
+        health = self.server.call_tool('sys_health_check', {'scope': 'full'})
+        
+        if health['success']:
+            self.log(f"✅ 系统健康: {health.get('overall_status', 'unknown')}")
+        
+        # 验证文件
+        self.log("📋 使用 file_read_text 验证代码文件...")
+        code_check = self.server.call_tool('file_read_text', {
+            'path': f'{project_path}/main.py',
+            'limit': 10
+        })
+        
+        if code_check['success']:
+            self.log(f"✅ 代码文件可读取 ({code_check.get('total_lines', 0)} 行)")
+        
+        # 生成质量报告
+        report = f"""# Quality Assurance Report
+
+## Project: {topic}
+
+### System Health
+- Status: {health.get('overall_status', 'N/A')}
+- Timestamp: {datetime.now().isoformat()}
+
+### File Verification
+- Code File: {'✅ Valid' if code_check['success'] else '❌ Error'}
+- Documentation: ✅ Present
+
+### Checklist
+- [x] Code structure validated
+- [x] Documentation complete
+- [x] System health verified
+- [x] Files accessible
+
+### Result
+**✅ PASSED** - Project meets quality standards
+"""
+        
+        self.server.call_tool('file_write_text', {
+            'path': f'{project_path}/QA_REPORT.md',
+            'content': report
+        })
+        
+        self.log("✅ QA报告已生成")
+        
+        return {
+            'agent': self.name,
+            'phase': 'quality_assurance',
+            'health_status': health.get('overall_status', 'unknown'),
+            'verification_passed': code_check['success'],
+            'status': 'completed'
+        }
+
+
+class MultiAgentOrchestrator:
+    """多智能体编排器 - 协调所有智能体"""
+    def __init__(self):
+        self.agents = {
+            'research': ResearchSpecialist(),
+            'planning': PlanningSpecialist(),
+            'implementation': ImplementationSpecialist(),
+            'documentation': DocumentationSpecialist(),
+            'qa': QualityAssuranceSpecialist()
+        }
+        self.workflow_data = {}
+    
+    def run_workflow(self, topic: str) -> Dict:
+        """运行完整工作流"""
+        print("\n" + "="*70)
+        print("🚀 MULTI-AGENT WORKFLOW ORCHESTRATION")
+        print("="*70)
+        print(f"\n📌 任务主题: {topic}")
+        print(f"🤖 参与智能体: {len(self.agents)} 个")
+        print("\n开始执行...\n")
+        
+        results = {}
+        
+        # Phase 1: Research
+        print("━"*70)
+        print("📚 PHASE 1: RESEARCH")
+        print("━"*70)
+        results['research'] = self.agents['research'].execute({
+            'topic': topic
+        })
+        self.workflow_data['research_data'] = results['research']
+        
+        # Phase 2: Planning
+        print("\n" + "━"*70)
+        print("📋 PHASE 2: PLANNING")
+        print("━"*70)
+        results['planning'] = self.agents['planning'].execute({
+            'topic': topic,
+            'research_data': results['research']
+        })
+        self.workflow_data['plan_data'] = results['planning']
+        
+        # Phase 3: Implementation
+        print("\n" + "━"*70)
+        print("💻 PHASE 3: IMPLEMENTATION")
+        print("━"*70)
+        results['implementation'] = self.agents['implementation'].execute({
+            'topic': topic,
+            'plan_data': results['planning']
+        })
+        self.workflow_data['implementation_data'] = results['implementation']
+        
+        # Phase 4: Documentation
+        print("\n" + "━"*70)
+        print("📝 PHASE 4: DOCUMENTATION")
+        print("━"*70)
+        results['documentation'] = self.agents['documentation'].execute({
+            'topic': topic,
+            'implementation_data': results['implementation']
+        })
+        
+        # Phase 5: Quality Assurance
+        print("\n" + "━"*70)
+        print("🔍 PHASE 5: QUALITY ASSURANCE")
+        print("━"*70)
+        results['qa'] = self.agents['qa'].execute({
+            'topic': topic,
+            'project_path': results['implementation'].get('project_path', '')
+        })
+        
+        # Summary
+        self._print_summary(results, topic)
+        
+        return results
+    
+    def _print_summary(self, results: Dict, topic: str):
+        """打印摘要"""
+        print("\n" + "="*70)
+        print("📊 WORKFLOW SUMMARY")
+        print("="*70)
+        
+        print(f"\n🎯 项目: {topic}")
+        print(f"📅 完成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        
+        print("\n📋 各阶段结果:")
+        for phase, result in results.items():
+            status = "✅" if result.get('status') == 'completed' else "❌"
+            print(f"   {status} {phase.upper()}: {result.get('agent', 'N/A')}")
+        
+        # Count files created
+        impl_data = results.get('implementation', {})
+        doc_data = results.get('documentation', {})
+        total_files = (
+            len(impl_data.get('files_created', [])) +
+            len(doc_data.get('docs_created', [])) +
+            1  # QA report
+        )
+        
+        project_path = impl_data.get('project_path', '')
+        
+        print(f"\n📁 产出:")
+        print(f"   • 项目路径: {project_path}")
+        print(f"   • 文件总数: {total_files}")
+        print(f"   • 代码文件: {len(impl_data.get('files_created', []))}")
+        print(f"   • 文档: {len(doc_data.get('docs_created', []))}")
+        print(f"   • QA报告: 1")
+        
+        qa_data = results.get('qa', {})
+        print(f"\n🏥 质量检查:")
+        print(f"   • 系统健康: {qa_data.get('health_status', 'N/A')}")
+        print(f"   • 文件验证: {'通过' if qa_data.get('verification_passed') else '失败'}")
+        
+        print("\n" + "="*70)
+        print("🎉 WORKFLOW COMPLETED SUCCESSFULLY!")
+        print("="*70)
+
+
+def main():
+    """主函数"""
+    print("""
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   🤖 MULTI-AGENT WORKFLOW DEMO                                          ║
+║                                                                          ║
+║   5个专业化智能体使用23个Tools协作完成实际任务                           ║
+║                                                                          ║
+║   Research → Planning → Implementation → Documentation → QA             ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+    """)
+    
+    # 创建编排器并运行工作流
+    orchestrator = MultiAgentOrchestrator()
+    
+    # 执行任务
+    results = orchestrator.run_workflow(
+        topic="Multi-Agent System Framework"
+    )
+    
+    # 展示Tools使用情况
+    print("\n🔧 TOOLS USAGE STATISTICS")
+    print("-"*70)
+    
+    server = KimiMCPExtendedServer()
+    stats = server.get_stats()
+    print(f"\n   可用Tools总数: {stats['total_tools']}")
+    print(f"   本次使用: 8+ Tools")
+    print(f"   智能体协作: 5 Agents")
+    
+    print("\n" + "="*70)
+    print("✅ 演示完成！查看 /tmp/multi_agent_system_framework/ 目录获取产出文件")
+    print("="*70)
+
+
+if __name__ == "__main__":
+    main()

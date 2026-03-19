@@ -1,0 +1,202 @@
+[
+  {
+    "id": "9a7b41ad-8b14-40ed-84b2-dfaf0146b041",
+    "fact": "验证结果 (反自欺欺人)",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.026979",
+    "last_accessed": "2026-03-17T05:25:30.026989",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "50ba58d1-501e-4edb-901e-47d1b49dfee2",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3",
+        "e54c6270-97ab-4ab9-b599-98e4aca05c6c",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "0aaeb167-fc07-4c3d-951d-40712d485970",
+        "a65d3fe5-120c-4ce9-a15a-89e270edf0a3"
+      ]
+    }
+  },
+  {
+    "id": "4705af30-3baf-4c50-b6fe-aba79d3728bc",
+    "fact": "** - 未预估8段×3分钟=24分钟>15分钟清理阈值",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027014",
+    "last_accessed": "2026-03-17T05:25:30.027015",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "f1a24bf9-3a64-4930-98d8-51d8963d3b25",
+        "41007e21-d784-479b-b98f-e5274234c901",
+        "40807357-bfac-4206-ace5-5d59f5e64ccd",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "868114c1-c563-4e41-81ff-2bfb3d15552c",
+        "41007e21-d784-479b-b98f-e5274234c901"
+      ]
+    }
+  },
+  {
+    "id": "22f8c025-b867-4944-8238-561aa2fb47cf",
+    "fact": "失误** - yt-dlp被412拦截3次才换路，违反\"3次失败强制换路\"原则",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027485",
+    "last_accessed": "2026-03-17T05:25:30.027487",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "08558537-1484-4b76-afc0-ca6a4d15fa3d",
+        "a6d52b65-8892-4643-beb4-2767f701ace0",
+        "f9cdf7c8-8f7b-4ee7-901f-bfe45f6160d5",
+        "e31543b7-a04a-42b0-aaea-deffa27b0720",
+        "f9cdf7c8-8f7b-4ee7-901f-bfe45f6160d5",
+        "08558537-1484-4b76-afc0-ca6a4d15fa3d",
+        "e31543b7-a04a-42b0-aaea-deffa27b0720",
+        "a6d52b65-8892-4643-beb4-2767f701ace0"
+      ]
+    }
+  },
+  {
+    "id": "008ced7c-ab84-486e-adf5-78d7ad4deb4f",
+    "fact": "/tmp/时系统会警告",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027495",
+    "last_accessed": "2026-03-17T05:25:30.027496",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "2f3f57fb-5d9a-4022-b6bd-8771bfdae2a8",
+        "2a696ff7-dd11-42d4-a88c-ced393c3dca0",
+        "d79d24a5-896f-4c95-b2a1-85de770d248c",
+        "eb027054-513e-4656-9c2a-8e1d20df130c",
+        "d79d24a5-896f-4c95-b2a1-85de770d248c",
+        "2f3f57fb-5d9a-4022-b6bd-8771bfdae2a8",
+        "eb027054-513e-4656-9c2a-8e1d20df130c",
+        "2a696ff7-dd11-42d4-a88c-ced393c3dca0"
+      ]
+    }
+  },
+  {
+    "id": "cd1637f8-db5f-4918-b6ce-3f6753173f5e",
+    "fact": "大脑思考，使用手脚行动，持续进化 |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027506",
+    "last_accessed": "2026-03-17T05:25:30.027507",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "3df722ee-7461-480a-9fa6-19e3e90833b9",
+        "1b294dcd-d91d-4428-958c-53fbd739ec4e",
+        "f8788d3d-c503-4a7e-87b6-cf71f3e65f5a",
+        "9dc655f4-a63d-4fa5-a0a6-b5ecc834d021",
+        "f8788d3d-c503-4a7e-87b6-cf71f3e65f5a",
+        "3df722ee-7461-480a-9fa6-19e3e90833b9",
+        "9dc655f4-a63d-4fa5-a0a6-b5ecc834d021",
+        "1b294dcd-d91d-4428-958c-53fbd739ec4e"
+      ]
+    }
+  },
+  {
+    "id": "030b77f6-e87f-477f-8b4d-79a7f385874b",
+    "fact": "大模型思考，使用skills行动\"",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027512",
+    "last_accessed": "2026-03-17T05:25:30.027513",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "1835efb1-1ba3-40c2-8030-1ff0543df28b",
+        "92014f40-88d9-4826-ac15-6ed1f750118f",
+        "2251f874-076a-4b9a-934c-f70f2c0afa14",
+        "bf88ecdb-0e0e-4725-9b20-cf727fbe9cdb",
+        "2251f874-076a-4b9a-934c-f70f2c0afa14",
+        "1835efb1-1ba3-40c2-8030-1ff0543df28b",
+        "bf88ecdb-0e0e-4725-9b20-cf727fbe9cdb",
+        "92014f40-88d9-4826-ac15-6ed1f750118f"
+      ]
+    }
+  },
+  {
+    "id": "d0f48ac6-2466-4661-aa4d-92c4649e13dd",
+    "fact": "锤子、电脑 | 使用read、exec、web_search |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027518",
+    "last_accessed": "2026-03-17T05:25:30.027519",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "d379fc6f-adde-4485-bd6e-051bb40228eb",
+        "801c82c6-f39e-4a10-9730-7a8a2e9afe30",
+        "ccfd0f29-3942-4587-9e81-d9ef16466259",
+        "e5fe58a5-57ae-4b20-9794-5012170ea286",
+        "ccfd0f29-3942-4587-9e81-d9ef16466259",
+        "d379fc6f-adde-4485-bd6e-051bb40228eb",
+        "e5fe58a5-57ae-4b20-9794-5012170ea286",
+        "801c82c6-f39e-4a10-9730-7a8a2e9afe30"
+      ]
+    }
+  },
+  {
+    "id": "1f87b436-1283-4fc5-a032-b28be9803e12",
+    "fact": "把自己定义为\"OpenClaw的Agent\"**",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T05:25:30.027977",
+    "last_accessed": "2026-03-17T05:25:30.027979",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "14e71812-9b90-4776-98fc-3249fdee8e1e",
+        "610fbc40-83bb-4a0e-b51e-b22019e08e7a",
+        "14e71812-9b90-4776-98fc-3249fdee8e1e",
+        "610fbc40-83bb-4a0e-b51e-b22019e08e7a",
+        "39a23d75-d26a-4d35-a63c-01d21a389734",
+        "bd598d64-38af-47bb-82dc-45187c1f5e25",
+        "bd598d64-38af-47bb-82dc-45187c1f5e25",
+        "39a23d75-d26a-4d35-a63c-01d21a389734"
+      ]
+    }
+  }
+]

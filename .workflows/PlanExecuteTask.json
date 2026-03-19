@@ -1,0 +1,20 @@
+{
+  "name": "PlanExecuteTask",
+  "id": "WF-1773080044",
+  "pattern": "plan-execute",
+  "description": "Plan → Do → Check → Act loop with feedback",
+  "nodes": [
+    {"id": "planner", "type": "agent", "function": "create_plan"},
+    {"id": "executor", "type": "agent", "function": "execute_plan"},
+    {"id": "checker", "type": "agent", "function": "verify_result"},
+    {"id": "actor", "type": "conditional", "function": "decide_next"}
+  ],
+  "edges": [
+    {"from": "planner", "to": "executor"},
+    {"from": "executor", "to": "checker"},
+    {"from": "checker", "to": "actor"},
+    {"from": "actor", "to": "executor", "condition": "needs_retry"},
+    {"from": "actor", "to": "END", "condition": "success"}
+  ],
+  "state": {"persistent": true, "max_iterations": 5}
+}

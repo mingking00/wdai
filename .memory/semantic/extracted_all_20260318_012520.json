@@ -1,0 +1,32 @@
+[
+  {
+    "id": "109d3337-7d94-4389-97ce-e52d51f752e9",
+    "fact": "在实际使用中验证效果：",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:20.967120",
+    "last_accessed": "2026-03-18T01:25:20.967130",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "73b40524-9082-48bc-988a-4534157a4ffb",
+    "fact": "在实际使用中验证效果：",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-18T01:25:20.967649",
+    "last_accessed": "2026-03-18T01:25:20.967651",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

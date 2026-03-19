@@ -1,0 +1,18 @@
+{
+  "name": "RouteAssistant",
+  "id": "WF-1773080044",
+  "pattern": "routing",
+  "description": "Input classification and specialist routing",
+  "nodes": [
+    {"id": "classifier", "type": "agent", "function": "classify_input"},
+    {"id": "tech_agent", "type": "agent", "role": "specialist", "function": "handle_technical"},
+    {"id": "sales_agent", "type": "agent", "role": "specialist", "function": "handle_sales"},
+    {"id": "support_agent", "type": "agent", "role": "specialist", "function": "handle_support"}
+  ],
+  "edges": [
+    {"from": "classifier", "to": "tech_agent", "condition": "type == 'technical'"},
+    {"from": "classifier", "to": "sales_agent", "condition": "type == 'sales'"},
+    {"from": "classifier", "to": "support_agent", "condition": "type == 'support'"}
+  ],
+  "state": {"persistent": true}
+}

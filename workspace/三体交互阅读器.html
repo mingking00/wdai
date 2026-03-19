@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三体交互阅读器 - 本地版</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:#1A1A2E;color:#EAEAEA;line-height:1.6;overflow:hidden;height:100vh}
+        .app{display:flex;flex-direction:column;height:100vh}
+        .header{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:#16213E;border-bottom:1px solid rgba(255,255,255,0.1);z-index:100}
+        .logo{display:flex;align-items:center;gap:12px}
+        .logo-icon{font-size:28px}
+        .logo-text{font-size:20px;font-weight:600;background:linear-gradient(135deg,#E74C3C,#F39C12);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;transition:all .3s;background:linear-gradient(135deg,#E74C3C,#C0392B);color:white}
+        .btn:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,0.3)}
+        .main{display:flex;flex:1;overflow:hidden}
+        .sidebar{width:320px;background:#16213E;border-right:1px solid rgba(255,255,255,0.1);overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:16px}
+        .sidebar::-webkit-scrollbar{width:6px}
+        .sidebar::-webkit-scrollbar-thumb{background:#0F3460;border-radius:3px}
+        .panel{background:#0F3460;border-radius:8px;overflow:hidden}
+        .panel-header{display:flex;align-items:center;gap:8px;padding:12px 16px;background:rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.1)}
+        .panel-title{font-weight:600;font-size:14px}
+        .panel-content{padding:12px}
+        .book-info .panel-content{display:flex;gap:12px}
+        .book-cover{width:80px;height:110px;background:linear-gradient(135deg,#1A1A2E,#0F3460);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:bold;color:#E74C3C;border:2px solid rgba(231,76,60,0.3)}
+        .book-meta h3{font-size:16px;margin-bottom:4px}
+        .book-meta p{font-size:12px;color:#B8B8B8}
+        .book-part{margin-bottom:8px}
+        .part-title{display:flex;align-items:center;gap:8px;padding:10px 12px;font-weight:600;font-size:13px;color:#B8B8B8;cursor:pointer;border-radius:6px;transition:all .3s}
+        .part-title:hover{background:rgba(255,255,255,0.05);color:#EAEAEA}
+        .toggle-icon{font-size:10px;transition:transform .2s}
+        .toggle-icon.collapsed{transform:rotate(-90deg)}
+        .chapter-list{list-style:none;padding-left:8px}
+        .chapter-list.collapsed{display:none}
+        .chapter-item{display:flex;align-items:center;gap:10px;padding:8px 12px;margin:2px 0;border-radius:6px;cursor:pointer;transition:all .3s;font-size:13px}
+        .chapter-item:hover{background:rgba(231,76,60,0.1)}
+        .chapter-item.active{background:rgba(231,76,60,0.2);border-left:3px solid #E74C3C}
+        .chapter-num{width:20px;height:20px;display:flex;align-items:center;justify-content:center;background:#16213E;border-radius:4px;font-size:11px;color:#7F8C8D}
+        .chapter-item:hover .chapter-num,.chapter-item.active .chapter-num{background:#E74C3C;color:white}
+        .char-list{display:flex;flex-direction:column;gap:8px}
+        .char-item{display:flex;align-items:center;gap:10px;padding:8px;border-radius:6px;cursor:pointer;transition:all .3s}
+        .char-item:hover{background:rgba(255,255,255,0.05)}
+        .char-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:14px;color:white}
+        .char-info{display:flex;flex-direction:column}
+        .char-name{font-weight:500;font-size:13px}
+        .char-role{font-size:11px;color:#7F8C8D}
+        .timeline-list{display:flex;flex-direction:column;gap:12px}
+        .timeline-item{display:flex;gap:12px;padding:8px;border-radius:6px;cursor:pointer;transition:all .3s}
+        .timeline-item:hover{background:rgba(255,255,255,0.05)}
+        .timeline-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;margin-top:4px}
+        .timeline-content{display:flex;flex-direction:column;gap:2px}
+        .timeline-time{font-size:11px;color:#E74C3C;font-weight:500}
+        .timeline-title{font-size:13px;font-weight:500}
+        .timeline-desc{font-size:11px;color:#7F8C8D}
+        .concept-tags{display:flex;flex-wrap:wrap;gap:8px}
+        .concept-tag{padding:6px 12px;background:#16213E;border-radius:20px;font-size:12px;cursor:pointer;transition:all .3s;border:1px solid rgba(255,255,255,0.1)}
+        .concept-tag:hover{background:#E74C3C;border-color:#E74C3C;transform:translateY(-1px)}
+        .reader{flex:1;display:flex;flex-direction:column;background:#1A1A2E}
+        .reader-toolbar{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:#16213E;border-bottom:1px solid rgba(255,255,255,0.1)}
+        .page-nav,.zoom-controls{display:flex;align-items:center;gap:12px}
+        .btn-icon{width:36px;height:36px;border:none;border-radius:6px;background:#0F3460;color:#EAEAEA;font-size:16px;cursor:pointer;transition:all .3s}
+        .btn-icon:hover{background:#E74C3C;color:white}
+        .page-info{display:flex;align-items:center;gap:8px;font-size:14px}
+        .page-info input{width:50px;padding:6px 8px;background:#0F3460;border:1px solid rgba(255,255,255,0.1);border-radius:4px;color:#EAEAEA;text-align:center;font-size:14px}
+        .page-info input:focus{outline:none;border-color:#E74C3C}
+        #zoom-level{font-size:13px;color:#B8B8B8;min-width:45px;text-align:center}
+        .reader-container{flex:1;display:flex;justify-content:center;align-items:center;overflow:auto;padding:24px}
+        .reader-container::-webkit-scrollbar{width:8px;height:8px}
+        .reader-container::-webkit-scrollbar-track{background:#16213E}
+        .reader-container::-webkit-scrollbar-thumb{background:#0F3460;border-radius:4px}
+        .empty-state{text-align:center;padding:48px}
+        .empty-icon{font-size:64px;margin-bottom:24px;opacity:.5}
+        .empty-state h2{font-size:24px;margin-bottom:12px}
+        .empty-state p{color:#B8B8B8;margin-bottom:24px}
+        .supported-formats{display:inline-block;padding:8px 16px;background:#0F3460;border-radius:8px;font-size:13px;color:#7F8C8D}
+        #pdf-canvas{display:none;box-shadow:0 4px 20px rgba(0,0,0,0.3);border-radius:4px;max-width:100%}
+        #pdf-canvas.loaded{display:block}
+        .modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);z-index:1000;justify-content:center;align-items:center;padding:24px}
+        .modal.active{display:flex}
+        .modal-content{background:#16213E;border-radius:8px;width:100%;max-width:500px;max-height:80vh;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.3)}
+        .modal-header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,0.1)}
+        .modal-header h3{font-size:18px}
+        .modal-close{width:32px;height:32px;border:none;background:transparent;color:#7F8C8D;font-size:24px;cursor:pointer;border-radius:4px;transition:all .3s}
+        .modal-close:hover{background:rgba(255,255,255,0.1);color:#EAEAEA}
+        .modal-body{padding:20px;overflow-y:auto;max-height:calc(80vh - 70px)}
+        .char-detail{text-align:center}
+        .char-detail-avatar{width:80px;height:80px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:bold;color:white}
+        .char-detail-name{font-size:24px;font-weight:600;margin-bottom:4px}
+        .char-detail-role{color:#E74C3C;font-size:14px;margin-bottom:16px}
+        .char-detail-desc{text-align:left;line-height:1.8;color:#B8B8B8}
+        .concept-detail h4{color:#E74C3C;margin-bottom:12px;font-size:18px}
+        .concept-detail p{line-height:1.8;color:#B8B8B8;margin-bottom:16px}
+        .concept-quote{padding:16px;background:#0F3460;border-left:4px solid #E74C3C;border-radius:4px;font-style:italic;color:#B8B8B8}
+        @media(max-width:768px){.sidebar{display:none}}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">📖</span>
+                <span class="logo-text">三体交互阅读器</span>
+            </div>
+            <input type="file" id="pdf-upload" accept=".pdf" hidden>
+            <button class="btn" onclick="document.getElementById('pdf-upload').click()">📁 上传PDF</button>
+        </header>
+
+        <div class="main">
+            <aside class="sidebar">
+                <div class="panel">
+                    <div class="panel-header"><span>📚</span> <span class="panel-title">书籍信息</span></div>
+                    <div class="panel-content book-info">
+                        <div class="book-cover">三体</div>
+                        <div class="book-meta">
+                            <h3>三体 (The Three-Body Problem)</h3>
+                            <p>刘慈欣 著</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header"><span>📑</span> <span class="panel-title">章节导航</span></div>
+                    <div class="panel-content">
+                        <div class="book-part">
+                            <div class="part-title" onclick="toggle('p1')"><span id="t1">▼</span> 第一部：地球往事</div>
+                            <ul class="chapter-list" id="p1">
+                                <li class="chapter-item" data-page="1" onclick="go(1)"><span class="chapter-num">1</span> 科学边界</li>
+                                <li class="chapter-item" data-page="15" onclick="go(15)"><span class="chapter-num">2</span> 台球</li>
+                                <li class="chapter-item" data-page="28" onclick="go(28)"><span class="chapter-num">3</span> 射手和农场主</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header"><span>👤</span> <span class="panel-title">主要角色</span></div>
+                    <div class="panel-content">
+                        <div class="char-list">
+                            <div class="char-item" onclick="showChar('wangmiao')">
+                                <div class="char-avatar" style="background:#4A90D9">汪</div>
+                                <div class="char-info"><span class="char-name">汪淼</span><span class="char-role">纳米科学家</span></div>
+                            </div>
+                            <div class="char-item" onclick="showChar('yewenjie')">
+                                <div class="char-avatar" style="background:#E74C3C">叶</div>
+                                <div class="char-info"><span class="char-name">叶文洁</span><span class="char-role">天体物理学家</span></div>
+                            </div>
+                            <div class="char-item" onclick="showChar('shiqiang')">
+                                <div class="char-avatar" style="background:#27AE60">史</div>
+                                <div class="char-info"><span class="char-name">史强</span><span class="char-role">刑警</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header"><span>💡</span> <span class="panel-title">核心概念</span></div>
+                    <div class="panel-content">
+                        <div class="concept-tags">
+                            <span class="concept-tag" onclick="showConcept('sophon')">智子</span>
+                            <span class="concept-tag" onclick="showConcept('darkforest')">黑暗森林</span>
+                            <span class="concept-tag" onclick="showConcept('droplet')">水滴</span>
+                            <span class="concept-tag" onclick="showConcept('dimensional')">降维打击</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="reader">
+                <div class="reader-toolbar">
+                    <div class="page-nav">
+                        <button class="btn-icon" onclick="change(-1)">◀</button>
+                        <span class="page-info"><input type="number" id="page" value="1" min="1" onchange="go(this.value)"> / <span id="total">--</span></span>
+                        <button class="btn-icon" onclick="change(1)">▶</button>
+                    </div>
+                    <div class="zoom-controls">
+                        <button class="btn-icon" onclick="zoom(-0.2)">−</button>
+                        <span id="zoom">100%</span>
+                        <button class="btn-icon" onclick="zoom(0.2)">+</button>
+                    </div>
+                </div>
+
+                <div class="reader-container" id="container">
+                    <div class="empty-state" id="empty">
+                        <div class="empty-icon">📖</div>
+                        <h2>上传PDF开始阅读</h2>
+                        <p>支持拖拽上传或点击按钮</p>
+                        <div class="supported-formats">支持格式: PDF</div>
+                    </div>
+                    <canvas id="canvas"></canvas>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="mt"></h3>
+                <button class="modal-close" onclick="closeM()">×</button>
+            </div>
+            <div class="modal-body" id="mb"></div>
+        </div>
+    </div>
+
+    <script>
+        const chars={
+            wangmiao:{name:'汪淼',role:'纳米材料科学家',avatar:'#4A90D9',desc:'汪淼是《三体》第一部的主角之一，一位研究纳米材料的科学家。他在调查科学家自杀事件的过程中，逐渐发现了"科学边界"组织和三体世界的存在。<b>关键事件</b>：发现"宇宙闪烁"现象；进入三体游戏；参与古筝行动。<b>性格特点</b>：理性、坚韧，面对超自然现象时保持了科学家的冷静。'},
+            yewenjie:{name:'叶文洁',role:'天体物理学家',avatar:'#E74C3C',desc:'叶文洁是《三体》系列中最关键的人物之一，红岸基地的天体物理学家。<b>核心行动</b>：发现了太阳能量镜面增益效应；向宇宙发出了地球的第一声啼鸣；成为地球三体组织的精神领袖。她既是人类文明的"叛徒"，又是一位对人类失望的理想主义者。'},
+            shiqiang:{name:'史强',role:'刑警',avatar:'#27AE60',desc:'史强（大史）是警方派来保护科学家的刑警，外表粗犷但内心细腻。<b>名言</b>："虫子从来没有被真正战胜过。"<b>性格特点</b>：看似粗鲁但极具洞察力，善于用简单直接的方式解决复杂问题。'}
+        };
+        const concepts={
+            sophon:{name:'智子（Sophon）',quote:'我们封锁了你们的科学。',desc:'智子是三体文明制造的高维智能粒子，通过二维展开和电路蚀刻技术，将单个质子改造成超级计算机。<b>功能</b>：干扰地球粒子对撞实验；在地球和舰队间进行即时通信；监视人类社会。'},
+            darkforest:{name:'黑暗森林法则',quote:'宇宙就是一座黑暗森林，每个文明都是带枪的猎人。',desc:'罗辑领悟的宇宙社会学基本法则。<b>基本公理</b>：1.生存是文明的第一需要 2.文明不断增长扩张，但宇宙物质总量不变。<b>结论</b>：发现即毁灭。任何暴露自己位置的文明都会被消灭。'},
+            droplet:{name:'水滴',quote:'它的表面是绝对光滑的。',desc:'三体文明发射的探测器，形状像一滴水银。<b>技术特点</b>：表面由强互作用力材料构成；温度接近绝对零度；能够锐角转向。<b>战绩</b>：仅凭一颗水滴就摧毁了人类2000艘战舰。'},
+            dimensional:{name:'降维打击',quote:'我需要一块二向箔，清理用。',desc:'高级文明使用的清理工具，将三维空间压缩成二维。<b>结果</b>：整个太阳系被二维化，变成了一幅没有厚度的画。只有达到光速才能逃脱。'}
+        };
+        pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        let pdf=null,page=1,pages=0,scale=1.5;
+        document.getElementById('pdf-upload').addEventListener('change',e=>load(e.target.files[0]));
+        document.addEventListener('dragover',e=>e.preventDefault());
+        document.addEventListener('drop',e=>{e.preventDefault();load(e.dataTransfer.files[0]);});
+        document.addEventListener('keydown',e=>{
+            if(!pdf)return;
+            if(e.key==='ArrowLeft'||e.key==='PageUp')change(-1);
+            if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')change(1);
+        });
+        async function load(file){
+            if(!file||file.type!=='application/pdf')return;
+            try{
+                pdf=await pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise;
+                pages=pdf.numPages;page=1;
+                document.getElementById('total').textContent=pages;
+                document.getElementById('empty').style.display='none';
+                document.getElementById('canvas').classList.add('loaded');
+                render();
+            }catch(err){alert('无法加载PDF：'+err.message);}
+        }
+        async function render(){
+            if(!pdf)return;
+            const p=await pdf.getPage(page);
+            const vp=p.getViewport({scale});
+            const c=document.getElementById('canvas');
+            c.width=vp.width;c.height=vp.height;
+            await p.render({canvasContext:c.getContext('2d'),viewport:vp}).promise;
+            document.getElementById('page').value=page;
+        }
+        function change(d){const n=page+d;if(n>=1&&n<=pages){page=n;render();}}
+        function go(n){n=parseInt(n);if(n>=1&&n<=pages){page=n;render();}}
+        function zoom(d){scale=Math.max(0.5,Math.min(3,scale+d));document.getElementById('zoom').textContent=Math.round(scale*100)+'%';render();}
+        function toggle(id){const e=document.getElementById(id),t=document.getElementById('t'+id[1]);if(e.classList.contains('collapsed')){e.classList.remove('collapsed');t.classList.remove('collapsed');}else{e.classList.add('collapsed');t.classList.add('collapsed');}}
+        function showChar(id){const c=chars[id];if(!c)return;document.getElementById('mt').textContent='角色详情';document.getElementById('mb').innerHTML='<div class="char-detail"><div class="char-detail-avatar" style="background:'+c.avatar+'">'+c.name[0]+'</div><div class="char-detail-name">'+c.name+'</div><div class="char-detail-role">'+c.role+'</div><div class="char-detail-desc">'+c.desc+'</div></div>';document.getElementById('modal').classList.add('active');}
+        function showConcept(id){const c=concepts[id];if(!c)return;document.getElementById('mt').textContent='概念详解';document.getElementById('mb').innerHTML='<div class="concept-detail"><h4>'+c.name+'</h4><div class="concept-quote">"'+c.quote+'"</div><p>'+c.desc+'</p></div>';document.getElementById('modal').classList.add('active');}
+        function closeM(){document.getElementById('modal').classList.remove('active');}
+        document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeM();});
+    </script>
+</body>
+</html>

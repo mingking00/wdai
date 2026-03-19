@@ -1,0 +1,11 @@
+{
+  "id": "063a27ba_v3_exp0",
+  "metrics": {
+    "sequential_time": 0.2514,
+    "parallel_time": 0.0502,
+    "speedup": 5.0,
+    "success": 1
+  },
+  "success": true,
+  "version": "v3.0"
+}

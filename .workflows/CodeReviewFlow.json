@@ -1,0 +1,23 @@
+{
+  "name": "CodeReviewFlow",
+  "id": "WF-1773080041",
+  "pattern": "parallelization",
+  "description": "Split task into concurrent subtasks",
+  "nodes": [
+    {"id": "splitter", "type": "agent", "function": "split_task"},
+    {"id": "worker_a", "type": "agent", "function": "process_section", "params": {"section": "A"}},
+    {"id": "worker_b", "type": "agent", "function": "process_section", "params": {"section": "B"}},
+    {"id": "worker_c", "type": "agent", "function": "process_section", "params": {"section": "C"}},
+    {"id": "aggregator", "type": "agent", "function": "combine_results"}
+  ],
+  "edges": [
+    {"from": "splitter", "to": "worker_a"},
+    {"from": "splitter", "to": "worker_b"},
+    {"from": "splitter", "to": "worker_c"},
+    {"from": "worker_a", "to": "aggregator"},
+    {"from": "worker_b", "to": "aggregator"},
+    {"from": "worker_c", "to": "aggregator"}
+  ],
+  "execution": {"parallel": ["worker_a", "worker_b", "worker_c"]},
+  "state": {"persistent": true}
+}

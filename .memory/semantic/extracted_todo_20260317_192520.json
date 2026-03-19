@@ -1,0 +1,17 @@
+[
+  {
+    "id": "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.513006",
+    "last_accessed": "2026-03-17T19:25:20.513008",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

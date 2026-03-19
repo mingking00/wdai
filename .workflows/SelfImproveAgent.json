@@ -1,0 +1,17 @@
+{
+  "name": "SelfImproveAgent",
+  "id": "WF-1773080044",
+  "pattern": "reflection",
+  "description": "Self-review and refinement loop",
+  "nodes": [
+    {"id": "executor", "type": "agent", "function": "execute_task"},
+    {"id": "reviewer", "type": "agent", "function": "review_output"},
+    {"id": "refiner", "type": "agent", "function": "refine_output"}
+  ],
+  "edges": [
+    {"from": "executor", "to": "reviewer"},
+    {"from": "reviewer", "to": "refiner"},
+    {"from": "refiner", "to": "END"}
+  ],
+  "state": {"persistent": true}
+}

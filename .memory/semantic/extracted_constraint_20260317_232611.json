@@ -1,0 +1,32 @@
+[
+  {
+    "id": "57963d3f-2782-455d-98ab-7f260f5711e8",
+    "fact": "框架层支持（多个独立session）",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835935",
+    "last_accessed": "2026-03-17T23:26:11.835949",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e5eb00e8-545e-4742-a3c6-2b69915be363",
+    "fact": "有验证步骤、跨Agent验证",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T23:26:11.835963",
+    "last_accessed": "2026-03-17T23:26:11.835965",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

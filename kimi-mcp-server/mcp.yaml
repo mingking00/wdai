@@ -1,0 +1,87 @@
+# Kimi MCP Server Configuration
+# 与OpenClaw集成配置
+
+name: "Kimi Claw MCP Server"
+version: "1.0.0"
+description: "MCP Server exposing Kimi Claw's capabilities"
+
+# 传输配置
+transport:
+  # 选项: stdio, http
+  default: stdio
+  http:
+    port: 8080
+    host: "127.0.0.1"
+
+# Tools配置
+tools:
+  # 自动注册所有带@mcp.tool装饰器的函数
+  auto_register: true
+  
+  # 命名空间前缀
+  prefix: ""
+  
+  # 启用/禁用特定Tools
+  enabled:
+    # File Tools
+    - file_read_text
+    - file_write_text
+    - file_list_directory
+    
+    # Web Tools
+    - web_search_brave
+    - web_fetch_page
+    
+    # Memory Tools
+    - agent_memory_search
+    - agent_memory_update
+    
+    # Core Tools
+    - core_plan_task
+    - core_decompose_problem
+
+# Resources配置
+resources:
+  # 可访问的资源URI
+  allowed_schemes:
+    - file
+    - memory
+    - workspace
+    
+  # 基础路径 (用于file://资源)
+  base_paths:
+    - /root/.openclaw/workspace
+    - /tmp
+
+# 安全配置
+security:
+  # 允许的文件操作路径
+  allowed_paths:
+    - /root/.openclaw/workspace
+    - /tmp
+    
+  # 禁止访问的路径
+  blocked_paths:
+    - /etc
+    - /root/.ssh
+    - /root/.openclaw/agents
+    
+  # 最大文件读取大小 (MB)
+  max_file_size: 10
+  
+  # 网络请求超时 (秒)
+  network_timeout: 30
+
+# 与OpenClaw集成
+openclaw:
+  # OpenClaw二进制路径
+  binary: "openclaw"
+  
+  # 工作目录
+  workspace: "/root/.openclaw/workspace"
+  
+  # 自动加载的Skills
+  auto_load_skills:
+    - web_search
+    - web_fetch
+    - memory

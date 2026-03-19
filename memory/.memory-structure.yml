@@ -1,0 +1,46 @@
+# WDai 多尺度记忆分层结构
+# version: 1.0
+# created: 2026-03-19
+
+structure:
+  immediate:
+    path: memory/immediate/
+    retention: session_end
+    content: [tool_calls, temp_calculations, current_context]
+    auto_migrate: session
+    
+  session:
+    path: memory/session/
+    retention: 7_days
+    content: [daily_decisions, user_preferences, task_progress]
+    auto_migrate: project
+    
+  project:
+    path: memory/project/
+    retention: 30_days
+    content: [evo_tasks, technical_solutions, project_state]
+    auto_migrate: domain
+    
+  domain:
+    path: memory/domain/
+    retention: 90_days
+    content: [planning_patterns, rag_techniques, domain_knowledge]
+    auto_migrate: universal
+    
+  universal:
+    path: memory/universal/
+    retention: permanent
+    content: [core_principles, meta_capabilities, fundamental_rules]
+    auto_migrate: none
+    
+  archive:
+    path: memory/archive/
+    retention: compressed_storage
+    content: [old_memories, inactive_projects]
+    auto_migrate: none
+
+migration_schedule:
+  immediate_to_session: "23:50_daily"
+  session_to_project: "sunday_23:00"
+  project_to_domain: "month_end"
+  domain_to_universal: "quarter_end"

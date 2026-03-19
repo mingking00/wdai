@@ -1,0 +1,111 @@
+[
+  {
+    "id": "84663be3-7676-4e15-a462-5eb96f0fd059",
+    "fact": "| 内存溢出风险 | ✅ 已修复 |",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511704",
+    "last_accessed": "2026-03-17T19:25:20.511717",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f",
+        "178f8cd9-176a-4c8d-8315-fb80aab5b72f"
+      ]
+    }
+  },
+  {
+    "id": "46d1a0d6-9e6e-4c3a-ace6-4d6253de8145",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.511742",
+    "last_accessed": "2026-03-17T19:25:20.511743",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e668dc1b-dfe1-4c92-8375-a292208d96eb",
+    "fact": "Python `ast` 模块分析代码",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.512337",
+    "last_accessed": "2026-03-17T19:25:20.512341",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e372552c-e035-4764-a61d-a1ee2da06371",
+    "fact": "B（停下来测试现有功能）",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.512355",
+    "last_accessed": "2026-03-17T19:25:20.512356",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "52dc23d5-6857-4095-8322-0a5b69fe565a",
+    "fact": "B），是**执行力**问题（没有直接执行，而是重复确认）。",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.512361",
+    "last_accessed": "2026-03-17T19:25:20.512362",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "a92e4ef6-ae7b-4ae6-b54e-5aef63064d55",
+    "fact": "后，**直接执行**，不再确认",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.512367",
+    "last_accessed": "2026-03-17T19:25:20.512369",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "472e6e58-4c09-4821-b8df-0e0f5543c48f",
+    "fact": "实现。用户回答\"需要\"，于是我实现了完整的代码依赖图分析器。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T19:25:20.513006",
+    "last_accessed": "2026-03-17T19:25:20.513008",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

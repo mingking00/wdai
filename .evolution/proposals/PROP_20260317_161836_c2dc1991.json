@@ -1,0 +1,31 @@
+{
+  "id": "PROP_20260317_161836_c2dc1991",
+  "title": "实现事件流和检查点机制",
+  "created_at": "2026-03-17T16:18:36.527570",
+  "type": "架构",
+  "impact": "medium",
+  "content": {
+    "problem": "当前缺乏对Agent执行过程的细粒度追踪，无法重放执行过程或回滚到之前状态。",
+    "solution": "基于OpenHands实现事件流架构：\n1. 所有动作转为不可变事件\n2. 事件流持久化存储\n3. 检查点机制（保存和恢复状态）\n4. 事件重放功能（用于调试）\n5. 与持久状态系统集成",
+    "expected_effect": "可追踪Agent决策过程，支持调试和错误恢复。",
+    "risk_assessment": "中风险。需要修改现有执行模型。",
+    "implementation_steps": [
+      "设计Event和EventStream类",
+      "实现事件持久化",
+      "添加检查点机制",
+      "实现事件重放",
+      "测试和验证"
+    ]
+  },
+  "status": "APPROVED",
+  "approval": {
+    "approved_by": "wdai",
+    "approved_at": "2026-03-17T16:24:39.411552",
+    "decision_reason": "基于OpenHands + MetaGPT研究，架构升级需要"
+  },
+  "execution": {
+    "executed_at": null,
+    "result": null,
+    "logs": []
+  }
+}

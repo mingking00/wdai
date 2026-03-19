@@ -1,0 +1,86 @@
+{
+  "id": "PLAN-20260312-155354",
+  "title": "学习CLI-Anything架构",
+  "description": "学习CLI-Anything架构",
+  "created_at": "2026-03-12T15:53:54.745919",
+  "status": "pending",
+  "subtasks": [
+    {
+      "id": "T01",
+      "title": "需求理解",
+      "description": "理解任务需求: 学习CLI-Anything架构...",
+      "status": "pending",
+      "priority": 4,
+      "estimated_minutes": 15,
+      "dependencies": [],
+      "tools_required": [],
+      "output_artifact": "",
+      "notes": "",
+      "completed_at": null
+    },
+    {
+      "id": "T02",
+      "title": "信息收集",
+      "description": "收集必要的信息和资源",
+      "status": "pending",
+      "priority": 3,
+      "estimated_minutes": 30,
+      "dependencies": [
+        "T01"
+      ],
+      "tools_required": [],
+      "output_artifact": "",
+      "notes": "",
+      "completed_at": null
+    },
+    {
+      "id": "T03",
+      "title": "方案设计",
+      "description": "设计解决方案",
+      "status": "pending",
+      "priority": 3,
+      "estimated_minutes": 30,
+      "dependencies": [
+        "T01"
+      ],
+      "tools_required": [],
+      "output_artifact": "",
+      "notes": "",
+      "completed_at": null
+    },
+    {
+      "id": "T04",
+      "title": "执行实施",
+      "description": "执行具体任务",
+      "status": "pending",
+      "priority": 3,
+      "estimated_minutes": 60,
+      "dependencies": [
+        "T02",
+        "T03"
+      ],
+      "tools_required": [],
+      "output_artifact": "",
+      "notes": "",
+      "completed_at": null
+    },
+    {
+      "id": "T05",
+      "title": "验证检查",
+      "description": "验证结果是否符合预期",
+      "status": "pending",
+      "priority": 2,
+      "estimated_minutes": 20,
+      "dependencies": [
+        "T04"
+      ],
+      "tools_required": [],
+      "output_artifact": "",
+      "notes": "",
+      "completed_at": null
+    }
+  ],
+  "total_estimated_minutes": 155,
+  "completed_subtasks": 0,
+  "notes": ""
+}

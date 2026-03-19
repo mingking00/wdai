@@ -196,5 +196,93 @@
     "recommendations": [
       "\u7ee7\u7eed\u4f18\u5316"
     ]
+  },
+  {
+    "project_id": "opp_1773740425_1",
+    "effectiveness_score": 0.8,
+    "user_rating": 0.0,
+    "lessons_learned": [
+      "\u6280\u80fd\u626b\u63cf\u5668\u8fd0\u884c\u6210\u529f"
+    ],
+    "recommendations": [
+      "\u7ee7\u7eed\u6269\u5c55\u6280\u80fd\u5e93"
+    ]
+  },
+  {
+    "project_id": "opp_1773740425_2",
+    "effectiveness_score": 0.5,
+    "user_rating": 0.0,
+    "lessons_learned": [
+      "\u63a2\u7d22\u9879\u76ee\u5b8c\u6210"
+    ],
+    "recommendations": [
+      "\u7ee7\u7eed\u4f18\u5316"
+    ]
+  },
+  {
+    "project_id": "opp_1773776419_1",
+    "effectiveness_score": 0.8,
+    "user_rating": 0.0,
+    "lessons_learned": [
+      "\u6280\u80fd\u626b\u63cf\u5668\u8fd0\u884c\u6210\u529f"
+    ],
+    "recommendations": [
+      "\u7ee7\u7eed\u6269\u5c55\u6280\u80fd\u5e93"
+    ]
+  },
+  {
+    "project_id": "opp_1773776419_2",
+    "effectiveness_score": 0.5,
+    "user_rating": 0.0,
+    "lessons_learned": [
+      "\u63a2\u7d22\u9879\u76ee\u5b8c\u6210"
+    ],
+    "recommendations": [
+      "\u7ee7\u7eed\u4f18\u5316"
+    ]
+  },
+  {
+    "project_id": "opp_1773820810_1",
+    "effectiveness_score": 0.8,
+    "user_rating": 0.0,
+    "lessons_learned": [
+      "\u6280\u80fd\u626b\u63cf\u5668\u8fd0\u884c\u6210\u529f"
+    ],
+    "recommendations": [
+      "\u7ee7\u7eed\u6269\u5c55\u6280\u80fd\u5e93"
+    ]
+  },
+  {
+    "project_id": "opp_1773820810_2",
+    "effectiveness_score": 0.5,
+    "user_rating": 0.0,
+    "lessons_learned": [
+      "\u63a2\u7d22\u9879\u76ee\u5b8c\u6210"
+    ],
+    "recommendations": [
+      "\u7ee7\u7eed\u4f18\u5316"
+    ]
+  },
+  {
+    "project_id": "opp_1773859231_1",
+    "effectiveness_score": 0.8,
+    "user_rating": 0.0,
+    "lessons_learned": [
+      "\u6280\u80fd\u626b\u63cf\u5668\u8fd0\u884c\u6210\u529f"
+    ],
+    "recommendations": [
+      "\u7ee7\u7eed\u6269\u5c55\u6280\u80fd\u5e93"
+    ]
+  },
+  {
+    "project_id": "opp_1773859231_2",
+    "effectiveness_score": 0.5,
+    "user_rating": 0.0,
+    "lessons_learned": [
+      "\u63a2\u7d22\u9879\u76ee\u5b8c\u6210"
+    ],
+    "recommendations": [
+      "\u7ee7\u7eed\u4f18\u5316"
+    ]
   }
 ]

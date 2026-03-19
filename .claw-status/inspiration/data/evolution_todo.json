@@ -1,0 +1,15 @@
+[
+  {
+    "type": "crawler_update",
+    "plan_id": "plan_20260319152845",
+    "description": "\u7cfb\u7edf\u5e94\u96c6\u6210Semantic Scholar API\u4ee5\u83b7\u5f97\u66f4\u5168\u9762\u7684\u8bba\u6587\u6570\u636e",
+    "steps": [
+      "1. \u8be6\u7ec6\u8bbe\u8ba1",
+      "2. \u5c0f\u89c4\u6a21\u9a8c\u8bc1",
+      "3. \u5168\u9762\u5b9e\u65bd",
+      "4. \u6548\u679c\u8bc4\u4f30"
+    ],
+    "created_at": "2026-03-19T15:28:45.943928",
+    "status": "pending_implementation"
+  }
+]

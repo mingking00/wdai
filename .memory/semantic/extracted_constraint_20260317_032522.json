@@ -1,0 +1,32 @@
+[
+  {
+    "id": "41cb4546-806b-408b-a07a-b59868778588",
+    "fact": "**：B站反爬限制，yt-dlp直接下载失败",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802304",
+    "last_accessed": "2026-03-17T03:25:22.802314",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "5f0d78c7-2d53-40dd-96d0-153a1f446827",
+    "fact": "输出 `references_text`，不能直接给无来源结论。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T03:25:22.802344",
+    "last_accessed": "2026-03-17T03:25:22.802345",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

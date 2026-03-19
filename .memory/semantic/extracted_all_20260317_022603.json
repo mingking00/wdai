@@ -1,0 +1,152 @@
+[
+  {
+    "id": "ea9e0f3f-2ffd-4cbc-bd64-a0c8caff6c04",
+    "fact": "获取外界的高质量信息和高质量的项目有深远意义的项目，这是进化的燃料。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395318",
+    "last_accessed": "2026-03-17T02:26:03.395350",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "51acb347-fccc-4ca3-8016-3db2edc0cc16",
+    "fact": "寻找高质量的论文来提升元认知能力。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395368",
+    "last_accessed": "2026-03-17T02:26:03.395370",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e75a23e2-da9c-48f6-bca9-2a3914eee175",
+    "fact": "扩展外部信息来源，包括GitHub Trending和ArXiv。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395379",
+    "last_accessed": "2026-03-17T02:26:03.395381",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "010d4fa5-293b-4bdb-9ce9-ae0ae9c77fe5",
+    "fact": "建立用户反馈收集机制。",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395388",
+    "last_accessed": "2026-03-17T02:26:03.395389",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "c2937669-a96a-4717-95f1-dd4e598cde88",
+    "fact": "实现ExternalInputCollector和RealWorldValidator组件。",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395772",
+    "last_accessed": "2026-03-17T02:26:03.395775",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "d43a37fa-38fb-4787-bf63-faee8c539931",
+    "fact": "建立四阶段外部反馈循环：外部输入、内部进化、实战验证、反馈吸收。",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.395783",
+    "last_accessed": "2026-03-17T02:26:03.395785",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "5c665392-e6b5-452b-9257-fcacaef82c7d",
+    "fact": "获取外界的高质量信息和高质量的项目有深远意义的项目，这是进化的燃料。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.396040",
+    "last_accessed": "2026-03-17T02:26:03.396042",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "7c9dcd91-7c16-49f2-935f-0b7263ca07e0",
+    "fact": "寻找高质量的论文来提升元认知能力。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.396072",
+    "last_accessed": "2026-03-17T02:26:03.396074",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "e87dd714-5991-47c2-b000-7e7b6d4114cb",
+    "fact": "扩展外部信息来源，包括GitHub Trending和ArXiv。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.396081",
+    "last_accessed": "2026-03-17T02:26:03.396083",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  },
+  {
+    "id": "02d88994-974b-42b5-865a-e38099e6d000",
+    "fact": "建立用户反馈收集机制。",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-17T02:26:03.396089",
+    "last_accessed": "2026-03-17T02:26:03.396091",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py"
+    }
+  }
+]

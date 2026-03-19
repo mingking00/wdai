@@ -52,5 +52,31 @@
     "avg_effectiveness": 0.65,
     "task_completion_rate": 0.75,
     "adjustments": []
+  },
+  {
+    "timestamp": 1773740425.1981955,
+    "avg_effectiveness": 0.65,
+    "task_completion_rate": 0.75,
+    "adjustments": []
+  },
+  {
+    "timestamp": 1773776419.3163018,
+    "avg_effectiveness": 0.65,
+    "task_completion_rate": 0.7142857142857143,
+    "adjustments": []
+  },
+  {
+    "timestamp": 1773820810.203082,
+    "avg_effectiveness": 0.65,
+    "task_completion_rate": 0.7,
+    "adjustments": []
+  },
+  {
+    "timestamp": 1773859231.5232184,
+    "avg_effectiveness": 0.65,
+    "task_completion_rate": 0.6756756756756757,
+    "adjustments": [
+      "\u4efb\u52a1\u5b8c\u6210\u7387\u504f\u4f4e\uff0c\u9700\u8981\u52a0\u5f3a\u9519\u8bef\u5904\u7406"
+    ]
   }
 ]

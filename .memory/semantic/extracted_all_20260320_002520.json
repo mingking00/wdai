@@ -1,0 +1,75 @@
+[
+  {
+    "id": "d8c5fe05-344d-43d5-aeac-def11e76f7f9",
+    "fact": "验证 → `git status`确认结果",
+    "category": "constraint",
+    "confidence": 0.7,
+    "created_at": "2026-03-20T00:25:20.265061",
+    "last_accessed": "2026-03-20T00:25:20.265073",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "049b1462-e3d9-40ef-954b-a2b6fcd3295b",
+        "b306efc2-0b21-47b9-8522-34ddfbd1a68b",
+        "2fbe73ac-856f-4de1-8582-727ceda7e51e",
+        "2fbe73ac-856f-4de1-8582-727ceda7e51e",
+        "b306efc2-0b21-47b9-8522-34ddfbd1a68b",
+        "049b1462-e3d9-40ef-954b-a2b6fcd3295b"
+      ]
+    }
+  },
+  {
+    "id": "9952491a-c01f-4252-818f-5ba7c271db0e",
+    "fact": "| ~65% | ~80% | +15% |",
+    "category": "decision",
+    "confidence": 0.7,
+    "created_at": "2026-03-20T00:25:20.265830",
+    "last_accessed": "2026-03-20T00:25:20.265832",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "9c065a62-43bd-4f05-9d3d-2a0bff786fc2",
+        "f7b7b879-31e0-4a90-8bca-7ed3b0b2f5c8",
+        "f7b7b879-31e0-4a90-8bca-7ed3b0b2f5c8",
+        "f7b7b879-31e0-4a90-8bca-7ed3b0b2f5c8",
+        "f7b7b879-31e0-4a90-8bca-7ed3b0b2f5c8",
+        "f7c1bf97-e4d0-43b2-9d94-8559e3d94aaf",
+        "f7c1bf97-e4d0-43b2-9d94-8559e3d94aaf",
+        "9c065a62-43bd-4f05-9d3d-2a0bff786fc2",
+        "4568c86f-dca9-46cf-9559-a5842a1b8790",
+        "4568c86f-dca9-46cf-9559-a5842a1b8790"
+      ]
+    }
+  },
+  {
+    "id": "98bdd72b-917e-46af-a1ab-7187f65a7eec",
+    "fact": ".json | 120s |",
+    "category": "todo",
+    "confidence": 0.7,
+    "created_at": "2026-03-20T00:25:20.266525",
+    "last_accessed": "2026-03-20T00:25:20.266527",
+    "access_count": 0,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "pattern_extraction",
+      "extracted_by": "memory_extract.py",
+      "potential_conflicts": [
+        "f8959ff3-1540-4605-b8fb-b60a22322518",
+        "24d9f5ee-33b1-455f-96d2-0bac27db67b1",
+        "7621e49c-9e4a-4e8d-a9e0-562ad517641b",
+        "24d9f5ee-33b1-455f-96d2-0bac27db67b1",
+        "7621e49c-9e4a-4e8d-a9e0-562ad517641b",
+        "f8959ff3-1540-4605-b8fb-b60a22322518"
+      ]
+    }
+  }
+]

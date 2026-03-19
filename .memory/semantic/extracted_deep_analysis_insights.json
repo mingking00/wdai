@@ -1,0 +1,56 @@
+[
+  {
+    "id": "deep-analysis-insight-001",
+    "fact": "灵感摄取系统的问题：只抓取了论文标题和元数据，没有深入分析任何一篇论文的具体技术方法、架构设计或算法细节",
+    "category": "learning",
+    "confidence": 0.95,
+    "created_at": "2026-03-19T18:30:00",
+    "last_accessed": "2026-03-19T18:30:00",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "user_correction",
+      "extracted_by": "memory_extract.py",
+      "context": "用户指出：有没有可能是你没有就一个论文详细分析？",
+      "importance": "high",
+      "tags": ["inspiration_system", "deep_analysis", "lesson_learned", "cognitive_improvement"]
+    }
+  },
+  {
+    "id": "deep-analysis-insight-002",
+    "fact": "表面信息抓取 vs 深度知识提取的根本区别：获取标题只是信息的搬运，深入分析才能获得可应用的知识",
+    "category": "principle",
+    "confidence": 0.92,
+    "created_at": "2026-03-19T18:30:00",
+    "last_accessed": "2026-03-19T18:30:00",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "self_reflection",
+      "extracted_by": "memory_extract.py",
+      "context": "从论文抓取失败中提炼的原则",
+      "importance": "high",
+      "tags": ["information_vs_knowledge", "depth_over_breadth", "system_design"]
+    }
+  },
+  {
+    "id": "deep-analysis-insight-003",
+    "fact": "深入分析论文的正确流程：获取全文/摘要 → 提取具体技术方法 → 分析架构设计 → 思考如何应用到自己的系统",
+    "category": "principle",
+    "confidence": 0.88,
+    "created_at": "2026-03-19T18:30:00",
+    "last_accessed": "2026-03-19T18:30:00",
+    "access_count": 1,
+    "decay_score": 1.0,
+    "embedding": null,
+    "metadata": {
+      "source": "best_practice_derivation",
+      "extracted_by": "memory_extract.py",
+      "context": "基于用户反馈推导的最佳实践",
+      "importance": "high",
+      "tags": ["research_methodology", "paper_analysis", "knowledge_transfer"]
+    }
+  }
+]
