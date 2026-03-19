@@ -1,0 +1,28 @@
+{
+  "date": "2026-03-19",
+  "generated_at": "10:00",
+  "p0_tasks": [
+    {
+      "id": "evo-006-planning",
+      "file": "/root/.openclaw/workspace/.claw-status/evo/evo-006-planning.md",
+      "status": "completed",
+      "priority": "p0"
+    },
+    {
+      "id": "evo-007-mcp",
+      "file": "/root/.openclaw/workspace/.claw-status/evo/evo-007-mcp.md",
+      "status": "pending",
+      "priority": "p0"
+    }
+  ],
+  "p1_tasks": [],
+  "p2_tasks": [],
+  "completed_today": [],
+  "failed_today": [],
+  "stats": {
+    "total_evo": 2,
+    "completed": 0,
+    "pending": 2,
+    "completion_rate": 0
+  }
+}
